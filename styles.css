@@ -506,6 +506,7 @@ h1, h2 {
   .hero { width: 100%; padding-top: 76px; grid-template-columns: minmax(0, 1fr); }
   .hero-copy, .hero-aside { width: auto; max-width: calc(100vw - 48px); }
   .hero h1 { font-size: clamp(3rem, 14vw, 4.8rem); }
+  .hero h1 span { font-size: .7em; }
   .hero-aside { box-shadow: 9px 9px 0 var(--blue); }
   .method-list li, .question-list li { grid-template-columns: 40px 1fr; }
   .proof-band { grid-template-columns: 1fr; }
