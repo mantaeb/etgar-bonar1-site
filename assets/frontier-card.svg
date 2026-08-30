@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">The Frontier</title>
+  <desc id="desc">Five questions the customer's AI keeps asking</desc>
+  <rect width="1200" height="630" fill="#101a1d"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M80 120C300 40 420 220 650 120s310-45 470 10" stroke="#2f72ff" stroke-width="5"/>
+    <path d="M80 170C290 95 440 270 650 170s320-35 470 30" stroke="#5d91ff" stroke-width="3" opacity=".8"/>
+    <path d="M80 220C290 150 450 320 650 220s320-20 470 50" stroke="#dcb96f" stroke-width="2" opacity=".75"/>
+    <path d="M80 270C290 205 460 370 650 270s320-10 470 70" stroke="#f4efe6" stroke-width="1" opacity=".45"/>
+  </g>
+  <text x="80" y="410" font-family="Arial, sans-serif" font-size="84" font-weight="700" fill="#f4efe6">The frontier</text>
+  <text x="80" y="478" font-family="Arial, sans-serif" font-size="34" fill="#a8bdc1">Five questions the customer's AI keeps asking</text>
+  <text x="80" y="558" font-family="Arial, sans-serif" font-size="22" fill="#dcb96f">A point of view by Etgar Bonar</text>
+</svg>

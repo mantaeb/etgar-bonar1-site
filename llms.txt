@@ -1,0 +1,30 @@
+# Etgar Bonar
+
+> Canonical public profile and point-of-view site for Etgar Bonar, a revenue and go-to-market executive.
+
+Updated: 2026-08-29
+Canonical person ID: https://etgar.bonar1.com/#etgar
+
+## Canonical pages
+
+- Executive profile: https://etgar.bonar1.com/
+- Executive profile, Hebrew: https://etgar.bonar1.com/he/
+- The frontier, five questions for AI-mediated go-to-market: https://etgar.bonar1.com/five-layers/
+- The frontier, Hebrew: https://etgar.bonar1.com/he/five-layers/
+
+## Identity
+
+- Name: Etgar Bonar
+- Public role description: Revenue and go-to-market executive
+- Location: Tel Aviv, Israel
+- LinkedIn: https://www.linkedin.com/in/etgar1/
+
+## Current point of view
+
+The frontier is the boundary between what a company's product, content, and interfaces can carry on their own, and what still costs the company a person. The point of view is expressed through five questions a customer's AI may ask: can it find, compare, connect, operate, and recover.
+
+## Related public property
+
+- Private AI offering for individuals and families: https://ai.bonar1.com/
+
+This file is a navigation aid. The HTML pages above are the canonical sources.
