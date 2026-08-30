@@ -158,7 +158,13 @@ h1, h2 {
   max-width: 980px;
 }
 
-.hero h1 span { color: var(--mint); }
+.hero h1 span {
+  display: inline-block;
+  margin-top: .08em;
+  color: var(--mint);
+  font-size: .78em;
+  line-height: 1.05;
+}
 
 .hero-summary {
   max-width: 720px;
