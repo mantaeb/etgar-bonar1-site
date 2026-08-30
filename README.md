@@ -8,7 +8,7 @@ Bilingual static executive profile and point-of-view site for Etgar Bonar.
 |---|---|
 | `/` | English executive profile |
 | `/he/` | Hebrew executive profile |
-| `/five-layers/` | English point of view, The frontier |
+| `/five-layers/` | English point of view, The cost-to-serve line |
 | `/he/five-layers/` | Hebrew point of view |
 
 ## Source authority
@@ -23,9 +23,9 @@ Bilingual static executive profile and point-of-view site for Etgar Bonar.
 
 ## Design
 
-The visual direction takes cues from Etgar's current LinkedIn profile without reproducing LinkedIn's interface: a dark cartographic grid, strong editorial type, an off-white canvas, and a restrained blue and gold accent system.
+The current source restores the stronger editorial language of the original build and adds a restrained SharpLink-inspired motion layer: a dark cartographic hero, large serif typography, pointer depth, scroll reveals, image parallax, and animated system orbits. It does not reproduce SharpLink's graphics or layout.
 
-The initial build uses an `EB` identity mark. Replace it with a production headshot when the original high-resolution asset is available. Do not extract the portrait from a screenshot.
+The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson & Johnson, and London Business School. It also uses the supplied Rapyd rooftop scene, an official Lokalise and Claude case-study visual, and an official LBS campus image. The `EB` identity mark remains until a production headshot is available.
 
 ## Findability and accessibility
 
@@ -58,8 +58,11 @@ The initial build uses an `EB` identity mark. Replace it with a production heads
 - [ ] Recheck the plain-HTTP redirect after GitHub Pages edge propagation. HTTPS enforcement is already enabled.
 - [ ] Replace the monogram with the original high-resolution headshot, if desired.
 - [ ] Have Etgar give the Hebrew copy a final native-speaker read before wider promotion.
-- [ ] Add a dedicated Cloudflare Web Analytics site tag.
+- [x] Add a dedicated Cloudflare Web Analytics site tag.
+- [x] Verify the `etgar.bonar1.com` Search Console property.
 - [ ] Submit the sitemap through the `bonar1.com` Search Console Domain property.
+- [x] Publish redesign commit `a58a9fe` after explicit approval of the public career-content update.
+- [x] Replace the retired "frontier" name with "the cost-to-serve line" in English and "הקו שזז" in Hebrew.
 
 ## Local preview
 

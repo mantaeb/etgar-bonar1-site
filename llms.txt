@@ -9,8 +9,8 @@ Canonical person ID: https://etgar.bonar1.com/#etgar
 
 - Executive profile: https://etgar.bonar1.com/
 - Executive profile, Hebrew: https://etgar.bonar1.com/he/
-- The frontier, five questions for AI-mediated go-to-market: https://etgar.bonar1.com/five-layers/
-- The frontier, Hebrew: https://etgar.bonar1.com/he/five-layers/
+- The cost-to-serve line, five questions for AI-mediated go-to-market: https://etgar.bonar1.com/five-layers/
+- The cost-to-serve line, Hebrew: https://etgar.bonar1.com/he/five-layers/
 
 ## Identity
 
@@ -21,7 +21,7 @@ Canonical person ID: https://etgar.bonar1.com/#etgar
 
 ## Current point of view
 
-The frontier is the boundary between what a company's product, content, and interfaces can carry on their own, and what still costs the company a person. The point of view is expressed through five questions a customer's AI may ask: can it find, compare, connect, operate, and recover.
+The cost-to-serve line is the boundary between what a company's product, content, and interfaces can carry on their own, and what still costs the company a person. There are five such lines, one for each question a customer's AI may ask: can it find, compare, connect, operate, and recover.
 
 ## Related public property
 
