@@ -51,10 +51,11 @@ The initial build uses an `EB` identity mark. Replace it with a production heads
 - [x] Add metadata, entity data, discovery files, social cards, and 404 page.
 - [x] Run the static AI visibility probe with no findings.
 - [x] Render-check desktop, narrow English, narrow Hebrew, and the point-of-view page.
-- [ ] Publish the source repository and enable GitHub Pages.
-- [ ] Add Cloudflare CNAME `etgar` to `mantaeb.github.io`, DNS only.
-- [ ] Verify public HTTPS and canonical redirects.
-- [ ] Add the reciprocal link from `ai.bonar1.com` after the new hostname is healthy.
+- [x] Publish `mantaeb/etgar-bonar1-site` and enable GitHub Pages.
+- [x] Add Cloudflare CNAME `etgar` to `mantaeb.github.io`, DNS only.
+- [x] Verify public HTTPS, the valid certificate, and all canonical routes.
+- [x] Add reciprocal English and Hebrew links from `ai.bonar1.com`, including the canonical Person identifier.
+- [ ] Recheck the plain-HTTP redirect after GitHub Pages edge propagation. HTTPS enforcement is already enabled.
 - [ ] Replace the monogram with the original high-resolution headshot, if desired.
 - [ ] Have Etgar give the Hebrew copy a final native-speaker read before wider promotion.
 - [ ] Add a dedicated Cloudflare Web Analytics site tag.
