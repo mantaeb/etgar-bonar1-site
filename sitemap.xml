@@ -2,26 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://etgar.bonar1.com/</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://etgar.bonar1.com/" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://etgar.bonar1.com/he/" />
-  </url>
-  <url>
-    <loc>https://etgar.bonar1.com/he/</loc>
-    <lastmod>2026-08-30</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://etgar.bonar1.com/" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://etgar.bonar1.com/he/" />
   </url>
   <url>
     <loc>https://etgar.bonar1.com/five-layers/</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://etgar.bonar1.com/five-layers/" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://etgar.bonar1.com/he/five-layers/" />
-  </url>
-  <url>
-    <loc>https://etgar.bonar1.com/he/five-layers/</loc>
-    <lastmod>2026-08-30</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://etgar.bonar1.com/five-layers/" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://etgar.bonar1.com/he/five-layers/" />
   </url>
 </urlset>

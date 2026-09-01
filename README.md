@@ -1,15 +1,17 @@
 # etgar.bonar1.com
 
-Bilingual static executive profile and point-of-view site for Etgar Bonar.
+English human-facing executive profile and point-of-view site for Etgar Bonar, with supplemental machine-readable Hebrew resources.
 
 ## Public routes
 
 | Route | Purpose |
 |---|---|
 | `/` | English executive profile |
-| `/he/` | Hebrew executive profile |
 | `/five-layers/` | English point of view, The cost-to-serve line |
-| `/he/five-layers/` | Hebrew point of view |
+| `/he/` | Legacy URL that sends visitors to `/` and is marked `noindex` |
+| `/he/five-layers/` | Legacy URL that sends visitors to `/five-layers/` and is marked `noindex` |
+| `/machine/he/profile.json` | Supplemental machine-readable Hebrew profile |
+| `/machine/he/cost-to-serve-line.json` | Supplemental machine-readable Hebrew point of view |
 
 ## Source authority
 
@@ -30,9 +32,11 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 ## Findability and accessibility
 
 - Important content is delivered as static semantic HTML.
-- Each page has one H1, unique metadata, a canonical URL, reciprocal `hreflang`, and accurate JSON-LD.
+- Each human-facing page has one H1, unique metadata, a canonical URL, English `hreflang`, and accurate JSON-LD.
 - The canonical Person identifier is `https://etgar.bonar1.com/#etgar`.
-- `robots.txt`, `sitemap.xml`, and the supplemental `llms.txt` cover all public routes.
+- `robots.txt` and `sitemap.xml` cover the canonical English pages. The supplemental `llms.txt` points machines to the Hebrew JSON resources.
+- Hebrew is not hidden in the English HTML. The machine resources are public, receive the same response for every visitor, and are not presented as canonical search pages.
+- Any material change to the English profile or point of view must be reflected in the matching Hebrew JSON resource in the same release. This is a manually maintained translation, not an independent source of truth.
 - The framework diagram is implemented as text and HTML, not as an image-only argument.
 - Layouts support narrow screens, RTL, reduced motion, keyboard focus, and print.
 
@@ -45,8 +49,8 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 
 ## Launch checklist
 
-- [x] Build English and Hebrew profiles.
-- [x] Build English and Hebrew framework pages.
+- [x] Build the English profile and framework page.
+- [x] Preserve Hebrew translations as supplemental structured JSON while keeping the normal website experience English-only.
 - [x] Add direct profile-to-private-AI cross-link.
 - [x] Add metadata, entity data, discovery files, social cards, and 404 page.
 - [x] Run the static AI visibility probe with no findings.
@@ -63,6 +67,10 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 - [ ] Submit the sitemap through the `bonar1.com` Search Console Domain property.
 - [x] Publish redesign commit `a58a9fe` after explicit approval of the public career-content update.
 - [x] Replace the retired "frontier" name with "the cost-to-serve line" in English and "הקו שזז" in Hebrew.
+- [x] Publish content refinement commit `9e50cfd` after explicit approval.
+- [x] Introduce the initial "shape the commercial system" hero, localize it to Hebrew, and publish the responsive treatment in `4cfcde3`.
+- [x] Restore the complete Lokalise/Claude graphic at its natural aspect ratio and link the English and Hebrew visual and caption to the Anthropic customer story in `1ff1fdc`.
+- [x] Add operating ownership through "shape and run," update the Hebrew rendering, and preserve the narrow-screen hierarchy in `aa59748`.
 
 ## Local preview
 
