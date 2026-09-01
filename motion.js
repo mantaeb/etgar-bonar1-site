@@ -75,31 +75,4 @@
   window.addEventListener('resize', requestParallaxUpdate, { passive: true });
   updateParallax();
 
-  const hero = document.querySelector('.hero');
-  if (hero && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-    let pointerFrame = 0;
-    let pointerX = 0;
-    let pointerY = 0;
-
-    const paintPointer = () => {
-      pointerFrame = 0;
-      hero.style.setProperty('--pointer-x', `${pointerX}px`);
-      hero.style.setProperty('--pointer-y', `${pointerY}px`);
-      hero.style.setProperty('--pointer-x-reverse', `${pointerX * -0.65}px`);
-      hero.style.setProperty('--pointer-y-reverse', `${pointerY * -0.65}px`);
-    };
-
-    hero.addEventListener('pointermove', (event) => {
-      const bounds = hero.getBoundingClientRect();
-      pointerX = ((event.clientX - bounds.left) / bounds.width - 0.5) * 22;
-      pointerY = ((event.clientY - bounds.top) / bounds.height - 0.5) * 22;
-      if (!pointerFrame) pointerFrame = window.requestAnimationFrame(paintPointer);
-    }, { passive: true });
-
-    hero.addEventListener('pointerleave', () => {
-      pointerX = 0;
-      pointerY = 0;
-      if (!pointerFrame) pointerFrame = window.requestAnimationFrame(paintPointer);
-    }, { passive: true });
-  }
 })();

@@ -25,7 +25,7 @@ English human-facing executive profile and point-of-view site for Etgar Bonar, w
 
 ## Design
 
-The current source restores the stronger editorial language of the original build and adds a restrained SharpLink-inspired motion layer: a dark cartographic hero, large serif typography, pointer depth, scroll reveals, image parallax, and animated system orbits. It does not reproduce SharpLink's graphics or layout.
+The current source uses one modern system sans-serif family throughout, with hierarchy created through size and weight. The dark hero keeps a restrained technical grid while omitting the earlier decorative circles, angled outlines, and pointer-following shapes. Scroll reveals, image parallax, and the animated AI system diagram remain.
 
 The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson & Johnson, and London Business School. It also uses the supplied Rapyd rooftop scene, an official Lokalise and Claude case-study visual, and an official LBS campus image. The `EB` identity mark remains until a production headshot is available.
 
