@@ -18,6 +18,11 @@
 html {
   scroll-behavior: smooth;
   background: var(--paper);
+  /* Guard: nothing may ever scroll the page sideways. `clip` is used rather
+     than `hidden` so neither html nor body becomes a scroll container, which
+     would break the sticky header. Browsers without `clip` fall back to the
+     `hidden` on body below, which is the previous behaviour. */
+  overflow-x: clip;
 }
 
 body {
@@ -29,6 +34,7 @@ body {
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+  overflow-x: clip;
 }
 
 a { color: inherit; text-underline-offset: .18em; }
@@ -591,6 +597,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 
 .career-media {
   position: relative;
+  min-width: 0;
   min-height: 360px;
   margin: 0;
   overflow: hidden;
@@ -639,6 +646,10 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
   outline-offset: -5px;
 }
 
+/* Sized by aspect-ratio alone. Any min-height here is transferred through the
+   aspect ratio into a minimum WIDTH (min-height x 1200/630), which the 1fr grid
+   track cannot shrink below and which then overflows the page horizontally on
+   narrow screens. Keep min-height at 0 and let the column decide the width. */
 .career-media.career-media--graphic {
   min-height: 0;
   aspect-ratio: 1200 / 630;
@@ -752,7 +763,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 @media (max-width: 1050px) {
   .career-with-media { grid-template-columns: 180px 1fr; }
   .career-with-media .career-media { grid-column: 2; min-height: 430px; }
-  .career-with-media .career-media--graphic { min-height: 300px; }
+  .career-with-media .career-media--graphic { min-height: 0; }
 }
 
 @media (max-width: 760px) {
@@ -762,13 +773,13 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
   .brand-strip img { max-width: 112px; max-height: 42px; }
   .career-with-media { grid-template-columns: 1fr; }
   .career-with-media .career-media { grid-column: 1; min-height: 390px; }
-  .career-with-media .career-media--graphic { min-height: 260px; }
+  .career-with-media .career-media--graphic { min-height: 0; }
 }
 
 @media (max-width: 480px) {
   .brand-strip ul { grid-template-columns: repeat(2, 1fr); }
   .career-with-media .career-media { min-height: 310px; }
-  .career-with-media .career-media--graphic { min-height: 220px; }
+  .career-with-media .career-media--graphic { min-height: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
