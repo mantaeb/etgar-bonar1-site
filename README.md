@@ -7,9 +7,10 @@ English human-facing executive profile and point-of-view site for Etgar Bonar, w
 | Route | Purpose |
 |---|---|
 | `/` | English executive profile |
-| `/five-layers/` | English point of view, The cost-to-serve line |
+| `/cost-to-serve-line/` | English point of view, The cost-to-serve line |
+| `/five-layers/` | Legacy URL, permanently redirected to `/cost-to-serve-line/` by Cloudflare |
 | `/he/` | Legacy URL that sends visitors to `/` and is marked `noindex` |
-| `/he/five-layers/` | Legacy URL that sends visitors to `/five-layers/` and is marked `noindex` |
+| `/he/five-layers/` | Legacy URL, permanently redirected to `/cost-to-serve-line/` by Cloudflare |
 | `/machine/he/profile.json` | Supplemental machine-readable Hebrew profile |
 | `/machine/he/cost-to-serve-line.json` | Supplemental machine-readable Hebrew point of view |
 
@@ -39,6 +40,7 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 - Any material change to the English profile or point of view must be reflected in the matching Hebrew JSON resource in the same release. This is a manually maintained translation, not an independent source of truth.
 - The framework diagram is implemented as text and HTML, not as an image-only argument.
 - Layouts support narrow screens, RTL, reduced motion, keyboard focus, and print.
+- The old point-of-view routes are covered by a Cloudflare Single Redirect rule. The `etgar` CNAME must remain proxied for the HTTP 301 responses to work.
 
 ## Deliberate exclusions
 
@@ -71,6 +73,7 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 - [x] Introduce the initial "shape the commercial system" hero, localize it to Hebrew, and publish the responsive treatment in `4cfcde3`.
 - [x] Restore the complete Lokalise/Claude graphic at its natural aspect ratio and link the English and Hebrew visual and caption to the Anthropic customer story in `1ff1fdc`.
 - [x] Add operating ownership through "shape and run," update the Hebrew rendering, and preserve the narrow-screen hierarchy in `aa59748`.
+- [x] Move the canonical point-of-view URL to `/cost-to-serve-line/`, update all maintained references, and permanently redirect the former English and Hebrew routes.
 
 ## Local preview
 

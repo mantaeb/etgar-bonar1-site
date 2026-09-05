@@ -5,7 +5,7 @@
   "visibility": "supplemental-machine-readable",
   "canonicalHumanUrl": "https://etgar.bonar1.com/",
   "machineUrl": "https://etgar.bonar1.com/machine/he/profile.json",
-  "dateModified": "2026-09-01",
+  "dateModified": "2026-09-05",
   "entity": {
     "id": "https://etgar.bonar1.com/#etgar",
     "name": "Etgar Bonar",
@@ -73,7 +73,7 @@
   "currentPointOfView": {
     "title": "החלק במסע הלקוח שהצוות שלכם אינו רואה הולך וגדל",
     "text": "לפני הרכישה, קונים משתמשים ב-AI כדי לחקור, להשוות ולתכנן את האינטגרציה. אחריה, אותו AI מחבר יותר ויותר את המוצר, מפעיל אותו ופותר תקלות. הקו שזז הוא הגבול בין מה שהמוצר, התוכן והממשקים שלכם יכולים לשאת בעצמם, לבין מה שעדיין עולה לכם באדם. יש חמישה קווים כאלה, וכל אחד מהם זז בקצב אחר.",
-    "canonicalThesisUrl": "https://etgar.bonar1.com/five-layers/",
+    "canonicalThesisUrl": "https://etgar.bonar1.com/cost-to-serve-line/",
     "hebrewMachineUrl": "https://etgar.bonar1.com/machine/he/cost-to-serve-line.json"
   },
   "handsOnAI": {
