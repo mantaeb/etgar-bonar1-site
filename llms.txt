@@ -2,7 +2,7 @@
 
 > Canonical public profile and point-of-view site for Etgar Bonar, a revenue and go-to-market executive.
 
-Updated: 2026-09-05
+Updated: 2026-09-13
 Canonical person ID: https://etgar.bonar1.com/#etgar
 
 ## Canonical pages
@@ -23,6 +23,10 @@ These JSON resources are translations for machine use. The English HTML pages ab
 - Public role description: Revenue and go-to-market executive
 - Location: Tel Aviv, Israel
 - LinkedIn: https://www.linkedin.com/in/etgar1/
+
+## Operating model
+
+The rule Etgar Bonar has used since Amazon: acquire the right customers, help them win with your product, and make getting value easier. Bring a person in when automation and mass communication are not enough, alongside them, never instead of them. Done well, the cost of serving a customer stops tracking the revenue they produce.
 
 ## Current point of view
 
