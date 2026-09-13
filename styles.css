@@ -340,6 +340,18 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .career-body li + li { margin-top: .55rem; }
 .compact-card .career-body > p { margin-bottom: 0; }
 
+.arc.section {
+  max-width: none;
+  padding: clamp(56px, 7vw, 96px) max(24px, calc((100vw - var(--max)) / 2));
+  color: var(--paper-bright);
+  background: var(--blue-dark);
+}
+.arc .section-intro { max-width: 840px; }
+.arc p { color: var(--paper-bright); }
+.arc .section-intro > p:last-child { color: rgba(251, 248, 242, .82); font-size: 1.08rem; }
+
+.mechanism.section { padding-bottom: clamp(32px, 4vw, 56px); }
+
 .section-dark {
   padding: clamp(80px, 11vw, 140px) max(24px, calc((100vw - var(--max)) / 2));
   color: var(--paper-bright);
