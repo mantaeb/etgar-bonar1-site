@@ -5,14 +5,20 @@
   "visibility": "supplemental-machine-readable",
   "canonicalHumanUrl": "https://etgar.bonar1.com/",
   "machineUrl": "https://etgar.bonar1.com/machine/he/profile.json",
-  "dateModified": "2026-09-14",
+  "dateModified": "2026-09-16",
   "entity": {
     "id": "https://etgar.bonar1.com/#etgar",
     "name": "Etgar Bonar",
     "alternateName": "אתגר בונר",
     "role": "מנהל הכנסות ו-Go-to-Market",
     "location": "תל אביב, ישראל",
-    "linkedin": "https://www.linkedin.com/in/etgar1/"
+    "linkedin": "https://www.linkedin.com/in/etgar1/",
+    "sameAs": [
+      "https://www.linkedin.com/in/etgar1/",
+      "https://medium.com/@etgarbon",
+      "https://www.youtube.com/channel/UC2PZEC2neoeFLe29Hz-HmuQ",
+      "https://lokalise.com/blog/author/etgar-bonar/"
+    ]
   },
   "positioning": {
     "headline": "אני מתחיל בבעיה המסחרית. משם אני בונה את המערכת המסחרית ומנהל את האנשים שהעסק צריך כדי לנצח.",
