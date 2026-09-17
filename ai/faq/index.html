@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Questions about a private AI operating layer | Etgar Bonar</title>
+    <meta
+      name="description"
+      content="Direct answers about a working private AI system running on a home server: what hardware it uses, which AI models it calls, where the data lives, how memory works, how a non-deterministic system is tested, and how it is run from a phone while travelling."
+    />
+    <link rel="canonical" href="https://etgarbonar.com/ai/faq/" />
+    <link rel="alternate" hreflang="en" href="https://etgarbonar.com/ai/faq/" />
+    <link rel="alternate" hreflang="x-default" href="https://etgarbonar.com/ai/faq/" />
+    <meta property="og:site_name" content="Private AI" />
+    <meta property="og:title" content="Questions about a private AI operating layer" />
+    <meta
+      property="og:description"
+      content="What the hardware is, which models it calls, where the data lives, how memory works, how a system that answers differently every time gets tested, and how it is run from a phone."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://etgarbonar.com/ai/faq/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://etgarbonar.com/ai/social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Questions about a private AI operating layer" />
+    <meta name="twitter:description" content="Direct answers about a working private AI system running on a home server." />
+    <meta name="twitter:image" content="https://etgarbonar.com/ai/social-card.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://etgarbonar.com/ai/faq/#webpage",
+            "url": "https://etgarbonar.com/ai/faq/",
+            "name": "Questions about a private AI operating layer",
+            "description": "Direct answers about a working private AI system running on a home server.",
+            "inLanguage": "en",
+            "datePublished": "2026-09-01",
+            "dateModified": "2026-09-01",
+            "isPartOf": {
+              "@id": "https://etgarbonar.com/#website"
+            },
+            "about": {
+              "@id": "https://etgarbonar.com/ai/#service"
+            },
+            "mainEntity": {
+              "@id": "https://etgarbonar.com/ai/faq/#faq"
+            },
+            "author": {
+              "@id": "https://etgarbonar.com/#etgar"
+            },
+            "publisher": {
+              "@id": "https://etgarbonar.com/#etgar"
+            },
+            "breadcrumb": {
+              "@id": "https://etgarbonar.com/ai/faq/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://etgarbonar.com/ai/faq/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Private AI",
+                "item": "https://etgarbonar.com/ai/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Questions",
+                "item": "https://etgarbonar.com/ai/faq/"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://etgarbonar.com/ai/faq/#faq",
+            "inLanguage": "en",
+            "dateModified": "2026-09-01",
+            "about": {
+              "@id": "https://etgarbonar.com/ai/#service"
+            },
+            "author": {
+              "@id": "https://etgarbonar.com/#etgar"
+            },
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "@id": "https://etgarbonar.com/ai/faq/#q-what-is-it",
+                "name": "What is this system?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It is a private AI operating layer that has run one household. A person talks to it through ordinary messaging apps, and it answers from a readable knowledge base of the household's own notes and records rather than from conversational memory. The coordination layer and all the data run on a home server the owner controls. The AI models are rented from external providers and are treated as interchangeable parts."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://etgarbonar.com/ai/faq/#q-local-models",
+                "name": "Does it run AI models locally on the home server?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. The home server has no GPU and cannot serve a model worth using, so inference is called from three commercial providers. What stays at home is everything else: the orchestration, the memory, the scheduling, the tool access and all of the data. This split is deliberate. Models improve every few months and are replaceable in a config change, while the knowledge base and the operating discipline around it are the parts that took a year to get right."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://etgarbonar.com/ai/faq/#q-hardware",
+                "name": "What hardware does it run on?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A single fanless mini-PC, roughly the size of an Apple TV, with a low-power Intel N100 processor and 16 GB of memory. It runs a hypervisor with two virtual machines: one for the assistant and its scripts, one for home automation. It draws a few watts, has no moving parts, and has run continuously for months at a time."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://etgarbonar.com/ai/faq/#q-models",
+                "name": "Which AI models does it use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "As of September 2026 it calls Anthropic, OpenAI and Google models, chosen per agent rather than globally. The general assistant runs on a stronger reasoning model; the narrow agents for travel, groceries and chores run on a fast, inexpensive one. Each agent has a two-deep fallback chain that crosses vendors, so an outage at any single provider degrades answer quality instead of taking the assistant offline."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://etgarbonar.com/ai/faq/#q-data",
+                "name": "Where does the data live and who can see it?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "All of it lives on the home server as plain text files, backed up nightly to the owner's own cloud storage. No third party holds the knowledge base. AI providers see only what a single request sends them, which is the relevant excerpt for that question and not the archive. Because the knowledge base is ordinary readable text rather than a vendor database, it can be opened, audited, exported or moved to a different AI model without a migration."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://etgarbonar.com/ai/faq/#q-memory",
+                "name": "How does it remember things without making them up?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Facts are read from source files at the moment they are needed, and answers carry the source they came from. Nothing enters long-term memory automatically: once a week the assistant proposes a short list of candidate facts and a human approves or rejects each one. That design was chosen after testing the alternative. Letting the system curate its own memory unsupervised made accuracy worse, not better, because it compounded its own errors."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://etgarbonar.com/ai/faq/#q-testing",
+                "name": "How do you test an AI system that gives a different answer every time?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You stop asserting on the wording and start asserting on the things that are deterministic. A weekly job asks five real household questions whose answers can be derived mechanically from the underlying records, each in a brand-new conversation so that no prior context props up the answer, and checks each reply against the record read live at that moment. Separately, a nightly audit with no AI in it verifies that the configured model is the model actually serving, that no scheduled process has silently stopped, and that no memory file points at something that no longer exists. Both alert only on failure, because a system that reports success trains its owner to ignore it."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://etgarbonar.com/ai/faq/#q-outage",
+                "name": "What happens when LLM credits run out or an AI provider has an outage?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The request moves to the next model in that agent's fallback chain, which belongs to a different vendor, and the conversation continues. A watcher notices the switch and messages the owner when the system drops to a backup and again when it recovers. An exhausted balance or a monthly spending cap looks the same to the system as an outage: the request fails, the next provider picks it up, and the conversation carries on. That is not hypothetical. A spending cap was reached once mid-month, and the assistant kept working on another vendor's model until it was raised. The nightly audit also looks for recent billing and authentication errors, so a quietly failing account surfaces the next morning rather than weeks later. Separately, a healer process watches for a specific provider error that corrupts a conversation and silently stops replies rather than failing loudly. It resets the affected session and asks the person to resend. Failures that announce themselves are easy; the ones worth building for are the quiet ones."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://etgarbonar.com/ai/faq/#q-capability",
+                "name": "What can it actually do day to day?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It works inside WhatsApp and Telegram, in English and Hebrew, for the whole family. It reads and summarises mail and calendar, manages a task board, runs the connected home, sends a daily briefing, maintains the family shopping list, tracks household vendors and payments against receipts, ran the coordination for a three-week family trip, and runs a chores and allowance system the children use directly. Narrow jobs get their own agent with its own small brief rather than being added to one general assistant. A specialist with a tiny, focused remit is markedly more reliable than a generalist trying to hold everything. Anything that has to add up is not left to the model. The shopping list, the chores and points ledger, and the household payment ledger are each written by a small purpose-built program that owns the format: the assistant interprets the request, the program records the result. That is what keeps a running total correct on a day when a model is having an off day."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://etgarbonar.com/ai/faq/#q-remote",
+                "name": "Can it be managed remotely, or does it depend on being at home?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It works the same from a laptop, a phone or an iPad. The server hosts a development workspace that runs in a browser, alongside a terminal whose session survives a dropped connection. Both are reachable only over a private network overlay and never from the public internet. Opening either one from any of those devices lands straight back where the last session stopped. The workspace was built for a small screen on purpose: a single column that a stray tap cannot split, a pinned tab for each AI coding agent, and a fix for the Android keyboard shoving the tab strip off screen. More than one vendor's coding agent runs there against the same knowledge base, which is what turns the claim about staying portable across AI models into something demonstrated rather than asserted. It was built ahead of family travel in 2026 and has been the main way the system is reached ever since: months of daily use, including extended travel in the near and far east, over hotel WiFi and mobile data, where it was the only access path there was. A plain terminal is kept as an independent fallback if the browser workspace is ever unavailable. The household kept running at home throughout, and one incident was diagnosed and closed from abroad."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://etgarbonar.com/ai/faq/#q-security",
+                "name": "How is a system like this kept secure?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Four controls carry most of the weight. Nothing is exposed to the public internet. Administrative access is reachable only over a private network overlay. Messaging access is restricted to an allowlist of known numbers, so an unknown sender cannot reach the assistant at all. Each agent is granted only the tools its job requires. The narrow agents cannot write files or browse the web even if their reasoning fails, which caps how wrong any single agent can be. Credentials sit at the lowest privilege that works. Anything needing administrator rights is granted for a single task and withdrawn in the same session."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://etgarbonar.com/ai/faq/#q-product",
+                "name": "Is this a product I can buy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Not today. It is a working personal system running in one household, not packaged software, and it is honest about the difference: it currently depends on a technically capable owner maintaining it."
+                }
+              },
+              {
+                "@type": "Question",
+                "@id": "https://etgarbonar.com/ai/faq/#q-who",
+                "name": "Who built it?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Etgar Bonar, a commercial executive based in Tel Aviv whose background is revenue leadership at Lokalise, Rapyd, Taboola and Amazon. He built and operates the system himself, choosing to learn AI by running a real one in daily life rather than by studying it. He also built a mobile development workspace so the system can be inspected and changed from a phone."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="/ai/styles.css?v=19" />
+    <script src="/ai/script.js?v=20" defer></script>
+    <!-- Cloudflare Web Analytics -->
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "8290fefd869644d2aa39da04ad6258e0"}'
+    ></script>
+    <!-- End Cloudflare Web Analytics -->
+  </head>
+  <body>
+    <div class="cursor-halo" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="/ai/" aria-label="Private AI home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Private AI</span>
+      </a>
+      <nav class="nav-links" aria-label="Site sections">
+        <a href="/ai/#how-it-works">How it works</a>
+        <a href="/ai/#proof">Working proof</a>
+        <a href="/ai/faq/" aria-current="page">Questions</a>
+        <a href="/ai/#interest">Discuss further</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="section faq-intro" aria-labelledby="faq-title">
+        <p class="section-kicker">Questions</p>
+        <h1 class="cursor-reactive" id="faq-title">Straight answers about a private AI system that runs a household.</h1>
+        <p class="faq-lede">
+          These are the questions people ask when they hear that an AI assistant
+          runs a household from a box on a shelf. The answers below are specific,
+          dated, and drawn from the running system rather than from a plan.
+        </p>
+        <p class="faq-meta">
+          Last verified 1 September 2026 against the live system ·
+          Written and operated by <a href="https://etgarbonar.com/">Etgar Bonar</a> ·
+          Figures come from the system's own cost and audit reports
+        </p>
+      </section>
+
+      <nav class="section faq-toc" aria-labelledby="faq-toc-title">
+        <h2 id="faq-toc-title" class="faq-toc-title">On this page</h2>
+        <ol>
+          <li><a href="#q-what-is-it">What is this system?</a></li>
+          <li><a href="#q-local-models">Does it run AI models locally on the home server?</a></li>
+          <li><a href="#q-hardware">What hardware does it run on?</a></li>
+          <li><a href="#q-models">Which AI models does it use?</a></li>
+          <li><a href="#q-data">Where does the data live and who can see it?</a></li>
+          <li><a href="#q-memory">How does it remember things without making them up?</a></li>
+          <li><a href="#q-testing">How do you test an AI system that gives a different answer every time?</a></li>
+          <li><a href="#q-outage">What happens when LLM credits run out or an AI provider has an outage?</a></li>
+          <li><a href="#q-capability">What can it actually do day to day?</a></li>
+          <li><a href="#q-remote">Can it be managed remotely, or does it depend on being at home?</a></li>
+          <li><a href="#q-security">How is a system like this kept secure?</a></li>
+          <li><a href="#q-product">Is this a product I can buy?</a></li>
+          <li><a href="#q-who">Who built it?</a></li>
+        </ol>
+      </nav>
+
+      <div class="section faq-list">
+        <article class="faq-item" id="q-what-is-it">
+          <h2>What is this system?</h2>
+          <p>
+            It is a private AI operating layer that has run one household. A person
+            talks to it through ordinary messaging apps, and it answers from a
+            readable knowledge base of the household's own notes and
+            records rather than from conversational memory. The coordination layer
+            and all the data run on a home server the owner controls. The AI models
+            are rented from external providers and are treated as interchangeable
+            parts.
+          </p>
+        </article>
+
+        <article class="faq-item" id="q-local-models">
+          <h2>Does it run AI models locally on the home server?</h2>
+          <p>
+            No. The home server has no GPU and cannot serve a model worth using, so
+            inference is called from three commercial providers. What stays at home
+            is everything else: the orchestration, the memory, the scheduling, the
+            tool access and all of the data.
+          </p>
+          <p>
+            This split is deliberate. Models improve every few months and are
+            replaceable in a config change, while the knowledge base and the
+            operating discipline around it are the parts that took a year to get
+            right.
+          </p>
+        </article>
+
+        <article class="faq-item" id="q-hardware">
+          <h2>What hardware does it run on?</h2>
+          <p>
+            A single fanless mini-PC, roughly the size of an Apple TV, with a
+            low-power Intel N100 processor and 16 GB of memory. It runs a hypervisor
+            with two virtual machines: one for the assistant and its scripts, one for
+            home automation. It draws a few watts, has no moving parts, and has run
+            continuously for months at a time.
+          </p>
+        </article>
+
+        <article class="faq-item" id="q-models">
+          <h2>Which AI models does it use?</h2>
+          <p>
+            As of September 2026 it calls Anthropic, OpenAI and Google models, chosen
+            per agent rather than globally. The general assistant runs on a stronger
+            reasoning model; the narrow agents for travel, groceries and chores run on
+            a fast, inexpensive one.
+          </p>
+          <p>
+            Each agent has a two-deep fallback chain that crosses vendors, so an
+            outage at any single provider degrades answer quality instead of taking
+            the assistant offline.
+          </p>
+        </article>
+
+
+        <article class="faq-item" id="q-data">
+          <h2>Where does the data live and who can see it?</h2>
+          <p>
+            All of it lives on the home server as plain text files, backed up nightly
+            to the owner's own cloud storage. No third party holds the knowledge base.
+            AI providers see only what a single request sends them, which is the
+            relevant excerpt for that question and not the archive.
+          </p>
+          <p>
+            Because the knowledge base is ordinary readable text rather than a vendor
+            database, it can be opened, audited, exported or moved to a different AI
+            model without a migration.
+          </p>
+        </article>
+
+        <article class="faq-item" id="q-memory">
+          <h2>How does it remember things without making them up?</h2>
+          <p>
+            Facts are read from source files at the moment they are needed, and answers
+            carry the source they came from. Nothing enters long-term memory
+            automatically: once a week the assistant proposes a short list of candidate
+            facts and a human approves or rejects each one.
+          </p>
+          <p>
+            That design was chosen after testing the alternative. Letting the system
+            curate its own memory unsupervised made accuracy worse, not better, because
+            it compounded its own errors.
+          </p>
+        </article>
+
+        <article class="faq-item" id="q-testing">
+          <h2>How do you test an AI system that gives a different answer every time?</h2>
+          <p>
+            You stop asserting on the wording and start asserting on the things that
+            are deterministic.
+          </p>
+          <p>
+            A weekly job asks five real household questions whose answers can be
+            derived mechanically from the underlying records, each in a brand-new
+            conversation so that no prior context props up the answer, and checks each
+            reply against the record read live at that moment. Separately, a nightly
+            audit with no AI in it verifies that the configured model is the model
+            actually serving, that no scheduled process has silently stopped, and that
+            no memory file points at something that no longer exists. Both alert only
+            on failure, because a system that reports success trains its owner to
+            ignore it.
+          </p>
+        </article>
+
+        <article class="faq-item" id="q-outage">
+          <h2>What happens when LLM credits run out or an AI provider has an outage?</h2>
+          <p>
+            The request moves to the next model in that agent's fallback chain, which
+            belongs to a different vendor, and the conversation continues. A watcher
+            notices the switch and messages the owner when the system drops to a backup
+            and again when it recovers.
+          </p>
+          <p>
+            An exhausted balance or a monthly spending cap looks the same to the system
+            as an outage: the request fails, the next provider picks it up, and the
+            conversation carries on. That is not hypothetical. A spending cap was
+            reached once mid-month, and the assistant kept working on another vendor's
+            model until it was raised. The nightly audit also looks for recent billing
+            and authentication errors, so a quietly failing account surfaces the next
+            morning rather than weeks later.
+          </p>
+          <p>
+            Separately, a healer process watches for a specific provider error that
+            corrupts a conversation and silently stops replies rather than failing
+            loudly. It resets the affected session and asks the person to resend.
+            Failures that announce themselves are easy; the ones worth building for are
+            the quiet ones.
+          </p>
+        </article>
+
+        <article class="faq-item" id="q-capability">
+          <h2>What can it actually do day to day?</h2>
+          <p>
+            It works inside WhatsApp and Telegram, in English and Hebrew, for the whole
+            family. It reads and summarises mail and calendar, manages a task board,
+            runs the connected home, sends a daily briefing, maintains the family
+            shopping list, tracks household vendors and payments against receipts, ran
+            the coordination for a three-week family trip, and runs a chores and
+            allowance system the children use directly.
+          </p>
+          <p>
+            Narrow jobs get their own agent with its own small brief rather than being
+            added to one general assistant. A specialist with a tiny, focused remit is
+            markedly more reliable than a generalist trying to hold everything.
+          </p>
+          <p>
+            Anything that has to add up is not left to the model. The shopping list, the
+            chores and points ledger, and the household payment ledger are each written
+            by a small purpose-built program that owns the format: the assistant
+            interprets the request, the program records the result. That is what keeps a
+            running total correct on a day when a model is having an off day.
+          </p>
+        </article>
+
+        <article class="faq-item" id="q-remote">
+          <h2>Can it be managed remotely, or does it depend on being at home?</h2>
+          <p>
+            It works the same from a laptop, a phone or an iPad. The server hosts a
+            development workspace that runs in a browser, alongside a terminal whose
+            session survives a dropped connection. Both are reachable only over a
+            private network overlay and never from the public internet. Opening either
+            one from any of those devices lands straight back where the last session
+            stopped.
+          </p>
+          <p>
+            The workspace was built for a small screen on purpose: a single column that
+            a stray tap cannot split, a pinned tab for each AI coding agent, and a fix
+            for the Android keyboard shoving the tab strip off screen. More than one
+            vendor's coding agent runs there against the same knowledge base, which is
+            what turns the claim about staying portable across AI models into something
+            demonstrated rather than asserted.
+          </p>
+          <p>
+            It was built ahead of family travel in 2026 and has been the main way the
+            system is reached ever since: months of daily use, including extended travel
+            in the near and far east, over hotel WiFi and mobile data, where it was the
+            only access path there was. A plain terminal is kept as an independent
+            fallback if the browser workspace is ever unavailable. The household kept
+            running at home throughout, and one incident was diagnosed and closed from
+            abroad.
+          </p>
+        </article>
+
+        <article class="faq-item" id="q-security">
+          <h2>How is a system like this kept secure?</h2>
+          <p>Four controls carry most of the weight.</p>
+          <ul>
+            <li>
+              <strong>Nothing is exposed to the public internet.</strong>
+              Administrative access is reachable only over a private network overlay.
+            </li>
+            <li>
+              <strong>Messaging access is restricted to an allowlist</strong> of known
+              numbers, so an unknown sender cannot reach the assistant at all.
+            </li>
+            <li>
+              <strong>Each agent is granted only the tools its job requires.</strong>
+              The narrow agents cannot write files or browse the web even if their
+              reasoning fails, which caps how wrong any single agent can be.
+            </li>
+            <li>
+              <strong>Credentials sit at the lowest privilege that works.</strong>
+              Anything needing administrator rights is granted for a single task and
+              withdrawn in the same session.
+            </li>
+          </ul>
+        </article>
+
+
+        <article class="faq-item" id="q-product">
+          <h2>Is this a product I can buy?</h2>
+          <p>
+            Not today. It is a working personal system running in one household, not
+            packaged software, and it is honest about the difference: it currently
+            depends on a technically capable owner maintaining it.
+          </p>
+        </article>
+
+        <article class="faq-item" id="q-who">
+          <h2>Who built it?</h2>
+          <p>
+            <a href="https://etgarbonar.com/">Etgar Bonar</a>, a commercial executive
+            based in Tel Aviv whose background is revenue leadership at Lokalise,
+            Rapyd, Taboola and Amazon. He built and operates the system himself, choosing
+            to learn AI by running a real one in daily life rather than by studying it.
+            He also built a mobile development workspace so the system can be inspected
+            and changed from a phone.
+          </p>
+        </article>
+      </div>
+
+      <section class="section early" id="interest" aria-labelledby="faq-cta-title">
+        <div class="early-content">
+          <p class="section-kicker">Private conversations</p>
+          <h2 class="cursor-reactive" id="faq-cta-title">Still have a question this page did not answer?</h2>
+          <a
+            class="button button-primary"
+            href="mailto:ai@bonar1.com?subject=Question%20about%20Private%20AI&body=Hi%20Etgar%2C%0A%0AMy%20question%20about%20the%20private%20AI%20operating%20layer%3A%0A"
+          >
+            Ask it directly
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Private AI</span>
+      <span>Questions: <a href="mailto:ai@bonar1.com">ai@bonar1.com</a></span>
+      <span>Privacy: this site uses Cloudflare Web Analytics and email links. No forms or ad tracking.</span>
+    </footer>
+  </body>
+</html>

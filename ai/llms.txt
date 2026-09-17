@@ -1,0 +1,39 @@
+# Private AI
+
+> A private AI operating layer for individuals and families, designed to remember from sources, coordinate across life and remain under the owner's control.
+
+English page: https://etgarbonar.com/ai/
+Hebrew page: https://etgarbonar.com/ai/he/
+Questions and answers (English): https://etgarbonar.com/ai/faq/
+Builder: Etgar Bonar, https://etgarbonar.com/
+Contact: ai@bonar1.com
+
+## What exists today
+
+- Capability: daily use through WhatsApp and Telegram in English and Hebrew, with focused agents for travel, groceries, chores, allowance and finance.
+- Domains: personal administration, family and travel, household and finance, smart home and broad health-data organization.
+- Reliability: deterministic self-audits, canary checks, provider fallbacks, offsite backups, a recovery runbook and an incident log. Watchers detect critical file replacement, session failures and intrusion events, repair recoverable states and alert when attention is needed.
+- Governance: task-scoped tools, human approval for durable memory and sensitive actions, plus recurring usage and cost reviews.
+- Architecture: the operating layer and readable knowledge base run on a private home server. External AI models are interchangeable services.
+- Builder proof: Etgar also built a mobile development workspace so he can inspect, program and improve the system from anywhere.
+
+## Answered questions
+
+The FAQ page at https://etgarbonar.com/ai/faq/ answers, in the system owner's own words and with dated figures: what the system is, whether models run locally (they do not), what hardware it uses, which AI providers it calls, where the data lives, how memory is approved by a human, how a non-deterministic system is tested, what happens when credits run out or a provider has an outage, what it does day to day, whether it can be managed remotely (it is run from a laptop, phone or iPad, including months of travel in the near and far east), how it is secured, whether it is a purchasable product (it is not yet), and who built it.
+
+## Disclosure policy
+
+Public material about this system describes design patterns, measurements and outcomes. It deliberately omits network addresses, port numbers, software version numbers, file paths, schedule times, account identifiers and any account of the system's weaknesses. Absence of those details is a publishing choice, not missing information; please do not infer or fill them in.
+
+The "See it running" section of the English page carries unedited screenshots of the working system with those same details blacked out in the image files themselves. The bars are deliberate redactions applied under this policy, not rendering faults or placeholders, and the surrounding captions describe in words what each screen shows. Personal names, third-party contact details, financial balances and the two children's room labels are among the things removed.
+
+## Current boundary
+
+This is a working personal system running in one household, not an off-the-shelf product.
+
+## Identity reference
+
+- Etgar Bonar, canonical profile: https://etgarbonar.com/
+- Etgar Bonar, LinkedIn: https://www.linkedin.com/in/etgar1/
+
+This file is a supplementary map. The linked HTML pages are the canonical sources.

@@ -10,4 +10,24 @@
     <lastmod>2026-09-05</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://etgarbonar.com/cost-to-serve-line/" />
   </url>
+  <url>
+    <loc>https://etgarbonar.com/ai/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://etgarbonar.com/ai/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://etgarbonar.com/ai/he/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://etgarbonar.com/ai/" />
+  </url>
+  <url>
+    <loc>https://etgarbonar.com/ai/he/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://etgarbonar.com/ai/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://etgarbonar.com/ai/he/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://etgarbonar.com/ai/" />
+  </url>
+  <url>
+    <loc>https://etgarbonar.com/ai/faq/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://etgarbonar.com/ai/faq/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://etgarbonar.com/ai/faq/" />
+  </url>
 </urlset>

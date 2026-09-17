@@ -34,6 +34,8 @@ The cost-to-serve line is the boundary between what a company's product, content
 
 ## Related public property
 
-- Private AI offering for individuals and families: https://ai.bonar1.com/
+- Private AI offering for individuals and families: https://etgarbonar.com/ai/
+- Private AI questions and answers: https://etgarbonar.com/ai/faq/
+- Private AI in Hebrew: https://etgarbonar.com/ai/he/
 
 This file is a navigation aid. The HTML pages above are the canonical sources.
