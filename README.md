@@ -1,4 +1,4 @@
-# etgar.bonar1.com
+# etgarbonar.com
 
 English human-facing executive profile and point-of-view site for Etgar Bonar, with supplemental machine-readable Hebrew resources.
 
@@ -34,7 +34,7 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 
 - Important content is delivered as static semantic HTML.
 - Each human-facing page has one H1, unique metadata, a canonical URL, English `hreflang`, and accurate JSON-LD.
-- The canonical Person identifier is `https://etgar.bonar1.com/#etgar`.
+- The canonical Person identifier is `https://etgarbonar.com/#etgar`.
 - `robots.txt` and `sitemap.xml` cover the canonical English pages. The supplemental `llms.txt` points machines to the Hebrew JSON resources.
 - Hebrew is not hidden in the English HTML. The machine resources are public, receive the same response for every visitor, and are not presented as canonical search pages.
 - Any material change to the English profile or point of view must be reflected in the matching Hebrew JSON resource in the same release. This is a manually maintained translation, not an independent source of truth.
@@ -60,12 +60,12 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 - [x] Publish `mantaeb/etgar-bonar1-site` and enable GitHub Pages.
 - [x] Add Cloudflare CNAME `etgar` to `mantaeb.github.io`, DNS only.
 - [x] Verify public HTTPS, the valid certificate, and all canonical routes.
-- [x] Add reciprocal English and Hebrew links from `ai.bonar1.com`, including the canonical Person identifier.
+- [x] Add reciprocal links from the Private AI section at `/ai/`, including the canonical Person identifier.
 - [ ] Recheck the plain-HTTP redirect after GitHub Pages edge propagation. HTTPS enforcement is already enabled.
 - [ ] Replace the monogram with the original high-resolution headshot, if desired.
 - [ ] Have Etgar give the Hebrew copy a final native-speaker read before wider promotion.
 - [x] Add a dedicated Cloudflare Web Analytics site tag.
-- [x] Verify the `etgar.bonar1.com` Search Console property.
+- [ ] Verify the `etgarbonar.com` Search Console domain property before cutover.
 - [ ] Submit the sitemap through the `bonar1.com` Search Console Domain property.
 - [x] Publish redesign commit `a58a9fe` after explicit approval of the public career-content update.
 - [x] Replace the retired "frontier" name with "the cost-to-serve line" in English and "הקו שזז" in Hebrew.

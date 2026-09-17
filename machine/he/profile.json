@@ -3,11 +3,11 @@
   "documentType": "executive-profile",
   "language": "he",
   "visibility": "supplemental-machine-readable",
-  "canonicalHumanUrl": "https://etgar.bonar1.com/",
-  "machineUrl": "https://etgar.bonar1.com/machine/he/profile.json",
+  "canonicalHumanUrl": "https://etgarbonar.com/",
+  "machineUrl": "https://etgarbonar.com/machine/he/profile.json",
   "dateModified": "2026-09-16",
   "entity": {
-    "id": "https://etgar.bonar1.com/#etgar",
+    "id": "https://etgarbonar.com/#etgar",
     "name": "Etgar Bonar",
     "alternateName": "אתגר בונר",
     "role": "מנהל הכנסות ו-Go-to-Market",
@@ -134,8 +134,8 @@
   "currentPointOfView": {
     "title": "החלק במסע הלקוח שהדשבורדים שלכם כמעט לא מתעדים הולך וגדל",
     "text": "לפני הרכישה, קונים משתמשים ב-AI כדי לחקור, להשוות ולתכנן את האינטגרציה. אחריה, אותו AI מחבר יותר ויותר את המוצר, מפעיל אותו ופותר תקלות. הקו שזז הוא הגבול בין מה שהמוצר, התוכן והממשקים שלכם יכולים לשאת בעצמם, לבין מה שעדיין עולה לכם באדם. יש חמישה קווים כאלה, וכל אחד מהם זז בקצב אחר.",
-    "canonicalThesisUrl": "https://etgar.bonar1.com/cost-to-serve-line/",
-    "hebrewMachineUrl": "https://etgar.bonar1.com/machine/he/cost-to-serve-line.json"
+    "canonicalThesisUrl": "https://etgarbonar.com/cost-to-serve-line/",
+    "hebrewMachineUrl": "https://etgarbonar.com/machine/he/cost-to-serve-line.json"
   },
   "handsOnAI": {
     "title": "בחרתי ללמוד את המערכת דרך בנייה שלה",
