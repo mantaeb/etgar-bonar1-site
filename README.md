@@ -14,6 +14,13 @@ English human-facing executive profile and point-of-view site for Etgar Bonar, w
 | `/machine/he/profile.json` | Supplemental machine-readable Hebrew profile |
 | `/machine/he/cost-to-serve-line.json` | Supplemental machine-readable Hebrew point of view |
 
+## Temporary design previews
+
+`/design-concepts/` contains three unlinked, `noindex` visual-system prototypes: Precision Dark,
+Apple Light, and Editorial Premium. They reuse current public claims but are comparison surfaces,
+not canonical profile pages. Keep them out of navigation and the sitemap. Remove the directory once
+a direction has been selected and incorporated into the production design.
+
 ## Source authority
 
 - Positioning: `projects/career/job-search/_shared/linkedin-profile-repositioning-2026-08.md`
