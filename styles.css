@@ -104,6 +104,10 @@ img, svg { max-width: 100%; }
 
 .site-nav a { text-decoration: none; }
 .site-nav a[aria-current="page"] { color: var(--blue-dark); }
+.site-nav .nav-short { display: none; }
+
+/* Anchor targets clear the sticky header */
+section[id], [id].section { scroll-margin-top: 96px; }
 .language-link { padding-inline-start: 1.5rem; border-inline-start: 1px solid var(--line); }
 
 .hero {
@@ -518,10 +522,40 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 
 @media (max-width: 640px) {
   body { font-size: 16px; }
-  .site-header { position: static; display: block; }
-  .brand { margin-bottom: .85rem; }
-  .site-nav { justify-content: flex-start; }
-  .site-nav a:nth-child(1), .site-nav a:nth-child(3) { display: none; }
+  /* Persistent single-row bar: brand mark + three destinations */
+  .site-header {
+    position: sticky;
+    top: 0;
+    min-height: 0;
+    align-items: center;
+    gap: .6rem;
+    padding-block: .5rem;
+    padding-inline: max(16px, env(safe-area-inset-left)) max(16px, env(safe-area-inset-right));
+    box-shadow: 0 6px 18px rgba(24, 22, 18, .05);
+  }
+  .brand { margin-bottom: 0; gap: 0; flex: none; }
+  .brand span:not(.brand-mark) { display: none; }
+  .brand-mark { width: 30px; height: 30px; border-radius: 8px; font-size: .66rem; }
+  .site-nav {
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: .8rem;
+    font-size: .82rem;
+    white-space: nowrap;
+  }
+  .site-nav a { display: inline-flex; align-items: center; min-height: 34px; }
+  .site-nav .nav-wide { display: none; }
+  .site-nav .nav-long { display: none; }
+  .site-nav .nav-short { display: inline; }
+  .site-nav .nav-cta {
+    padding: .38rem .72rem;
+    border-radius: 999px;
+    color: var(--paper-bright);
+    background: var(--ink);
+  }
+  .site-nav .nav-cta[aria-current="page"] { color: var(--paper-bright); }
+  section[id], [id].section { scroll-margin-top: 60px; }
   .language-link { margin-inline-start: 0; padding-inline-start: .8rem; }
   .hero { width: 100%; padding-top: 76px; grid-template-columns: minmax(0, 1fr); }
   .hero-copy, .hero-aside { width: 100%; max-width: 100%; min-width: 0; }
