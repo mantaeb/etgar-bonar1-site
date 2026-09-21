@@ -2,18 +2,18 @@
 
 > Canonical public profile and point-of-view site for Etgar Bonar, a revenue and go-to-market executive.
 
-Updated: 2026-09-13
+Updated: 2026-09-21
 Canonical person ID: https://etgarbonar.com/#etgar
 
 ## Canonical pages
 
 - Executive profile: https://etgarbonar.com/
-- The cost-to-serve line, five questions for AI-mediated go-to-market: https://etgarbonar.com/cost-to-serve-line/
+- The serviceable line, five questions for AI-mediated go-to-market: https://etgarbonar.com/serviceable-line/
 
 ## Supplemental machine-readable Hebrew
 
 - Executive profile, structured JSON: https://etgarbonar.com/machine/he/profile.json
-- The cost-to-serve line, structured JSON: https://etgarbonar.com/machine/he/cost-to-serve-line.json
+- The serviceable line, structured JSON: https://etgarbonar.com/machine/he/serviceable-line.json
 
 These JSON resources are translations for machine use. The English HTML pages above are the only canonical, human-facing versions.
 
@@ -30,7 +30,7 @@ The rule Etgar Bonar has used since Amazon: acquire the right customers, help th
 
 ## Current point of view
 
-The cost-to-serve line is the boundary between what a company's product, content, and interfaces can carry on their own, and what still costs the company a person. There are five such lines, one for each question a customer's AI may ask: can it find, compare, connect, operate, and recover.
+The serviceable line is the boundary between what a company's product, content, and interfaces can carry on their own, and what still costs the company a person. There are five such lines, one for each question a customer's AI may ask: can it find, compare, connect, operate, and recover.
 
 ## Related public property
 

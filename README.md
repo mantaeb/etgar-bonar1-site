@@ -7,12 +7,13 @@ English human-facing executive profile and point-of-view site for Etgar Bonar, w
 | Route | Purpose |
 |---|---|
 | `/` | English executive profile |
-| `/cost-to-serve-line/` | English point of view, The cost-to-serve line |
-| `/five-layers/` | Legacy URL, permanently redirected to `/cost-to-serve-line/` by Cloudflare |
+| `/serviceable-line/` | English point of view, The serviceable line |
+| `/cost-to-serve-line/` | Former point-of-view URL, permanently redirected to `/serviceable-line/` by Cloudflare |
+| `/five-layers/` | Legacy stub that points directly to `/serviceable-line/` |
 | `/he/` | Legacy URL that sends visitors to `/` and is marked `noindex` |
-| `/he/five-layers/` | Legacy URL, permanently redirected to `/cost-to-serve-line/` by Cloudflare |
+| `/he/five-layers/` | Legacy stub that points directly to `/serviceable-line/` |
 | `/machine/he/profile.json` | Supplemental machine-readable Hebrew profile |
-| `/machine/he/cost-to-serve-line.json` | Supplemental machine-readable Hebrew point of view |
+| `/machine/he/serviceable-line.json` | Supplemental machine-readable Hebrew point of view |
 
 ## Temporary design previews
 
@@ -75,12 +76,12 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 - [ ] Verify the `etgarbonar.com` Search Console domain property before cutover.
 - [ ] Submit the sitemap through the `bonar1.com` Search Console Domain property.
 - [x] Publish redesign commit `a58a9fe` after explicit approval of the public career-content update.
-- [x] Replace the retired "frontier" name with "the cost-to-serve line" in English and "הקו שזז" in Hebrew.
+- [x] Replace the retired "frontier" name with "the serviceable line" in English and "הקו שזז" in Hebrew.
 - [x] Publish content refinement commit `9e50cfd` after explicit approval.
 - [x] Introduce the initial "shape the commercial system" hero, localize it to Hebrew, and publish the responsive treatment in `4cfcde3`.
 - [x] Restore the complete Lokalise/Claude graphic at its natural aspect ratio and link the English and Hebrew visual and caption to the Anthropic customer story in `1ff1fdc`.
 - [x] Add operating ownership through "shape and run," update the Hebrew rendering, and preserve the narrow-screen hierarchy in `aa59748`.
-- [x] Move the canonical point-of-view URL to `/cost-to-serve-line/`, update all maintained references, and permanently redirect the former English and Hebrew routes.
+- [x] Move the canonical point-of-view URL to `/serviceable-line/`, update all maintained references, and permanently redirect the former point-of-view route.
 
 ## Local preview
 
