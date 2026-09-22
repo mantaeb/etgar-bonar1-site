@@ -86,12 +86,12 @@ img, svg { max-width: 100%; }
   height: 38px;
   display: grid;
   place-items: center;
-  color: var(--paper-bright);
+  overflow: hidden;
   background: var(--ink);
   border-radius: 9px;
-  font-size: .75rem;
-  letter-spacing: .04em;
 }
+
+.brand-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 .site-nav {
   display: flex;
@@ -232,23 +232,20 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
   min-width: 0;
 }
 
-.portrait-placeholder {
+.portrait-mark {
   width: 112px;
   height: 112px;
   margin: -70px 0 1.5rem;
   display: grid;
   place-items: center;
   overflow: hidden;
-  color: var(--paper-bright);
-  background:
-    radial-gradient(circle at 60% 35%, var(--blue) 0 9%, transparent 9.5%),
-    linear-gradient(145deg, var(--ink-soft), var(--ink));
+  background: var(--ink);
   border: 6px solid var(--paper-bright);
   border-radius: 50%;
   box-shadow: 0 0 0 1px var(--line);
 }
 
-.portrait-placeholder span { font-size: 2rem; font-weight: 800; letter-spacing: -.04em; }
+.portrait-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .aside-kicker { margin-bottom: .35rem; color: var(--blue-dark); font-weight: 800; }
 .hero-aside p:not(.aside-kicker) { color: var(--muted); font-size: .94rem; }
 .hero-aside a { font-size: .9rem; font-weight: 750; }
