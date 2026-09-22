@@ -34,8 +34,8 @@ The serviceable line is the boundary between what a company's product, content, 
 
 ## Related public property
 
-- Private AI offering for individuals and families: https://etgarbonar.com/ai/
-- Private AI questions and answers: https://etgarbonar.com/ai/faq/
-- Private AI in Hebrew: https://etgarbonar.com/ai/he/
+- The personal AI system Etgar built and runs, as working evidence: https://etgarbonar.com/ai/
+- Questions and answers about that system: https://etgarbonar.com/ai/faq/
+- The same system in Hebrew: https://etgarbonar.com/ai/he/
 
 This file is a navigation aid. The HTML pages above are the canonical sources.

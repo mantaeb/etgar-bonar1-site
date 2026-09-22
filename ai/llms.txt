@@ -1,6 +1,6 @@
-# Private AI
+# A private AI system, running under real load
 
-> A private AI operating layer for individuals and families, designed to remember from sources, coordinate across life and remain under the owner's control.
+> A working private AI system built and run by Etgar Bonar since February 2026: source-backed memory, specialist agents and workflows, with permission boundaries, human approval, watchdogs, backups and a written log of every failure. One operator, no team. This is a record of a working system, not a product for sale.
 
 English page: https://etgarbonar.com/ai/
 Hebrew page: https://etgarbonar.com/ai/he/

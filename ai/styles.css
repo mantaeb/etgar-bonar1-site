@@ -234,8 +234,14 @@ section[id] {
   position: relative;
   z-index: 3;
   justify-self: start;
-  width: min(760px, calc(100% - clamp(40px, 10vw, 128px)));
+  width: min(820px, calc(100% - clamp(40px, 10vw, 128px)));
   margin: 0 0 clamp(44px, 7vh, 84px) clamp(20px, 5vw, 64px);
+}
+
+/* The hero headline carries more words than the global h1 scale assumes. */
+#hero-title {
+  font-size: clamp(34px, 4.1vw, 58px);
+  line-height: 1.06;
 }
 
 .eyebrow,
