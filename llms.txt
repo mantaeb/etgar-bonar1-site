@@ -36,6 +36,5 @@ The serviceable line is the boundary between what a company's product, content, 
 
 - The personal AI system Etgar built and runs, as working evidence: https://etgarbonar.com/ai/
 - Questions and answers about that system: https://etgarbonar.com/ai/faq/
-- The same system in Hebrew: https://etgarbonar.com/ai/he/
 
 This file is a navigation aid. The HTML pages above are the canonical sources.

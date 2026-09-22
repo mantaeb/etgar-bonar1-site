@@ -80,6 +80,7 @@ img, svg { max-width: 100%; }
 }
 
 .brand:hover { color: var(--ink); }
+.brand-he { font-weight: 400; opacity: .6; margin-inline-start: .4em; }
 
 .brand-mark {
   width: 38px;
