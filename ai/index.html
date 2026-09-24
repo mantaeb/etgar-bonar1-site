@@ -112,7 +112,7 @@
       </a>
       <nav class="nav-links" aria-label="Page sections">
         <a href="#how-it-works">How it works</a>
-        <a href="#proof">Working proof</a>
+        <a href="#proof">Operational evidence</a>
         <a href="#demo-memory">See it running</a>
         <a href="#trust">Trust</a>
         <a href="#interest">Get in touch</a>
@@ -284,10 +284,14 @@
 
       <section class="section split-section reveal-on-scroll" aria-labelledby="inside-title">
         <div>
-          <p class="section-kicker">Where it helps</p>
-          <h2 class="cursor-reactive" id="inside-title">One operating layer across the parts of life.</h2>
+          <p class="section-kicker">Where it works</p>
+          <h2 class="cursor-reactive" id="inside-title">One operating layer for work and life.</h2>
         </div>
         <div class="stacked-list">
+          <div class="list-row">
+            <span>Business work</span>
+            <p>Commercial strategy, AI visibility, product positioning, and decision support for confidential advisory work.</p>
+          </div>
           <div class="list-row">
             <span>Personal administration</span>
             <p>Inbox, calendar, tasks, documents, decisions, and project continuity.</p>
@@ -308,6 +312,91 @@
             <span>Health</span>
             <p>Health records, test results, and history kept connected, organized, and searchable.</p>
           </div>
+        </div>
+      </section>
+
+      <section class="section proof reveal-on-scroll" id="proof" aria-labelledby="proof-title">
+        <div class="section-heading">
+          <p class="section-kicker">Operational evidence</p>
+          <h2 class="cursor-reactive" id="proof-title">Built for real work, and run with the discipline it requires.</h2>
+        </div>
+        <div class="proof-grid">
+          <article class="proof-item">
+            <strong>Applied capability</strong>
+            <ul>
+              <li>Supports confidential advisory work in commercial strategy, positioning, AI visibility, and decision support</li>
+              <li>Daily use through WhatsApp and Telegram, in English and Hebrew</li>
+              <li>Source-backed memory plus connected tools and home systems</li>
+            </ul>
+          </article>
+          <article class="proof-item">
+            <strong>Reliability</strong>
+            <ul>
+              <li>Nightly deterministic self-audits and canary checks</li>
+              <li>Fallbacks across AI providers, with outage and recovery alerts</li>
+              <li>Nightly offsite backups, a recovery runbook, and an incident log</li>
+              <li>Watchers detect critical file replacement, session failures, and intrusion events, repair recoverable states, and alert when attention is needed</li>
+            </ul>
+          </article>
+          <article class="proof-item">
+            <strong>Governance</strong>
+            <ul>
+              <li>Specialists receive only the tools their job needs</li>
+              <li>The chores agent cannot inspect family photos because image access is not available to it</li>
+              <li>Long-term memory, usage, and cost are reviewed on a defined rhythm</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="home-monitor-row model-proof-row">
+          <div class="home-monitor-copy">
+            <p class="rail-label">Multiple models, one governed system</p>
+            <h3>Model choice stays flexible. Usage stays visible.</h3>
+            <p>Requests can move between providers when needed, while usage and cost remain measured by provider and every fallback stays visible. Subscriptions carry the work. Metered API billing is used only where no plan covers the job, which keeps it a deliberate exception instead of the default.</p>
+            <figure class="scene scene-tall model-consumption-scene">
+              <div class="scene-frame">
+                <img src="/ai/assets/proof-model-consumption.webp" width="1080" height="2104" loading="lazy" decoding="async"
+                  alt="A status dashboard showing Claude and Codex plan consumption. Each plan has a session and a weekly bar, a mark showing where a flat burn through the window would stand, and a projection of where the current rate lands by reset. Below are gauges for backup freshness, vault size, disk, memory, CPU load and sync peers." />
+              </div>
+              <figcaption>
+                <b>Plan consumption is visible too.</b>
+                Session and weekly limits are tracked before they become blockers.
+              </figcaption>
+            </figure>
+          </div>
+          <figure class="cost-story" data-proof-story>
+            <div class="cost-window">
+              <div class="system-window-bar">
+                <span><i aria-hidden="true"></i> AI usage</span>
+                <span>Daily report</span>
+              </div>
+              <div class="cost-body">
+                <p class="cost-label">Estimated model cost today</p>
+                <strong class="cost-total story-beat" data-sequence="3" data-hold="1100" data-caption="Today's total is calculated">$0.088</strong>
+                <div class="cost-lines">
+                  <div class="cost-line story-beat" data-sequence="1" data-hold="750" data-caption="Usage is measured by provider"><span>Primary provider</span><b>$0.049</b></div>
+                  <div class="cost-line story-beat" data-sequence="2" data-hold="750" data-caption="Every provider is included"><span>Secondary provider</span><b>$0.038</b></div>
+                </div>
+                <div class="cost-average story-beat" data-sequence="4" data-hold="1000" data-caption="The total is compared with a trailing baseline">
+                  <span>Trailing 7-day average</span><b>$0.224 / day</b>
+                </div>
+                <div class="fallback-notice story-beat" data-sequence="5" data-hold="1600" data-caption="Provider fallback is reported, not hidden">
+                  <span aria-hidden="true">↳</span><p><b>Fallback visible</b> The last request used the backup model.</p>
+                </div>
+              </div>
+            </div>
+            <div class="story-controls">
+              <button class="story-replay" type="button" data-story-replay>Replay the report</button>
+              <span data-story-caption>Usage is measured by provider</span>
+            </div>
+            <figcaption><b>Cost is a governed number, not a surprise.</b> Daily spend is measured against a trailing average, and a provider fallback remains visible when it fires.</figcaption>
+            <details class="evidence-drawer is-inline">
+              <summary>View the original redacted report</summary>
+              <div class="evidence-grid">
+                <img src="/ai/assets/proof-chat-cost.webp" width="700" height="454" loading="lazy" decoding="async" alt="The original redacted daily AI cost report." />
+              </div>
+            </details>
+          </figure>
         </div>
       </section>
 
@@ -446,12 +535,12 @@
       </section>
 
       <section class="section demo reveal-on-scroll" id="demo-trip" aria-labelledby="demo-trip-title">
-        <p class="section-kicker">Works where the family already communicates</p>
-        <h2 class="cursor-reactive" id="demo-trip-title">It travels with the family.</h2>
+        <p class="section-kicker">Works where the conversation is already happening</p>
+        <h2 class="cursor-reactive" id="demo-trip-title">It coordinates travel and stays with the group.</h2>
         <p class="demo-lede">
-          There is no new app for the family to learn. The assistant joins the WhatsApp group
-          everyone already uses, so questions, updates and shared decisions stay visible to the
-          whole group. It answers questions, writes briefings and keeps watching the bookings.
+          There is no new app to learn. The assistant joins the WhatsApp group already in use, so
+          questions, updates and shared decisions stay visible to everyone. It answers questions,
+          writes briefings and keeps watching the bookings.
         </p>
         <div class="trip-showcase" data-story-switcher>
           <p class="story-choice-label">Choose a real trip story</p>
@@ -475,7 +564,7 @@
               <div class="native-chat whatsapp-chat">
                 <div class="native-chat-bar">
                   <span class="wa-avatar" aria-hidden="true">✈️</span>
-                  <span class="wa-group-copy"><b>Family trip</b><small>WhatsApp group</small></span>
+                  <span class="wa-group-copy"><b>Trip planning</b><small>WhatsApp group</small></span>
                   <span class="wa-chat-actions" aria-hidden="true">⌕ &nbsp; ⋮</span>
                 </div>
                 <div class="native-chat-feed">
@@ -516,12 +605,12 @@
               <div class="native-chat whatsapp-chat">
                 <div class="native-chat-bar">
                   <span class="wa-avatar" aria-hidden="true">✈️</span>
-                  <span class="wa-group-copy"><b>Family trip</b><small>WhatsApp group</small></span>
+                  <span class="wa-group-copy"><b>Trip planning</b><small>WhatsApp group</small></span>
                   <span class="wa-chat-actions" aria-hidden="true">⌕ &nbsp; ⋮</span>
                 </div>
                 <div class="native-chat-feed">
                   <div class="chat-bubble person story-beat" data-sequence="1" data-hold="950" data-caption="A question arrived in the ordinary group">
-                    <span class="speaker">Family member</span>
+                    <span class="speaker">Group member</span>
                     <p>@etgar.ai How difficult is tomorrow's climb, and how high is it?</p>
                     <span class="message-meta"><time>18:42</time><i aria-label="Read">✓✓</i></span>
                   </div>
@@ -538,7 +627,7 @@
               <div class="decision-rail">
                 <p class="rail-label">What happened behind the message</p>
                 <div class="decision-card story-beat" data-sequence="2" data-hold="1250" data-caption="The system checked which source could support the answer">
-                  <span>01</span><div><b>Source boundary</b><p>This was general destination knowledge, not something found in the family's trip files.</p></div>
+                  <span>01</span><div><b>Source boundary</b><p>This was general destination knowledge, not something found in the trip files.</p></div>
                 </div>
                 <div class="outcome-card story-beat" data-sequence="4" data-hold="1500" data-caption="The source boundary stayed visible">
                   <small>Answer provenance</small><strong>General knowledge</strong><span>Not claimed as a trip-file fact</span>
@@ -556,13 +645,13 @@
               <div class="native-chat whatsapp-chat">
                 <div class="native-chat-bar">
                   <span class="wa-avatar" aria-hidden="true">✈️</span>
-                  <span class="wa-group-copy"><b>Family trip</b><small>WhatsApp group</small></span>
+                  <span class="wa-group-copy"><b>Trip planning</b><small>WhatsApp group</small></span>
                   <span class="wa-chat-actions" aria-hidden="true">⌕ &nbsp; ⋮</span>
                 </div>
                 <div class="native-chat-feed">
                   <div class="chat-bubble assistant story-beat" data-sequence="3" data-hold="2100" data-caption="A useful briefing arrived before anyone asked">
                     <span class="speaker">etgar.ai</span>
-                    <p><b>🏝️ Tomorrow's family brief</b></p>
+                    <p><b>🏝️ Tomorrow's trip brief</b></p>
                     <p><b>Base:</b> Havana Club, Uppuveli. We are staying here for a few more days.</p>
                     <p>🚐 A short drive to <b>Nilaveli</b> for snorkeling.</p>
                     <p>🐠 <b>Plan:</b> reef snorkeling, colourful fish, and perhaps small, harmless reef sharks. Later: rest, pool and beach. Everything stays flexible with the conditions.</p>
@@ -604,10 +693,10 @@
       </section>
 
       <section class="section demo reveal-on-scroll" id="demo-allowance" aria-labelledby="demo-allowance-title">
-        <p class="section-kicker">Works where the family already communicates</p>
-        <h2 class="cursor-reactive" id="demo-allowance-title">It settles the family's small economy.</h2>
+        <p class="section-kicker">Works where the conversation is already happening</p>
+        <h2 class="cursor-reactive" id="demo-allowance-title">Shared ledgers for chores, budgets, and tasks.</h2>
         <p class="demo-lede">
-          The family reports chores in the WhatsApp group they already share, where everyone can
+          People report chores in the WhatsApp group they already share, where everyone can
           participate and see the result. The price list is fixed in advance, so what a job is worth
           is not renegotiated at the end of the week.
         </p>
@@ -616,7 +705,7 @@
             <div class="native-chat whatsapp-chat">
               <div class="native-chat-bar">
                 <span class="wa-avatar" aria-hidden="true">🧹</span>
-                <span class="wa-group-copy"><b>Family chores</b><small>WhatsApp group</small></span>
+                <span class="wa-group-copy"><b>Shared chores</b><small>WhatsApp group</small></span>
                 <span class="wa-chat-actions" aria-hidden="true">⌕ &nbsp; ⋮</span>
               </div>
               <div class="native-chat-feed">
@@ -651,7 +740,7 @@
                 <span>01</span><div><b>Fixed list checked</b><p>“Unload the dishwasher” matches. “Load the dishwasher” alone does not.</p></div>
               </div>
               <div class="decision-card is-caution story-beat" data-sequence="3" data-hold="1050" data-caption="The assistant refuses to invent a value">
-                <span>02</span><div><b>No guessing</b><p>An unknown phrase stops the process until the family clarifies it.</p></div>
+                <span>02</span><div><b>No guessing</b><p>An unknown phrase stops the process until the group clarifies it.</p></div>
               </div>
               <div class="decision-card story-beat" data-sequence="6" data-hold="850" data-caption="The clarification resolves the second chore">
                 <span>03</span><div><b>Exact match</b><p>The clarification maps to “Clear the sink and load the dishwasher.”</p></div>
@@ -673,9 +762,9 @@
           </figcaption>
         </figure>
 
-        <p class="reconstruction-note"><i aria-hidden="true"></i> Recreated from a real family exchange. Names and personal details have been removed.</p>
+        <p class="reconstruction-note"><i aria-hidden="true"></i> Recreated from a real group exchange. Names and personal details have been removed.</p>
         <details class="evidence-drawer evidence-drawer-whatsapp">
-          <summary><span aria-hidden="true">💬</span> Open the original, redacted WhatsApp chat from the family chores group</summary>
+          <summary><span aria-hidden="true">💬</span> Open the original, redacted WhatsApp chat from the shared chores group</summary>
           <div class="evidence-strip">
             <img src="/ai/assets/msg-chores-1.webp" width="724" height="168" loading="lazy" decoding="async" alt="The original redacted request for two chores." />
             <img src="/ai/assets/msg-chores-2.webp" width="724" height="302" loading="lazy" decoding="async" alt="The original redacted reply asking for clarification." />
@@ -683,91 +772,6 @@
             <img src="/ai/assets/msg-chores-4.webp" width="724" height="420" loading="lazy" decoding="async" alt="The original redacted point awards and weekly total." />
           </div>
         </details>
-      </section>
-
-      <section class="section proof reveal-on-scroll" id="proof" aria-labelledby="proof-title">
-        <div class="section-heading">
-          <p class="section-kicker">Working proof</p>
-          <h2 class="cursor-reactive" id="proof-title">Capability, reliability, and governance are already running together.</h2>
-        </div>
-        <div class="proof-grid">
-          <article class="proof-item">
-            <strong>Capability</strong>
-            <ul>
-              <li>Daily use through WhatsApp and Telegram, in English and Hebrew</li>
-              <li>Focused agents for travel, groceries, chores, allowance, and finance</li>
-              <li>Source-backed memory plus connected tools and home systems</li>
-            </ul>
-          </article>
-          <article class="proof-item">
-            <strong>Reliability</strong>
-            <ul>
-              <li>Nightly deterministic self-audits and canary checks</li>
-              <li>Fallbacks across AI providers, with outage and recovery alerts</li>
-              <li>Nightly offsite backups, a recovery runbook, and an incident log</li>
-              <li>Watchers detect critical file replacement, session failures, and intrusion events, repair recoverable states, and alert when attention is needed</li>
-            </ul>
-          </article>
-          <article class="proof-item">
-            <strong>Governance</strong>
-            <ul>
-              <li>Specialists receive only the tools their job needs</li>
-              <li>The chores agent cannot inspect family photos because image access is not available to it</li>
-              <li>Long-term memory, usage, and cost are reviewed on a defined rhythm</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="home-monitor-row model-proof-row">
-          <div class="home-monitor-copy">
-            <p class="rail-label">Multiple models, one governed system</p>
-            <h3>Model choice stays flexible. Usage stays visible.</h3>
-            <p>Requests can move between providers when needed, while usage and cost remain measured by provider and every fallback stays visible. Subscriptions carry the work. Metered API billing is used only where no plan covers the job, which keeps it a deliberate exception instead of the default.</p>
-            <figure class="scene scene-tall model-consumption-scene">
-              <div class="scene-frame">
-                <img src="/ai/assets/proof-model-consumption.webp" width="1080" height="2104" loading="lazy" decoding="async"
-                  alt="A status dashboard showing Claude and Codex plan consumption. Each plan has a session and a weekly bar, a mark showing where a flat burn through the window would stand, and a projection of where the current rate lands by reset. Below are gauges for backup freshness, vault size, disk, memory, CPU load and sync peers." />
-              </div>
-              <figcaption>
-                <b>Plan consumption is visible too.</b>
-                Session and weekly limits are tracked before they become blockers.
-              </figcaption>
-            </figure>
-          </div>
-          <figure class="cost-story" data-proof-story>
-            <div class="cost-window">
-              <div class="system-window-bar">
-                <span><i aria-hidden="true"></i> AI usage</span>
-                <span>Daily report</span>
-              </div>
-              <div class="cost-body">
-                <p class="cost-label">Estimated model cost today</p>
-                <strong class="cost-total story-beat" data-sequence="3" data-hold="1100" data-caption="Today's total is calculated">$0.088</strong>
-                <div class="cost-lines">
-                  <div class="cost-line story-beat" data-sequence="1" data-hold="750" data-caption="Usage is measured by provider"><span>Primary provider</span><b>$0.049</b></div>
-                  <div class="cost-line story-beat" data-sequence="2" data-hold="750" data-caption="Every provider is included"><span>Secondary provider</span><b>$0.038</b></div>
-                </div>
-                <div class="cost-average story-beat" data-sequence="4" data-hold="1000" data-caption="The total is compared with a trailing baseline">
-                  <span>Trailing 7-day average</span><b>$0.224 / day</b>
-                </div>
-                <div class="fallback-notice story-beat" data-sequence="5" data-hold="1600" data-caption="Provider fallback is reported, not hidden">
-                  <span aria-hidden="true">↳</span><p><b>Fallback visible</b> The last request used the backup model.</p>
-                </div>
-              </div>
-            </div>
-            <div class="story-controls">
-              <button class="story-replay" type="button" data-story-replay>Replay the report</button>
-              <span data-story-caption>Usage is measured by provider</span>
-            </div>
-            <figcaption><b>Cost is a governed number, not a surprise.</b> Daily spend is measured against a trailing average, and a provider fallback remains visible when it fires.</figcaption>
-            <details class="evidence-drawer is-inline">
-              <summary>View the original redacted report</summary>
-              <div class="evidence-grid">
-                <img src="/ai/assets/proof-chat-cost.webp" width="700" height="454" loading="lazy" decoding="async" alt="The original redacted daily AI cost report." />
-              </div>
-            </details>
-          </figure>
-        </div>
       </section>
 
       <section class="section demo reveal-on-scroll" id="demo-ops" aria-labelledby="demo-ops-title">
