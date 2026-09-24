@@ -17,7 +17,6 @@
     '.build > *',
     '.credential-grid article',
     '.contact > *',
-    '.article-heading > *',
     '.article-body > p',
     '.article-body > .pull-quote',
     '.article-body > section',
@@ -39,6 +38,18 @@
   }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
 
   revealItems.forEach((item) => revealObserver.observe(item));
+
+  // Fallbacks for renderers where the observer never fires (full-page captures,
+  // link previews, print): show whatever is already in the viewport, and everything on print.
+  const revealAll = (onlyInView) => {
+    revealItems.forEach((item) => {
+      if (item.classList.contains('is-visible')) return;
+      if (onlyInView && item.getBoundingClientRect().top > window.innerHeight) return;
+      item.classList.add('is-visible');
+    });
+  };
+  window.setTimeout(() => revealAll(true), 1500);
+  window.addEventListener('beforeprint', () => revealAll(false));
 
   const heroGrid = document.querySelector('.hero-grid');
   const heroAside = document.querySelector('.hero-aside');

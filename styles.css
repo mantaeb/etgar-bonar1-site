@@ -466,24 +466,33 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .question-list h3 { margin-bottom: .25rem; font-size: 1.35rem; }
 .question-list p { margin-bottom: 0; color: var(--muted); }
 
-.flow-diagram { margin-top: 2.5rem; padding: 2.2rem; color: var(--paper-bright); background: var(--ink); border-radius: 3px; }
+.flow-figure { margin: 0; }
+.flow-diagram { position: relative; margin-top: 2.5rem; padding: 2.2rem 2.2rem 2.2rem 3.4rem; color: var(--paper-bright); background: var(--ink); border-radius: 3px; }
 .flow-start, .flow-result { padding: 1rem 1.2rem; text-align: center; background: var(--blue-dark); font-weight: 800; }
 .flow-diagram ol { position: relative; margin: 0; padding: 2.5rem 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: .65rem; list-style: none; }
 .flow-diagram ol::before { content: ""; position: absolute; left: 8%; right: 8%; top: 50%; border-top: 1px solid #688086; }
 .flow-diagram li { position: relative; z-index: 1; min-height: 130px; padding: 1rem .75rem; display: flex; flex-direction: column; justify-content: space-between; background: #1b292d; border: 1px solid #3a5359; }
 .flow-diagram li strong { color: var(--gold); }
-.flow-diagram li span { color: var(--mint); font-size: .75rem; line-height: 1.35; }
+.flow-diagram li span { color: #f2b59f; font-size: .9rem; line-height: 1.35; }
 .flow-result { background: #265b55; }
-.flow-loop { margin-top: 1rem; padding-top: 1rem; color: var(--mint); border-top: 1px dashed #688086; text-align: center; font-size: .8rem; }
+.flow-loop { margin-top: 1rem; padding-top: 1rem; color: var(--mint); border-top: 1px dashed #688086; text-align: center; font-size: .9rem; }
+.flow-loop-label { display: block; margin-bottom: .2rem; color: var(--gold); font-size: .7rem; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+/* The return path: the outcome feeds the next buyer's research, so the flow is a loop, not a funnel. */
+.flow-diagram::before { content: ""; position: absolute; left: 1.2rem; top: 3.1rem; bottom: 2.6rem; width: 1.1rem; border: 2px dashed var(--gold); border-right: 0; border-radius: 6px 0 0 6px; opacity: .8; }
+.flow-diagram::after { content: ""; position: absolute; left: 2.1rem; top: calc(3.1rem - 6px); border: 7px solid transparent; border-left: 10px solid var(--gold); opacity: .8; }
 .diagram-caption { margin-top: 1rem; color: var(--muted); font-size: .82rem; }
 
 .loss-grid, .evidence-columns { margin-top: 2.5rem; display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
 .loss-grid { grid-template-columns: repeat(2, 1fr); }
 .evidence-columns { grid-template-columns: repeat(3, 1fr); }
-.loss-grid article, .evidence-columns article { padding: 2rem; background: var(--paper-bright); }
+.loss-grid > div, .evidence-columns > div { padding: 2rem; background: var(--paper-bright); }
 .loss-grid p, .evidence-columns p { margin-bottom: 0; color: var(--muted); }
 .evidence-columns span { color: var(--blue-dark); font-size: .7rem; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
 .evidence-columns h3 { margin: .6rem 0; }
+.evidence-columns > .is-forecast { background: var(--paper); outline: 2px dashed #b9b1a3; outline-offset: -12px; }
+.evidence-columns > .is-forecast span { color: var(--muted); }
+.evidence-columns a, .definition a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.article-body .definition { padding-inline-start: 1.2rem; border-inline-start: 3px solid var(--gold); font-weight: 600; color: var(--ink); }
 
 .article-footer { margin-top: clamp(90px, 12vw, 150px); padding-top: 2.5rem; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: end; border-top: 4px solid var(--ink); }
 .article-footer > div:first-child { max-width: 600px; }
@@ -582,7 +591,9 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
   .build { grid-template-columns: 1fr; }
   .build-visual { max-width: 350px; }
   .loss-grid { grid-template-columns: 1fr; }
-  .flow-diagram { padding: 1.2rem; }
+  .flow-diagram { padding: 1.2rem 1.2rem 1.2rem 2.6rem; }
+  .flow-diagram::before { left: .7rem; top: 2.1rem; bottom: 2.2rem; width: .9rem; }
+  .flow-diagram::after { left: 1.4rem; top: calc(2.1rem - 6px); }
   .article-hero h1 { font-size: clamp(2.75rem, 12vw, 3.9rem); }
   .site-footer { align-items: flex-start; flex-direction: column; justify-content: center; }
   [dir="rtl"] .site-header { width: 100%; max-width: 100vw; overflow: hidden; }
