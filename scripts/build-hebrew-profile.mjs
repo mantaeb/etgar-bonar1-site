@@ -104,7 +104,7 @@ const html = `<!doctype html>
   <link rel="alternate" hreflang="en" href="${escapeHtml(profile.englishProfileUrl)}">
   <link rel="alternate" hreflang="x-default" href="${escapeHtml(profile.englishProfileUrl)}">
   <link rel="alternate" type="application/json" href="${escapeHtml(profile.machineUrl)}" title="פרופיל מובנה בעברית">
-  <link rel="stylesheet" href="/styles.css?v=16">
+  <link rel="stylesheet" href="/styles.css?v=17">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -137,7 +137,7 @@ ${jsonForHtml(structuredData)}
     <nav class="site-nav" aria-label="ניווט ראשי">
       <a class="nav-wide" href="#record">קריירה</a>
       <a href="#focus">המיקוד הנוכחי</a>
-      <a class="nav-wide language-link" href="/" lang="en" dir="ltr">English</a>
+      <a class="language-link" href="/" hreflang="en" lang="en" dir="ltr">English</a>
       <a class="nav-cta" href="#contact">יצירת קשר</a>
     </nav>
   </header>
@@ -179,6 +179,8 @@ ${jsonForHtml(structuredData)}
         <p class="eyebrow">הקריירה המקצועית</p>
         <h2 id="record-title">אחריות מסחרית רחבה, לא מסלול פונקציונלי אחד.</h2>
         <p>${escapeHtml(profile.page.careerIntro)}</p>
+        <p class="record-language-note">${escapeHtml(profile.page.careerEnglishNote)}</p>
+        <a class="text-link" href="/#record" hreflang="en">${escapeHtml(profile.page.careerEnglishCta)} <span aria-hidden="true">←</span></a>
       </div>
       <div class="career-list">${careerHtml}
       </div>

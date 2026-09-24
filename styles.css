@@ -80,7 +80,8 @@ img, svg { max-width: 100%; }
 }
 
 .brand:hover { color: var(--ink); }
-.brand-he { font-weight: 400; opacity: .6; margin-inline-start: .4em; }
+.brand-he { margin-left: .65em; font-weight: 400; opacity: .6; }
+[dir="rtl"] .brand-he { margin-right: .65em; margin-left: 0; }
 
 .brand-mark {
   width: 38px;
@@ -312,6 +313,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 
 .record { max-width: 1240px; }
 .record-intro { margin-bottom: 4rem; }
+.record-language-note { color: var(--muted); }
 
 .career-list { border-top: 1px solid var(--line); }
 .career-card {
@@ -548,8 +550,8 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
     flex: 1 1 auto;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    gap: .8rem;
-    font-size: .82rem;
+    gap: .6rem;
+    font-size: .78rem;
     white-space: nowrap;
   }
   .site-nav a { display: inline-flex; align-items: center; min-height: 34px; }
@@ -564,7 +566,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
   }
   .site-nav .nav-cta[aria-current="page"] { color: var(--paper-bright); }
   section[id], [id].section { scroll-margin-top: 60px; }
-  .language-link { margin-inline-start: 0; padding-inline-start: .8rem; }
+  .language-link { margin-inline-start: 0; padding-inline-start: .55rem; }
   .hero { width: 100%; padding-top: 76px; grid-template-columns: minmax(0, 1fr); }
   .hero-copy, .hero-aside { width: 100%; max-width: 100%; min-width: 0; }
   .hero h1, .hero-summary, .hero-thesis { width: 100%; max-width: 100%; overflow-wrap: break-word; }
