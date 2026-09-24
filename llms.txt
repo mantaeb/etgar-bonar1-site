@@ -35,7 +35,7 @@ The serviceable line is the share of the market, and of each customer's journey,
 
 ## Hands-on AI build
 
-Etgar Bonar built and runs a personal AI operating system under real load, not as a demo. Other people depend on it daily. It combines source-backed memory, specialist agents and real workflows with permission boundaries, human approval, watchdogs, canary tests, backups and incident logging. The build is practical evidence behind his current focus on how far customers and operators can progress before a company has to add people.
+Etgar Bonar's AI build is the latest example of a career-long hands-on pattern. He has worked inside the commercial functions he leads, built websites across three decades, automated his home, and built a personal AI operating system at the smallest useful scale: one operator, no team, real costs and real consequences. The system connects AI to real context and tools, with scoped permissions, human approval, watchdogs, canary tests, backups and incident logging. The constraint it exposed connects directly to his serviceable-line point of view: where progress stops and a company still has to add people.
 
 ## Related public property
 
