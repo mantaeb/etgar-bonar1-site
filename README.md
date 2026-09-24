@@ -10,6 +10,8 @@ English and Hebrew executive profile, plus Etgar Bonar's English point-of-view s
 | `/serviceable-line/` | English point of view, The serviceable line |
 | `/cost-to-serve-line/` | Former point-of-view URL, permanently redirected to `/serviceable-line/` by Cloudflare |
 | `/five-layers/` | Legacy stub that points directly to `/serviceable-line/` |
+| `/ai/` | Working personal AI system, presented as executive build evidence |
+| `/ai/faq/` | Detailed questions and answers about the working AI system |
 | `/he/` | Concise Hebrew executive profile and career timeline |
 | `/ai/he/` | Legacy Hebrew identity route that sends visitors and crawlers to `/he/` |
 | `/he/five-layers/` | Legacy stub that points directly to `/serviceable-line/` |
@@ -66,6 +68,7 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 - [x] Build the English profile and framework page.
 - [x] Publish a concise Hebrew profile with an expanded career timeline generated from the Hebrew source of truth.
 - [x] Add direct profile-to-private-AI cross-link.
+- [x] Add matching English and Hebrew AI-build evidence sections, linked to the working system and its FAQ.
 - [x] Add metadata, entity data, discovery files, social cards, and 404 page.
 - [x] Run the static AI visibility probe with no findings.
 - [x] Render-check desktop, narrow English, narrow Hebrew, and the point-of-view page.

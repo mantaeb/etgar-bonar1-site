@@ -33,6 +33,10 @@ The rule Etgar Bonar has used since Amazon: acquire the right customers, help th
 
 The serviceable line is the share of the market, and of each customer's journey, a company can win without adding people: the work a customer's AI can complete with its product before anyone from the company has to step in. Where the line sits depends on two variables that multiply: how much work customers in that industry hand to AI, and how legible the product is to a machine. A customer's AI tests it with five questions: can it find the company, compare it honestly, work out how it connects, run the work, and recover when something breaks.
 
+## Hands-on AI build
+
+Etgar Bonar built and runs a personal AI operating system under real load, not as a demo. Other people depend on it daily. It combines source-backed memory, specialist agents and real workflows with permission boundaries, human approval, watchdogs, canary tests, backups and incident logging. The build is practical evidence behind his current focus on how far customers and operators can progress before a company has to add people.
+
 ## Related public property
 
 - The personal AI system Etgar built and runs, as working evidence: https://etgarbonar.com/ai/

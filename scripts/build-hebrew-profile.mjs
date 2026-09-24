@@ -16,6 +16,13 @@ const escapeHtml = (value) => String(value)
 
 const ltr = (value) => `<bdi lang="en" dir="ltr">${escapeHtml(value)}</bdi>`;
 const jsonForHtml = (value) => JSON.stringify(value, null, 2).replaceAll("<", "\\u003c");
+const mixedHebrew = (value) => {
+  let html = escapeHtml(value);
+  for (const term of ["contact sales", "self-service", "PLG", "API", "AI"]) {
+    html = html.replaceAll(term, `<bdi lang="en" dir="ltr">${term}</bdi>`);
+  }
+  return html;
+};
 
 const occupation = profile.career.map((item) => ({
   "@type": "Role",
@@ -64,6 +71,14 @@ const structuredData = {
       inLanguage: "he-IL",
       dateModified: profile.dateModified,
       mainEntity: { "@id": profile.entity.id }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": profile.aiBuild.entityId,
+      name: profile.aiBuild.structuredName,
+      description: profile.aiBuild.structuredDescription,
+      url: profile.aiBuild.url,
+      creator: { "@id": profile.entity.id }
     }
   ]
 };
@@ -90,6 +105,10 @@ const focusHtml = profile.currentFocus.paragraphs
   .map((paragraph) => `        <p>${escapeHtml(paragraph)}</p>`)
   .join("\n");
 
+const aiBuildHtml = profile.aiBuild.paragraphs
+  .map((paragraph) => `        <p>${mixedHebrew(paragraph)}</p>`)
+  .join("\n");
+
 const html = `<!doctype html>
 <html lang="he" dir="rtl">
 <head>
@@ -104,7 +123,7 @@ const html = `<!doctype html>
   <link rel="alternate" hreflang="en" href="${escapeHtml(profile.englishProfileUrl)}">
   <link rel="alternate" hreflang="x-default" href="${escapeHtml(profile.englishProfileUrl)}">
   <link rel="alternate" type="application/json" href="${escapeHtml(profile.machineUrl)}" title="פרופיל מובנה בעברית">
-  <link rel="stylesheet" href="/styles.css?v=17">
+  <link rel="stylesheet" href="/styles.css?v=18">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -137,6 +156,7 @@ ${jsonForHtml(structuredData)}
     <nav class="site-nav" aria-label="ניווט ראשי">
       <a class="nav-wide" href="#record">קריירה</a>
       <a href="#focus">המיקוד הנוכחי</a>
+      <a class="nav-wide" href="#build">בניית ${ltr("AI")}</a>
       <a class="language-link" href="/" hreflang="en" lang="en" dir="ltr">English</a>
       <a class="nav-cta" href="#contact">יצירת קשר</a>
     </nav>
@@ -194,6 +214,20 @@ ${jsonForHtml(structuredData)}
       <div class="frontier-copy">
 ${focusHtml}
         <a class="text-link light-link" href="${escapeHtml(profile.currentFocus.pointOfViewUrl)}" hreflang="en">${escapeHtml(profile.currentFocus.pointOfViewLabel)} <span aria-hidden="true">←</span></a>
+      </div>
+    </section>
+
+    <section class="build section" id="build" aria-labelledby="build-title">
+      <div>
+        <p class="eyebrow">${mixedHebrew(profile.aiBuild.eyebrow)}</p>
+        <h2 id="build-title">${mixedHebrew(profile.aiBuild.title)}</h2>
+      </div>
+      <div class="build-copy">
+${aiBuildHtml}
+        <div class="inline-links">
+          <a class="text-link" href="${escapeHtml(profile.aiBuild.url)}" hreflang="en">${mixedHebrew(profile.aiBuild.label)} <span aria-hidden="true">←</span></a>
+          <a class="text-link" href="${escapeHtml(profile.aiBuild.faqUrl)}" hreflang="en">${mixedHebrew(profile.aiBuild.faqLabel)} <span aria-hidden="true">←</span></a>
+        </div>
       </div>
     </section>
 

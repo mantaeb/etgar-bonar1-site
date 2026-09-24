@@ -378,9 +378,9 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 
 .build {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
   gap: clamp(3rem, 10vw, 9rem);
-  align-items: center;
+  align-items: start;
 }
 
 .build-visual {
