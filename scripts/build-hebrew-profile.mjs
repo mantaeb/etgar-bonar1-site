@@ -123,7 +123,7 @@ const html = `<!doctype html>
   <link rel="alternate" hreflang="en" href="${escapeHtml(profile.englishProfileUrl)}">
   <link rel="alternate" hreflang="x-default" href="${escapeHtml(profile.englishProfileUrl)}">
   <link rel="alternate" type="application/json" href="${escapeHtml(profile.machineUrl)}" title="פרופיל מובנה בעברית">
-  <link rel="stylesheet" href="/styles.css?v=18">
+  <link rel="stylesheet" href="/styles.css?v=19">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">

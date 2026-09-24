@@ -402,6 +402,34 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .build-copy > p { color: var(--muted); }
 .pending-link { color: var(--muted); font-size: .88rem; }
 
+.ai-operating-test.section {
+  max-width: none;
+  padding-inline: max(24px, calc((100vw - var(--max)) / 2));
+  background: #e6edff;
+}
+
+.ai-test-intro { max-width: 1120px; }
+.ai-operating-test h2 {
+  max-width: 1120px;
+  margin-bottom: 0;
+  color: var(--blue-dark);
+  font-size: clamp(3rem, 6vw, 5.6rem);
+  line-height: .99;
+  letter-spacing: -.055em;
+}
+
+.ai-test-copy {
+  margin-top: clamp(3rem, 7vw, 6rem);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 7vw, 6rem);
+}
+
+.ai-test-proof,
+.ai-test-lesson { max-width: 560px; }
+.ai-test-copy p { color: var(--ink-soft); }
+.ai-test-copy a:not(.text-link) { color: var(--blue-dark); font-weight: 750; }
+
 .credential-grid { margin-top: 3rem; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .credential-grid article { padding: 2rem; border-inline-start: 1px solid var(--line); }
 .credential-grid article:last-child { border-inline-end: 1px solid var(--line); }
@@ -522,6 +550,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
   .site-header { padding-block: .8rem; align-items: flex-start; }
   .site-nav { gap: .85rem 1.1rem; flex-wrap: wrap; }
   .hero, .method, .frontier-teaser, .build, .article-hero { grid-template-columns: 1fr; }
+  .ai-test-copy { grid-template-columns: 1fr; }
   .hero { min-height: 0; gap: 5rem; align-items: start; }
   .hero-aside { max-width: 470px; }
   .proof-band { grid-template-columns: repeat(2, 1fr); }
@@ -589,6 +618,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
   .career-card { grid-template-columns: 1fr; gap: 1rem; }
   .career-meta { flex-direction: row; justify-content: space-between; }
   .frontier-teaser h2, .contact h2, .section-intro h2, .build h2, .article-body h2 { line-height: 1.03; }
+  .ai-operating-test h2 { font-size: clamp(2.7rem, 12vw, 4.25rem); line-height: 1; }
   .build { grid-template-columns: 1fr; }
   .build-visual { max-width: 350px; }
   .loss-grid { grid-template-columns: 1fr; }
