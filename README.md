@@ -1,6 +1,6 @@
 # etgarbonar.com
 
-English human-facing executive profile and point-of-view site for Etgar Bonar, with supplemental machine-readable Hebrew resources.
+English and Hebrew executive profile, plus Etgar Bonar's English point-of-view site.
 
 ## Public routes
 
@@ -10,9 +10,10 @@ English human-facing executive profile and point-of-view site for Etgar Bonar, w
 | `/serviceable-line/` | English point of view, The serviceable line |
 | `/cost-to-serve-line/` | Former point-of-view URL, permanently redirected to `/serviceable-line/` by Cloudflare |
 | `/five-layers/` | Legacy stub that points directly to `/serviceable-line/` |
-| `/he/` | Legacy URL that sends visitors to `/` and is marked `noindex` |
+| `/he/` | Concise Hebrew executive profile and career timeline |
+| `/ai/he/` | Legacy Hebrew identity route that sends visitors and crawlers to `/he/` |
 | `/he/five-layers/` | Legacy stub that points directly to `/serviceable-line/` |
-| `/machine/he/profile.json` | Supplemental machine-readable Hebrew profile |
+| `/machine/he/profile.json` | Public Hebrew profile source used to generate `/he/` |
 | `/machine/he/serviceable-line.json` | Supplemental machine-readable Hebrew point of view |
 
 ## Temporary design previews
@@ -41,11 +42,14 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 ## Findability and accessibility
 
 - Important content is delivered as static semantic HTML.
-- Each human-facing page has one H1, unique metadata, a canonical URL, English `hreflang`, and accurate JSON-LD.
+- Each human-facing page has one H1, unique metadata, a canonical URL, reciprocal `hreflang`, and accurate JSON-LD.
 - The canonical Person identifier is `https://etgarbonar.com/#etgar`.
-- `robots.txt` and `sitemap.xml` cover the canonical English pages. The supplemental `llms.txt` points machines to the Hebrew JSON resources.
-- Hebrew is not hidden in the English HTML. The machine resources are public, receive the same response for every visitor, and are not presented as canonical search pages.
-- Any material change to the English profile or point of view must be reflected in the matching Hebrew JSON resource in the same release. This is a manually maintained translation, not an independent source of truth.
+- `robots.txt` and `sitemap.xml` cover the canonical English and Hebrew pages. The supplemental `llms.txt` points to both profiles and the Hebrew source data.
+- Hebrew is not hidden in the English HTML. `/he/` is a visible, indexable page with its own canonical URL. The machine resources are public and receive the same response for every visitor.
+- `machine/he/profile.json` is the single source of truth for the Hebrew profile. It contains the distinct LinkedIn summary and expanded website copy, shared career facts, current focus, and education. Run `node scripts/build-hebrew-profile.mjs` after every change and `node scripts/build-hebrew-profile.mjs --check` before deployment. Never hand-edit `he/index.html`.
+- Release gate: `node scripts/build-hebrew-profile.mjs --check` must pass before every deployment. A failed check means the Hebrew surfaces have drifted and the release is not ready.
+- LinkedIn cannot be deployed from this repository. Any Hebrew LinkedIn change must first be recorded in the `linkedin` object in `machine/he/profile.json`, then copied to LinkedIn, so the public surfaces do not drift.
+- Any material change to the English profile or point of view must be reviewed against the matching Hebrew source in the same release. The Hebrew website can be more concise, but career facts and positioning must agree.
 - The framework diagram is implemented as text and HTML, not as an image-only argument.
 - Layouts support narrow screens, RTL, reduced motion, keyboard focus, and print.
 - The old point-of-view routes are covered by a Cloudflare Single Redirect rule. The `etgar` CNAME must remain proxied for the HTTP 301 responses to work.
@@ -60,7 +64,7 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 ## Launch checklist
 
 - [x] Build the English profile and framework page.
-- [x] Preserve Hebrew translations as supplemental structured JSON while keeping the normal website experience English-only.
+- [x] Publish a concise Hebrew profile with an expanded career timeline generated from the Hebrew source of truth.
 - [x] Add direct profile-to-private-AI cross-link.
 - [x] Add metadata, entity data, discovery files, social cards, and 404 page.
 - [x] Run the static AI visibility probe with no findings.
@@ -71,7 +75,7 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 - [x] Add reciprocal links from the Private AI section at `/ai/`, including the canonical Person identifier.
 - [ ] Recheck the plain-HTTP redirect after GitHub Pages edge propagation. HTTPS enforcement is already enabled.
 - [ ] Replace the monogram with the original high-resolution headshot, if desired.
-- [ ] Have Etgar give the Hebrew copy a final native-speaker read before wider promotion.
+- [ ] Have Etgar give the expanded Hebrew website copy a final native-speaker read after launch.
 - [x] Add a dedicated Cloudflare Web Analytics site tag.
 - [ ] Verify the `etgarbonar.com` Search Console domain property before cutover.
 - [ ] Submit the sitemap through the `bonar1.com` Search Console Domain property.

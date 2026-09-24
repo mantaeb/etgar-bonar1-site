@@ -2,20 +2,21 @@
 
 > Canonical public profile and point-of-view site for Etgar Bonar, a revenue and go-to-market executive.
 
-Updated: 2026-09-21
+Updated: 2026-09-24
 Canonical person ID: https://etgarbonar.com/#etgar
 
 ## Canonical pages
 
 - Executive profile: https://etgarbonar.com/
+- Hebrew executive profile: https://etgarbonar.com/he/
 - The serviceable line, five questions for AI-mediated go-to-market: https://etgarbonar.com/serviceable-line/
 
-## Supplemental machine-readable Hebrew
+## Hebrew source data
 
 - Executive profile, structured JSON: https://etgarbonar.com/machine/he/profile.json
 - The serviceable line, structured JSON: https://etgarbonar.com/machine/he/serviceable-line.json
 
-These JSON resources are translations for machine use. The English HTML pages above are the only canonical, human-facing versions.
+The Hebrew executive profile JSON is the source used to generate the visible Hebrew profile page. The point-of-view JSON remains a supplemental translation of the English page.
 
 ## Identity
 

@@ -2,8 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://etgarbonar.com/</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://etgarbonar.com/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://etgarbonar.com/he/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://etgarbonar.com/" />
+  </url>
+  <url>
+    <loc>https://etgarbonar.com/he/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://etgarbonar.com/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://etgarbonar.com/he/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://etgarbonar.com/" />
   </url>
   <url>
     <loc>https://etgarbonar.com/serviceable-line/</loc>
