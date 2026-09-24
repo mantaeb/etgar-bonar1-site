@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">The Serviceable Line</title>
-  <desc id="desc">Five questions the customer's AI keeps asking</desc>
+  <desc id="desc">What can your customer's AI do without you?</desc>
   <rect width="1200" height="630" fill="#101a1d"/>
   <g fill="none" stroke-linecap="round">
     <path d="M80 120C300 40 420 220 650 120s310-45 470 10" stroke="#2f72ff" stroke-width="5"/>
@@ -9,6 +9,6 @@
     <path d="M80 270C290 205 460 370 650 270s320-10 470 70" stroke="#f4efe6" stroke-width="1" opacity=".45"/>
   </g>
   <text x="80" y="405" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="#f4efe6">The serviceable line</text>
-  <text x="80" y="478" font-family="Arial, sans-serif" font-size="34" fill="#a8bdc1">Five questions the customer's AI keeps asking</text>
+  <text x="80" y="478" font-family="Arial, sans-serif" font-size="34" fill="#a8bdc1">What can your customer's AI do without you?</text>
   <text x="80" y="558" font-family="Arial, sans-serif" font-size="22" fill="#dcb96f">A point of view by Etgar Bonar</text>
 </svg>

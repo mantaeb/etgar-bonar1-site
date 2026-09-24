@@ -6,7 +6,7 @@
   "canonicalHumanUrl": "https://etgarbonar.com/serviceable-line/",
   "machineUrl": "https://etgarbonar.com/machine/he/serviceable-line.json",
   "title": "הקו שזז",
-  "subtitle": "חמש שאלות שה-AI של הלקוח ממשיך לשאול",
+  "subtitle": "מה ה-AI של הלקוח שלך יכול לעשות בלעדיך?",
   "author": {
     "id": "https://etgarbonar.com/#etgar",
     "name": "Etgar Bonar",
@@ -123,8 +123,8 @@
     },
     {
       "status": "נדרש לבדיקה",
-      "name": "הקצב שבו התקרה עולה בכל תעשייה",
-      "text": "המנגנון הוכח בגרסה האנושית. מה שעוד לא הוכח הוא הקצב שבו התקרה עולה בכל תעשייה."
+      "name": "כמה מהר כל תעשייה זזה",
+      "text": "המנגנון הוכח בגרסה האנושית. מה שעוד לא הוכח הוא כמה מהר הקונים בכל תעשייה מעבירים את העבודה הזאת ל-AI, וזה מה שקובע כמה רחוק הקו יכול לזוז."
     }
   ],
   "authorBio": "אתגר בונר הוא מנהל הכנסות ו-GTM. לשעבר CMO בלוקלייז, VP Sales בראפיד, General Manager בטאבולה ומנהל שיווק גלובלי באמזון."
