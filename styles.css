@@ -660,7 +660,18 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
   background: var(--paper-bright);
   box-shadow: 0 0 0 100vmax var(--paper-bright);
   clip-path: inset(0 -100vmax);
+  position: relative;
+}
+
+.brand-strip::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100vw;
   border-bottom: 1px solid var(--line);
+  transform: translateX(-50%);
+  pointer-events: none;
 }
 
 .brand-strip > p {
