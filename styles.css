@@ -81,6 +81,7 @@ img, svg { max-width: 100%; }
 
 .brand:hover { color: var(--ink); }
 .brand-he { margin-left: .65em; font-weight: 400; opacity: .6; }
+html[lang="en"] .brand-he { opacity: .35; }
 [dir="rtl"] .brand-he { margin-right: .65em; margin-left: 0; }
 
 .brand-mark {
