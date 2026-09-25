@@ -658,6 +658,8 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
   gap: 1.5rem;
   align-items: center;
   background: var(--paper-bright);
+  box-shadow: 0 0 0 100vmax var(--paper-bright);
+  clip-path: inset(0 -100vmax);
   border-bottom: 1px solid var(--line);
 }
 
