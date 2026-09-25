@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="color-scheme" content="dark">
+  <title>Commercial system in motion | Etgar Bonar design concept</title>
+  <style>
+    :root {
+      --ink: #101a1d;
+      --ink-soft: #233236;
+      --paper: #f4efe6;
+      --paper-bright: #fbf8f2;
+      --line: #d8d1c5;
+      --muted: #a8bdc1;
+      --blue: #2f72ff;
+      --blue-dark: #1553d2;
+      --gold: #dcb96f;
+      --mint: #a8bdc1;
+      --max: 1180px;
+      --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { overflow-x: clip; background: var(--ink); }
+    body { margin: 0; min-width: 320px; overflow-x: hidden; color: var(--paper-bright); background: var(--ink); font: 16px/1.5 var(--sans); }
+    button { font: inherit; }
+    .skip-link { position: fixed; z-index: 100; top: 12px; left: 12px; transform: translateY(-180%); padding: .7rem 1rem; color: white; background: var(--blue-dark); border-radius: 5px; }
+    .skip-link:focus { transform: translateY(0); }
+
+    .concept-bar {
+      min-height: 48px;
+      padding: .65rem max(24px, calc((100vw - var(--max)) / 2));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      color: #c7d0d1;
+      background: #0a1214;
+      border-bottom: 1px solid rgba(168, 189, 193, .16);
+      font-size: .78rem;
+    }
+    .concept-bar p { margin: 0; }
+    .concept-label { color: var(--gold); font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+    .concept-note { color: #839699; }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      min-height: calc(100svh - 48px);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 1.18fr) minmax(260px, .62fr);
+      gap: clamp(2rem, 8vw, 8rem);
+      align-items: end;
+      padding: clamp(80px, 10vw, 138px) max(24px, calc((100vw - var(--max)) / 2)) clamp(56px, 7vw, 90px);
+      background: var(--ink);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(16, 26, 29, .96) 0%, rgba(16, 26, 29, .79) 41%, rgba(16, 26, 29, .19) 75%, rgba(16, 26, 29, .56) 100%), linear-gradient(0deg, rgba(16, 26, 29, .88) 0%, transparent 48%);
+      pointer-events: none;
+    }
+
+    /* Deliberate overscan: the SVG always extends past the hero, whose overflow clips it. */
+    .system-visual { position: absolute; z-index: -2; inset: -8%; width: 116%; height: 116%; min-width: 0; max-width: none; }
+    .system-visual text { font-family: var(--sans); }
+    .system-visual .grid-line { stroke: #a8bdc1; stroke-opacity: .1; stroke-width: 1; }
+    .system-visual .route { fill: none; stroke: #a8bdc1; stroke-opacity: .27; stroke-width: 1.25; }
+    .system-visual .route.primary { stroke: #a8bdc1; stroke-opacity: .48; stroke-width: 1.55; }
+    .system-visual .route.return { stroke: #dcb96f; stroke-opacity: .38; stroke-width: 1.35; stroke-dasharray: 4 9; }
+    .system-visual .route-pulse { fill: none; stroke: #2f72ff; stroke-opacity: .72; stroke-width: 1.4; stroke-dasharray: 2 22; animation: route-flow 8s linear infinite; }
+    .system-visual .route-pulse.delayed { animation-delay: -3.7s; animation-duration: 10s; }
+    .system-visual .diagram-node { fill: #101a1d; stroke: #a8bdc1; stroke-opacity: .72; stroke-width: 1.5; }
+    .system-visual .diagram-node.core { fill: #17272b; stroke: #dcb96f; stroke-opacity: .95; stroke-width: 2; }
+    .system-visual .diagram-node.value { fill: #17282a; stroke: #8ecbc0; stroke-opacity: .95; stroke-width: 2; }
+    .system-visual .node-ring { fill: none; stroke: #dcb96f; stroke-opacity: .4; stroke-width: 1; stroke-dasharray: 3 6; animation: rotate 24s linear infinite; transform-origin: 836px 427px; }
+    .system-visual .diagram-label { fill: #d9e2df; font-size: 12px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+    .system-visual .diagram-detail { fill: #97abad; font-size: 12px; }
+    .system-visual .small-node { fill: #a8bdc1; fill-opacity: .52; }
+    .system-visual .small-node.accent { fill: #dcb96f; fill-opacity: .9; }
+    .system-visual .small-node.value { fill: #8ecbc0; fill-opacity: .95; }
+    .system-visual .customer-dot { transition: opacity .18s linear; }
+    .system-visual .customer-dot.market { fill: #dcb96f; }
+    .system-visual .customer-dot.auto { fill: #a8bdc1; }
+    .system-visual .customer-dot.assisted { fill: #2f72ff; }
+    .system-visual .customer-dot.value { fill: #8ecbc0; }
+    .system-visual .stages text { display: none; }
+
+    @keyframes route-flow { to { stroke-dashoffset: -144; } }
+    @keyframes rotate { to { transform: rotate(360deg); } }
+
+    .hero-copy { position: relative; z-index: 1; min-width: 0; max-width: 770px; }
+    .eyebrow { margin: 0 0 1rem; color: var(--gold); font-size: .74rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { width: 100%; max-width: 760px; margin: 0 0 1.7rem; overflow-wrap: break-word; font-size: clamp(2.9rem, 5.2vw, 5.1rem); font-weight: 700; line-height: .98; letter-spacing: -.04em; }
+    h1 span { display: block; margin-top: .15em; color: var(--mint); font-size: .63em; font-weight: 550; line-height: 1.08; letter-spacing: -.022em; }
+    .summary { max-width: 670px; margin: 0; color: #e8e5dd; font-size: clamp(1.05rem, 1.6vw, 1.3rem); line-height: 1.48; }
+    .actions { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: .85rem; align-items: center; }
+    .button { min-height: 48px; padding: .72rem 1.15rem; display: inline-flex; align-items: center; justify-content: center; border: 1px solid currentColor; border-radius: 999px; color: white; background: var(--blue); font-size: .9rem; font-weight: 750; text-decoration: none; }
+    .button:hover { background: var(--blue-dark); }
+    .button.quiet { color: var(--paper-bright); background: transparent; border-color: rgba(255,255,255,.42); }
+    .button.quiet:hover { background: rgba(255,255,255,.08); }
+
+    .hero-aside { position: relative; z-index: 1; align-self: end; justify-self: end; width: min(100%, 330px); padding: 1.5rem; color: var(--ink); background: var(--paper-bright); box-shadow: 14px 14px 0 var(--blue); }
+    .portrait-mark { width: 112px; height: 112px; margin: -70px 0 1.5rem; display: grid; place-items: center; overflow: hidden; background: var(--ink); border: 6px solid var(--paper-bright); border-radius: 50%; box-shadow: 0 0 0 1px var(--line); }
+    .portrait-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .aside-kicker { margin: 0 0 .35rem; color: var(--blue-dark); font-size: 1rem; font-weight: 800; line-height: 1.45; }
+    .hero-aside p:not(.aside-kicker) { margin: 0 0 1.1rem; color: #5e696b; font-size: .94rem; line-height: 1.5; }
+    .hero-aside a { color: var(--ink); font-size: .9rem; font-weight: 750; }
+
+    .preview-caption { max-width: var(--max); margin: 0 auto; padding: 1.35rem 24px 1.6rem; color: #9aabab; background: #0a1214; border-top: 1px solid rgba(168, 189, 193, .16); font-size: .85rem; }
+    .preview-caption strong { color: #e0e8e7; }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; align-items: start; min-height: auto; padding-top: 94px; gap: 3.5rem; }
+      .system-visual { inset: -6% auto -6% -20%; width: 140%; height: 112%; transform: none; }
+      .hero::after { background: linear-gradient(90deg, rgba(16, 26, 29, .92) 0%, rgba(16, 26, 29, .73) 70%, rgba(16, 26, 29, .5) 100%), linear-gradient(0deg, rgba(16, 26, 29, .85) 0%, transparent 58%); }
+      .hero-aside { justify-self: start; }
+    }
+
+    @media (max-width: 560px) {
+      .concept-bar { align-items: flex-start; flex-direction: column; gap: .15rem; }
+      .hero { width: 100vw; max-width: 100vw; min-height: calc(100svh - 83px); padding: 74px 20px 52px; }
+      .hero-copy { width: calc(100vw - 40px); max-width: calc(100vw - 40px); }
+      h1, h1 span, .summary { width: 100%; max-width: 100%; }
+      .system-visual { inset: -4% auto -4% -32%; width: 164%; height: 108%; opacity: .5; }
+      h1 { font-size: clamp(2.55rem, 12vw, 3.65rem); }
+      .summary { font-size: 1rem; }
+      .hero-aside { width: 100%; max-width: 340px; box-shadow: 8px 8px 0 rgba(21, 83, 210, .8); }
+      .system-visual { opacity: .5; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+      .customer-dot { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#concept">Skip to concept</a>
+  <header class="concept-bar">
+    <p class="concept-label">Hero motion concept</p>
+    <p class="concept-note">Prototype only. It is not connected to the live website or its copy.</p>
+  </header>
+
+  <main id="concept">
+    <section class="hero" aria-labelledby="hero-title">
+      <svg class="system-visual" id="system-visual" viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <filter id="glow" x="-200%" y="-200%" width="400%" height="400%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+          </filter>
+          <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#dcb96f" stop-opacity=".17" />
+            <stop offset="100%" stop-color="#dcb96f" stop-opacity="0" />
+          </radialGradient>
+          <radialGradient id="value-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#8ecbc0" stop-opacity=".16" />
+            <stop offset="100%" stop-color="#8ecbc0" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+
+        <g class="grid" aria-hidden="true">
+          <path class="grid-line" d="M0 80H1440M0 170H1440M0 260H1440M0 350H1440M0 440H1440M0 530H1440M0 620H1440M0 710H1440" />
+          <path class="grid-line" d="M90 0V820M180 0V820M270 0V820M360 0V820M450 0V820M540 0V820M630 0V820M720 0V820M810 0V820M900 0V820M990 0V820M1080 0V820M1170 0V820M1260 0V820M1350 0V820" />
+        </g>
+
+        <circle cx="836" cy="427" r="132" fill="url(#core-glow)" />
+        <circle cx="1164" cy="272" r="132" fill="url(#value-glow)" />
+
+        <g class="routes">
+          <path id="route-market-1" class="route" d="M-30 156 C210 156 304 212 498 310 S716 407 805 421" />
+          <path id="route-market-2" class="route primary" d="M-30 282 C212 282 332 307 510 366 S718 416 805 425" />
+          <path id="route-market-3" class="route" d="M-30 502 C217 502 338 463 506 427 S712 428 805 429" />
+          <path id="route-market-4" class="route" d="M-30 666 C215 666 316 559 504 477 S714 447 805 433" />
+          <path id="route-market-5" class="route" d="M-30 756 C183 756 326 604 512 499 S715 459 805 437" />
+          <path id="route-auto" class="route primary" d="M864 410 C932 360 970 294 1046 285 S1130 276 1214 270" />
+          <path id="route-assisted" class="route" d="M864 440 C930 482 967 547 1042 555 S1134 563 1215 560" />
+          <path id="route-value" class="route primary" d="M1254 270 C1330 271 1364 235 1470 188" />
+          <path id="route-human-value" class="route" d="M1252 560 C1320 546 1370 491 1470 452" />
+          <path id="route-return" class="route return" d="M1280 591 C1234 754 930 748 728 708 C478 658 310 751 -20 716" />
+          <path class="route-pulse" d="M-30 282 C212 282 332 307 510 366 S718 416 805 425 C932 360 970 294 1046 285 S1130 276 1214 270 C1330 271 1364 235 1470 188" />
+          <path class="route-pulse delayed" d="M-30 666 C215 666 316 559 504 477 S714 447 805 433 C930 482 967 547 1042 555 S1134 563 1215 560 C1320 546 1370 491 1470 452" />
+        </g>
+
+        <g class="field-nodes" aria-hidden="true">
+          <rect class="small-node" x="245" y="151" width="5" height="5" /><rect class="small-node accent" x="361" y="223" width="6" height="6" />
+          <rect class="small-node" x="519" y="375" width="5" height="5" /><rect class="small-node" x="620" y="398" width="6" height="6" />
+          <rect class="small-node accent" x="690" y="418" width="6" height="6" /><rect class="small-node" x="411" y="486" width="5" height="5" />
+          <rect class="small-node" x="247" y="591" width="5" height="5" /><rect class="small-node accent" x="563" y="465" width="6" height="6" />
+          <rect class="small-node" x="952" y="340" width="5" height="5" /><rect class="small-node" x="993" y="300" width="5" height="5" />
+          <rect class="small-node value" x="1315" y="229" width="6" height="6" /><rect class="small-node" x="980" y="532" width="5" height="5" />
+          <rect class="small-node accent" x="1092" y="557" width="6" height="6" /><rect class="small-node value" x="1370" y="491" width="6" height="6" />
+        </g>
+
+        <g class="stages">
+          <g transform="translate(118 251)"><text class="diagram-label">Market signals</text><text class="diagram-detail" y="20">Customers, context, intent</text></g>
+          <g transform="translate(836 427)">
+            <circle class="node-ring" r="54" />
+            <circle class="diagram-node core" r="34" />
+            <circle r="7" fill="#dcb96f" /><path d="M-15 0H15M0-15V15" stroke="#101a1d" stroke-width="2" />
+          </g>
+          <g transform="translate(759 504)"><text class="diagram-label">Diagnosis</text><text class="diagram-detail" y="20">What does this customer need?</text></g>
+          <g transform="translate(1047 285)"><circle class="diagram-node" r="23" /><path d="M-9 0H9M0-9V9" stroke="#a8bdc1" stroke-width="1.4" /></g>
+          <g transform="translate(978 230)"><text class="diagram-label">Product and automation</text><text class="diagram-detail" y="20">Serve at the right scale</text></g>
+          <g transform="translate(1042 555)"><circle class="diagram-node" r="23" /><circle r="7" fill="none" stroke="#a8bdc1" stroke-width="1.4" /></g>
+          <g transform="translate(965 618)"><text class="diagram-label">Human judgment</text><text class="diagram-detail" y="20">Where it makes the difference</text></g>
+          <g transform="translate(1234 270)"><circle class="diagram-node value" r="28" /><path d="M-12 1L-3 10 14-12" fill="none" stroke="#8ecbc0" stroke-width="2.2" /></g>
+          <g transform="translate(1174 185)"><text class="diagram-label">Customer value</text><text class="diagram-detail" y="20">A reason to stay and grow</text></g>
+          <g transform="translate(859 706)"><text class="diagram-label" fill="#dcb96f">Learning loop</text><text class="diagram-detail" y="20">Each outcome improves the system</text></g>
+        </g>
+
+        <g id="moving-customers" aria-hidden="true"></g>
+      </svg>
+
+      <div class="hero-copy">
+        <p class="eyebrow">Revenue · GTM · General management</p>
+        <h1 id="hero-title">I start with the commercial problem.<span>Then I build the system and run the organization the business needs to win.</span></h1>
+        <p class="summary">The animation makes the claim visible: commercial growth comes from understanding the customer, then designing the right system around what they need.</p>
+        <div class="actions" aria-label="Prototype actions">
+          <a class="button" href="#notes">See the system</a>
+          <a class="button quiet" href="#notes">Concept notes</a>
+        </div>
+      </div>
+
+      <aside class="hero-aside" aria-label="Executive profile summary">
+        <div class="portrait-mark" aria-hidden="true"><img src="https://etgarbonar.com/assets/logo-256.png" alt="" width="112" height="112" decoding="async"></div>
+        <p class="aside-kicker">Commercial leadership, end to end</p>
+        <p>Scope across Sales, Account Management, marketing, partnerships and product-led growth, with people reporting to me across oceans since 2016.</p>
+        <a href="https://www.linkedin.com/in/etgar1/">LinkedIn profile <span aria-hidden="true">↗</span></a>
+      </aside>
+    </section>
+
+    <footer class="preview-caption" id="notes"><strong>Review note:</strong> the headline and buttons are layout placeholders taken from the current hero. The EB profile card is retained. The moving diagram is the only proposed new element, and it sits behind the final copy without changing the page structure or search content.</footer>
+  </main>
+
+  <script>
+    (() => {
+      const customerLayer = document.getElementById('moving-customers');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const hero = document.querySelector('.hero');
+      const routeSeeds = [
+        ['route-market-1', 'market', 0.000035, 0.05],
+        ['route-market-2', 'market', 0.000052, 0.29],
+        ['route-market-3', 'auto', 0.000044, 0.52],
+        ['route-market-4', 'market', 0.000038, 0.73],
+        ['route-auto', 'auto', 0.000078, 0.16],
+        ['route-assisted', 'assisted', 0.000066, 0.42],
+        ['route-value', 'value', 0.00009, 0.66],
+        ['route-return', 'market', 0.000033, 0.37]
+      ];
+      const routes = routeSeeds.flatMap(([id, tone, speed, offset]) => [0, .48].map(shift => ({
+        path: document.getElementById(id),
+        tone,
+        speed,
+        offset: (offset + shift) % 1
+      })));
+      let frame;
+      let heroVisible = true;
+
+      const dots = routes.map((route, index) => {
+        const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        dot.setAttribute('class', `customer-dot ${route.tone}`);
+        dot.setAttribute('r', index === 5 ? '4.4' : '3.6');
+        customerLayer.append(dot);
+        return { ...route, dot };
+      });
+
+      function draw(time) {
+        frame = undefined;
+        if (shouldAnimate()) {
+          dots.forEach(({ path, dot, speed, offset }) => {
+            const progress = (time * speed + offset) % 1;
+            const point = path.getPointAtLength(progress * path.getTotalLength());
+            dot.style.opacity = '.95';
+            dot.setAttribute('cx', point.x);
+            dot.setAttribute('cy', point.y);
+          });
+        }
+        schedule();
+      }
+
+      function shouldAnimate() { return heroVisible && !document.hidden && !reduceMotion.matches; }
+      function schedule() { if (shouldAnimate() && !frame) frame = requestAnimationFrame(draw); }
+
+      new IntersectionObserver(([entry]) => {
+        heroVisible = entry.isIntersecting;
+        schedule();
+      }, { threshold: 0.05 }).observe(hero);
+      document.addEventListener('visibilitychange', schedule);
+      reduceMotion.addEventListener('change', schedule);
+      schedule();
+      window.addEventListener('pagehide', () => cancelAnimationFrame(frame), { once: true });
+    })();
+  </script>
+</body>
+</html>
