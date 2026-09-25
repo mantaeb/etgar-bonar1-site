@@ -140,7 +140,9 @@ section[id], [id].section { scroll-margin-top: 96px; }
 }
 
 .hero-system { position: absolute; z-index: -1; inset: -8%; width: 116%; height: 116%; max-width: none; pointer-events: none; opacity: .52; }
-.hero-system iframe { width: 100%; height: 100%; border: 0; pointer-events: none; }
+.hero-system svg { display: block; width: 100%; height: 100%; }
+.hero-system .flow { animation: hero-system-flow 8s linear infinite; }
+@keyframes hero-system-flow { to { stroke-dashoffset: -132; } }
 @media (max-width: 640px) { .hero-system { inset: -4% auto -4% -32%; width: 164%; height: 108%; opacity: .34; } }
 @media (prefers-reduced-motion: reduce) { .hero-system .flow { animation: none; } }
 

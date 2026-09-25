@@ -139,9 +139,6 @@
       *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
       .customer-dot { display: none; }
     }
-    body.graphic-only .concept-bar, body.graphic-only .hero-copy, body.graphic-only .hero-aside, body.graphic-only .preview-caption { display: none; }
-    body.graphic-only .hero { min-height: 100vh; padding: 0; display: block; }
-    body.graphic-only .hero::after { background: transparent; }
   </style>
 </head>
 <body>
@@ -245,7 +242,6 @@
 
   <script>
     (() => {
-      if (new URLSearchParams(location.search).has('graphic')) document.body.classList.add('graphic-only');
       const customerLayer = document.getElementById('moving-customers');
       const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
       const hero = document.querySelector('.hero');
