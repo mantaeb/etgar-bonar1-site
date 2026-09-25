@@ -165,6 +165,7 @@ ${jsonForHtml(structuredData)}
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-system" aria-hidden="true"></div>
       <div class="hero-copy">
         <p class="eyebrow light">${ltr(profile.page.eyebrow)}</p>
         <h1 id="hero-title">${escapeHtml(profile.page.headline)}<br><span>${escapeHtml(profile.page.headlineContinuation)}</span></h1>
@@ -257,6 +258,7 @@ ${aiBuildHtml}
     <p><a href="/" lang="en" dir="ltr">Full professional profile in English</a></p>
   </footer>
   <script src="/motion.js" defer></script>
+  <script src="/hero-system.js?v=1" defer></script>
 </body>
 </html>
 `;
