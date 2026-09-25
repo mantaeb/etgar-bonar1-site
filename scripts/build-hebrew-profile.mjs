@@ -171,8 +171,8 @@ ${jsonForHtml(structuredData)}
         <p class="hero-summary">${escapeHtml(profile.page.summary)}</p>
         <p class="hero-thesis">${escapeHtml(profile.currentFocus.title)}</p>
         <div class="actions">
-          <a class="button button-primary" href="#record">${escapeHtml(profile.page.recordCta)}</a>
-          <a class="button button-quiet" href="/" hreflang="en">${escapeHtml(profile.page.englishCta)}</a>
+          <a class="button button-quiet" href="#record">${escapeHtml(profile.page.recordCta)}</a>
+          <a class="button button-primary" href="/" hreflang="en">${escapeHtml(profile.page.englishCta)}</a>
         </div>
       </div>
       <aside class="hero-aside" aria-label="תקציר הפרופיל המקצועי">
