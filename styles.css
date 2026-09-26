@@ -551,6 +551,23 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .question-list h3 { margin-bottom: .25rem; font-size: 1.35rem; }
 .question-list p { margin-bottom: 0; color: var(--muted); }
 
+.topic-grid { margin-top: 2.5rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.topic-grid > div { padding: 2rem; background: var(--paper-bright); }
+.topic-grid h3 { margin-bottom: .55rem; color: var(--ink); }
+.topic-grid p { margin-bottom: 0; color: var(--muted); }
+.topic-grid > div:last-child { grid-column: 1 / -1; }
+
+.measurement-block { margin-top: 3.5rem; padding-top: 2.5rem; border-top: 3px solid var(--ink); }
+.measurement-block > h3 { margin-bottom: .65rem; font-size: 1.6rem; }
+.measurement-block > p { max-width: 750px; color: var(--muted); }
+.measurement-table-wrap { margin-top: 1.8rem; overflow-x: auto; }
+.measurement-table { width: 100%; border-collapse: collapse; background: var(--paper-bright); border: 1px solid var(--line); font-size: .9rem; }
+.measurement-table caption { padding-bottom: .7rem; color: var(--muted); font-size: .78rem; text-align: left; }
+.measurement-table th, .measurement-table td { padding: 1rem; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.measurement-table thead th { color: var(--blue-dark); background: var(--paper); font-size: .7rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+.measurement-table tbody th { width: 16%; color: var(--ink); font-size: .95rem; }
+.measurement-table tbody td { color: var(--muted); }
+
 .flow-figure { margin: 0; }
 .flow-diagram { position: relative; margin-top: 2.5rem; padding: 2.2rem 2.2rem 2.2rem 3.4rem; color: var(--paper-bright); background: var(--ink); border-radius: 3px; }
 .flow-start, .flow-result { padding: 1rem 1.2rem; text-align: center; background: var(--blue-dark); font-weight: 800; }
@@ -578,6 +595,15 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .evidence-columns > .is-forecast span { color: var(--muted); }
 .evidence-columns a, .definition a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .article-body .definition { padding-inline-start: 1.2rem; border-inline-start: 3px solid var(--gold); font-weight: 600; color: var(--ink); }
+.article-body .term-context { color: var(--muted); font-size: .93rem; }
+.evidence-subtitle { margin-top: 2.5rem; font-size: 1.35rem; }
+.market-signals { margin-top: 3rem; padding: 2rem; background: var(--paper-bright); border: 1px solid var(--line); }
+.market-signals h3 { margin-bottom: 1rem; font-size: 1.35rem; }
+.market-signals ul { margin: 0; padding-left: 1.2rem; }
+.market-signals li { margin-bottom: 1rem; color: var(--muted); }
+.market-signals li:last-child { margin-bottom: 0; }
+.market-signals a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.market-signals .source-date { margin: 1.4rem 0 0; color: var(--muted); font-size: .78rem; }
 
 .article-footer { margin-top: clamp(90px, 12vw, 150px); padding-top: 2.5rem; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: end; border-top: 4px solid var(--ink); }
 .article-footer > div:first-child { max-width: 600px; }
@@ -678,6 +704,15 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
   .build { grid-template-columns: 1fr; }
   .build-visual { max-width: 350px; }
   .loss-grid { grid-template-columns: 1fr; }
+  .topic-grid { grid-template-columns: 1fr; }
+  .topic-grid > div:last-child { grid-column: auto; }
+  .measurement-table, .measurement-table tbody, .measurement-table tr, .measurement-table th, .measurement-table td { display: block; }
+  .measurement-table thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .measurement-table tbody tr { padding: 1rem; border-bottom: 1px solid var(--line); }
+  .measurement-table tbody tr:last-child { border-bottom: 0; }
+  .measurement-table tbody th, .measurement-table tbody td { width: auto; padding: .45rem 0; border: 0; }
+  .measurement-table tbody th { color: var(--blue-dark); font-size: 1.05rem; }
+  .measurement-table tbody td::before { content: attr(data-label); display: block; margin-bottom: .2rem; color: var(--ink); font-size: .68rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
   .flow-diagram { padding: 1.2rem 1.2rem 1.2rem 2.6rem; }
   .flow-diagram::before { left: .7rem; top: 2.1rem; bottom: 2.2rem; width: .9rem; }
   .flow-diagram::after { left: 1.4rem; top: calc(2.1rem - 6px); }

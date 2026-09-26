@@ -2,7 +2,7 @@
 
 > Canonical public profile and point-of-view site for Etgar Bonar, a revenue and go-to-market executive.
 
-Updated: 2026-09-24
+Updated: 2026-09-26
 Canonical person ID: https://etgarbonar.com/#etgar
 
 ## Canonical pages
@@ -32,6 +32,8 @@ The rule Etgar Bonar has used since Amazon: acquire the right customers, help th
 ## Current point of view
 
 The serviceable line is the share of the market, and of each customer's journey, a company can win without adding people: the work a customer's AI can complete with its product before anyone from the company has to step in. Where the line sits depends on two variables that multiply: how much work customers in that industry hand to AI, and how legible the product is to a machine. A customer's AI tests it with five questions: can it find the company, compare it honestly, work out how it connects, run the work, and recover when something breaks.
+
+The serviceable line connects five current discussions. AI visibility, AEO and GEO cover whether a machine can find and cite a company. Agentic commerce describes customers delegating work to agents. AI agent readiness describes whether the vendor is legible and operable to those agents. Cost to serve and human escalation expose the economics. Service-as-software and outcome-based pricing are consequences when agents can complete autonomous, attributable work.
 
 ## Hands-on AI build
 
