@@ -153,17 +153,17 @@ section[id], [id].section { scroll-margin-top: 96px; }
 }
 
 .hero-system .system-visual { display: block; width: 100%; height: 100%; max-width: none; }
-.hero-system .grid-line { fill: none; stroke: #a8bdc1; stroke-opacity: .1; stroke-width: 1; }
-.hero-system .route { fill: none; stroke: #a8bdc1; stroke-opacity: .27; stroke-width: 1.25; }
-.hero-system .route.primary { stroke: #a8bdc1; stroke-opacity: .48; stroke-width: 1.55; }
-.hero-system .route.return { stroke: #dcb96f; stroke-opacity: .38; stroke-width: 1.35; stroke-dasharray: 4 9; }
-.hero-system .route-pulse { fill: none; stroke: #2f72ff; stroke-opacity: .72; stroke-width: 1.4; stroke-dasharray: 2 22; animation: hero-route-flow 8s linear infinite; }
+.hero-system .grid-line { fill: none; stroke: #a8bdc1; stroke-opacity: .12; stroke-width: 1; }
+.hero-system .route { fill: none; stroke: #a8bdc1; stroke-opacity: .33; stroke-width: 1.25; }
+.hero-system .route.primary { stroke: #a8bdc1; stroke-opacity: .55; stroke-width: 1.55; }
+.hero-system .route.return { stroke: #dcb96f; stroke-opacity: .44; stroke-width: 1.35; stroke-dasharray: 4 9; }
+.hero-system .route-pulse { fill: none; stroke: #2f72ff; stroke-opacity: .8; stroke-width: 1.4; stroke-dasharray: 2 22; animation: hero-route-flow 8s linear infinite; }
 .hero-system .route-pulse.delayed { animation-delay: -3.7s; animation-duration: 10s; }
-.hero-system .diagram-node { fill: #101a1d; stroke: #a8bdc1; stroke-opacity: .72; stroke-width: 1.5; }
+.hero-system .diagram-node { fill: #101a1d; stroke: #a8bdc1; stroke-opacity: .8; stroke-width: 1.5; }
 .hero-system .diagram-node.core { fill: #17272b; stroke: #dcb96f; stroke-opacity: .95; stroke-width: 2; }
 .hero-system .diagram-node.value { fill: #17282a; stroke: #8ecbc0; stroke-opacity: .95; stroke-width: 2; }
 .hero-system .node-ring { fill: none; stroke: #dcb96f; stroke-opacity: .4; stroke-width: 1; stroke-dasharray: 3 6; animation: hero-node-rotate 24s linear infinite; transform-origin: 836px 427px; }
-.hero-system .small-node { fill: #a8bdc1; fill-opacity: .52; }
+.hero-system .small-node { fill: #a8bdc1; fill-opacity: .6; }
 .hero-system .small-node.accent { fill: #dcb96f; fill-opacity: .9; }
 .hero-system .small-node.value { fill: #8ecbc0; fill-opacity: .95; }
 .hero-system .customer-dot { transition: opacity .18s linear; }
@@ -185,7 +185,7 @@ section[id], [id].section { scroll-margin-top: 96px; }
 }
 
 @media (max-width: 560px) {
-  .hero-system { inset: -4% auto -4% -32%; width: 164%; height: 108%; opacity: .5; }
+  .hero-system { inset: -4% auto -4% -32%; width: 164%; height: 108%; opacity: .58; }
 }
 
 @media (prefers-reduced-motion: reduce) {

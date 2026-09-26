@@ -3,11 +3,11 @@
     <svg class="system-visual" viewBox="0 0 1440 820" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
       <defs>
         <radialGradient id="hero-system-core-glow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#dcb96f" stop-opacity=".17" />
+          <stop offset="0%" stop-color="#dcb96f" stop-opacity=".2" />
           <stop offset="100%" stop-color="#dcb96f" stop-opacity="0" />
         </radialGradient>
         <radialGradient id="hero-system-value-glow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#8ecbc0" stop-opacity=".16" />
+          <stop offset="0%" stop-color="#8ecbc0" stop-opacity=".19" />
           <stop offset="100%" stop-color="#8ecbc0" stop-opacity="0" />
         </radialGradient>
       </defs>

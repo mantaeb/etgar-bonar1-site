@@ -123,7 +123,7 @@ const html = `<!doctype html>
   <link rel="alternate" hreflang="en" href="${escapeHtml(profile.englishProfileUrl)}">
   <link rel="alternate" hreflang="x-default" href="${escapeHtml(profile.englishProfileUrl)}">
   <link rel="alternate" type="application/json" href="${escapeHtml(profile.machineUrl)}" title="פרופיל מובנה בעברית">
-  <link rel="stylesheet" href="/styles.css?v=20">
+  <link rel="stylesheet" href="/styles.css?v=21">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -258,7 +258,7 @@ ${aiBuildHtml}
     <p><a href="/" lang="en" dir="ltr">Full professional profile in English</a></p>
   </footer>
   <script src="/motion.js" defer></script>
-  <script src="/hero-system.js?v=3" defer></script>
+  <script src="/hero-system.js?v=4" defer></script>
 </body>
 </html>
 `;
