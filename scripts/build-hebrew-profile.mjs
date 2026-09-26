@@ -259,6 +259,9 @@ ${aiBuildHtml}
   </footer>
   <script src="/motion.js" defer></script>
   <script src="/hero-system.js?v=5" defer></script>
+  <!-- Cloudflare Web Analytics -->
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"8290fefd869644d2aa39da04ad6258e0"}'></script>
+  <!-- End Cloudflare Web Analytics -->
 </body>
 </html>
 `;
