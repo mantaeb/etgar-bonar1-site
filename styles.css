@@ -516,7 +516,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .article-hero {
   min-height: 590px;
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(280px, .7fr);
+  grid-template-columns: minmax(0, 1.25fr) minmax(330px, .9fr);
   gap: 4rem;
   align-items: end;
   overflow: hidden;
@@ -527,13 +527,23 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .article-heading h1 .h1-sub { display: block; margin-top: .4em; max-width: 30ch; color: var(--paper-bright); font-size: .4em; font-weight: 600; line-height: 1.2; letter-spacing: -.01em; opacity: .92; }
 .article-meta { margin-top: 2rem; margin-bottom: 0; color: #93a6aa; font-size: .8rem; }
 
-.frontier-lines { min-height: 360px; position: relative; }
-.frontier-lines span { position: absolute; left: 0; right: -30%; height: 100px; border-top: 2px solid var(--blue); border-radius: 50%; transform: rotate(-8deg); }
-.frontier-lines span:nth-child(1) { top: 0; }
-.frontier-lines span:nth-child(2) { top: 58px; border-color: #5d91ff; }
-.frontier-lines span:nth-child(3) { top: 116px; border-color: var(--gold); }
-.frontier-lines span:nth-child(4) { top: 174px; border-color: var(--mint); }
-.frontier-lines span:nth-child(5) { top: 232px; border-color: #60787d; }
+.line-diagram { --label-col: 6.2rem; margin: 0; align-self: center; width: 100%; max-width: 620px; }
+.line-diagram .ld-legend { display: grid; grid-template-columns: var(--label-col) 1fr; gap: 1rem; margin-bottom: 1.6rem; }
+.line-diagram .ld-legend > span:last-child { display: flex; justify-content: space-between; gap: 1rem; }
+.line-diagram .ld-legend em:last-child { text-align: end; }
+.line-diagram .ld-legend em { max-width: 47%; color: #93a6aa; font-style: normal; font-size: .72rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
+.line-diagram ul { list-style: none; margin: 0; padding: 0; display: grid; gap: clamp(1.15rem, 2.4vw, 2rem); }
+.line-diagram li { display: grid; grid-template-columns: var(--label-col) 1fr; gap: 1rem; align-items: center; }
+.line-diagram b { color: var(--mint); font-size: .95rem; font-weight: 500; text-align: end; }
+.line-diagram i { position: relative; display: block; height: 11px; border-radius: 6px; background: rgba(168,189,193,.13); overflow: hidden; }
+.line-diagram i::before { content: ""; position: absolute; inset-block: 0; inset-inline-start: 0; width: var(--reach); border-radius: 6px; background: var(--blue); }
+.line-diagram i::after { content: ""; position: absolute; inset-block: 0; inset-inline-start: calc(var(--reach) + 13px); width: 60px; background-image: radial-gradient(circle at 5px 50%, var(--gold) 4px, transparent 4.6px); background-size: 15px 100%; opacity: .72; }
+.line-diagram li:nth-child(1) { --reach: 78%; }
+.line-diagram li:nth-child(2) { --reach: 63%; }
+.line-diagram li:nth-child(3) { --reach: 43%; }
+.line-diagram li:nth-child(4) { --reach: 31%; }
+.line-diagram li:nth-child(5) { --reach: 21%; }
+.line-diagram .ld-note { margin: 1.7rem 0 0; color: #7d9094; font-size: .76rem; line-height: 1.5; }
 
 .article-body { max-width: 920px; margin: 0 auto; padding: clamp(70px, 10vw, 130px) 24px; }
 .article-body > p, .article-body section > p { max-width: 750px; }
@@ -615,7 +625,6 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] .article-deck, [dir="rtl"] .lede, [dir="rtl"] .pull-quote p { font-family: Arial, "Noto Sans Hebrew", var(--sans); }
 [dir="rtl"] .hero h1 { letter-spacing: -.03em; }
 [dir="rtl"] .career-featured::before { left: auto; right: -24px; }
-[dir="rtl"] .frontier-lines span { transform: rotate(8deg); }
 [dir="rtl"] .hero-copy,
 [dir="rtl"] .hero-aside,
 [dir="rtl"] .section-intro,
