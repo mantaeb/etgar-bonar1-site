@@ -53,11 +53,9 @@
 
   const heroGrid = document.querySelector('.hero-grid');
   const heroAside = document.querySelector('.hero-aside');
-  const frontierLines = document.querySelector('.frontier-lines');
 
   if (heroGrid) heroGrid.dataset.parallax = '0.035';
   if (heroAside) heroAside.dataset.parallax = '0.025';
-  if (frontierLines) frontierLines.dataset.parallax = '0.04';
 
   const parallaxItems = [...document.querySelectorAll('[data-parallax]')];
   let scrollFrame = 0;
