@@ -1,14 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">The Serviceable Line</title>
-  <desc id="desc">What can your customer's AI do without you?</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="cardtitle carddesc">
+  <title id="cardtitle">The serviceable line</title>
+  <desc id="carddesc">Five layers, five lines. Findable, Decidable, Integrable, Operable and Fixable, each drawn to a different length between "carried by the customer's AI" and "still needs one of your people", and each one still moving outward. A point of view by Etgar Bonar.</desc>
+
   <rect width="1200" height="630" fill="#101a1d"/>
-  <g fill="none" stroke-linecap="round">
-    <path d="M80 120C300 40 420 220 650 120s310-45 470 10" stroke="#2f72ff" stroke-width="5"/>
-    <path d="M80 170C290 95 440 270 650 170s320-35 470 30" stroke="#5d91ff" stroke-width="3" opacity=".8"/>
-    <path d="M80 220C290 150 450 320 650 220s320-20 470 50" stroke="#dcb96f" stroke-width="2" opacity=".75"/>
-    <path d="M80 270C290 205 460 370 650 270s320-10 470 70" stroke="#f4efe6" stroke-width="1" opacity=".45"/>
+
+  <g font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="18" fill="#a8bdc1" opacity=".55">
+    <text x="250" y="64">Carried by the customer's AI</text>
+    <text x="1120" y="64" text-anchor="end">Still needs one of your people</text>
   </g>
-  <text x="80" y="405" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="#f4efe6">The serviceable line</text>
-  <text x="80" y="478" font-family="Arial, sans-serif" font-size="34" fill="#a8bdc1">What can your customer's AI do without you?</text>
-  <text x="80" y="558" font-family="Arial, sans-serif" font-size="22" fill="#dcb96f">A point of view by Etgar Bonar</text>
+
+  <g font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1" text-anchor="end">
+    <text x="228" y="118">Findable</text>
+    <text x="228" y="160">Decidable</text>
+    <text x="228" y="202">Integrable</text>
+    <text x="228" y="244">Operable</text>
+    <text x="228" y="286">Fixable</text>
+  </g>
+
+  <g stroke="#1e2b2f" stroke-width="8" stroke-linecap="round">
+    <path d="M250 112H1120"/><path d="M250 154H1120"/><path d="M250 196H1120"/>
+    <path d="M250 238H1120"/><path d="M250 280H1120"/>
+  </g>
+
+  <g stroke="#2f72ff" stroke-width="8" stroke-linecap="round">
+    <path d="M250 112H930"/><path d="M250 154H800"/><path d="M250 196H620"/>
+    <path d="M250 238H520"/><path d="M250 280H430"/>
+  </g>
+
+  <g stroke="#dcb96f" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 11" opacity=".7">
+    <path d="M952 112H1042"/><path d="M822 154H912"/><path d="M642 196H732"/>
+    <path d="M542 238H632"/><path d="M452 280H542"/>
+  </g>
+
+  <path d="M80 348H1120" stroke="#233236" stroke-width="1"/>
+
+  <text x="80" y="426" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="70" font-weight="700" letter-spacing="-1" fill="#f4efe6">The serviceable line</text>
+  <text x="80" y="484" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="31" fill="#a8bdc1">How far does your customer's AI get without you?</text>
+  <text x="80" y="562" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#dcb96f">A point of view by Etgar Bonar</text>
+  <text x="1120" y="562" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#a8bdc1" opacity=".5">etgarbonar.com</text>
 </svg>

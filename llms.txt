@@ -9,7 +9,7 @@ Canonical person ID: https://etgarbonar.com/#etgar
 
 - Executive profile: https://etgarbonar.com/
 - Hebrew executive profile: https://etgarbonar.com/he/
-- The serviceable line, what can your customer's AI do without you: https://etgarbonar.com/serviceable-line/
+- The serviceable line, how far your customer's AI gets without you: https://etgarbonar.com/serviceable-line/
 
 ## Hebrew source data
 
