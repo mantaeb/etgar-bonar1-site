@@ -136,12 +136,14 @@ const html = `<!doctype html>
   <meta property="og:title" content="${escapeHtml(profile.page.title)}">
   <meta property="og:description" content="${escapeHtml(profile.page.description)}">
   <meta property="og:url" content="${escapeHtml(profile.canonicalHumanUrl)}">
-  <meta property="og:image" content="https://etgarbonar.com/assets/social-card.png">
+  <meta property="og:image" content="https://etgarbonar.com/assets/social-card-v2.png?v=1">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="אתגר בונר, Revenue and GTM Executive">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(profile.page.title)}">
   <meta name="twitter:description" content="${escapeHtml(profile.page.description)}">
-  <meta name="twitter:image" content="https://etgarbonar.com/assets/social-card.png">
+  <meta name="twitter:image" content="https://etgarbonar.com/assets/social-card-v2.png?v=1">
   <script type="application/ld+json">
 ${jsonForHtml(structuredData)}
   </script>
