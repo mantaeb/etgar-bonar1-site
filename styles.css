@@ -556,11 +556,16 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .pull-quote p { margin: 0; font: 600 clamp(1.6rem, 3vw, 2.5rem)/1.27 var(--sans); letter-spacing: -.035em; }
 
 .question-list { margin-top: 2.5rem; border-top: 1px solid var(--line); }
-.question-list li { padding: 1.1rem 0; display: grid; grid-template-columns: 56px 1fr; gap: 1.4rem; align-items: center; border-bottom: 1px solid var(--line); }
+.question-list li { padding: 1.4rem 0; display: grid; grid-template-columns: 56px 1fr; gap: 1.4rem; align-items: start; border-bottom: 1px solid var(--line); }
 .question-list > li > span { color: var(--blue-dark); font-size: .78rem; font-weight: 850; letter-spacing: .1em; }
 .question-list h3 { margin: 0; font-size: 1.35rem; }
 .question-list h3 .q-label { display: block; margin-bottom: .3rem; color: var(--blue-dark); font-size: .72rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
 .question-list p { margin-bottom: 0; color: var(--muted); }
+.question-list > li > span { padding-top: .25rem; }
+.question-list h3 + p { margin-top: .7rem; }
+.question-list p + p { margin-top: .25rem; }
+.question-list p strong { color: var(--ink); font-weight: 750; }
+.market-signals ul + p { margin: 1.4rem 0 0; color: var(--muted); }
 
 .topic-grid { margin-top: 2.5rem; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
 .topic-grid > div { padding: 2rem; background: var(--paper-bright); }
