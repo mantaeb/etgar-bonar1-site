@@ -44,4 +44,16 @@ Etgar Bonar's AI build is the latest example of a career-long hands-on pattern. 
 - The personal AI system Etgar built and runs, as working evidence: https://etgarbonar.com/ai/
 - Questions and answers about that system: https://etgarbonar.com/ai/faq/
 
+<!-- markdown-mirrors:start -->
+## Markdown versions
+
+Plain Markdown copies of the canonical pages, regenerated from the HTML at every deploy. The HTML pages remain the canonical sources.
+
+- [Executive profile](https://etgarbonar.com/index.md)
+- [Hebrew executive profile](https://etgarbonar.com/he/index.md)
+- [The serviceable line, how far your customer's AI gets without you](https://etgarbonar.com/serviceable-line/index.md)
+- [The personal AI system Etgar built and runs, as working evidence](https://etgarbonar.com/ai/index.md)
+- [Questions and answers about that system](https://etgarbonar.com/ai/faq/index.md)
+<!-- markdown-mirrors:end -->
+
 This file is a navigation aid. The HTML pages above are the canonical sources.

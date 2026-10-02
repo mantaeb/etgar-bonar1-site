@@ -46,10 +46,13 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 - Important content is delivered as static semantic HTML.
 - Each human-facing page has one H1, unique metadata, a canonical URL, reciprocal `hreflang`, and accurate JSON-LD.
 - The canonical Person identifier is `https://etgarbonar.com/#etgar`.
-- `robots.txt` and `sitemap.xml` cover the canonical English and Hebrew pages. The supplemental `llms.txt` points to both profiles and the Hebrew source data.
+- `robots.txt` and `sitemap.xml` cover the canonical English and Hebrew pages. The supplemental `llms.txt` points to both profiles, the Hebrew source data and the Markdown mirrors.
 - Hebrew is not hidden in the English HTML. `/he/` is a visible, indexable page with its own canonical URL. The machine resources are public and receive the same response for every visitor.
 - `machine/he/profile.json` is the single source of truth for the Hebrew profile. It contains the distinct LinkedIn summary and expanded website copy, shared career facts, current focus, and education. Run `node scripts/build-hebrew-profile.mjs` after every change and `node scripts/build-hebrew-profile.mjs --check` before deployment. Never hand-edit `he/index.html`.
 - Release gate: `node scripts/build-hebrew-profile.mjs --check` must pass before every deployment. A failed check means the Hebrew surfaces have drifted and the release is not ready.
+- Every page in `sitemap.xml` has a generated Markdown mirror at `<path>/index.md` (for example `/serviceable-line/index.md`), and `llms.txt` lists them between its `markdown-mirrors` markers. This is the free-tier substitute for Cloudflare's paid Markdown for Agents. Run `python3 scripts/build-markdown-mirrors.py` after any HTML or sitemap change, and after the Hebrew build so `/he/index.md` reflects the regenerated page. Never hand-edit an `index.md` or the marked `llms.txt` block. To add or remove a mirror, add or remove the page in `sitemap.xml`.
+- Release gate: `site-deploy` runs `python3 scripts/build-markdown-mirrors.py --check` and refuses to push while any mirror is missing, stale or orphaned.
+- The mirrors must never start with YAML front matter. GitHub Pages runs Jekyll here, and Jekyll would turn such a file into HTML and overwrite the real `index.html`. Plain `.md` files are served as-is with `text/markdown`.
 - LinkedIn cannot be deployed from this repository. Any Hebrew LinkedIn change must first be recorded in the `linkedin` object in `machine/he/profile.json`, then copied to LinkedIn, so the public surfaces do not drift.
 - Any material change to the English profile or point of view must be reviewed against the matching Hebrew source in the same release. The Hebrew website can be more concise, but career facts and positioning must agree.
 - The framework diagram is implemented as text and HTML, not as an image-only argument.
