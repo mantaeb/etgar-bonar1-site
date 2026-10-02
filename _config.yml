@@ -1,0 +1,6 @@
+# GitHub Pages runs Jekyll on this repository and serves every file it does not exclude.
+# Keep repository-only material off the website. Anything added here still shows on GitHub,
+# because the repository itself is public.
+exclude:
+  - README.md
+  - scripts

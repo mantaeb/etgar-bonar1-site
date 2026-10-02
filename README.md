@@ -27,13 +27,9 @@ a direction has been selected and incorporated into the production design.
 
 ## Source authority
 
-- Positioning: `projects/career/job-search/_shared/linkedin-profile-repositioning-2026-08.md`
-- Public claims: `projects/career/evidence/claims-ledger.md`
-- Point of view: `projects/career/pov/README.md`
-- Framework page: `projects/career/pov/framework/01-five-questions.md` and `02-job-completion-flow.md`
-- Property roles and linking: `projects/bonar1-websites/etgar-ai-content-architecture.md`
-- Findability requirements: `projects/bonar1-websites/web-findability-standard.md`
-- Hebrew terminology: `projects/bonar1-websites/hebrew-localization-guide.md`
+The positioning, public claims, point of view and Hebrew terminology this site draws on are kept in
+Etgar's private notes, outside this repository. This repository is public: never add internal file
+paths, private context or unpublished plans to it. `site-deploy` refuses to push them.
 
 ## Design
 
@@ -61,7 +57,6 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 
 ## Deliberate exclusions
 
-- The business go-to-market renovation programme is not published while the executive seat search is active.
 - The `ai-build.bonar1.com` link is not live until that hostname has DNS and HTTPS.
 - No unsupported recommendation, testimonial, or unverified conversion claim is included.
 - No external font, framework, or JavaScript dependency is required for the site to render.
@@ -96,7 +91,7 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 ## Local preview
 
 ```bash
-python3 -m http.server 8765 --directory projects/bonar1-websites/etgar-site
+python3 -m http.server 8765   # run from the repository root
 ```
 
 Then open `http://127.0.0.1:8765/`.
