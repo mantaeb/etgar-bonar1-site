@@ -300,6 +300,13 @@ def render_mirror(html_path, page_url):
     return text, title
 
 
+def declares_mirror(html_path, md_url):
+    """True if the page's <head> points agents at its mirror with a text/markdown alternate link."""
+    root = page_info(html_path, md_url)[0]
+    return find(root, lambda n: n.tag == "link" and n.attrs.get("rel") == "alternate"
+                and n.attrs.get("type") == "text/markdown" and n.attrs.get("href") == md_url) is not None
+
+
 def sitemap_pages():
     tree = ET.parse(ROOT / "sitemap.xml")
     ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
@@ -345,6 +352,9 @@ def main(argv):
         if not html_path.exists():
             problems.append(f"{url} is in sitemap.xml but {html_path.relative_to(ROOT)} does not exist")
             continue
+        if not declares_mirror(html_path, md_url):
+            problems.append(f'{html_path.relative_to(ROOT)} lacks <link rel="alternate" type="text/markdown" '
+                            f'href="{md_url}"> in its <head>; add it by hand (for /he/, in the Hebrew build template)')
         text, title = render_mirror(html_path, url)
         expected.add(md_path)
         entries.append((url, md_url, title))
@@ -370,9 +380,10 @@ def main(argv):
         for path, text in writes:
             state = "orphaned (page left the sitemap)" if text is None else "missing or stale"
             print(f"STALE: {path.relative_to(ROOT)} is {state}", file=sys.stderr)
-        if writes or problems:
+        if writes:
             print("Run: python3 scripts/build-markdown-mirrors.py, review the diff, commit, then deploy.",
                   file=sys.stderr)
+        if writes or problems:
             return 1
         print(f"markdown mirrors OK: {len(entries)} pages, llms.txt in sync")
         return 0

@@ -119,6 +119,7 @@ const html = `<!doctype html>
   <meta name="author" content="Etgar Bonar">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="${escapeHtml(profile.canonicalHumanUrl)}">
+  <link rel="alternate" type="text/markdown" href="${escapeHtml(profile.canonicalHumanUrl)}index.md" title="Markdown version">
   <link rel="alternate" hreflang="he" href="${escapeHtml(profile.canonicalHumanUrl)}">
   <link rel="alternate" hreflang="en" href="${escapeHtml(profile.englishProfileUrl)}">
   <link rel="alternate" hreflang="x-default" href="${escapeHtml(profile.englishProfileUrl)}">
