@@ -12,7 +12,7 @@ A point of view by Etgar Bonar
 
 The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose the customer without seeing it: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill. Move the line out, and you can win customers you used to walk away from, and stop the losses you never measured.
 
-Published 29 August 2026 · Updated 2 October 2026 · 6 minute read
+Published 29 August 2026 · Updated 2 October 2026 · 8 minute read
 
 *Carried by your customers and their AI* *Your people step in, or the customer is lost*
 
@@ -140,11 +140,9 @@ Evidence and forecast
 
 Before AI, customers carried the journey through self-service, and the line sat wherever a company decided a person had to step in. **The rule I have used since Amazon: bring a person in when automation and mass communication are not enough.** Moving the line out did what the definition at the top of this page says it does.
 
-- **Win customers you used to walk away from.** At Amazon Advertising, I built mass account management for new markets in the UK, Germany and France, serving advertisers at volume rather than one account at a time. At Taboola, the same model ran a unit with 80% of the company's customers: each account manager covered two to three times the accounts of Taboola's own enterprise organization while the unit grew from about $130M to $500M, and new revenue rose 1.8 times as fast as budget from 2019 to 2021.
-- **Stop the losses you never measured.** At Taboola, account managers owned the activation of new customers, with a monthly target for customers running a meaningful test rather than merely signing up, because in advertising trying is easy and staying is hard. In self-service, after we built the offshore customer-success team, first response went roughly ten times faster and net promoter score rose more than fivefold.
-- **Bring a person in *only* where judgment is needed.** At Rapyd, with Product and Compliance, we automated merchant onboarding and KYC decisioning, sorting applications into auto-approve, auto-reject and manual review, so a person was needed only where judgment actually was. At Taboola and Amazon Advertising, advertisers whose campaigns were rejected were told how to fix and resubmit them, without an account manager. At Taboola, after the change, re-uploaded campaigns rose 37% and spending campaigns 11%.
-
-Across the five layers: **Findable** through inbound marketing, PR and performance marketing wherever I owned marketing, and through referral partners at Rapyd. **Selectable** at Taboola, where self-service grew from about 12% to about half of new revenue as customers chose and bought without a salesperson. **Integrable** through documentation and tutorials at Amazon, Taboola and Rapyd, and Taboola's Fiverr Learn course. **Operable** in Taboola's activation target and Rapyd's onboarding. **Fixable** in Taboola's rejected-campaign emails and its customer-success team.
+- **Win customers you used to walk away from.** At Amazon Advertising, I built mass account management for new markets in the UK, Germany and France, serving advertisers at volume rather than one account at a time. At Taboola, the same model ran a unit with 80% of the company's customers. We took self-service from about 12% of new revenue to about half, and each account manager covered two to three times the accounts of Taboola's own enterprise organization, while the unit grew from about $130M to $500M. New revenue rose 1.8 times as fast as budget from 2019 to 2021.
+- **Stop the losses you never measured.** At Taboola, account managers carried a monthly target for new customers running a meaningful test, not merely signing up, because in advertising trying is easy and staying is hard. At both Amazon Advertising and Taboola, advertisers whose campaigns were rejected were told how to fix and resubmit them without an account manager; at Taboola, re-uploaded campaigns rose 37% and spending campaigns 11%.
+- **Bring a person in *only* where judgment is needed.** At Rapyd, with Product and Compliance, we automated merchant onboarding and KYC decisioning, sorting applications into auto-approve, auto-reject and manual review, so a person was needed only where judgment actually was. Where people did add value, they moved the result: in Taboola's self-service segment, after we built an offshore customer-success team, net promoter score rose more than fivefold.
 
 Built and measured
 
