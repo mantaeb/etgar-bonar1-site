@@ -57,11 +57,10 @@ GROWTH = [
 # every hero drawing is the same offering: an uneven surface inside the dashed maximum, the blue
 # line inside it, and the gold outline for where the line is heading (never past the surface).
 HERO_SURFACE = [2.7, 3.0, 2.0, 2.4, 1.6]
-HERO_LINE = [2.2, 1.4, 1.3, 1.0, 0.8]
-# Gold arrows for where the line is heading, on three layers only: layer index -> where the arrow
-# ends. Findable is already near its edge, and Operable moves last (the page says so), so neither
-# gets an arrow.
-HERO_ARROWS = {1: 2.35, 2: 1.85, 4: 1.4}
+HERO_LINE = [1.9, 1.3, 1.3, 1.0, 0.8]
+# Gold arrows for where the line is heading, on Findable and Selectable only (Etgar, 2026-10-03):
+# layer index -> where the arrow ends. The area the move adds is shaded gold.
+HERO_ARROWS = {0: 2.55, 1: 2.3}
 HERO = (HERO_SURFACE, HERO_LINE, HERO_LINE)
 assert all(HERO_LINE[i] < v <= HERO_SURFACE[i] for i, v in HERO_ARROWS.items())
 
@@ -121,17 +120,20 @@ def arrow(i, start, end, r, head=10):
 
 def arrows_text(arrows):
     names = [LAYERS[i] for i in sorted(arrows)]
-    return f" Gold arrows on {', '.join(names[:-1])} and {names[-1]} show where the line is heading."
+    return (f" Gold arrows on {', '.join(names[:-1])} and {names[-1]} show where the line is heading,"
+            " and the area the move adds is shaded gold.")
 
 
 def svg(name, surface, line, carried, *, prefix, r, viewbox, font_gap, old=None, arrows=None, labels=True,
         indent="          "):
-    """arrows: the hero form, without the scaffold (rings, spokes, dashed maximum), labels hugging the
-    surface, and gold arrows for where the line is heading."""
+    """arrows: the hero form. A faint silhouette instead of the scaffold (rings, spokes, dashed maximum),
+    labels hugging the surface, gold arrows for where the line is heading and the gold area they add."""
     p = prefix
     label = describe(name, surface, line, carried) + (arrows_text(arrows) if arrows else "")
     out = [f'<svg viewBox="{viewbox}" role="img" aria-label="{label}">']
-    if not arrows:
+    if arrows:
+        out.append(f'  <polygon class="{p}-silhouette" points="{poly([MAX] * 5, r)}"/>')
+    else:
         for f in (1, 2):
             out.append(f'  <polygon class="{p}-ring" points="{poly([f] * 5, r)}"/>')
         out.append(f'  <polygon class="{p}-ring {p}-max" points="{poly([MAX] * 5, r)}"/>')
@@ -143,7 +145,14 @@ def svg(name, surface, line, carried, *, prefix, r, viewbox, font_gap, old=None,
     out.append(f'  <polygon class="{p}-surface" points="{poly(surface, r)}"/>')
     if carried != line:
         out.append(f'  <polygon class="{p}-other" points="{poly(carried, r)}"/>')
+    if arrows:
+        gain = [arrows.get(i, v) for i, v in enumerate(line)]
+        out.append(f'  <polygon class="{p}-gain" points="{poly(gain, r)}"/>')
+        # an opaque copy of the line's area, so the gold shows only in the area the move adds
+        out.append(f'  <polygon class="{p}-mask" points="{poly(line, r)}"/>')
     out.append(f'  <polygon class="{p}-line" points="{poly(line, r)}"/>')
+    if arrows:
+        out.append(f'  <circle class="{p}-center" cx="0" cy="0" r="3"/>')
     for i, end in (arrows or {}).items():
         (x0, y0, x1, y1), head = arrow(i, line[i] + .12, end, r)
         out.append(f'  <line class="{p}-arrow" x1="{x0:.1f}" y1="{y0:.1f}" x2="{x1:.1f}" y2="{y1:.1f}"/>')
@@ -202,9 +211,11 @@ MINT, GOLD, BLUE, INK, PAPER = "#a8bdc1", "#dcb96f", "#2f72ff", "#101a1d", "#f4e
 
 def card_pentagon(cx, cy, r, surface, line, arrows=None, labels=True, label_size=20):
     """The pentagon with inline styles, for the standalone social-card SVGs. With arrows, it is the
-    hero form: no scaffold, labels hugging the surface, gold arrows."""
+    hero form: a faint silhouette, labels hugging the surface, gold arrows and the gold area they add."""
     out = [f'  <g transform="translate({cx} {cy})">']
-    if not arrows:
+    if arrows:
+        out.append(f'    <polygon points="{poly([MAX] * 5, r)}" fill="{MINT}" fill-opacity=".05"/>')
+    else:
         for f in (1, 2):
             out.append(f'    <polygon points="{poly([f] * 5, r)}" fill="none" stroke="{MINT}" stroke-opacity=".12"/>')
         out.append(f'    <polygon points="{poly([MAX] * 5, r)}" fill="none" stroke="{MINT}" stroke-opacity=".38" stroke-dasharray="4 6"/>')
@@ -212,7 +223,13 @@ def card_pentagon(cx, cy, r, surface, line, arrows=None, labels=True, label_size
             x, y = pt(i, MAX, r)
             out.append(f'    <line x1="0" y1="0" x2="{x:.1f}" y2="{y:.1f}" stroke="{MINT}" stroke-opacity=".16"/>')
     out.append(f'    <polygon points="{poly(surface, r)}" fill="{MINT}" fill-opacity=".14" stroke="{MINT}" stroke-width="1.6" stroke-linejoin="round"/>')
+    if arrows:
+        gain = [arrows.get(i, v) for i, v in enumerate(line)]
+        out.append(f'    <polygon points="{poly(gain, r)}" fill="{GOLD}" fill-opacity=".24" stroke="{GOLD}" stroke-width="1.2" stroke-linejoin="round"/>')
+        out.append(f'    <polygon points="{poly(line, r)}" fill="#1e2a2d"/>')
     out.append(f'    <polygon points="{poly(line, r)}" fill="{BLUE}" fill-opacity=".26" stroke="{BLUE}" stroke-width="2.5" stroke-linejoin="round"/>')
+    if arrows:
+        out.append(f'    <circle cx="0" cy="0" r="3" fill="{MINT}" opacity=".55"/>')
     for i, end in (arrows or {}).items():
         (x0, y0, x1, y1), head = arrow(i, line[i] + .12, end, r)
         out.append(f'    <line x1="{x0:.1f}" y1="{y0:.1f}" x2="{x1:.1f}" y2="{y1:.1f}" stroke="{GOLD}" stroke-width="3" stroke-linecap="round"/>')
@@ -262,7 +279,7 @@ def main_card():
     return card_svg("The serviceable line",
                     "A five-spoke chart, one spoke per layer: Findable, Selectable, Integrable, Operable and Fixable. "
                     "The solid outline is what the offering asks of someone on each layer; the blue shape is how far your customers and their AI get; "
-                    "past it, your people step in or the customer is lost; gold arrows on three layers show where the line is heading. How far does your customer's AI get without you? "
+                    "past it, your people step in or the customer is lost; gold arrows on Findable and Selectable show where the line is heading, and the area they add is shaded gold. How far does your customer's AI get without you? "
                     "A point of view by Etgar Bonar.", body)
 
 

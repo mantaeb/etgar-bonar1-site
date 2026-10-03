@@ -547,6 +547,10 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .line-diagram .ld-max { fill: none; stroke: rgba(168,189,193,.38); stroke-dasharray: 4 6; }
 .line-diagram .ld-other { fill: rgba(62,190,170,.30); stroke: #4cc3ae; stroke-width: 1.6; stroke-linejoin: round; }
 .line-diagram .ld-key-other::before { background: rgba(62,190,170,.30); border: 2px solid #4cc3ae; }
+.line-diagram .ld-silhouette { fill: rgba(168,189,193,.05); }
+.line-diagram .ld-gain { fill: rgba(220,185,111,.24); stroke: var(--gold); stroke-width: 1.2; stroke-linejoin: round; }
+.line-diagram .ld-mask { fill: #1e2a2d; }
+.line-diagram .ld-center { fill: var(--mint); opacity: .55; }
 .line-diagram .ld-arrow { stroke: var(--gold); stroke-width: 3; stroke-linecap: round; }
 .line-diagram .ld-arrowhead { fill: var(--gold); }
 .line-diagram .ld-surface { fill: rgba(168,189,193,.14); stroke: var(--mint); stroke-width: 1.6; stroke-linejoin: round; }

@@ -1,18 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="cardtitle carddesc">
   <title id="cardtitle">The serviceable line</title>
-  <desc id="carddesc">A five-spoke chart, one spoke per layer: Findable, Selectable, Integrable, Operable and Fixable. The solid outline is what the offering asks of someone on each layer; the blue shape is how far your customers and their AI get; past it, your people step in or the customer is lost; gold arrows on three layers show where the line is heading. How far does your customer's AI get without you? A point of view by Etgar Bonar.</desc>
+  <desc id="carddesc">A five-spoke chart, one spoke per layer: Findable, Selectable, Integrable, Operable and Fixable. The solid outline is what the offering asks of someone on each layer; the blue shape is how far your customers and their AI get; past it, your people step in or the customer is lost; gold arrows on Findable and Selectable show where the line is heading, and the area they add is shaded gold. How far does your customer's AI get without you? A point of view by Etgar Bonar.</desc>
   <rect width="1200" height="630" fill="#101a1d"/>
   <g transform="translate(890 262)">
+    <polygon points="0.0,-172.0 163.6,-53.2 101.1,139.2 -101.1,139.2 -163.6,-53.2" fill="#a8bdc1" fill-opacity=".05"/>
     <polygon points="0.0,-154.8 163.6,-53.2 67.4,92.8 -80.9,111.3 -87.2,-28.3" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-width="1.6" stroke-linejoin="round"/>
-    <polygon points="0.0,-126.1 76.3,-24.8 43.8,60.3 -33.7,46.4 -43.6,-14.2" fill="#2f72ff" fill-opacity=".26" stroke="#2f72ff" stroke-width="2.5" stroke-linejoin="round"/>
-    <line x1="82.9" y1="-26.9" x2="118.6" y2="-38.5" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/>
-    <polygon points="128.1,-41.6 120.3,-33.3 116.9,-43.8" fill="#dcb96f"/>
-    <line x1="47.9" y1="65.9" x2="56.5" y2="77.7" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/>
-    <polygon points="62.3,85.8 52.0,81.0 60.9,74.5" fill="#dcb96f"/>
-    <line x1="-50.2" y1="-16.3" x2="-66.8" y2="-21.7" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/>
-    <polygon points="-76.3,-24.8 -65.1,-26.9 -68.5,-16.5" fill="#dcb96f"/>
-    <circle cx="0.0" cy="-126.1" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
-    <circle cx="76.3" cy="-24.8" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
+    <polygon points="0.0,-146.2 125.4,-40.7 43.8,60.3 -33.7,46.4 -43.6,-14.2" fill="#dcb96f" fill-opacity=".24" stroke="#dcb96f" stroke-width="1.2" stroke-linejoin="round"/>
+    <polygon points="0.0,-108.9 70.9,-23.0 43.8,60.3 -33.7,46.4 -43.6,-14.2" fill="#1e2a2d"/>
+    <polygon points="0.0,-108.9 70.9,-23.0 43.8,60.3 -33.7,46.4 -43.6,-14.2" fill="#2f72ff" fill-opacity=".26" stroke="#2f72ff" stroke-width="2.5" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="3" fill="#a8bdc1" opacity=".55"/>
+    <line x1="0.0" y1="-115.8" x2="0.0" y2="-136.2" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="0.0,-146.2 5.5,-136.2 -5.5,-136.2" fill="#dcb96f"/>
+    <line x1="77.4" y1="-25.2" x2="115.9" y2="-37.7" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="125.4,-40.7 117.6,-32.4 114.2,-42.9" fill="#dcb96f"/>
+    <circle cx="0.0" cy="-108.9" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
+    <circle cx="70.9" cy="-23.0" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
     <circle cx="43.8" cy="60.3" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
     <circle cx="-33.7" cy="46.4" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
     <circle cx="-43.6" cy="-14.2" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
