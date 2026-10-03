@@ -14,11 +14,12 @@ The serviceable line is how far your customers, and increasingly their AI, get w
 
 Published 29 August 2026 · Updated 3 October 2026 · 8 minute read
 
+- The surface: what your offering asks of someone
 - Carried by your customers and their AI
 - Your people step in, or the customer is lost
-- Where the line is moving
+- Where the line is heading
 
-Illustrative, for an offering with all five layers in depth. Not every offering has them: [see the shape of the line](https://etgarbonar.com/serviceable-line/shapes/). Each axis is one layer: Findable, Selectable, Integrable, Operable, Fixable. The blue shape is the serviceable line: how far your customers, and increasingly their AI, get with your offering on their own. Outside it, your people step in or the customer is lost. The gold marks the direction the line is moving.
+Illustrative. Each axis is one layer: Findable, Selectable, Integrable, Operable, Fixable. The solid outline is what this offering asks of someone on each layer, and no two offerings ask the same: [see the shape of the line](https://etgarbonar.com/serviceable-line/shapes/). The blue shape is the serviceable line: how far your customers, and increasingly their AI, get with your offering on their own. Past it, your people step in or the customer is lost. The gold marks where the line is heading.
 
 Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine. I spent most of those years on the seller's side of that shift, at Amazon, Taboola and Rapyd.
 

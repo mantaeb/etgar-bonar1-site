@@ -53,15 +53,14 @@ GROWTH = [
      DRILL[1]),
 ]
 
-# The main page hero: an offering with all five layers in depth, so the surface is full, plus the
-# gold outline for where the line is moving. Same drawing code as the sub-page, so the two heroes
-# follow one set of rules: dashed maximum, solid surface, grey gap, blue line.
-MAIN_LINE = [2.46, 1.5, 1.98, 1.2, 1.68]
-MAIN_HERO = ([3, 3, 3, 3, 3], MAIN_LINE, MAIN_LINE)
-MAIN_MOVE = [2.91, 2.04, 2.52, 1.74, 2.22]
-
-# the shapes hero introduces the idea, so it shows no work carried by others
-HERO = ([2.4, 2.8, 1.4, 2.2, 1.0], [2.0, 1.5, 0.8, 1.1, 0.4], [2.0, 1.5, 0.8, 1.1, 0.4])
+# One hero shape, used by the main page hero, the shapes page hero and the main social card, so
+# every hero drawing is the same offering: an uneven surface inside the dashed maximum, the blue
+# line inside it, and the gold outline for where the line is heading (never past the surface).
+HERO_SURFACE = [2.7, 3.0, 2.0, 2.4, 1.6]
+HERO_LINE = [2.2, 1.4, 1.3, 1.0, 0.8]
+HERO_MOVE = [2.5, 1.9, 1.7, 1.4, 1.2]
+HERO = (HERO_SURFACE, HERO_LINE, HERO_LINE)
+assert all(l <= m <= su for l, m, su in zip(HERO_LINE, HERO_MOVE, HERO_SURFACE))
 
 
 def pt(i, v, r):
@@ -110,7 +109,7 @@ def svg(name, surface, line, carried, *, prefix, r, viewbox, font_gap, old=None,
     p = prefix
     label = describe(name, surface, line, carried)
     if move:
-        label += " A gold dotted outline further out shows where the line is moving."
+        label += " A gold dotted outline further out shows where the line is heading."
     out = [f'<svg viewBox="{viewbox}" role="img" aria-label="{label}">']
     for f in (1, 2):
         out.append(f'  <polygon class="{p}-ring" points="{poly([f] * 5, r)}"/>')
@@ -163,14 +162,13 @@ HERO_BOX = dict(prefix="ld", r=168, viewbox="-296 -214 592 424", font_gap=18)
 def blocks():
     return {
         PAGE: {
-            "hero": svg("An illustrative offering", *HERO, **HERO_BOX),
+            "hero": svg("An illustrative offering", *HERO, move=HERO_MOVE, **HERO_BOX),
             "grid": grid(OFFERINGS),
             "segments": grid(SEGMENTS, "shape-grid shape-pair"),
             "growth": grid(GROWTH, "shape-grid shape-pair"),
         },
         MAIN_PAGE: {
-            "main-hero": svg("An illustrative offering with all five layers in depth", *MAIN_HERO,
-                             move=MAIN_MOVE, **HERO_BOX),
+            "main-hero": svg("An illustrative offering", *HERO, move=HERO_MOVE, **HERO_BOX),
         },
     }
 
@@ -214,6 +212,7 @@ def legend_row(x, y, kind, text):
     swatch = {
         "line": f'<rect x="{x}" y="{y - 12}" width="22" height="14" rx="2" fill="{BLUE}" fill-opacity=".26" stroke="{BLUE}" stroke-width="2"/>',
         "gap": f'<rect x="{x}" y="{y - 12}" width="22" height="14" rx="2" fill="{MINT}" fill-opacity=".14" stroke="{MINT}" stroke-opacity=".4"/>',
+        "surface": f'<path d="M{x} {y - 5}H{x + 22}" stroke="{MINT}" stroke-width="2.5"/>',
         "move": f'<path d="M{x + 3} {y - 5}H{x + 21}" stroke="{GOLD}" stroke-width="5" stroke-linecap="round" stroke-dasharray="0 8" opacity=".85"/>',
     }[kind]
     return f'  {swatch}\n  <text x="{x + 34}" y="{y}" {FONT} font-size="17" fill="{MINT}" opacity=".8">{text}</text>'
@@ -221,10 +220,11 @@ def legend_row(x, y, kind, text):
 
 def main_card():
     body = "\n".join([
-        card_pentagon(890, 270, 172, MAIN_HERO[0], MAIN_HERO[1], move=MAIN_MOVE),
-        legend_row(700, 520, "line", "Carried by your customers and their AI"),
-        legend_row(700, 550, "gap", "Your people step in, or the customer is lost"),
-        legend_row(700, 580, "move", "Where the line is moving"),
+        card_pentagon(890, 262, 172, HERO_SURFACE, HERO_LINE, move=HERO_MOVE),
+        legend_row(700, 492, "surface", "The surface: what your offering asks of someone"),
+        legend_row(700, 522, "line", "Carried by your customers and their AI"),
+        legend_row(700, 552, "gap", "Your people step in, or the customer is lost"),
+        legend_row(700, 582, "move", "Where the line is heading"),
         f'  <text x="80" y="196" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">The serviceable</text>',
         f'  <text x="80" y="274" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">line</text>',
         f'  <text x="80" y="352" {FONT} font-size="30" fill="{MINT}">How far does your customer\'s</text>',
@@ -233,9 +233,9 @@ def main_card():
         f'  <text x="80" y="580" {FONT} font-size="21" fill="{MINT}" opacity=".5">etgarbonar.com</text>',
     ])
     return card_svg("The serviceable line",
-                    "A pentagon with one spoke per layer: Findable, Selectable, Integrable, Operable and Fixable. "
-                    "The blue shape is how far your customers and their AI get on each; past it, your people step in or the customer is lost; "
-                    "a gold dotted outline further out shows where the line is moving. How far does your customer's AI get without you? "
+                    "A five-spoke chart, one spoke per layer: Findable, Selectable, Integrable, Operable and Fixable. "
+                    "The solid outline is what the offering asks of someone on each layer; the blue shape is how far your customers and their AI get; "
+                    "past it, your people step in or the customer is lost; a gold dotted outline shows where the line is heading. How far does your customer's AI get without you? "
                     "A point of view by Etgar Bonar.", body)
 
 

@@ -15,10 +15,11 @@ The five layers are not the same size for every offering. A bag of rice has almo
 Published 3 October 2026 · 7 minute read
 
 - The surface: what your offering asks of someone
-- The line: how far your customers and their AI get alone
-- The gap: your people step in, or the customer is lost
+- Carried by your customers and their AI
+- Your people step in, or the customer is lost
+- Where the line is heading
 
-Illustrative. The dashed outline is the most any offering can ask on a layer. This one asks a lot on two layers and little on Fixable.
+Illustrative, the same offering as on the main page. The dashed outline is the most any offering can ask on a layer; this one asks the most on Selectable and the least on Fixable. The gold marks where the line is heading.
 
 Every offering asks something of the person buying it. Some ask almost nothing. Some ask a great deal, before the purchase and long after it.
 
