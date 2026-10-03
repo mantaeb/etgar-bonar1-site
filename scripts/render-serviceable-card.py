@@ -2,14 +2,15 @@
 
 Chrome's headless screenshot clips roughly 110px off the bottom when --window-size
 matches the content exactly, so the page is rendered taller and cropped back down.
-Run:  python3 scripts/render-serviceable-card.py
+Run:  python3 scripts/render-serviceable-card.py [card name, default serviceable-line-card]
 """
-import pathlib, subprocess, tempfile, zlib, struct
+import pathlib, subprocess, sys, tempfile, zlib, struct
 
 W, H = 1200, 630
 root = pathlib.Path(__file__).resolve().parent.parent
-svg = root / "assets/serviceable-line-card.svg"
-png = root / "assets/serviceable-line-card.png"
+name = sys.argv[1] if len(sys.argv) > 1 else "serviceable-line-card"
+svg = root / f"assets/{name}.svg"
+png = root / f"assets/{name}.png"
 
 
 def decode(path):

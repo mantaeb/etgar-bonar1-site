@@ -1,41 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="cardtitle carddesc">
   <title id="cardtitle">The serviceable line</title>
-  <desc id="carddesc">Five layers, five lines. Findable, Selectable, Integrable, Operable and Fixable, each drawn to a different length between "carried by your customers and their AI" and "your people step in, or the customer is lost", and each one still moving outward. A point of view by Etgar Bonar.</desc>
-
+  <desc id="carddesc">A pentagon with one spoke per layer: Findable, Selectable, Integrable, Operable and Fixable. The blue shape is how far your customers and their AI get on each; past it, your people step in or the customer is lost; a gold dotted outline further out shows where the line is moving. How far does your customer's AI get without you? A point of view by Etgar Bonar.</desc>
   <rect width="1200" height="630" fill="#101a1d"/>
-
-  <g font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="18" fill="#a8bdc1" opacity=".55">
-    <text x="250" y="64">Carried by your customers and their AI</text>
-    <text x="1120" y="64" text-anchor="end">Your people step in, or the customer is lost</text>
+  <g transform="translate(890 270)">
+    <polygon points="0.0,-57.3 54.5,-17.7 33.7,46.4 -33.7,46.4 -54.5,-17.7" fill="none" stroke="#a8bdc1" stroke-opacity=".12"/>
+    <polygon points="0.0,-114.7 109.1,-35.4 67.4,92.8 -67.4,92.8 -109.1,-35.4" fill="none" stroke="#a8bdc1" stroke-opacity=".12"/>
+    <polygon points="0.0,-172.0 163.6,-53.2 101.1,139.2 -101.1,139.2 -163.6,-53.2" fill="none" stroke="#a8bdc1" stroke-opacity=".38" stroke-dasharray="4 6"/>
+    <line x1="0" y1="0" x2="0.0" y2="-172.0" stroke="#a8bdc1" stroke-opacity=".16"/>
+    <line x1="0" y1="0" x2="163.6" y2="-53.2" stroke="#a8bdc1" stroke-opacity=".16"/>
+    <line x1="0" y1="0" x2="101.1" y2="139.2" stroke="#a8bdc1" stroke-opacity=".16"/>
+    <line x1="0" y1="0" x2="-101.1" y2="139.2" stroke="#a8bdc1" stroke-opacity=".16"/>
+    <line x1="0" y1="0" x2="-163.6" y2="-53.2" stroke="#a8bdc1" stroke-opacity=".16"/>
+    <polygon points="0.0,-172.0 163.6,-53.2 101.1,139.2 -101.1,139.2 -163.6,-53.2" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-width="1.6" stroke-linejoin="round"/>
+    <polygon points="0.0,-166.8 111.2,-36.1 84.9,116.9 -58.6,80.7 -121.1,-39.3" fill="none" stroke="#dcb96f" stroke-width="3" stroke-dasharray="0 9" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+    <polygon points="0.0,-141.0 81.8,-26.6 66.7,91.8 -40.4,55.7 -91.6,-29.8" fill="#2f72ff" fill-opacity=".26" stroke="#2f72ff" stroke-width="2.5" stroke-linejoin="round"/>
+    <circle cx="0.0" cy="-141.0" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
+    <circle cx="81.8" cy="-26.6" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
+    <circle cx="66.7" cy="91.8" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
+    <circle cx="-40.4" cy="55.7" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
+    <circle cx="-91.6" cy="-29.8" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
+    <text x="0.0" y="-190.0" text-anchor="middle" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Findable</text>
+    <text x="181.6" y="-48.2" text-anchor="start" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Selectable</text>
+    <text x="101.1" y="169.2" text-anchor="middle" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Integrable</text>
+    <text x="-101.1" y="169.2" text-anchor="middle" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Operable</text>
+    <text x="-181.6" y="-48.2" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Fixable</text>
   </g>
-
-  <g font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1" text-anchor="end">
-    <text x="228" y="118">Findable</text>
-    <text x="228" y="160">Selectable</text>
-    <text x="228" y="202">Integrable</text>
-    <text x="228" y="244">Operable</text>
-    <text x="228" y="286">Fixable</text>
-  </g>
-
-  <g stroke="#1e2b2f" stroke-width="8" stroke-linecap="round">
-    <path d="M250 112H1120"/><path d="M250 154H1120"/><path d="M250 196H1120"/>
-    <path d="M250 238H1120"/><path d="M250 280H1120"/>
-  </g>
-
-  <g stroke="#2f72ff" stroke-width="8" stroke-linecap="round">
-    <path d="M250 112H930"/><path d="M250 154H800"/><path d="M250 196H620"/>
-    <path d="M250 238H520"/><path d="M250 280H430"/>
-  </g>
-
-  <g stroke="#dcb96f" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 11" opacity=".7">
-    <path d="M952 112H1042"/><path d="M822 154H912"/><path d="M642 196H732"/>
-    <path d="M542 238H632"/><path d="M452 280H542"/>
-  </g>
-
-  <path d="M80 348H1120" stroke="#233236" stroke-width="1"/>
-
-  <text x="80" y="426" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="70" font-weight="700" letter-spacing="-1" fill="#f4efe6">The serviceable line</text>
-  <text x="80" y="484" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="31" fill="#a8bdc1">How far does your customer's AI get without you?</text>
-  <text x="80" y="562" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#dcb96f">A point of view by Etgar Bonar</text>
-  <text x="1120" y="562" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#a8bdc1" opacity=".5">etgarbonar.com</text>
+  <rect x="700" y="508" width="22" height="14" rx="2" fill="#2f72ff" fill-opacity=".26" stroke="#2f72ff" stroke-width="2"/>
+  <text x="734" y="520" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Carried by your customers and their AI</text>
+  <rect x="700" y="538" width="22" height="14" rx="2" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".4"/>
+  <text x="734" y="550" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Your people step in, or the customer is lost</text>
+  <path d="M703 575H721" stroke="#dcb96f" stroke-width="5" stroke-linecap="round" stroke-dasharray="0 8" opacity=".85"/>
+  <text x="734" y="580" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Where the line is moving</text>
+  <text x="80" y="196" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-1" fill="#f4efe6">The serviceable</text>
+  <text x="80" y="274" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-1" fill="#f4efe6">line</text>
+  <text x="80" y="352" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="30" fill="#a8bdc1">How far does your customer's</text>
+  <text x="80" y="394" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="30" fill="#a8bdc1">AI get without you?</text>
+  <text x="80" y="548" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#dcb96f">A point of view by Etgar Bonar</text>
+  <text x="80" y="580" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#a8bdc1" opacity=".5">etgarbonar.com</text>
 </svg>

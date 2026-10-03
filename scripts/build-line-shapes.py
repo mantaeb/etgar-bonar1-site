@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Draw the pentagon shapes on /serviceable-line/shapes/ from the data below.
+"""Draw the pentagon shapes on both serviceable-line pages and both social cards from the data below.
 
     python3 scripts/build-line-shapes.py
 
@@ -175,6 +175,89 @@ def blocks():
     }
 
 
+FONT = 'font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif"'
+MINT, GOLD, BLUE, INK, PAPER = "#a8bdc1", "#dcb96f", "#2f72ff", "#101a1d", "#f4efe6"
+
+
+def card_pentagon(cx, cy, r, surface, line, move=None, labels=True, label_size=20):
+    """The hero pentagon with inline styles, for the standalone social-card SVGs."""
+    out = [f'  <g transform="translate({cx} {cy})">']
+    for f in (1, 2):
+        out.append(f'    <polygon points="{poly([f] * 5, r)}" fill="none" stroke="{MINT}" stroke-opacity=".12"/>')
+    out.append(f'    <polygon points="{poly([MAX] * 5, r)}" fill="none" stroke="{MINT}" stroke-opacity=".38" stroke-dasharray="4 6"/>')
+    for i in range(5):
+        x, y = pt(i, MAX, r)
+        out.append(f'    <line x1="0" y1="0" x2="{x:.1f}" y2="{y:.1f}" stroke="{MINT}" stroke-opacity=".16"/>')
+    out.append(f'    <polygon points="{poly(surface, r)}" fill="{MINT}" fill-opacity=".14" stroke="{MINT}" stroke-width="1.6" stroke-linejoin="round"/>')
+    if move:
+        out.append(f'    <polygon points="{poly(move, r)}" fill="none" stroke="{GOLD}" stroke-width="3" stroke-dasharray="0 9" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>')
+    out.append(f'    <polygon points="{poly(line, r)}" fill="{BLUE}" fill-opacity=".26" stroke="{BLUE}" stroke-width="2.5" stroke-linejoin="round"/>')
+    for i, v in enumerate(line):
+        if v > 0:
+            x, y = pt(i, v, r)
+            out.append(f'    <circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="{BLUE}" stroke="{INK}" stroke-width="2"/>')
+    if labels:
+        for i, n in enumerate(LAYERS):
+            x, y, anchor = label_pos(i, r, 18)
+            out.append(f'    <text x="{x:.1f}" y="{y:.1f}" text-anchor="{anchor}" {FONT} font-size="{label_size}" fill="{MINT}">{n}</text>')
+    out.append("  </g>")
+    return "\n".join(out)
+
+
+def card_svg(title, desc, body):
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="cardtitle carddesc">\n'
+            f'  <title id="cardtitle">{title}</title>\n  <desc id="carddesc">{desc}</desc>\n'
+            f'  <rect width="1200" height="630" fill="{INK}"/>\n{body}\n</svg>\n')
+
+
+def legend_row(x, y, kind, text):
+    swatch = {
+        "line": f'<rect x="{x}" y="{y - 12}" width="22" height="14" rx="2" fill="{BLUE}" fill-opacity=".26" stroke="{BLUE}" stroke-width="2"/>',
+        "gap": f'<rect x="{x}" y="{y - 12}" width="22" height="14" rx="2" fill="{MINT}" fill-opacity=".14" stroke="{MINT}" stroke-opacity=".4"/>',
+        "move": f'<path d="M{x + 3} {y - 5}H{x + 21}" stroke="{GOLD}" stroke-width="5" stroke-linecap="round" stroke-dasharray="0 8" opacity=".85"/>',
+    }[kind]
+    return f'  {swatch}\n  <text x="{x + 34}" y="{y}" {FONT} font-size="17" fill="{MINT}" opacity=".8">{text}</text>'
+
+
+def main_card():
+    body = "\n".join([
+        card_pentagon(890, 270, 172, MAIN_HERO[0], MAIN_HERO[1], move=MAIN_MOVE),
+        legend_row(700, 520, "line", "Carried by your customers and their AI"),
+        legend_row(700, 550, "gap", "Your people step in, or the customer is lost"),
+        legend_row(700, 580, "move", "Where the line is moving"),
+        f'  <text x="80" y="196" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">The serviceable</text>',
+        f'  <text x="80" y="274" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">line</text>',
+        f'  <text x="80" y="352" {FONT} font-size="30" fill="{MINT}">How far does your customer\'s</text>',
+        f'  <text x="80" y="394" {FONT} font-size="30" fill="{MINT}">AI get without you?</text>',
+        f'  <text x="80" y="548" {FONT} font-size="21" fill="{GOLD}">A point of view by Etgar Bonar</text>',
+        f'  <text x="80" y="580" {FONT} font-size="21" fill="{MINT}" opacity=".5">etgarbonar.com</text>',
+    ])
+    return card_svg("The serviceable line",
+                    "A pentagon with one spoke per layer: Findable, Selectable, Integrable, Operable and Fixable. "
+                    "The blue shape is how far your customers and their AI get on each; past it, your people step in or the customer is lost; "
+                    "a gold dotted outline further out shows where the line is moving. How far does your customer's AI get without you? "
+                    "A point of view by Etgar Bonar.", body)
+
+
+def shapes_card():
+    picks = [OFFERINGS[0], OFFERINGS[3], OFFERINGS[5]]
+    parts = []
+    for cx, (name, surface, line, *_rest) in zip((240, 600, 960), picks):
+        parts.append(card_pentagon(cx, 160, 100, surface, line, labels=False))
+        parts.append(f'  <text x="{cx}" y="300" text-anchor="middle" {FONT} font-size="20" fill="{MINT}">{name}</text>')
+    parts += [
+        f'  <path d="M80 340H1120" stroke="#233236" stroke-width="1"/>',
+        f'  <text x="80" y="420" {FONT} font-size="56" font-weight="700" letter-spacing="-1" fill="{PAPER}">The shape of the serviceable line</text>',
+        f'  <text x="80" y="474" {FONT} font-size="28" fill="{MINT}">How far does your customer\'s AI get without you?</text>',
+        f'  <text x="80" y="560" {FONT} font-size="21" fill="{GOLD}">A point of view by Etgar Bonar</text>',
+        f'  <text x="1120" y="560" text-anchor="end" {FONT} font-size="21" fill="{MINT}" opacity=".5">etgarbonar.com</text>',
+    ]
+    return card_svg("The shape of the serviceable line",
+                    "Three pentagons: a bag of rice with almost no surface, a medical device with a long Selectable and a short line, "
+                    "and API-first software with all five layers in depth. How far does your customer's AI get without you? "
+                    "Not every offering has five layers. A point of view by Etgar Bonar.", "\n".join(parts))
+
+
 def main():
     for page, named in blocks().items():
         html = page.read_text()
@@ -185,6 +268,10 @@ def main():
                 raise SystemExit(f"marker shapes:{name} not found exactly once in {page.name}")
         page.write_text(html)
         print(f"wrote {page.relative_to(ROOT)}")
+    for name, svg_text in (("serviceable-line-card", main_card()), ("serviceable-shapes-card", shapes_card())):
+        path = ROOT / "assets" / f"{name}.svg"
+        path.write_text(svg_text)
+        print(f"wrote {path.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
