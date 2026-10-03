@@ -1,29 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="cardtitle carddesc">
   <title id="cardtitle">The serviceable line</title>
-  <desc id="carddesc">A five-spoke chart, one spoke per layer: Findable, Selectable, Integrable, Operable and Fixable. The solid outline is what the offering asks of someone on each layer; the blue shape is how far your customers and their AI get; past it, your people step in or the customer is lost; a gold dotted outline shows where the line is heading. How far does your customer's AI get without you? A point of view by Etgar Bonar.</desc>
+  <desc id="carddesc">A five-spoke chart, one spoke per layer: Findable, Selectable, Integrable, Operable and Fixable. The solid outline is what the offering asks of someone on each layer; the blue shape is how far your customers and their AI get; past it, your people step in or the customer is lost; gold arrows on three layers show where the line is heading. How far does your customer's AI get without you? A point of view by Etgar Bonar.</desc>
   <rect width="1200" height="630" fill="#101a1d"/>
   <g transform="translate(890 262)">
-    <polygon points="0.0,-57.3 54.5,-17.7 33.7,46.4 -33.7,46.4 -54.5,-17.7" fill="none" stroke="#a8bdc1" stroke-opacity=".12"/>
-    <polygon points="0.0,-114.7 109.1,-35.4 67.4,92.8 -67.4,92.8 -109.1,-35.4" fill="none" stroke="#a8bdc1" stroke-opacity=".12"/>
-    <polygon points="0.0,-172.0 163.6,-53.2 101.1,139.2 -101.1,139.2 -163.6,-53.2" fill="none" stroke="#a8bdc1" stroke-opacity=".38" stroke-dasharray="4 6"/>
-    <line x1="0" y1="0" x2="0.0" y2="-172.0" stroke="#a8bdc1" stroke-opacity=".16"/>
-    <line x1="0" y1="0" x2="163.6" y2="-53.2" stroke="#a8bdc1" stroke-opacity=".16"/>
-    <line x1="0" y1="0" x2="101.1" y2="139.2" stroke="#a8bdc1" stroke-opacity=".16"/>
-    <line x1="0" y1="0" x2="-101.1" y2="139.2" stroke="#a8bdc1" stroke-opacity=".16"/>
-    <line x1="0" y1="0" x2="-163.6" y2="-53.2" stroke="#a8bdc1" stroke-opacity=".16"/>
     <polygon points="0.0,-154.8 163.6,-53.2 67.4,92.8 -80.9,111.3 -87.2,-28.3" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-width="1.6" stroke-linejoin="round"/>
-    <polygon points="0.0,-143.3 103.6,-33.7 57.3,78.9 -47.2,64.9 -65.4,-21.3" fill="none" stroke="#dcb96f" stroke-width="3" stroke-dasharray="0 9" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
     <polygon points="0.0,-126.1 76.3,-24.8 43.8,60.3 -33.7,46.4 -43.6,-14.2" fill="#2f72ff" fill-opacity=".26" stroke="#2f72ff" stroke-width="2.5" stroke-linejoin="round"/>
+    <line x1="82.9" y1="-26.9" x2="118.6" y2="-38.5" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="128.1,-41.6 120.3,-33.3 116.9,-43.8" fill="#dcb96f"/>
+    <line x1="47.9" y1="65.9" x2="56.5" y2="77.7" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="62.3,85.8 52.0,81.0 60.9,74.5" fill="#dcb96f"/>
+    <line x1="-50.2" y1="-16.3" x2="-66.8" y2="-21.7" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="-76.3,-24.8 -65.1,-26.9 -68.5,-16.5" fill="#dcb96f"/>
     <circle cx="0.0" cy="-126.1" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
     <circle cx="76.3" cy="-24.8" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
     <circle cx="43.8" cy="60.3" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
     <circle cx="-33.7" cy="46.4" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
     <circle cx="-43.6" cy="-14.2" r="5" fill="#2f72ff" stroke="#101a1d" stroke-width="2"/>
-    <text x="0.0" y="-190.0" text-anchor="middle" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Findable</text>
+    <text x="0.0" y="-172.8" text-anchor="middle" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Findable</text>
     <text x="181.6" y="-48.2" text-anchor="start" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Selectable</text>
-    <text x="101.1" y="169.2" text-anchor="middle" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Integrable</text>
-    <text x="-101.1" y="169.2" text-anchor="middle" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Operable</text>
-    <text x="-181.6" y="-48.2" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Fixable</text>
+    <text x="67.4" y="122.8" text-anchor="middle" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Integrable</text>
+    <text x="-80.9" y="141.3" text-anchor="middle" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Operable</text>
+    <text x="-105.2" y="-23.3" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Fixable</text>
   </g>
   <path d="M700 487H722" stroke="#a8bdc1" stroke-width="2.5"/>
   <text x="734" y="492" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">The surface: what your offering asks of someone</text>
@@ -31,7 +28,7 @@
   <text x="734" y="522" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Carried by your customers and their AI</text>
   <rect x="700" y="540" width="22" height="14" rx="2" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".4"/>
   <text x="734" y="552" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Your people step in, or the customer is lost</text>
-  <path d="M703 577H721" stroke="#dcb96f" stroke-width="5" stroke-linecap="round" stroke-dasharray="0 8" opacity=".85"/>
+  <path d="M701 577H713" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/><polygon points="722,577 712,571.5 712,582.5" fill="#dcb96f"/>
   <text x="734" y="582" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Where the line is heading</text>
   <text x="80" y="196" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-1" fill="#f4efe6">The serviceable</text>
   <text x="80" y="274" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-1" fill="#f4efe6">line</text>

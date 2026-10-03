@@ -19,7 +19,7 @@ Published 29 August 2026 · Updated 3 October 2026 · 8 minute read
 - Your people step in, or the customer is lost
 - Where the line is heading
 
-Illustrative. Each axis is one layer: Findable, Selectable, Integrable, Operable, Fixable. The solid outline is what this offering asks of someone on each layer, and no two offerings ask the same: [see the shape of the line](https://etgarbonar.com/serviceable-line/shapes/). The blue shape is the serviceable line: how far your customers, and increasingly their AI, get with your offering on their own. Past it, your people step in or the customer is lost. The gold marks where the line is heading.
+Illustrative. Each axis is one layer: Findable, Selectable, Integrable, Operable, Fixable. The solid outline is what this offering asks of someone on each layer, and no two offerings ask the same: [see the shape of the line](https://etgarbonar.com/serviceable-line/shapes/). The blue shape is the serviceable line: how far your customers, and increasingly their AI, get with your offering on their own. Past it, your people step in or the customer is lost. The gold arrows mark where the line is heading, on the three layers where it is moving now.
 
 Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine. I spent most of those years on the seller's side of that shift, at Amazon, Taboola and Rapyd.
 

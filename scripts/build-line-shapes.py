@@ -58,9 +58,12 @@ GROWTH = [
 # line inside it, and the gold outline for where the line is heading (never past the surface).
 HERO_SURFACE = [2.7, 3.0, 2.0, 2.4, 1.6]
 HERO_LINE = [2.2, 1.4, 1.3, 1.0, 0.8]
-HERO_MOVE = [2.5, 1.9, 1.7, 1.4, 1.2]
+# Gold arrows for where the line is heading, on three layers only: layer index -> where the arrow
+# ends. Findable is already near its edge, and Operable moves last (the page says so), so neither
+# gets an arrow.
+HERO_ARROWS = {1: 2.35, 2: 1.85, 4: 1.4}
 HERO = (HERO_SURFACE, HERO_LINE, HERO_LINE)
-assert all(l <= m <= su for l, m, su in zip(HERO_LINE, HERO_MOVE, HERO_SURFACE))
+assert all(HERO_LINE[i] < v <= HERO_SURFACE[i] for i, v in HERO_ARROWS.items())
 
 
 def pt(i, v, r):
@@ -93,8 +96,8 @@ def describe(name, surface, line, carried):
     return f"{name}. " + "; ".join(parts) + "."
 
 
-def label_pos(i, r, gap):
-    x, y = pt(i, MAX, r)
+def label_pos(i, r, gap, v=MAX):
+    x, y = pt(i, v, r)
     if i == 0:
         return x, y - gap, "middle"
     if i == 1:
@@ -104,34 +107,54 @@ def label_pos(i, r, gap):
     return x, y + gap + 12, "middle"
 
 
-def svg(name, surface, line, carried, *, prefix, r, viewbox, font_gap, old=None, move=None, labels=True,
+def arrow(i, start, end, r, head=10):
+    """A straight arrow along layer i's spoke, from value start to value end: (line, head points)."""
+    a = math.radians(-90 + i * 72)
+    ux, uy = math.cos(a), math.sin(a)
+    x0, y0 = pt(i, start, r)
+    x1, y1 = pt(i, end, r)
+    bx, by = x1 - head * ux, y1 - head * uy
+    px, py = -uy * head * .55, ux * head * .55
+    head_pts = f"{x1:.1f},{y1:.1f} {bx + px:.1f},{by + py:.1f} {bx - px:.1f},{by - py:.1f}"
+    return (x0, y0, bx, by), head_pts
+
+
+def arrows_text(arrows):
+    names = [LAYERS[i] for i in sorted(arrows)]
+    return f" Gold arrows on {', '.join(names[:-1])} and {names[-1]} show where the line is heading."
+
+
+def svg(name, surface, line, carried, *, prefix, r, viewbox, font_gap, old=None, arrows=None, labels=True,
         indent="          "):
+    """arrows: the hero form, without the scaffold (rings, spokes, dashed maximum), labels hugging the
+    surface, and gold arrows for where the line is heading."""
     p = prefix
-    label = describe(name, surface, line, carried)
-    if move:
-        label += " A gold dotted outline further out shows where the line is heading."
+    label = describe(name, surface, line, carried) + (arrows_text(arrows) if arrows else "")
     out = [f'<svg viewBox="{viewbox}" role="img" aria-label="{label}">']
-    for f in (1, 2):
-        out.append(f'  <polygon class="{p}-ring" points="{poly([f] * 5, r)}"/>')
-    out.append(f'  <polygon class="{p}-ring {p}-max" points="{poly([MAX] * 5, r)}"/>')
-    for i in range(5):
-        x, y = pt(i, MAX, r)
-        out.append(f'  <line class="{p}-spoke" x1="0" y1="0" x2="{x:.1f}" y2="{y:.1f}"/>')
+    if not arrows:
+        for f in (1, 2):
+            out.append(f'  <polygon class="{p}-ring" points="{poly([f] * 5, r)}"/>')
+        out.append(f'  <polygon class="{p}-ring {p}-max" points="{poly([MAX] * 5, r)}"/>')
+        for i in range(5):
+            x, y = pt(i, MAX, r)
+            out.append(f'  <line class="{p}-spoke" x1="0" y1="0" x2="{x:.1f}" y2="{y:.1f}"/>')
     if old:
         out.append(f'  <polygon class="{p}-old" points="{poly(old, r)}"/>')
     out.append(f'  <polygon class="{p}-surface" points="{poly(surface, r)}"/>')
     if carried != line:
         out.append(f'  <polygon class="{p}-other" points="{poly(carried, r)}"/>')
-    if move:
-        out.append(f'  <polygon class="{p}-move" points="{poly(move, r)}"/>')
     out.append(f'  <polygon class="{p}-line" points="{poly(line, r)}"/>')
+    for i, end in (arrows or {}).items():
+        (x0, y0, x1, y1), head = arrow(i, line[i] + .12, end, r)
+        out.append(f'  <line class="{p}-arrow" x1="{x0:.1f}" y1="{y0:.1f}" x2="{x1:.1f}" y2="{y1:.1f}"/>')
+        out.append(f'  <polygon class="{p}-arrowhead" points="{head}"/>')
     for i, v in enumerate(line):
         if v > 0:
             x, y = pt(i, v, r)
             out.append(f'  <circle class="{p}-vtx" cx="{x:.1f}" cy="{y:.1f}" r="{3.5 if p == "sh" else 5}"/>')
     if labels:
         for i, n in enumerate(LAYERS):
-            x, y, anchor = label_pos(i, r, font_gap)
+            x, y, anchor = label_pos(i, r, font_gap, surface[i] if arrows else MAX)
             if surface[i] == 0:
                 out.append(f'  <text class="{p}-name is-none" x="{x:.1f}" y="{y:.1f}" text-anchor="{anchor}">{n}'
                            f'<tspan class="{p}-none" x="{x:.1f}" dy="1.15em">none</tspan></text>')
@@ -162,13 +185,13 @@ HERO_BOX = dict(prefix="ld", r=168, viewbox="-296 -214 592 424", font_gap=18)
 def blocks():
     return {
         PAGE: {
-            "hero": svg("An illustrative offering", *HERO, move=HERO_MOVE, **HERO_BOX),
+            "hero": svg("An illustrative offering", *HERO, arrows=HERO_ARROWS, **HERO_BOX),
             "grid": grid(OFFERINGS),
             "segments": grid(SEGMENTS, "shape-grid shape-pair"),
             "growth": grid(GROWTH, "shape-grid shape-pair"),
         },
         MAIN_PAGE: {
-            "main-hero": svg("An illustrative offering", *HERO, move=HERO_MOVE, **HERO_BOX),
+            "main-hero": svg("An illustrative offering", *HERO, arrows=HERO_ARROWS, **HERO_BOX),
         },
     }
 
@@ -177,26 +200,30 @@ FONT = 'font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif"'
 MINT, GOLD, BLUE, INK, PAPER = "#a8bdc1", "#dcb96f", "#2f72ff", "#101a1d", "#f4efe6"
 
 
-def card_pentagon(cx, cy, r, surface, line, move=None, labels=True, label_size=20):
-    """The hero pentagon with inline styles, for the standalone social-card SVGs."""
+def card_pentagon(cx, cy, r, surface, line, arrows=None, labels=True, label_size=20):
+    """The pentagon with inline styles, for the standalone social-card SVGs. With arrows, it is the
+    hero form: no scaffold, labels hugging the surface, gold arrows."""
     out = [f'  <g transform="translate({cx} {cy})">']
-    for f in (1, 2):
-        out.append(f'    <polygon points="{poly([f] * 5, r)}" fill="none" stroke="{MINT}" stroke-opacity=".12"/>')
-    out.append(f'    <polygon points="{poly([MAX] * 5, r)}" fill="none" stroke="{MINT}" stroke-opacity=".38" stroke-dasharray="4 6"/>')
-    for i in range(5):
-        x, y = pt(i, MAX, r)
-        out.append(f'    <line x1="0" y1="0" x2="{x:.1f}" y2="{y:.1f}" stroke="{MINT}" stroke-opacity=".16"/>')
+    if not arrows:
+        for f in (1, 2):
+            out.append(f'    <polygon points="{poly([f] * 5, r)}" fill="none" stroke="{MINT}" stroke-opacity=".12"/>')
+        out.append(f'    <polygon points="{poly([MAX] * 5, r)}" fill="none" stroke="{MINT}" stroke-opacity=".38" stroke-dasharray="4 6"/>')
+        for i in range(5):
+            x, y = pt(i, MAX, r)
+            out.append(f'    <line x1="0" y1="0" x2="{x:.1f}" y2="{y:.1f}" stroke="{MINT}" stroke-opacity=".16"/>')
     out.append(f'    <polygon points="{poly(surface, r)}" fill="{MINT}" fill-opacity=".14" stroke="{MINT}" stroke-width="1.6" stroke-linejoin="round"/>')
-    if move:
-        out.append(f'    <polygon points="{poly(move, r)}" fill="none" stroke="{GOLD}" stroke-width="3" stroke-dasharray="0 9" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>')
     out.append(f'    <polygon points="{poly(line, r)}" fill="{BLUE}" fill-opacity=".26" stroke="{BLUE}" stroke-width="2.5" stroke-linejoin="round"/>')
+    for i, end in (arrows or {}).items():
+        (x0, y0, x1, y1), head = arrow(i, line[i] + .12, end, r)
+        out.append(f'    <line x1="{x0:.1f}" y1="{y0:.1f}" x2="{x1:.1f}" y2="{y1:.1f}" stroke="{GOLD}" stroke-width="3" stroke-linecap="round"/>')
+        out.append(f'    <polygon points="{head}" fill="{GOLD}"/>')
     for i, v in enumerate(line):
         if v > 0:
             x, y = pt(i, v, r)
             out.append(f'    <circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="{BLUE}" stroke="{INK}" stroke-width="2"/>')
     if labels:
         for i, n in enumerate(LAYERS):
-            x, y, anchor = label_pos(i, r, 18)
+            x, y, anchor = label_pos(i, r, 18, surface[i] if arrows else MAX)
             out.append(f'    <text x="{x:.1f}" y="{y:.1f}" text-anchor="{anchor}" {FONT} font-size="{label_size}" fill="{MINT}">{n}</text>')
     out.append("  </g>")
     return "\n".join(out)
@@ -213,14 +240,14 @@ def legend_row(x, y, kind, text):
         "line": f'<rect x="{x}" y="{y - 12}" width="22" height="14" rx="2" fill="{BLUE}" fill-opacity=".26" stroke="{BLUE}" stroke-width="2"/>',
         "gap": f'<rect x="{x}" y="{y - 12}" width="22" height="14" rx="2" fill="{MINT}" fill-opacity=".14" stroke="{MINT}" stroke-opacity=".4"/>',
         "surface": f'<path d="M{x} {y - 5}H{x + 22}" stroke="{MINT}" stroke-width="2.5"/>',
-        "move": f'<path d="M{x + 3} {y - 5}H{x + 21}" stroke="{GOLD}" stroke-width="5" stroke-linecap="round" stroke-dasharray="0 8" opacity=".85"/>',
+        "move": f'<path d="M{x + 1} {y - 5}H{x + 13}" stroke="{GOLD}" stroke-width="3" stroke-linecap="round"/><polygon points="{x + 22},{y - 5} {x + 12},{y - 10.5} {x + 12},{y + .5}" fill="{GOLD}"/>',
     }[kind]
     return f'  {swatch}\n  <text x="{x + 34}" y="{y}" {FONT} font-size="17" fill="{MINT}" opacity=".8">{text}</text>'
 
 
 def main_card():
     body = "\n".join([
-        card_pentagon(890, 262, 172, HERO_SURFACE, HERO_LINE, move=HERO_MOVE),
+        card_pentagon(890, 262, 172, HERO_SURFACE, HERO_LINE, arrows=HERO_ARROWS),
         legend_row(700, 492, "surface", "The surface: what your offering asks of someone"),
         legend_row(700, 522, "line", "Carried by your customers and their AI"),
         legend_row(700, 552, "gap", "Your people step in, or the customer is lost"),
@@ -235,7 +262,7 @@ def main_card():
     return card_svg("The serviceable line",
                     "A five-spoke chart, one spoke per layer: Findable, Selectable, Integrable, Operable and Fixable. "
                     "The solid outline is what the offering asks of someone on each layer; the blue shape is how far your customers and their AI get; "
-                    "past it, your people step in or the customer is lost; a gold dotted outline shows where the line is heading. How far does your customer's AI get without you? "
+                    "past it, your people step in or the customer is lost; gold arrows on three layers show where the line is heading. How far does your customer's AI get without you? "
                     "A point of view by Etgar Bonar.", body)
 
 

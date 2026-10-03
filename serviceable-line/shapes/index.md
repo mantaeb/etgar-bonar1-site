@@ -19,7 +19,7 @@ Published 3 October 2026 · 7 minute read
 - Your people step in, or the customer is lost
 - Where the line is heading
 
-Illustrative, the same offering as on the main page. The dashed outline is the most any offering can ask on a layer; this one asks the most on Selectable and the least on Fixable. The gold marks where the line is heading.
+Illustrative, the same offering as on the main page. It asks the most on Selectable and the least on Fixable. The gold arrows mark where the line is heading, on the three layers where it is moving now.
 
 Every offering asks something of the person buying it. Some ask almost nothing. Some ask a great deal, before the purchase and long after it.
 

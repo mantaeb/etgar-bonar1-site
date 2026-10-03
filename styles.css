@@ -539,7 +539,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .line-diagram .ld-legend li { display: flex; align-items: center; gap: .55rem; color: #93a6aa; font-size: .68rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
 .line-diagram .ld-legend li::before { content: ""; flex: none; width: 18px; height: 12px; border-radius: 2px; }
 .line-diagram .ld-key-line::before { background: rgba(47,114,255,.26); border: 2px solid var(--blue); }
-.line-diagram .ld-key-move::before { height: 6px; background-image: radial-gradient(circle, var(--gold) 2.4px, transparent 3px); background-size: 6px 100%; opacity: .85; }
+.line-diagram .ld-legend .ld-key-move::before { content: "\2192"; width: 18px; height: auto; background: none; color: var(--gold); font-size: 1.5rem; font-weight: 700; line-height: 1; text-align: center; }
 .line-diagram .ld-note { margin: 1.1rem 0 0; color: #7d9094; font-size: .76rem; line-height: 1.5; }
 .line-diagram .ld-note a { color: var(--mint); text-underline-offset: 3px; }
 /* Hero pentagons, both pages: dashed maximum, solid surface, grey gap, blue line */
@@ -547,6 +547,8 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .line-diagram .ld-max { fill: none; stroke: rgba(168,189,193,.38); stroke-dasharray: 4 6; }
 .line-diagram .ld-other { fill: rgba(62,190,170,.30); stroke: #4cc3ae; stroke-width: 1.6; stroke-linejoin: round; }
 .line-diagram .ld-key-other::before { background: rgba(62,190,170,.30); border: 2px solid #4cc3ae; }
+.line-diagram .ld-arrow { stroke: var(--gold); stroke-width: 3; stroke-linecap: round; }
+.line-diagram .ld-arrowhead { fill: var(--gold); }
 .line-diagram .ld-surface { fill: rgba(168,189,193,.14); stroke: var(--mint); stroke-width: 1.6; stroke-linejoin: round; }
 .line-diagram .ld-name.is-none { fill: #6f8286; }
 .line-diagram .ld-none { font-size: 13px; letter-spacing: .06em; }
