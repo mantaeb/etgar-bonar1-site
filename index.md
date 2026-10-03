@@ -143,7 +143,7 @@ Current point of view
 
 Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine, which raises one question: how far does your customer's AI get without you?
 
-**The serviceable line** is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose the customer without seeing it: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill. Move the line out, and you can win customers you used to walk away from, and stop the losses you never measured.
+**The serviceable line** is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose the customer, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill. Move the line out, and you can win customers you used to walk away from, and stop the losses you never measured.
 
 Where the line sits now depends on two things that multiply: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine. And it sits in a different place at each of the five questions a customer's AI asks, from whether it can find you at all to whether it can recover when something breaks.
 

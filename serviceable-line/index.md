@@ -10,7 +10,7 @@ A point of view by Etgar Bonar
 
 # The serviceable line How far does your customer's AI get without you?
 
-The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose the customer without seeing it: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill. Move the line out, and you can win customers you used to walk away from, and stop the losses you never measured.
+The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose the customer, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill. Move the line out, and you can win customers you used to walk away from, and stop the losses you never measured.
 
 Published 29 August 2026 · Updated 3 October 2026 · 8 minute read
 

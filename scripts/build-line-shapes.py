@@ -15,6 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PAGE = ROOT / "serviceable-line/shapes/index.html"
+MAIN_PAGE = ROOT / "serviceable-line/index.html"
 LAYERS = ["Findable", "Selectable", "Integrable", "Operable", "Fixable"]
 MAX = 3.0
 
@@ -52,7 +53,14 @@ GROWTH = [
      DRILL[1]),
 ]
 
-# the hero introduces the idea, so it shows no work carried by others
+# The main page hero: an offering with all five layers in depth, so the surface is full, plus the
+# gold outline for where the line is moving. Same drawing code as the sub-page, so the two heroes
+# follow one set of rules: dashed maximum, solid surface, grey gap, blue line.
+MAIN_LINE = [2.46, 1.5, 1.98, 1.2, 1.68]
+MAIN_HERO = ([3, 3, 3, 3, 3], MAIN_LINE, MAIN_LINE)
+MAIN_MOVE = [2.91, 2.04, 2.52, 1.74, 2.22]
+
+# the shapes hero introduces the idea, so it shows no work carried by others
 HERO = ([2.4, 2.8, 1.4, 2.2, 1.0], [2.0, 1.5, 0.8, 1.1, 0.4], [2.0, 1.5, 0.8, 1.1, 0.4])
 
 
@@ -97,9 +105,13 @@ def label_pos(i, r, gap):
     return x, y + gap + 12, "middle"
 
 
-def svg(name, surface, line, carried, *, prefix, r, viewbox, font_gap, old=None, labels=True, indent="          "):
+def svg(name, surface, line, carried, *, prefix, r, viewbox, font_gap, old=None, move=None, labels=True,
+        indent="          "):
     p = prefix
-    out = [f'<svg viewBox="{viewbox}" role="img" aria-label="{describe(name, surface, line, carried)}">']
+    label = describe(name, surface, line, carried)
+    if move:
+        label += " A gold dotted outline further out shows where the line is moving."
+    out = [f'<svg viewBox="{viewbox}" role="img" aria-label="{label}">']
     for f in (1, 2):
         out.append(f'  <polygon class="{p}-ring" points="{poly([f] * 5, r)}"/>')
     out.append(f'  <polygon class="{p}-ring {p}-max" points="{poly([MAX] * 5, r)}"/>')
@@ -111,6 +123,8 @@ def svg(name, surface, line, carried, *, prefix, r, viewbox, font_gap, old=None,
     out.append(f'  <polygon class="{p}-surface" points="{poly(surface, r)}"/>')
     if carried != line:
         out.append(f'  <polygon class="{p}-other" points="{poly(carried, r)}"/>')
+    if move:
+        out.append(f'  <polygon class="{p}-move" points="{poly(move, r)}"/>')
     out.append(f'  <polygon class="{p}-line" points="{poly(line, r)}"/>')
     for i, v in enumerate(line):
         if v > 0:
@@ -143,26 +157,34 @@ def grid(items, cls="shape-grid"):
     return f'          <div class="{cls}">\n' + "\n".join(cards) + "\n          </div>"
 
 
+HERO_BOX = dict(prefix="ld", r=168, viewbox="-296 -214 592 424", font_gap=18)
+
+
 def blocks():
-    hero = svg("An illustrative offering", *HERO, prefix="ld", r=168,
-               viewbox="-296 -214 592 424", font_gap=18)
     return {
-        "hero": hero,
-        "grid": grid(OFFERINGS),
-        "segments": grid(SEGMENTS, "shape-grid shape-pair"),
-        "growth": grid(GROWTH, "shape-grid shape-pair"),
+        PAGE: {
+            "hero": svg("An illustrative offering", *HERO, **HERO_BOX),
+            "grid": grid(OFFERINGS),
+            "segments": grid(SEGMENTS, "shape-grid shape-pair"),
+            "growth": grid(GROWTH, "shape-grid shape-pair"),
+        },
+        MAIN_PAGE: {
+            "main-hero": svg("An illustrative offering with all five layers in depth", *MAIN_HERO,
+                             move=MAIN_MOVE, **HERO_BOX),
+        },
     }
 
 
 def main():
-    html = PAGE.read_text()
-    for name, content in blocks().items():
-        pattern = re.compile(rf"(<!-- shapes:{name}:start -->\n).*?(<!-- shapes:{name}:end -->)", re.S)
-        html, n = pattern.subn(lambda m: m.group(1) + content + "\n" + m.group(2), html)
-        if n != 1:
-            raise SystemExit(f"marker shapes:{name} not found exactly once")
-    PAGE.write_text(html)
-    print(f"wrote {PAGE.relative_to(ROOT)}")
+    for page, named in blocks().items():
+        html = page.read_text()
+        for name, content in named.items():
+            pattern = re.compile(rf"(<!-- shapes:{name}:start -->\n).*?(<!-- shapes:{name}:end -->)", re.S)
+            html, n = pattern.subn(lambda m: m.group(1) + content + "\n" + m.group(2), html)
+            if n != 1:
+                raise SystemExit(f"marker shapes:{name} not found exactly once in {page.name}")
+        page.write_text(html)
+        print(f"wrote {page.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

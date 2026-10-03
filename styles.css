@@ -530,7 +530,6 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .line-diagram { margin: 0; align-self: center; width: 100%; max-width: 560px; }
 .line-diagram svg { display: block; width: 100%; height: auto; overflow: visible; }
 .line-diagram .ld-ring { fill: rgba(168,189,193,.04); stroke: rgba(168,189,193,.34); stroke-width: 1.2; }
-.line-diagram .ld-ring-in { fill: none; stroke: rgba(168,189,193,.14); stroke-width: 1; }
 .line-diagram .ld-spoke { stroke: rgba(168,189,193,.16); stroke-width: 1; }
 .line-diagram .ld-line { fill: rgba(47,114,255,.26); stroke: var(--blue); stroke-width: 2.5; stroke-linejoin: round; }
 .line-diagram .ld-move { fill: none; stroke: var(--gold); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 0 9; opacity: .8; }
@@ -540,12 +539,11 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .line-diagram .ld-legend li { display: flex; align-items: center; gap: .55rem; color: #93a6aa; font-size: .68rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
 .line-diagram .ld-legend li::before { content: ""; flex: none; width: 18px; height: 12px; border-radius: 2px; }
 .line-diagram .ld-key-line::before { background: rgba(47,114,255,.26); border: 2px solid var(--blue); }
-.line-diagram .ld-key-out::before { background: rgba(168,189,193,.04); border: 1px solid rgba(168,189,193,.34); }
 .line-diagram .ld-key-move::before { height: 6px; background-image: radial-gradient(circle, var(--gold) 2.4px, transparent 3px); background-size: 6px 100%; opacity: .85; }
 .line-diagram .ld-note { margin: 1.1rem 0 0; color: #7d9094; font-size: .76rem; line-height: 1.5; }
 .line-diagram .ld-note a { color: var(--mint); text-underline-offset: 3px; }
-/* Shapes sub-page: hero adds a surface inside the dashed maximum */
-.shape-hero .ld-ring:not(.ld-max) { fill: none; stroke: rgba(168,189,193,.12); }
+/* Hero pentagons, both pages: dashed maximum, solid surface, grey gap, blue line */
+.line-diagram .ld-ring:not(.ld-max) { fill: none; stroke: rgba(168,189,193,.12); }
 .line-diagram .ld-max { fill: none; stroke: rgba(168,189,193,.38); stroke-dasharray: 4 6; }
 .line-diagram .ld-other { fill: rgba(62,190,170,.30); stroke: #4cc3ae; stroke-width: 1.6; stroke-linejoin: round; }
 .line-diagram .ld-key-other::before { background: rgba(62,190,170,.30); border: 2px solid #4cc3ae; }
