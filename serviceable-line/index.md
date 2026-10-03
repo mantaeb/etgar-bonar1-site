@@ -12,29 +12,25 @@ A point of view by Etgar Bonar
 
 The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose the customer without seeing it: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill. Move the line out, and you can win customers you used to walk away from, and stop the losses you never measured.
 
-Published 29 August 2026 · Updated 2 October 2026 · 8 minute read
+Published 29 August 2026 · Updated 3 October 2026 · 8 minute read
 
-*Carried by your customers and their AI* *Your people step in, or the customer is lost*
+- Carried by your customers and their AI
+- Your people step in, or the customer is lost
+- Where the line is moving
 
-- **Findable**
-- **Selectable**
-- **Integrable**
-- **Operable**
-- **Fixable**
-
-Illustrative. Blue is how far your customers, and increasingly their AI, get with your offering on their own; past that point, your people step in or the customer is lost, and the gold marks the direction the line is moving.
+Illustrative, for an offering with all five layers in depth. Not every offering has them: [see the shape of the line](https://etgarbonar.com/serviceable-line/shapes/). Each axis is one layer: Findable, Selectable, Integrable, Operable, Fixable. The blue shape is the serviceable line: how far your customers, and increasingly their AI, get with your offering on their own. Outside it, your people step in or the customer is lost. The gold marks the direction the line is moving.
 
 Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine. I spent most of those years on the seller's side of that shift, at Amazon, Taboola and Rapyd.
 
 *Serviceable* as in serviceable available market: the demand a company can actually reach.
 
-Both sales-led and product-led motions are losing surface area to this silent part of the journey. The company does not own the machine doing the work. It often cannot see the interaction. And rarely does one leader own whether the machine's picture of the company matches what the company actually is.
+Both sales-led and product-led motions are losing ground to this silent part of the journey. The company does not own the machine doing the work. It often cannot see the interaction. And rarely does one leader own whether the machine's picture of the company matches what the company actually is.
 
 ## The two variables behind the variance
 
 Where the line sits now depends on two things that multiply: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine. The first is gated by permission, accountability, regulation and the cost of error, not by model capability. The second is whether an outsider's agent can find it, compare it, connect it, run it and recover it without a person.
 
-They multiply, they do not add. A perfectly legible product sold into a market whose buyers do not yet delegate has a short line anyway. A market full of delegating buyers does nothing for a vendor a machine cannot read. That is why the line sits in a different place in developer tooling than in hospital procurement, and why the same vendor's line differs by segment inside one company. It is not only a software question. A bag of rice has nothing to connect or fix. A cordless drill does, and a buyer can ask an AI whether it takes a battery they already own before paying.
+They multiply, they do not add. A perfectly legible product sold into a market whose buyers do not yet delegate has a short line anyway. A market full of delegating buyers does nothing for a vendor a machine cannot read. That is why the line sits in a different place in developer tooling than in hospital procurement, and why the same vendor's line differs by segment inside one company. It is not only a software question. A bag of rice has nothing to connect or fix. A cordless drill does, and a buyer can ask an AI whether it takes a battery they already own before paying. [How the line takes a different shape for each offering](https://etgarbonar.com/serviceable-line/shapes/).
 
 One of those you do not control, and it is rising anyway. The other is a decision you have already made, deliberately or not.
 
