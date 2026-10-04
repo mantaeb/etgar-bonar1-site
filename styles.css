@@ -551,12 +551,19 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .line-diagram .ld-gain { fill: rgba(220,185,111,.24); stroke: var(--gold); stroke-width: 1.2; stroke-linejoin: round; }
 .line-diagram .ld-mask { fill: #1e2a2d; }
 .line-diagram .ld-center { fill: var(--mint); opacity: .55; }
+.line-diagram .ld-bar-track { fill: rgba(168,189,193,.14); stroke: rgba(168,189,193,.45); stroke-width: 1; }
+.line-diagram .ld-bar-line { fill: var(--blue); }
+.line-diagram .ld-bar-gain { fill: rgba(220,185,111,.35); }
+.line-diagram .ld-bar-mark { stroke: var(--paper-bright); stroke-width: 3; stroke-linecap: round; }
+.line-diagram .ld-bar-arrow { stroke: var(--gold); stroke-width: 3; stroke-linecap: round; }
+.line-diagram .ld-bar-arrowhead { fill: var(--gold); }
 .line-diagram .ld-arrow { stroke: var(--gold); stroke-width: 3; stroke-linecap: round; }
 .line-diagram .ld-arrowhead { fill: var(--gold); }
 .line-diagram .ld-surface { fill: rgba(168,189,193,.14); stroke: var(--mint); stroke-width: 1.6; stroke-linejoin: round; }
 .line-diagram .ld-name.is-none { fill: #6f8286; }
 .line-diagram .ld-none { font-size: 13px; letter-spacing: .06em; }
-.line-diagram .ld-key-surface::before { height: 0 !important; border-top: 2px solid var(--mint); }
+.line-diagram .ld-legend .ld-key-surface::before { background: transparent; border: 1.5px solid rgba(168,189,193,.6); }
+.line-diagram .ld-legend .ld-key-mark::before { width: 3px; height: 18px; margin: 0 7px 0 8px; background: var(--paper-bright); border-radius: 2px; }
 .line-diagram .ld-key-gap::before { background: rgba(168,189,193,.14); border: 1px solid rgba(168,189,193,.3); }
 .eyebrow-link { color: inherit; text-decoration: none; }
 .eyebrow-link:hover { color: var(--paper-bright); }
@@ -570,6 +577,11 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .shape-card figcaption { margin-top: 1rem; }
 .shape-card h3 { margin: 0 0 .35rem; }
 .shape-card p { margin: 0; color: var(--muted); font-size: .94rem; }
+.sh-bar-track { fill: rgba(16,26,29,.07); stroke: rgba(16,26,29,.35); stroke-width: 1; }
+.sh-bar-line { fill: var(--blue); }
+.sh-bar-other { fill: rgba(31,150,135,.5); }
+.sh-bar-old { fill: none; stroke: var(--ink); stroke-width: 1.2; stroke-dasharray: 4 4; opacity: .55; }
+.sh-bar-mark { stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round; }
 .sh-ring { fill: none; stroke: var(--line); stroke-width: 1; }
 .sh-max { stroke: #b6ad9e; stroke-dasharray: 3 4; }
 .sh-spoke { stroke: var(--line); stroke-width: 1; }
@@ -580,7 +592,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .sh-vtx { fill: var(--blue); stroke: var(--paper-bright); stroke-width: 1.5; }
 .sh-name { fill: var(--ink-soft); font: 600 14px var(--sans); }
 .sh-name.is-none { fill: #9aa2a2; font-weight: 500; }
-.sh-none { font-size: 11px; letter-spacing: .06em; }
+.sh-none { font-size: 11px; letter-spacing: .06em; fill: #9aa2a2; }
 .shape-grid + p { margin-top: 2.2rem; }
 .shape-grid + .shape-points { margin-top: 3rem; }
 .past-line { margin: 0; padding: 0; list-style: none; display: grid; gap: .9rem; }
@@ -606,6 +618,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
   .shape-grid, .shape-points { grid-template-columns: 1fr; }
   .shape-terms > div { grid-template-columns: 1fr; gap: .4rem; }
   .sh-name { font-size: 18px; }
+  .line-diagram .ld-name { font-size: 25px; }
   .sh-none { font-size: 14px; }
 }
 
@@ -722,6 +735,14 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
   .contact { align-items: flex-start; flex-direction: column; }
   .line-diagram { margin-top: 1rem; }
   .article-hero { min-height: 500px; }
+  /* Phones: title and question, then the chart, then the deck, so the chart is not below a wall of text */
+  .article-hero { gap: 0; align-items: start; }
+  .article-hero .article-heading { display: contents; }
+  .article-hero .article-heading > .eyebrow { order: 1; }
+  .article-hero h1 { order: 2; }
+  .article-hero .line-diagram { order: 3; margin: .5rem 0 2.5rem; }
+  .article-hero .article-deck { order: 4; }
+  .article-hero .article-meta { order: 5; }
   .flow-diagram ol { grid-template-columns: 1fr; }
   .flow-diagram ol::before { left: 50%; right: auto; top: 8%; bottom: 8%; border-top: 0; border-inline-start: 1px solid #688086; }
   .flow-diagram li { min-height: 100px; }

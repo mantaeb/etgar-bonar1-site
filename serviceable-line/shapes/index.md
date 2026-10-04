@@ -15,11 +15,12 @@ The five layers are not the same size for every offering. A bag of rice has almo
 Published 3 October 2026 · 7 minute read
 
 - The surface: what your offering asks of someone
+- The serviceable line
 - Carried by your customers and their AI
 - Your people step in, or the customer is lost
 - Where the line is heading
 
-Illustrative, the same offering as on the main page. It asks the most on Selectable and the least on Fixable. The gold arrows mark where the line is heading on Findable and Selectable, and the gold area is what that move adds.
+Illustrative, on a shared 0 to 3 scale: the same offering as on the main page. A bar's length is what the offering asks on that layer. What matters is the grey on each bar, the gap, not which bar is longest. The gold arrows mark where the line is heading on Findable and Selectable.
 
 Every offering asks something of the person buying it. Some ask almost nothing. Some ask a great deal, before the purchase and long after it.
 
@@ -31,15 +32,15 @@ How to read the shape
 
 ## A surface, a line and a gap
 
-Each spoke is one of the five layers: Findable, Selectable, Integrable, Operable and Fixable. Three things sit on them.
+Each bar is one of the five layers: Findable, Selectable, Integrable, Operable and Fixable. Three things sit on each bar.
 
 The surface
 
-Everything someone has to work out or do to get value from your offering, on each layer: where to find it, how it compares, what it has to connect to, how to run it, and what to do when it goes wrong. A long spoke means a lot of work on that layer. No spoke means the layer does not exist for this offering.
+Everything someone has to work out or do to get value from your offering, on each layer: where to find it, how it compares, what it has to connect to, how to run it, and what to do when it goes wrong. A long bar means a lot of work on that layer. No bar means the layer does not exist for this offering.
 
 The line
 
-How much of that surface your customers, and increasingly their AI, get through on their own.
+How much of that surface your customers, and increasingly their AI, get through on their own. On the drawings, it is the blue, ending at a white mark.
 
 Past the line
 
@@ -51,7 +52,7 @@ Six offerings
 
 ## Six offerings, six shapes
 
-These shapes are illustrative. They are drawn from how each kind of offering is typically bought and used, not from measurement. Read the outline, not the numbers. Teal marks work someone else carries, such as a partner, a dealer or a service company; more on that below.
+These shapes are illustrative. They are drawn from how each kind of offering is typically bought and used, not from measurement. Read the shape, not the numbers. Teal marks work someone else carries, such as a partner, a dealer or a service company; more on that below.
 
 Bag of rice Two short layers, and the retailer carries most of both. Nothing to connect, nothing to fix.
 
@@ -67,7 +68,7 @@ API-first software All five layers, in depth, and the one shape where every laye
 
 What the shapes show
 
-## What the outlines make plain
+## What the shapes make plain
 
 ### Industry is the wrong cut
 
@@ -168,7 +169,7 @@ Use the same scale for the surface, the line and what others carry, so two peopl
 3. **2** A procedure to follow.
 4. **3** A system to configure and keep running.
 
-Compare shapes spoke by spoke, never by area. Area grows with the square of each value and changes with the order of the spokes, so two shapes of the same size can mean very different things.
+Compare offerings layer by layer, and look at the grey: the gap is what costs you, not the length of the bar.
 
 Start here
 
