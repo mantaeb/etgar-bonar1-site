@@ -12,7 +12,7 @@ A point of view by Etgar Bonar
 
 The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose the customer, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill. Move the line out, and you can win customers you used to walk away from, and stop the losses you never measured.
 
-Published 29 August 2026 · Updated 4 October 2026 · 8 minute read
+Published 29 August 2026 · Updated 5 October 2026 · 8 minute read
 
 - The surface: what your offering asks of someone
 - The serviceable line
@@ -31,7 +31,7 @@ Both sales-led and product-led motions are losing ground to this silent part of 
 
 How far AI moves the line depends on two things, and neither works without the other: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine. The first is gated by permission, accountability, regulation and the cost of error, not by model capability. The second is whether an outsider's agent can find it, compare it, connect it, run it and recover it without a person.
 
-They multiply, they do not add. A perfectly legible product sold into a market whose buyers do not yet delegate has a short line anyway. A market full of delegating buyers does nothing for a vendor a machine cannot read. That is why the line sits in a different place in developer tooling than in hospital procurement, and why the same vendor's line differs by segment inside one company. It is not only a software question. A bag of rice has nothing to connect or fix. A cordless drill does, and a buyer can ask an AI whether it takes a battery they already own before paying. [How the line takes a different shape for each offering](https://etgarbonar.com/serviceable-line/shapes/).
+They multiply, they do not add. A perfectly legible product sold into a market whose buyers do not yet delegate gains little from AI. A market full of delegating buyers does nothing for a vendor a machine cannot read. That is why the line sits in a different place in developer tooling than in hospital procurement, and why the same vendor's line differs by segment inside one company. It is not only a software question. A bag of rice has nothing to connect or fix. A cordless drill does, and a buyer can ask an AI whether it takes a battery they already own before paying. [How the line takes a different shape for each offering](https://etgarbonar.com/serviceable-line/shapes/).
 
 One of those you do not control, and it is rising anyway. The other is a decision you have already made, deliberately or not.
 
