@@ -145,7 +145,7 @@ Customers have been getting further on their own for a decade: finding you, comp
 
 **The serviceable line** is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose the customer, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill. Move the line out, and you can win customers you used to walk away from, and stop the losses you never measured.
 
-Where the line sits now depends on two things that multiply: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine. And it sits in a different place at each of the five questions a customer's AI asks, from whether it can find you at all to whether it can recover when something breaks.
+How far AI moves the line depends on two things, and neither works without the other: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine. And the line sits in a different place at each of the five questions a customer's AI asks, from whether it can find you at all to whether it can recover when something breaks.
 
 The direction is clear: more of the buying journey and more of the customer experience is becoming AI-mediated, and go-to-market practices built for an entirely human journey will need re-tooling. How fast each market moves is still unproven, and that is what decides where to act first.
 

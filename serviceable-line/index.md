@@ -29,7 +29,7 @@ Both sales-led and product-led motions are losing ground to this silent part of 
 
 ## The two variables behind the variance
 
-Where the line sits now depends on two things that multiply: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine. The first is gated by permission, accountability, regulation and the cost of error, not by model capability. The second is whether an outsider's agent can find it, compare it, connect it, run it and recover it without a person.
+How far AI moves the line depends on two things, and neither works without the other: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine. The first is gated by permission, accountability, regulation and the cost of error, not by model capability. The second is whether an outsider's agent can find it, compare it, connect it, run it and recover it without a person.
 
 They multiply, they do not add. A perfectly legible product sold into a market whose buyers do not yet delegate has a short line anyway. A market full of delegating buyers does nothing for a vendor a machine cannot read. That is why the line sits in a different place in developer tooling than in hospital procurement, and why the same vendor's line differs by segment inside one company. It is not only a software question. A bag of rice has nothing to connect or fix. A cordless drill does, and a buyer can ask an AI whether it takes a battery they already own before paying. [How the line takes a different shape for each offering](https://etgarbonar.com/serviceable-line/shapes/).
 

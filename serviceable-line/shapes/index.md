@@ -122,7 +122,7 @@ Sold to an enterprise Security review, procurement and many systems to connect: 
 
 So the line is set per buyer segment, not per company. That is also why the two variables behind it are read per buyer, not per industry.
 
-Where the line sits now depends on two things that multiply: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine.
+How far AI moves the line depends on two things, and neither works without the other: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine.
 
 How it plays out
 
