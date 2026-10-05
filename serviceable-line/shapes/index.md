@@ -20,7 +20,7 @@ Published 3 October 2026 · 7 minute read
 - Your people step in, or the customer is lost
 - Where the line is heading
 
-Illustrative, on a shared 0 to 3 scale: the same offering as on the main page. A bar's length is what the offering asks on that layer. What matters is the grey on each bar, the gap, not which bar is longest. The gold arrows mark where the line is heading on Findable and Selectable.
+Illustrative, on a shared 0 to 3 scale: the same offering as on the main page. A bar's length is what the offering asks on that layer. What matters is the grey on each bar, the gap, not which bar is longest. The gold arrows mark where the line is heading on Findable and Selectable, and a little on Operable, which moves last.
 
 Every offering asks something of the person buying it. Some ask almost nothing. Some ask a great deal, before the purchase and long after it.
 

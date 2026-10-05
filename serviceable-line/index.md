@@ -10,7 +10,7 @@ A point of view by Etgar Bonar
 
 # The serviceable line How far does your customer's AI get without you?
 
-The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose the customer, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill. Move the line out, and you can win customers you used to walk away from, and stop the losses you never measured.
+Move the line out, and you can win customers you used to walk away from.
 
 Published 29 August 2026 · Updated 5 October 2026 · 8 minute read
 
@@ -18,8 +18,11 @@ Published 29 August 2026 · Updated 5 October 2026 · 8 minute read
 - The serviceable line
 - Carried by your customers and their AI
 - Your people step in, or the customer is lost
+- Where the line is heading
 
-Illustrative. Each bar is one layer: Findable, Selectable, Integrable, Operable, Fixable, as long as what this offering asks on that layer. Blue is how far your customers, and increasingly their AI, get with your offering on their own, and the white mark is the serviceable line. Past it, your people step in or the customer is lost. No two offerings ask the same: [see the shape of the line](https://etgarbonar.com/serviceable-line/shapes/).
+Illustrative, for one example offering. Each bar is one layer (Findable, Selectable, Integrable, Operable, Fixable), and its length is how much work that layer takes. Blue is what your customers and their AI carry alone; the white mark is the serviceable line. Gold is where it is heading. Other offerings have different bars: [see six examples](https://etgarbonar.com/serviceable-line/shapes/).
+
+The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose the customer, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.
 
 Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine. I spent most of those years on the seller's side of that shift, at Amazon, Taboola and Rapyd.
 

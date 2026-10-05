@@ -53,13 +53,13 @@ GROWTH = [
 ]
 
 # The hero offering. Bar length is the surface on every hero, so the layers differ in length from the
-# first screen (Etgar, 2026-10-04). The main page hero and its social card stop there: surface, the
-# blue carried part and the white mark (the serviceable line). The shapes page hero adds gold arrows
-# for where the line is heading on Findable and Selectable (Etgar, 2026-10-03). The values do not fall steadily from top to bottom, so
+# first screen (Etgar, 2026-10-04). Both heroes and the main social card carry gold arrows for where the
+# line is heading: on Findable and Selectable (Etgar, 2026-10-03), plus a small one on Operable, which
+# moves last (Etgar, 2026-10-05). The values do not fall steadily from top to bottom, so
 # the five bars never read as a trend or a ranking.
 HERO_SURFACE = [2.7, 3.0, 2.0, 2.4, 1.6]
 HERO_LINE = [1.9, 1.3, 1.5, 0.9, 1.1]
-HERO_ARROWS = {0: 2.5, 1: 2.3}
+HERO_ARROWS = {0: 2.5, 1: 2.3, 3: 1.25}
 assert all(HERO_LINE[i] < v <= HERO_SURFACE[i] for i, v in HERO_ARROWS.items())
 SIMPLE = (HERO_SURFACE, HERO_LINE, HERO_LINE)
 FULL = (HERO_SURFACE, HERO_LINE, HERO_LINE)
@@ -174,7 +174,7 @@ def blocks():
             "growth": grid(GROWTH, "shape-grid shape-pair"),
         },
         MAIN_PAGE: {
-            "main-hero": svg("An illustrative offering", *SIMPLE, kind="hero"),
+            "main-hero": svg("An illustrative offering", *FULL, kind="hero", arrows=HERO_ARROWS),
         },
     }
 
@@ -191,17 +191,19 @@ def legend_row(x, y, kind, text):
         "gap": f'<rect x="{x}" y="{y - 12}" width="22" height="14" rx="3" fill="{MINT}" fill-opacity=".14" stroke="{MINT}" stroke-opacity=".45"/>',
         "surface": f'<rect x="{x}" y="{y - 12}" width="22" height="14" rx="3" fill="none" stroke="{MINT}" stroke-opacity=".7" stroke-width="1.5"/>',
         "mark": f'<line x1="{x + 11}" y1="{y - 15}" x2="{x + 11}" y2="{y + 3}" stroke="{PAPER}" stroke-width="3" stroke-linecap="round"/>',
+        "move": f'<line x1="{x}" y1="{y - 5}" x2="{x + 14}" y2="{y - 5}" stroke="{GOLD}" stroke-width="3" stroke-linecap="round"/><polygon points="{x + 22},{y - 5} {x + 13},{y - 11} {x + 13},{y + 1}" fill="{GOLD}"/>',
     }[kind]
     return f'  {swatch}\n  <text x="{x + 34}" y="{y}" {FONT} font-size="17" fill="{MINT}" opacity=".8">{text}</text>'
 
 
 def main_card():
-    rows = bar_rows(*SIMPLE, x0=800, y0=110, unit=112, step=60, h=24, style=CARD_STYLE)
+    rows = bar_rows(*FULL, x0=800, y0=110, unit=112, step=60, h=24, style=CARD_STYLE, arrows=HERO_ARROWS)
     body = "\n".join(["  " + r for r in rows] + [
-        legend_row(690, 466, "surface", "The surface: what your offering asks of someone"),
-        legend_row(690, 498, "mark", "The serviceable line"),
-        legend_row(690, 530, "line", "Carried by your customers and their AI"),
-        legend_row(690, 562, "gap", "Your people step in, or the customer is lost"),
+        legend_row(690, 450, "surface", "The surface: what your offering asks of someone"),
+        legend_row(690, 482, "mark", "The serviceable line"),
+        legend_row(690, 514, "line", "Carried by your customers and their AI"),
+        legend_row(690, 546, "gap", "Your people step in, or the customer is lost"),
+        legend_row(690, 578, "move", "Where the line is heading"),
         f'  <text x="80" y="196" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">The serviceable</text>',
         f'  <text x="80" y="274" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">line</text>',
         f'  <text x="80" y="352" {FONT} font-size="30" fill="{MINT}">How far does your customer\'s</text>',
@@ -212,7 +214,8 @@ def main_card():
     return card_svg("The serviceable line",
                     "Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. Blue is how far your customers "
                     "and their AI get on each; a white mark at the end of the blue is the serviceable line; past it, your people step in "
-                    "or the customer is lost. How far does your customer's AI get without you? A point of view by Etgar Bonar.", body)
+                    "or the customer is lost. Gold arrows on Findable, Selectable and Operable show where the line is heading. "
+                    "How far does your customer's AI get without you? A point of view by Etgar Bonar.", body)
 
 
 def shapes_card():
