@@ -9,7 +9,7 @@ Canonical person ID: https://etgarbonar.com/#etgar
 
 - Executive profile: https://etgarbonar.com/
 - Hebrew executive profile: https://etgarbonar.com/he/
-- The serviceable line, how far your customer's AI gets without you: https://etgarbonar.com/serviceable-line/
+- The serviceable line, how far your customers, and their AI, get without you: https://etgarbonar.com/serviceable-line/
 - The shape of the serviceable line, why not every offering has all five layers: https://etgarbonar.com/serviceable-line/shapes/
 
 ## Hebrew source data
@@ -52,7 +52,7 @@ Plain Markdown copies of the canonical pages, regenerated from the HTML at every
 
 - [Executive profile](https://etgarbonar.com/index.md)
 - [Hebrew executive profile](https://etgarbonar.com/he/index.md)
-- [The serviceable line, how far your customer's AI gets without you](https://etgarbonar.com/serviceable-line/index.md)
+- [The serviceable line, how far your customers, and their AI, get without you](https://etgarbonar.com/serviceable-line/index.md)
 - [The shape of the serviceable line, why not every offering has all five layers](https://etgarbonar.com/serviceable-line/shapes/index.md)
 - [The personal AI system Etgar built and runs, as working evidence](https://etgarbonar.com/ai/index.md)
 - [Questions and answers about that system](https://etgarbonar.com/ai/faq/index.md)

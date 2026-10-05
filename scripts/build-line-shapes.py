@@ -206,8 +206,8 @@ def main_card():
         legend_row(690, 578, "move", "Where the line is heading"),
         f'  <text x="80" y="196" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">The serviceable</text>',
         f'  <text x="80" y="274" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">line</text>',
-        f'  <text x="80" y="352" {FONT} font-size="30" fill="{MINT}">How far does your customer\'s</text>',
-        f'  <text x="80" y="394" {FONT} font-size="30" fill="{MINT}">AI get without you?</text>',
+        f'  <text x="80" y="352" {FONT} font-size="30" fill="{MINT}">How far do your customers,</text>',
+        f'  <text x="80" y="394" {FONT} font-size="30" fill="{MINT}">and their AI, get without you?</text>',
         f'  <text x="80" y="548" {FONT} font-size="21" fill="{GOLD}">A point of view by Etgar Bonar</text>',
         f'  <text x="80" y="580" {FONT} font-size="21" fill="{MINT}" opacity=".5">etgarbonar.com</text>',
     ])
@@ -215,7 +215,7 @@ def main_card():
                     "Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. Blue is how far your customers "
                     "and their AI get on each; a white mark at the end of the blue is the serviceable line; past it, your people step in "
                     "or the customer is lost. Gold arrows on Findable, Selectable and Operable show where the line is heading. "
-                    "How far does your customer's AI get without you? A point of view by Etgar Bonar.", body)
+                    "How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.", body)
 
 
 def shapes_card():
@@ -228,13 +228,13 @@ def shapes_card():
     parts += [
         f'  <path d="M80 340H1120" stroke="#233236" stroke-width="1"/>',
         f'  <text x="80" y="420" {FONT} font-size="56" font-weight="700" letter-spacing="-1" fill="{PAPER}">The shape of the serviceable line</text>',
-        f'  <text x="80" y="474" {FONT} font-size="28" fill="{MINT}">How far does your customer\'s AI get without you?</text>',
+        f'  <text x="80" y="474" {FONT} font-size="28" fill="{MINT}">How far do your customers, and their AI, get without you?</text>',
         f'  <text x="80" y="560" {FONT} font-size="21" fill="{GOLD}">A point of view by Etgar Bonar</text>',
         f'  <text x="1120" y="560" text-anchor="end" {FONT} font-size="21" fill="{MINT}" opacity=".5">etgarbonar.com</text>',
     ]
     return card_svg("The shape of the serviceable line",
                     "Three sets of five bars: a bag of rice with two short bars and three layers missing, a medical device with long bars "
-                    "and little blue, and API-first software with five full bars. How far does your customer's AI get without you? "
+                    "and little blue, and API-first software with five full bars. How far do your customers, and their AI, get without you? "
                     "Not every offering has five layers. A point of view by Etgar Bonar.", "\n".join(parts))
 
 

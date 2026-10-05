@@ -141,7 +141,7 @@ Current point of view
 
 ## The part of the customer journey your dashboards barely register is getting larger.
 
-Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine, which raises one question: how far does your customer's AI get without you?
+Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine, which raises one question: how far do your customers, and their AI, get without you?
 
 **The serviceable line** is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose the customer, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill. Move the line out, and you can win customers you used to walk away from, and stop the losses you never measured.
 

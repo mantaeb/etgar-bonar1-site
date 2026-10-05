@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="cardtitle carddesc">
   <title id="cardtitle">The serviceable line</title>
-  <desc id="carddesc">Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. Blue is how far your customers and their AI get on each; a white mark at the end of the blue is the serviceable line; past it, your people step in or the customer is lost. Gold arrows on Findable, Selectable and Operable show where the line is heading. How far does your customer's AI get without you? A point of view by Etgar Bonar.</desc>
+  <desc id="carddesc">Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. Blue is how far your customers and their AI get on each; a white mark at the end of the blue is the serviceable line; past it, your people step in or the customer is lost. Gold arrows on Findable, Selectable and Operable show where the line is heading. How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.</desc>
   <rect width="1200" height="630" fill="#101a1d"/>
   <text x="786" y="116" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Findable</text>
   <rect x="800" y="98.0" width="302.4" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
@@ -43,8 +43,8 @@
   <text x="724" y="578" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Where the line is heading</text>
   <text x="80" y="196" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-1" fill="#f4efe6">The serviceable</text>
   <text x="80" y="274" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-1" fill="#f4efe6">line</text>
-  <text x="80" y="352" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="30" fill="#a8bdc1">How far does your customer's</text>
-  <text x="80" y="394" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="30" fill="#a8bdc1">AI get without you?</text>
+  <text x="80" y="352" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="30" fill="#a8bdc1">How far do your customers,</text>
+  <text x="80" y="394" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="30" fill="#a8bdc1">and their AI, get without you?</text>
   <text x="80" y="548" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#dcb96f">A point of view by Etgar Bonar</text>
   <text x="80" y="580" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#a8bdc1" opacity=".5">etgarbonar.com</text>
 </svg>

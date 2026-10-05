@@ -4,11 +4,11 @@
 > The HTML page is the canonical source.
 
 Title: The Shape of the Serviceable Line: Not Every Offering Has Five Layers
-Description: How far does your customer's AI get without you? The five layers are not the same size for every offering, so the serviceable line has a shape, and so does the work around it.
+Description: How far do your customers, and their AI, get without you? The five layers are not the same size for every offering, so the serviceable line has a shape, and so does the work around it.
 
 [The serviceable line](https://etgarbonar.com/serviceable-line/) · Part two
 
-# The shape of the serviceable line How far does your customer's AI get without you?
+# The shape of the serviceable line How far do your customers, and their AI, get without you?
 
 The five layers are not the same size for every offering. A bag of rice has almost nothing to connect or fix. A medical device has a hospital committee to convince and technicians to train. A software platform has all five, in depth. So the line has a shape, and so does the work around it.
 
