@@ -12,7 +12,7 @@ A point of view by Etgar Bonar
 
 Move the line out, and you can win customers you used to walk away from.
 
-Published 29 August 2026 · Updated 5 October 2026 · 8 minute read
+Published 29 August 2026 · Updated 6 October 2026 · 8 minute read
 
 - The surface: what your offering asks of someone
 - The serviceable line
@@ -46,6 +46,8 @@ These are not stages in a funnel. The machine can consult any of them before or 
 
 Each question becomes useful when it has an observable test and a commercial signal. The point is not one total score. It is to locate where the work stops and what that stop costs.
 
+**Integrable gets the offering into the customer's environment. Operable gets the customer's work done once it is there.**
+
 1. **Findable Can it find you at all?**
 
    **If it fails:** never considered.
@@ -64,14 +66,14 @@ Each question becomes useful when it has an observable test and a commercial sig
 
    **If it fails:** bought as a smaller version of you.
 
-   **Test:** The agent produces a valid implementation plan from public material.
+   **Test:** The agent produces a valid implementation plan and, where test access exists, completes a working connection.
 
-   **Signal:** Integration success and time to first value.
+   **Signal:** Successful connection, time to working connection and implementation effort.
 4. **Operable Can it run the work?**
 
    **If it fails:** paid for and stalled.
 
-   **Test:** The agent completes and verifies the customer's core job.
+   **Test:** Once connected, the agent completes and verifies the customer's core job.
 
    **Signal:** Task completion, activation and expansion.
 5. **Fixable Can it recover when something breaks?**
@@ -81,6 +83,8 @@ Each question becomes useful when it has an observable test and a commercial sig
    **Test:** The agent diagnoses a failure, applies the right fix and confirms recovery.
 
    **Signal:** Resolution rate, escalation rate and churn.
+
+A payments agent can authenticate and read account data, yet lack the permission or capability to issue a refund. The platform is Integrable for that agent, but not Operable for that job.
 
 Every exit is a loss the seller may never see recorded. The two in the middle are especially expensive: the customer buys a smaller version of what you offer, or pays and then stalls. When the job is done, it ends in activation, expansion and advocacy. Either way, the outcome becomes public evidence and shapes the next buyer's research.
 

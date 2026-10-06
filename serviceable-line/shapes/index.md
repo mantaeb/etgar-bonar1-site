@@ -12,7 +12,7 @@ Description: How far do your customers, and their AI, get without you? The five 
 
 The five layers are not the same size for every offering. A bag of rice has almost nothing to connect or fix. A medical device has a hospital committee to convince and technicians to train. A software platform has all five, in depth. So the line has a shape, and so does the work around it.
 
-Published 3 October 2026 · 7 minute read
+Published 3 October 2026 · Updated 6 October 2026 · 7 minute read
 
 - The surface: what your offering asks of someone
 - The serviceable line
@@ -33,6 +33,8 @@ How to read the shape
 ## A surface, a line and a gap
 
 Each bar is one of the five layers: Findable, Selectable, Integrable, Operable and Fixable. Three things sit on each bar.
+
+**Integrable gets the offering into the customer's environment. Operable gets the customer's work done once it is there.**
 
 The surface
 
@@ -58,7 +60,7 @@ Bag of rice Two short layers, and the retailer carries most of both. Nothing to 
 
 Cordless drill The battery platform is an Integrable layer, error lights and spare parts a Fixable one. Forums and repair sites carry what the maker does not publish.
 
-Payments platform Documentation carries Integrable a long way. Required onboarding checks and payment disputes hold the line in, whatever the AI can do. Platforms that resell payments carry part of it.
+Payments platform Authentication and a working sandbox connection are Integrable. Creating and verifying a payment are Operable. Required onboarding checks and payment disputes hold the line in, whatever the AI can do. Platforms that resell payments carry part of it.
 
 Medical device The longest Selectable: clinical evidence, approvals and a hospital committee. Distributors and hospital technicians carry much of the rest, and the AI doing that work is theirs, not the buyer's.
 
