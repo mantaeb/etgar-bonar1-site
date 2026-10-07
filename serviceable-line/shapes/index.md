@@ -63,7 +63,7 @@ Six offerings
 
 ## Six offerings, six shapes
 
-These shapes are illustrative, scored on the scale above. They are drawn from how each kind of offering is typically bought and used, not from measurement, so read the shape, not the exact lengths. Some of the work past your line is carried by someone else, such as a partner, a dealer or a service company. Teal on the drawings; more on that below.
+These shapes are illustrative, scored on the scale above. They are drawn from how each kind of offering is typically bought and used, not from measurement, so read the shape, not the exact lengths. Some of the work past your line is carried by someone else, such as a partner, a dealer or a service company. That work is teal on the drawings; more on that below.
 
 Bag of rice Two short layers, each a few facts to look up, and the retailer carries most of both. Integrable and Fixable score zero: nothing to connect, nothing to fix.
 
