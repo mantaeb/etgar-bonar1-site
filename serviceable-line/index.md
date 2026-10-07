@@ -52,9 +52,9 @@ Each question becomes useful when it has an observable test and a commercial sig
 
    **If it fails:** never considered.
 
-   **Test:** The company appears without a brand prompt and the facts are current.
+   **Test:** The company is named, without a brand prompt, across the questions its buyers ask.
 
-   **Signal:** Mentions, citations and factual accuracy.
+   **Signal:** Share of unbranded buyer questions where it is named, by segment.
 2. **Selectable Can it compare you honestly?**
 
    **If it fails:** cut from the shortlist.

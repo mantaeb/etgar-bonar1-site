@@ -46,7 +46,7 @@ How much of that surface your customers, and increasingly their AI, get through 
 
 Past the line
 
-**One of your people steps in.** This is seen and costed: it is your cost to serve.  **The customer is lost.** This ranges from invisible (left out of an AI answer, never entered the funnel), to seen as a number without its cause (a trial that did not convert, churn, a deal that went small), to seen and explained, which happens only when a person was there.  On the drawings, grey is the gap.
+**One of your people steps in.** This is seen and costed: your cost to sell and to serve.  **The customer is lost.** This ranges from invisible (left out of an AI answer, never entered the funnel), to seen as a number without its cause (a trial that did not convert, churn, a deal that went small), to seen and explained, which happens only when a person was there.  On the drawings, grey is the gap.
 
 Moving the line out shrinks the gap from the inside. How much there is to shrink depends on the offering.
 
