@@ -23,17 +23,17 @@ MAX = 3.0
 # sites are counted too, so line <= carried <= surface on every layer.
 OFFERINGS = [
     ("Bag of rice", [0.8, 0.8, 0, 0.4, 0], [0.2, 0.3, 0, 0.4, 0], [0.75, 0.75, 0, 0.4, 0],
-     "Two short layers, and the retailer carries most of both. Nothing to connect, nothing to fix."),
+     "Two short layers, each a few facts to look up, and the retailer carries most of both. Integrable and Fixable score zero: nothing to connect, nothing to fix."),
     ("Cordless drill", [2.2, 2.4, 2.0, 1.2, 2.0], [1.8, 1.5, 0.8, 1.0, 0.6], [2.0, 1.9, 1.1, 1.0, 1.3],
-     "The battery platform is an Integrable layer, error lights and spare parts a Fixable one. Forums and repair sites carry what the maker does not publish."),
+     "The battery platform is an Integrable layer. Error lights and spare parts make Fixable a procedure to follow. Forums and repair sites carry what the maker does not publish."),
     ("Payments platform", [2.6, 3.0, 3.0, 2.8, 3.0], [2.2, 1.0, 2.2, 1.0, 1.0], [2.3, 1.4, 2.6, 1.4, 1.4],
-     "Authentication and a working sandbox connection are Integrable. Creating and verifying a payment are Operable. Required onboarding checks and payment disputes hold the line in, whatever the AI can do. Platforms that resell payments carry part of it."),
+     "Authentication and a working sandbox connection are Integrable, a system to configure and keep running. Creating and verifying a payment are Operable. Required onboarding checks and payment disputes hold the line in, whatever the AI can do. Platforms that resell payments carry part of it."),
     ("Medical device", [1.8, 3.0, 2.6, 2.6, 3.0], [1.0, 0.7, 0.7, 0.8, 0.5], [1.5, 1.4, 1.4, 1.6, 2.0],
      "The longest Selectable: clinical evidence, approvals and a hospital committee. Distributors and hospital technicians carry much of the rest, and the AI doing that work is theirs, not the buyer's."),
     ("Clinic", [2.6, 2.6, 1.4, 2.2, 1.8], [2.0, 1.2, 0.6, 1.3, 0.7], [2.3, 1.6, 0.9, 1.4, 0.9],
      "A service has a surface too: coverage, preparation, follow-up and the bill. Insurer directories and booking sites answer part of it."),
     ("API-first software", [3, 3, 3, 3, 3], [2.5, 1.6, 2.2, 1.3, 1.5], [2.6, 2.0, 2.7, 1.6, 2.0],
-     "All five layers, in depth, and the one shape where every layer can be tested from outside today. Review sites and implementation partners carry part of it."),
+     "All five layers, each at the top of the scale, and the one shape where every layer can be tested from outside today. Review sites and implementation partners carry part of it."),
 ]
 
 SEGMENTS = [
@@ -213,9 +213,9 @@ def main_card():
         f'  <text x="80" y="580" {FONT} font-size="21" fill="{MINT}" opacity=".5">etgarbonar.com</text>',
     ])
     return card_svg("The serviceable line",
-                    "Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. Blue is how far your customers "
-                    "and their AI get on each; a white mark at the end of the blue is the serviceable line; past it, your people step in "
-                    "or the customer is lost. Gold arrows on Findable, Selectable, Integrable and Operable show where the line is heading. "
+                    "Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A mark on each bar "
+                    "is the serviceable line: how far your customers and their AI get on that layer on their own. Past it, your people step in "
+                    "or the customer is lost. Arrows on Findable, Selectable, Integrable and Operable show where the line is heading. "
                     "How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.", body)
 
 
@@ -234,8 +234,8 @@ def shapes_card():
         f'  <text x="1120" y="560" text-anchor="end" {FONT} font-size="21" fill="{MINT}" opacity=".5">etgarbonar.com</text>',
     ]
     return card_svg("The shape of the serviceable line",
-                    "Three sets of five bars: a bag of rice with two short bars and three layers missing, a medical device with long bars "
-                    "and little blue, and API-first software with five full bars. How far do your customers, and their AI, get without you? "
+                    "Three sets of five bars: a bag of rice with three short bars and two layers missing, a medical device with long bars "
+                    "and little of each carried by the customer, and API-first software with five full bars. How far do your customers, and their AI, get without you? "
                     "Not every offering has five layers. A point of view by Etgar Bonar.", "\n".join(parts))
 
 

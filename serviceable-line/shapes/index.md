@@ -20,7 +20,7 @@ Published 3 October 2026 · Updated 6 October 2026 · 7 minute read
 - Your people step in, or the customer is lost
 - Where the line is heading
 
-Illustrative, on a shared 0 to 3 scale: the same offering as on the main page. A bar's length is what the offering asks on that layer. What matters is the grey on each bar, the gap, not which bar is longest. The gold arrows mark where the line is heading on Findable and Selectable, and a little on Operable, which moves last.
+Illustrative: the same offering as on the main page. A bar's length is what the offering asks on that layer. What matters is the gap on each bar, the part past the line, not which bar is longest. The arrows mark where the line is heading: on Findable, Selectable and Integrable, and a little on Operable, which moves last.
 
 Every offering asks something of the person buying it. Some ask almost nothing. Some ask a great deal, before the purchase and long after it.
 
@@ -42,31 +42,40 @@ Everything someone has to work out or do to get value from your offering, on eac
 
 The line
 
-How much of that surface your customers, and increasingly their AI, get through on their own. On the drawings, it is the blue, ending at a white mark.
+How much of that surface your customers, and increasingly their AI, get through on their own. It ends at the serviceable line, the mark on each bar. Blue on the drawings.
 
-Past the line
+The gap
 
-**One of your people steps in.** This is seen and costed: your cost to sell and to serve.  **The customer is lost.** This ranges from invisible (left out of an AI answer, never entered the funnel), to seen as a number without its cause (a trial that did not convert, churn, a deal that went small), to seen and explained, which happens only when a person was there.  On the drawings, grey is the gap.
+Everything past the line. One of two things happens there:  **One of your people steps in.** This is seen and costed: your cost to sell and to serve.  **The customer is lost.** This ranges from invisible (left out of an AI answer, never entered the funnel), to seen as a number without its cause (a trial that did not convert, churn, a deal that went small), to seen and explained, which happens only when a person was there.  Grey on the drawings.
 
 Moving the line out shrinks the gap from the inside. How much there is to shrink depends on the offering.
+
+### The scale
+
+Every bar on this page is scored on one scale, for the surface, the line and what others carry, so two people draw the same offering the same way.
+
+1. **0** Nothing to do. The layer does not exist for this offering.
+2. **1** A few facts to look up.
+3. **2** A procedure to follow.
+4. **3** A system to configure and keep running.
 
 Six offerings
 
 ## Six offerings, six shapes
 
-These shapes are illustrative. They are drawn from how each kind of offering is typically bought and used, not from measurement. Read the shape, not the numbers. Teal marks work someone else carries, such as a partner, a dealer or a service company; more on that below.
+These shapes are illustrative, scored on the scale above. They are drawn from how each kind of offering is typically bought and used, not from measurement, so read the shape, not the exact lengths. Some of the work past your line is carried by someone else, such as a partner, a dealer or a service company. Teal on the drawings; more on that below.
 
-Bag of rice Two short layers, and the retailer carries most of both. Nothing to connect, nothing to fix.
+Bag of rice Two short layers, each a few facts to look up, and the retailer carries most of both. Integrable and Fixable score zero: nothing to connect, nothing to fix.
 
-Cordless drill The battery platform is an Integrable layer, error lights and spare parts a Fixable one. Forums and repair sites carry what the maker does not publish.
+Cordless drill The battery platform is an Integrable layer. Error lights and spare parts make Fixable a procedure to follow. Forums and repair sites carry what the maker does not publish.
 
-Payments platform Authentication and a working sandbox connection are Integrable. Creating and verifying a payment are Operable. Required onboarding checks and payment disputes hold the line in, whatever the AI can do. Platforms that resell payments carry part of it.
+Payments platform Authentication and a working sandbox connection are Integrable, a system to configure and keep running. Creating and verifying a payment are Operable. Required onboarding checks and payment disputes hold the line in, whatever the AI can do. Platforms that resell payments carry part of it.
 
 Medical device The longest Selectable: clinical evidence, approvals and a hospital committee. Distributors and hospital technicians carry much of the rest, and the AI doing that work is theirs, not the buyer's.
 
 Clinic A service has a surface too: coverage, preparation, follow-up and the bill. Insurer directories and booking sites answer part of it.
 
-API-first software All five layers, in depth, and the one shape where every layer can be tested from outside today. Review sites and implementation partners carry part of it.
+API-first software All five layers, each at the top of the scale, and the one shape where every layer can be tested from outside today. Review sites and implementation partners carry part of it.
 
 What the shapes show
 
@@ -86,7 +95,7 @@ For anything that is not a commodity, Findable is a contest for a few places, an
 
 ### Selectable is where the newest silent loss happens
 
-When price, limits and fit criteria are missing, the AI compares you against a smaller version of yourself, or fills the gap with someone else's numbers. The longer the Selectable bar, the more that costs.
+When price, limits and fit criteria are missing, the AI compares you against a smaller version of yourself, or fills in the blanks with someone else's numbers. The longer the Selectable bar, the more that costs. The first move is to publish them as plain facts a machine can quote, and to track how accurately the buyer's AI compares you.
 
 ### In regulated offerings, the rules hold the line in
 
@@ -162,16 +171,9 @@ Use it
 4. What is left is your gap: the work your people carry, and the customers you lose, often without seeing why.
 5. Draw it once per buyer segment, not once per company.
 
-### Scoring each layer
+Score each layer on the 0 to 3 scale under How to read the shape, so two people draw the same offering the same way.
 
-Use the same scale for the surface, the line and what others carry, so two people draw the same offering the same way.
-
-1. **0** Nothing to do. The layer does not exist for this offering.
-2. **1** A few facts to look up.
-3. **2** A procedure to follow.
-4. **3** A system to configure and keep running.
-
-Compare offerings layer by layer, and look at the grey: the gap is what costs you, not the length of the bar.
+Compare offerings layer by layer, and look at the gap: it is what costs you, not the length of the bar.
 
 Start here
 

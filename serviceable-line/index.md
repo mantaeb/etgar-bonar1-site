@@ -20,7 +20,7 @@ Published 29 August 2026 · Updated 6 October 2026 · 8 minute read
 - Your people step in, or the customer is lost
 - Where the line is heading
 
-Illustrative, for one example offering. Each bar is one layer (Findable, Selectable, Integrable, Operable, Fixable), and its length is how much work that layer takes. Blue is what your customers and their AI carry alone; the white mark is the serviceable line. Gold is where it is heading. Other offerings have different bars: [see six examples](https://etgarbonar.com/serviceable-line/shapes/).
+Illustrative, for one example offering. Each bar is one layer, as long as the work that layer takes, and the mark on it is the serviceable line. Other offerings have different bars: [see six examples](https://etgarbonar.com/serviceable-line/shapes/).
 
 The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose revenue, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.
 
@@ -105,7 +105,7 @@ The silent losses
 
 ### Omission
 
-A capability is real but poorly described. The buyer's AI compares you against a smaller version of yourself, and the company never knows the capability was missing from the decision.
+A capability is real but poorly described. The buyer's AI compares you against a smaller version of yourself, and the company never knows the capability was missing from the decision. The first move is to publish each capability, with its price, limits and fit criteria, as plain facts a machine can quote, and to track how accurately the buyer's AI compares you.
 
 ### Disillusion
 

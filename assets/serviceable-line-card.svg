@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="cardtitle carddesc">
   <title id="cardtitle">The serviceable line</title>
-  <desc id="carddesc">Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. Blue is how far your customers and their AI get on each; a white mark at the end of the blue is the serviceable line; past it, your people step in or the customer is lost. Gold arrows on Findable, Selectable, Integrable and Operable show where the line is heading. How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.</desc>
+  <desc id="carddesc">Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A mark on each bar is the serviceable line: how far your customers and their AI get on that layer on their own. Past it, your people step in or the customer is lost. Arrows on Findable, Selectable, Integrable and Operable show where the line is heading. How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.</desc>
   <rect width="1200" height="630" fill="#101a1d"/>
   <text x="786" y="116" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Findable</text>
   <rect x="800" y="98.0" width="302.4" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
