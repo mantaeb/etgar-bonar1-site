@@ -86,7 +86,7 @@ For anything that is not a commodity, Findable is a contest for a few places, an
 
 ### Selectable is where the newest silent loss happens
 
-When price, limits and fit criteria are missing, the AI compares you against a smaller version of yourself, or fills the gap with someone else's numbers. The longer the Selectable spoke, the more that costs.
+When price, limits and fit criteria are missing, the AI compares you against a smaller version of yourself, or fills the gap with someone else's numbers. The longer the Selectable bar, the more that costs.
 
 ### In regulated offerings, the rules hold the line in
 

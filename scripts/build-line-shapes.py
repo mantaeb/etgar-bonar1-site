@@ -55,11 +55,12 @@ GROWTH = [
 # The hero offering. Bar length is the surface on every hero, so the layers differ in length from the
 # first screen (Etgar, 2026-10-04). Both heroes and the main social card carry gold arrows for where the
 # line is heading: on Findable and Selectable (Etgar, 2026-10-03), plus a small one on Operable, which
-# moves last (Etgar, 2026-10-05). The values do not fall steadily from top to bottom, so
+# moves last (Etgar, 2026-10-05). Integrable gets an almost complete arrow, because it usually moves
+# before Operable (Etgar, 2026-10-07). The values do not fall steadily from top to bottom, so
 # the five bars never read as a trend or a ranking.
 HERO_SURFACE = [2.7, 3.0, 2.0, 2.4, 1.6]
 HERO_LINE = [1.9, 1.3, 1.5, 0.9, 1.1]
-HERO_ARROWS = {0: 2.5, 1: 2.3, 3: 1.25}
+HERO_ARROWS = {0: 2.5, 1: 2.3, 2: 1.9, 3: 1.25}
 assert all(HERO_LINE[i] < v <= HERO_SURFACE[i] for i, v in HERO_ARROWS.items())
 SIMPLE = (HERO_SURFACE, HERO_LINE, HERO_LINE)
 FULL = (HERO_SURFACE, HERO_LINE, HERO_LINE)
@@ -214,7 +215,7 @@ def main_card():
     return card_svg("The serviceable line",
                     "Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. Blue is how far your customers "
                     "and their AI get on each; a white mark at the end of the blue is the serviceable line; past it, your people step in "
-                    "or the customer is lost. Gold arrows on Findable, Selectable and Operable show where the line is heading. "
+                    "or the customer is lost. Gold arrows on Findable, Selectable, Integrable and Operable show where the line is heading. "
                     "How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.", body)
 
 

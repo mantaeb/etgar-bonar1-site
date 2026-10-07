@@ -30,6 +30,17 @@ Customers have been getting further on their own for a decade: finding you, comp
 
 Both sales-led and product-led motions are losing ground to this silent part of the journey. The company does not own the machine doing the work. It often cannot see the interaction. And rarely does one leader own whether the machine's picture of the company matches what the company actually is.
 
+Selected examples of where I have moved the line · [Full track record](https://etgarbonar.com/#record)
+
+The rule I have used since Amazon: bring a person in when automation and mass communication are not enough.
+
+- **Amazon Advertising.** Built mass account management for new markets in the UK, Germany and France, serving advertisers at volume rather than one account at a time.
+- **Taboola.** Each account manager covered two to three times the accounts of the company's own enterprise organization, while the unit grew from about $130M to $500M.
+- **Rapyd.** With Product and Compliance, automated merchant onboarding into auto-approve, auto-reject and manual review, so a person stepped in only where judgment was needed.
+- **Lokalise.** Moved early on discovery in AI search, and reached the #1 measured share of voice across about 1,000 high-value prompts.
+
+What this does not prove yet
+
 ## The two variables behind the variance
 
 How far AI moves the line depends on two things, and neither works without the other: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine. The first is gated by permission, accountability, regulation and the cost of error, not by model capability. The second is whether an outsider's agent can find it, compare it, connect it, run it and recover it without a person.
@@ -100,6 +111,8 @@ A capability is real but poorly described. The buyer's AI compares you against a
 
 The buyer arrives with an implementation plan assembled from public material. The plan is wrong, so activation stalls and the failure becomes evidence for the next buyer.
 
+The human version of the fix: at Taboola, telling advertisers how to fix and resubmit a rejected campaign, without an account manager, lifted re-uploaded campaigns 37% and spending campaigns 11%.
+
 The vacancy
 
 ## Five answers, five teams, rarely one owner
@@ -108,7 +121,7 @@ How a company is represented to machines is split across marketing, product, pri
 
 This is a commercial job because the failure appears as lost consideration, lower conversion, slow activation, higher cost to serve, and quiet churn. The owner needs the authority to coordinate the whole system and the discipline to measure it end to end.
 
-That owner does not run every function. They own the shared economic outcome: shortlist and win rate, activation, expansion and retention, and the cost of serving each customer.
+The revenue leader should own the shared economic outcome across the journey (shortlist and win rate, activation, expansion, retention, and the cost of serving each customer) without running every function.
 
 The current conversation
 
@@ -140,25 +153,17 @@ Evidence and forecast
 
 ## What is observed, and what still needs proving
 
-### The human version: the same line, moved by hand
+Observed, by hand
 
-Before AI, customers carried the journey through self-service, and the line sat wherever a company decided a person had to step in. **The rule I have used since Amazon: bring a person in when automation and mass communication are not enough.** Moving the line out did what the definition at the top of this page says it does.
+### The mechanism
 
-- **Win customers you used to walk away from.** At Amazon Advertising, I built mass account management for new markets in the UK, Germany and France, serving advertisers at volume rather than one account at a time. At Taboola, the same model ran a unit with 80% of the company's customers. We took self-service there from about 12% of new revenue to about half, and each account manager covered two to three times the accounts of the company's own enterprise organization, while the unit grew from about $130M to $500M. New revenue rose 1.8 times as fast as budget from 2019 to 2021.
-- **Stop the losses you never measured.** At Amazon Advertising and later at Taboola, advertisers whose campaigns were rejected were told how to fix and resubmit them without an account manager; at Taboola, re-uploaded campaigns rose 37% and spending campaigns 11%. Account managers there also carried a monthly target for new customers running a meaningful test, not merely signing up, because in advertising trying is easy and staying is hard.
-- **Bring a person in *only* where judgment is needed.** At Rapyd, with Product and Compliance, we automated merchant onboarding and KYC decisioning, sorting applications into auto-approve, auto-reject and manual review, so a person was needed only where judgment actually was. Where people did add value, they moved the result: in Taboola's self-service segment, after we built an offshore customer-success team, first response went roughly ten times faster and net promoter score rose more than fivefold.
-
-Built and measured
-
-### Discovery
-
-At [Lokalise](https://etgarbonar.com/#record), we built the AI-discovery operating model and measured category leadership across approximately 1,000 high-value prompts.
+Moving the line out wins customers a company used to walk away from, stops losses it never measured, and puts people only where judgment pays. Selected examples are at the top of this page; the [full track record](https://etgarbonar.com/#record) is on my profile.
 
 To be tested
 
 ### How fast buyers move
 
-The mechanism is proven in the human version. What is unproven is how quickly each kind of buyer hands this work to AI, which sets how far the line can move.
+The mechanism is proven by hand. What is unproven is how quickly each kind of buyer hands this work to AI, which sets how far the line can move.
 
 ### Current market signals
 
@@ -172,6 +177,6 @@ About the author
 
 ## Etgar Bonar
 
-General Manager and commercial operator, about thirteen years on products customers adopt through an interface: General Manager of Taboola's global SMB business through its IPO, Vice President of Sales at Rapyd, Chief Marketing Officer at Lokalise, and before that Amazon's advertising and payments businesses. Built and led orgs of up to sixty-five people across four continents.
+Commercial leader and General Manager, accountable for revenue in his last three roles: General Manager of Taboola's global SMB business, from about $130M to $500M through its IPO; Vice President of Sales and Executive Team member at Rapyd, running several business units; Chief Marketing Officer at Lokalise. Before that, Amazon Advertising, Amazon Payments and Johnson & Johnson. Sales, partnerships, customer success and marketing, run as one revenue system.
 
 [View executive profile](https://etgarbonar.com/) [Start a conversation](mailto:etgar@bonar1.com) [Message on LinkedIn](https://www.linkedin.com/in/etgar1/)
