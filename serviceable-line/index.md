@@ -22,7 +22,7 @@ Published 29 August 2026 · Updated 6 October 2026 · 8 minute read
 
 Illustrative, for one example offering. Each bar is one layer (Findable, Selectable, Integrable, Operable, Fixable), and its length is how much work that layer takes. Blue is what your customers and their AI carry alone; the white mark is the serviceable line. Gold is where it is heading. Other offerings have different bars: [see six examples](https://etgarbonar.com/serviceable-line/shapes/).
 
-The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose the customer, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.
+The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose revenue, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.
 
 Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine. I spent most of those years on the seller's side of that shift, at Amazon, Taboola and Rapyd.
 
