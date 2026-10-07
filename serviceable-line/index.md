@@ -12,7 +12,7 @@ A point of view by Etgar Bonar
 
 Move the line out, and you can win customers you used to walk away from.
 
-Published 29 August 2026 · Updated 6 October 2026 · 8 minute read
+Published 29 August 2026 · Updated 7 October 2026 · 8 minute read
 
 - The surface: what your offering asks of someone
 - The serviceable line

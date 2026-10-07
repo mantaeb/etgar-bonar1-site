@@ -12,7 +12,7 @@ Description: How far do your customers, and their AI, get without you? The five 
 
 The five layers are not the same size for every offering. A bag of rice has almost nothing to connect or fix. A medical device has a hospital committee to convince and technicians to train. A software platform has all five, in depth. So the line has a shape, and so does the work around it.
 
-Published 3 October 2026 · Updated 6 October 2026 · 7 minute read
+Published 3 October 2026 · Updated 7 October 2026 · 7 minute read
 
 - The surface: what your offering asks of someone
 - The serviceable line
