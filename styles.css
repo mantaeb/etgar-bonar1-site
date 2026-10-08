@@ -636,7 +636,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .question-list li { padding: 1.4rem 0; display: grid; grid-template-columns: 56px 1fr; gap: 1.4rem; align-items: start; border-bottom: 1px solid var(--line); }
 .question-list > li > span { color: var(--blue-dark); font-size: .78rem; font-weight: 850; letter-spacing: .1em; }
 .question-list h3 { margin: 0; font-size: 1.35rem; }
-.question-list h3 .q-label { display: block; margin-bottom: .3rem; color: var(--blue-dark); font-size: .72rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+.question-list h3 .q-label, .proof-teaser .q-label { display: block; margin-bottom: .3rem; color: var(--blue-dark); font-size: .72rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
 .question-list p { margin-bottom: 0; color: var(--muted); }
 .question-list > li > span { padding-top: .25rem; }
 .question-list h3 + p { margin-top: .7rem; }
