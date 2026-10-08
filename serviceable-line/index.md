@@ -30,16 +30,18 @@ Customers have been getting further on their own for a decade: finding you, comp
 
 Both sales-led and product-led motions are losing ground to this silent part of the journey. The company does not own the machine doing the work. It often cannot see the interaction. And rarely does one leader own whether the machine's picture of the company matches what the company actually is.
 
-Selected examples of where I have moved the line · [Full track record](https://etgarbonar.com/#record)
+Selected examples of where my teams and I have moved the line · [Full track record, by company](https://etgarbonar.com/#record)
 
 The rule I have used since Amazon: bring a person in when automation and mass communication are not enough.
 
-- **Amazon Advertising.** Built mass account management for new markets in the UK, Germany and France, serving advertisers at volume rather than one account at a time.
-- **Taboola.** Each account manager covered two to three times the accounts of the company's own enterprise organization, while the unit grew from about $130M to $500M.
-- **Rapyd.** With Product and Compliance, automated merchant onboarding into auto-approve, auto-reject and manual review, so a person stepped in only where judgment was needed.
-- **Lokalise.** Moved early on discovery in AI search, and reached the #1 measured share of voice across about 1,000 high-value prompts.
+- **Being found and understood by AI.** At Lokalise, we moved early on discovery in AI search and reached the #1 measured share of voice across about 1,000 high-value prompts. Buyers who came from AI answers converted at about five times the rate of organic Google search.
+- **Deciding who needs a person.** My teams built lead scoring and routing at Taboola, Rapyd and Lokalise, enriching each lead and scoring it on intent, on fit with the ideal customer and, later, on its value to the company. At Rapyd, the sales development team we built from zero became the lead qualifier for the whole company. At Lokalise, sales acceptance of marketing leads rose from 35% to 59%.
+- **Letting customers buy and get started alone.** At Taboola, self-service grew from about 12% to about half of new revenue. At Rapyd, with Product and Compliance, we automated merchant onboarding into auto-approve, auto-reject and manual review, so a person stepped in only where judgment was needed.
+- **Educating customers at scale.** Customers learned to get results from the product through video tutorials and documentation at Amazon, Taboola and Rapyd, and through partners, including a Fiverr Learn course at Taboola.
+- **Serving at volume.** At Amazon Advertising, we built mass account management for new markets in the UK, Germany and France. At Taboola, each account manager covered two to three times the accounts of the company's own enterprise organization, while the unit grew from about $130M to $500M.
+- **Letting customers fix it themselves.** At Amazon Advertising and Taboola, advertisers were told how to fix and resubmit a rejected campaign without an account manager. At Taboola, re-uploaded campaigns rose 37% and spending campaigns 11%. That job is moving to the customer's AI, which can read the rejection email and the documentation and make the fix itself, if both are clear enough.
 
-What this does not prove yet
+Each of these is work the customer's AI is starting to do. What this does not prove yet
 
 ## The two variables behind the variance
 
@@ -110,8 +112,6 @@ A capability is real but poorly described. The buyer's AI compares you against a
 ### Disillusion
 
 The buyer arrives with an implementation plan assembled from public material. The plan is wrong, so activation stalls and the failure becomes evidence for the next buyer.
-
-The human version of the fix: at Taboola, telling advertisers how to fix and resubmit a rejected campaign, without an account manager, lifted re-uploaded campaigns 37% and spending campaigns 11%.
 
 The vacancy
 
