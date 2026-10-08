@@ -12,7 +12,7 @@ A point of view by Etgar Bonar
 
 Move the line out, and you can win customers you used to walk away from.
 
-Published 29 August 2026 · Updated 7 October 2026 · 8 minute read
+Published 29 August 2026 · Updated 8 October 2026 · 8 minute read
 
 - The surface: what your offering asks of someone
 - The serviceable line
@@ -35,7 +35,7 @@ Selected examples of where my teams and I have moved the line · [Full track rec
 The rule I have used since Amazon: bring a person in when automation and mass communication are not enough.
 
 - Findable **Can it find you at all?** At Lokalise, we moved early on discovery in AI search and reached the #1 measured share of voice across about 1,000 high-value prompts. Buyers who came from AI answers converted at about five times the rate of organic Google search.
-- Selectable **Can it compare you honestly?** To decide who needed a person, my teams built lead scoring and routing at Taboola, Rapyd and Lokalise, enriching each lead and scoring it on intent and fit. At Taboola, self-service grew from about 12% to about half of new revenue. At Rapyd, the sales development team we built from zero became the lead qualifier for the whole company. At Lokalise, sales acceptance of marketing leads rose from 35% to 59%.
+- Selectable **Can it compare you correctly?** To decide who needed a person, my teams built lead scoring and routing at Taboola, Rapyd and Lokalise, enriching each lead and scoring it on intent and fit. At Taboola, self-service grew from about 12% to about half of new revenue. At Rapyd, the sales development team we built from zero became the lead qualifier for the whole company. At Lokalise, sales acceptance of marketing leads rose from 35% to 59%.
 - Integrable **Can it work out how you connect?** At Amazon, Taboola and Rapyd, customers learned to integrate the product into their stack and get results from it by leveraging video tutorials, documentation and partners. At Rapyd, with Product and Compliance, we automated merchant onboarding into auto-approve, auto-reject and manual review, so a person stepped in only where judgment was needed.
 - Operable **Can it run the work?** At Amazon Advertising, we built mass account management for new markets in the UK, Germany and France. At Taboola, each account manager covered two to three times the accounts of the company's own enterprise organization, with mass communication and automation carrying the rest, while the unit grew from about $130M to $500M.
 - Fixable **Can it recover when something breaks?** At Amazon Advertising and Taboola, advertisers were told how to fix and resubmit a rejected campaign without an account manager. At Taboola, re-uploaded campaigns rose 37% and spending campaigns 11%. That job is moving to the customer's AI, which can read the rejection email and the documentation and make the fix itself, if both are clear enough.
@@ -67,7 +67,7 @@ Each question becomes useful when it has an observable test and a commercial sig
    **Test:** The company is named, without a brand prompt, across the questions its buyers ask.
 
    **Signal:** Share of unbranded buyer questions where it is named, by segment.
-2. **Selectable Can it compare you honestly?**
+2. **Selectable Can it compare you correctly?**
 
    **If it fails:** cut from the shortlist.
 
