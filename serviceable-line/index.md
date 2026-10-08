@@ -24,7 +24,7 @@ Illustrative, for one example offering. Each bar is one layer, as long as the wo
 
 The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose revenue, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.
 
-Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine. I spent most of those years on the seller's side of that shift, at Amazon, Taboola and Rapyd, where my teams and I moved this line by hand (examples below).
+Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine. I spent most of those years on the seller's side of that shift, at Amazon, Taboola, Rapyd and Lokalise, where my teams and I moved this line by hand (examples below).
 
 *Serviceable* as in serviceable available market: the demand a company can actually reach.
 
