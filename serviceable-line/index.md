@@ -24,23 +24,11 @@ Illustrative, for one example offering. Each bar is one layer, as long as the wo
 
 The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose revenue, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.
 
-Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine. I spent most of those years on the seller's side of that shift, at Amazon, Taboola and Rapyd.
+Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine. I spent most of those years on the seller's side of that shift, at Amazon, Taboola and Rapyd, where my teams and I moved this line by hand (examples below).
 
 *Serviceable* as in serviceable available market: the demand a company can actually reach.
 
 Both sales-led and product-led motions are losing ground to this silent part of the journey. The company does not own the machine doing the work. It often cannot see the interaction. And rarely does one leader own whether the machine's picture of the company matches what the company actually is.
-
-Selected examples of where my teams and I have moved the line · [Full track record, by company](https://etgarbonar.com/#record)
-
-The rule I have used since Amazon: bring a person in when automation and mass communication are not enough.
-
-- Findable **Can it find you at all?** At Lokalise, we moved early on discovery in AI search and reached the #1 measured share of voice across about 1,000 high-value prompts. Buyers who came from AI answers converted at about five times the rate of organic Google search.
-- Selectable **Can it compare you correctly?** To decide who needed a person, my teams built lead scoring and routing at Taboola, Rapyd and Lokalise, enriching each lead and scoring it on intent and fit. At Taboola, self-service grew from about 12% to about half of new revenue. At Rapyd, the sales development team we built from zero became the lead qualifier for the whole company. At Lokalise, sales acceptance of marketing leads rose from 35% to 59%.
-- Integrable **Can it work out how you connect?** At Amazon, Taboola and Rapyd, customers learned to integrate the product into their stack and get results from it by leveraging video tutorials, documentation and partners. At Rapyd, with Product and Compliance, we automated merchant onboarding into auto-approve, auto-reject and manual review, so a person stepped in only where judgment was needed.
-- Operable **Can it run the work?** At Amazon Advertising, we built mass account management for new markets in the UK, Germany and France. At Taboola, each account manager covered two to three times the accounts of the company's own enterprise organization, with mass communication and automation carrying the rest, while the unit grew from about $130M to $500M.
-- Fixable **Can it recover when something breaks?** At Amazon Advertising and Taboola, advertisers were told how to fix and resubmit a rejected campaign without an account manager. At Taboola, re-uploaded campaigns rose 37% and spending campaigns 11%. That job is moving to the customer's AI, which can read the rejection email and the documentation and make the fix itself, if both are clear enough.
-
-Each of these is work the customer's AI is starting to do. What this does not prove yet
 
 ## The two variables behind the variance
 
@@ -100,6 +88,18 @@ A payments agent can authenticate and read account data, yet lack the permission
 
 Every exit is a loss the seller may never see recorded. The two in the middle are especially expensive: the customer buys a smaller version of what you offer, or pays and then stalls. When the job is done, it ends in activation, expansion and advocacy. Either way, the outcome becomes public evidence and shapes the next buyer's research.
 
+Selected examples of where my teams and I have moved the line · [Full track record, by company](https://etgarbonar.com/#record)
+
+The rule I have used since Amazon: bring a person in when automation and mass communication are not enough.
+
+- Findable **Can it find you at all?** At Lokalise, we moved early on discovery in AI search and reached the #1 measured share of voice across about 1,000 high-value prompts. Buyers who came from AI answers converted at about five times the rate of organic Google search.
+- Selectable **Can it compare you correctly?** To decide who needed a person, my teams built lead scoring and routing at Taboola, Rapyd and Lokalise, enriching each lead and scoring it on intent and fit. At Taboola, self-service grew from about 12% to about half of new revenue. At Rapyd, the sales development team we built from zero became the lead qualifier for the whole company. At Lokalise, sales acceptance of marketing leads rose from 35% to 59%.
+- Integrable **Can it work out how you connect?** At Amazon, Taboola and Rapyd, customers learned to integrate the product into their stack and get results from it by leveraging video tutorials, documentation and partners. At Rapyd, with Product and Compliance, we automated merchant onboarding into auto-approve, auto-reject and manual review, so a person stepped in only where judgment was needed.
+- Operable **Can it run the work?** At Amazon Advertising, we built mass account management for new markets in the UK, Germany and France. At Taboola, each account manager covered two to three times the accounts of the company's own enterprise organization, with mass communication and automation carrying the rest, while the unit grew from about $130M to $500M.
+- Fixable **Can it recover when something breaks?** At Amazon Advertising and Taboola, advertisers were told how to fix and resubmit a rejected campaign without an account manager. At Taboola, re-uploaded campaigns rose 37% and spending campaigns 11%. That job is moving to the customer's AI, which can read the rejection email and the documentation and make the fix itself, if both are clear enough.
+
+Each of these is work the customer's AI is starting to do. What this does not prove yet
+
 The silent losses
 
 ## The funnel cannot report what never entered it
@@ -156,7 +156,7 @@ Observed, by hand
 
 ### The mechanism
 
-Moving the line out wins customers a company used to walk away from, stops losses it never measured, and puts people only where judgment pays. Selected examples are at the top of this page; the [full track record](https://etgarbonar.com/#record) is on my profile.
+Moving the line out wins customers a company used to walk away from, stops losses it never measured, and puts people only where judgment pays. Selected examples follow the five questions above; the [full track record](https://etgarbonar.com/#record) is on my profile.
 
 To be tested
 
