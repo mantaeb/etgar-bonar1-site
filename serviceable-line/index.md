@@ -16,9 +16,9 @@ Published 29 August 2026 · Updated 10 October 2026 · 8 minute read
 
 - The surface: what your offering asks of someone
 - The serviceable line
-- Carried by your customers and their AI
+- Carried by your customers
+- Carried by their AI
 - Your people step in, or the customer is lost
-- Where the line is heading
 
 Illustrative, for one example offering. Each bar is one layer, as long as the work that layer takes, and the mark on it is the serviceable line. Other offerings have different bars: [see six examples](https://etgarbonar.com/serviceable-line/shapes/).
 

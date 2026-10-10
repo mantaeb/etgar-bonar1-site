@@ -539,6 +539,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .line-diagram .ld-legend li { display: flex; align-items: center; gap: .55rem; color: #93a6aa; font-size: .68rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
 .line-diagram .ld-legend li::before { content: ""; flex: none; width: 18px; height: 12px; border-radius: 2px; }
 .line-diagram .ld-key-line::before { background: rgba(47,114,255,.26); border: 2px solid var(--blue); }
+.line-diagram .ld-key-ai::before { background: rgba(220,185,111,.35); border: 2px solid var(--gold); }
 .line-diagram .ld-legend .ld-key-move::before { content: "\2192"; width: 18px; height: auto; background: none; color: var(--gold); font-size: 1.5rem; font-weight: 700; line-height: 1; text-align: center; }
 .line-diagram .ld-note { margin: 1.1rem 0 0; color: #7d9094; font-size: .76rem; line-height: 1.5; }
 .line-diagram .ld-note a { color: var(--mint); text-underline-offset: 3px; }
@@ -554,6 +555,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .line-diagram .ld-bar-track { fill: rgba(168,189,193,.14); stroke: rgba(168,189,193,.45); stroke-width: 1; }
 .line-diagram .ld-bar-line { fill: var(--blue); }
 .line-diagram .ld-bar-gain { fill: rgba(220,185,111,.35); }
+.line-diagram .ld-bar-ai { fill: var(--gold); }
 .line-diagram .ld-bar-mark { stroke: var(--paper-bright); stroke-width: 3; stroke-linecap: round; }
 .line-diagram .ld-bar-arrow { stroke: var(--gold); stroke-width: 3; stroke-linecap: round; }
 .line-diagram .ld-bar-arrowhead { fill: var(--gold); }

@@ -1,35 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="cardtitle carddesc">
   <title id="cardtitle">The serviceable line</title>
-  <desc id="carddesc">Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A mark on each bar is the serviceable line: how far your customers and their AI get on that layer on their own. Past it, your people step in or the customer is lost. Arrows on Findable, Selectable, Integrable and Operable show where the line is heading. How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.</desc>
+  <desc id="carddesc">Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A mark on each bar is the serviceable line: how far your customers and their AI get on that layer on their own. Past it, your people step in or the customer is lost. Blue is what customers carry; gold on Findable, Selectable, Integrable and Operable is what their AI carries, and the mark sits at its end. How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.</desc>
   <rect width="1200" height="630" fill="#101a1d"/>
   <text x="786" y="116" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Findable</text>
   <rect x="800" y="98.0" width="302.4" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="98.0" width="280.0" height="24" rx="6.0" fill="#dcb96f" fill-opacity=".35"/>
+  <rect x="800" y="98.0" width="280.0" height="24" rx="6.0" fill="#dcb96f"/>
   <rect x="800" y="98.0" width="212.8" height="24" rx="6.0" fill="#2f72ff"/>
-  <line x1="1012.8" y1="92.0" x2="1012.8" y2="128.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
-  <line x1="1020.8" y1="110" x2="1070.0" y2="110" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/>
-  <polygon points="1080.0,110 1070.0,104 1070.0,116" fill="#dcb96f"/>
+  <line x1="1080.0" y1="92.0" x2="1080.0" y2="128.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <text x="786" y="176" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Selectable</text>
   <rect x="800" y="158.0" width="336.0" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="158.0" width="257.6" height="24" rx="6.0" fill="#dcb96f" fill-opacity=".35"/>
+  <rect x="800" y="158.0" width="257.6" height="24" rx="6.0" fill="#dcb96f"/>
   <rect x="800" y="158.0" width="145.6" height="24" rx="6.0" fill="#2f72ff"/>
-  <line x1="945.6" y1="152.0" x2="945.6" y2="188.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
-  <line x1="953.6" y1="170" x2="1047.6" y2="170" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/>
-  <polygon points="1057.6,170 1047.6,164 1047.6,176" fill="#dcb96f"/>
+  <line x1="1057.6" y1="152.0" x2="1057.6" y2="188.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <text x="786" y="236" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Integrable</text>
   <rect x="800" y="218.0" width="224.0" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="218.0" width="212.8" height="24" rx="6.0" fill="#dcb96f" fill-opacity=".35"/>
+  <rect x="800" y="218.0" width="212.8" height="24" rx="6.0" fill="#dcb96f"/>
   <rect x="800" y="218.0" width="168.0" height="24" rx="6.0" fill="#2f72ff"/>
-  <line x1="968.0" y1="212.0" x2="968.0" y2="248.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
-  <line x1="976.0" y1="230" x2="1002.8" y2="230" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/>
-  <polygon points="1012.8,230 1002.8,224 1002.8,236" fill="#dcb96f"/>
+  <line x1="1012.8" y1="212.0" x2="1012.8" y2="248.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <text x="786" y="296" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Operable</text>
   <rect x="800" y="278.0" width="268.8" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="278.0" width="140.0" height="24" rx="6.0" fill="#dcb96f" fill-opacity=".35"/>
+  <rect x="800" y="278.0" width="140.0" height="24" rx="6.0" fill="#dcb96f"/>
   <rect x="800" y="278.0" width="100.8" height="24" rx="6.0" fill="#2f72ff"/>
-  <line x1="900.8" y1="272.0" x2="900.8" y2="308.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
-  <line x1="908.8" y1="290" x2="930.0" y2="290" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/>
-  <polygon points="940.0,290 930.0,284 930.0,296" fill="#dcb96f"/>
+  <line x1="940.0" y1="272.0" x2="940.0" y2="308.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <text x="786" y="356" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Fixable</text>
   <rect x="800" y="338.0" width="179.2" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
   <rect x="800" y="338.0" width="123.2" height="24" rx="6.0" fill="#2f72ff"/>
@@ -39,11 +31,11 @@
   <line x1="701" y1="467" x2="701" y2="485" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <text x="724" y="482" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">The serviceable line</text>
   <rect x="690" y="502" width="22" height="14" rx="3" fill="#2f72ff"/>
-  <text x="724" y="514" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Carried by your customers and their AI</text>
-  <rect x="690" y="534" width="22" height="14" rx="3" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <text x="724" y="546" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Your people step in, or the customer is lost</text>
-  <line x1="690" y1="573" x2="704" y2="573" stroke="#dcb96f" stroke-width="3" stroke-linecap="round"/><polygon points="712,573 703,567 703,579" fill="#dcb96f"/>
-  <text x="724" y="578" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Where the line is heading</text>
+  <text x="724" y="514" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Carried by your customers</text>
+  <rect x="690" y="534" width="22" height="14" rx="3" fill="#dcb96f"/>
+  <text x="724" y="546" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Carried by their AI</text>
+  <rect x="690" y="566" width="22" height="14" rx="3" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
+  <text x="724" y="578" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Your people step in, or the customer is lost</text>
   <text x="80" y="196" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-1" fill="#f4efe6">The serviceable</text>
   <text x="80" y="274" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-1" fill="#f4efe6">line</text>
   <text x="80" y="352" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="30" fill="#a8bdc1">How far do your customers,</text>

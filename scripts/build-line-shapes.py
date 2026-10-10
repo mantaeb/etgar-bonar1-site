@@ -62,6 +62,10 @@ HERO_SURFACE = [2.7, 3.0, 2.0, 2.4, 1.6]
 HERO_LINE = [1.9, 1.3, 1.5, 0.9, 1.1]
 HERO_ARROWS = {0: 2.5, 1: 2.3, 2: 1.9, 3: 1.25}
 assert all(HERO_LINE[i] < v <= HERO_SURFACE[i] for i, v in HERO_ARROWS.items())
+# The main page hero and the main social card follow Clip A (Etgar, 2026-10-10): blue is what customers
+# carry, solid gold is what their AI carries on top, and the white mark sits at the end of the gold. The
+# gold ends where the shapes-page arrows point, so both pages draw the same numbers. The shapes page keeps
+# the arrows, because its six cards have no customer/AI split and share the hero's legend.
 SIMPLE = (HERO_SURFACE, HERO_LINE, HERO_LINE)
 FULL = (HERO_SURFACE, HERO_LINE, HERO_LINE)
 
@@ -73,6 +77,7 @@ CARD_STYLE = {
     "track": f'fill="{MINT}" fill-opacity=".14" stroke="{MINT}" stroke-opacity=".45"',
     "line": f'fill="{BLUE}"',
     "gain": f'fill="{GOLD}" fill-opacity=".35"',
+    "ai": f'fill="{GOLD}"',
     "mark": f'stroke="{PAPER}" stroke-width="3" stroke-linecap="round"',
     "arrow": f'stroke="{GOLD}" stroke-width="3" stroke-linecap="round"',
     "arrowhead": f'fill="{GOLD}"',
@@ -90,29 +95,35 @@ def carried_word(s, l):
     return "almost all" if f >= .8 else "most" if f >= .55 else "about half" if f >= .35 else "little"
 
 
-def describe(name, surface, line, carried, arrows=None):
-    parts = []
-    for n, s, l, c in zip(LAYERS, surface, line, carried):
+def describe(name, surface, line, carried, arrows=None, ai=None):
+    ai, parts = ai or {}, []
+    for i, (n, s, l, c) in enumerate(zip(LAYERS, surface, line, carried)):
         if s == 0:
             parts.append(f"{n}: none")
         else:
             others = ", more by others" if c - l >= .2 else ""
-            parts.append(f"{n}: {size_word(s)} surface, {carried_word(s, l)} of it carried alone{others}")
+            parts.append(f"{n}: {size_word(s)} surface, {carried_word(s, ai.get(i, l))} of it carried alone{others}")
     text = f"{name}, one bar per layer. " + "; ".join(parts) + ". A white mark on each bar is the serviceable line."
     if arrows:
         names = [LAYERS[i] for i in sorted(arrows)]
         text += f" Gold arrows on {', '.join(names[:-1])} and {names[-1]} show where the line is heading."
+    if ai:
+        names = [LAYERS[i] for i in sorted(ai)]
+        text += (f" Blue is what customers carry. Gold on {', '.join(names[:-1])} and {names[-1]} is what their AI carries,"
+                 " and the mark sits at its end.")
     return text
 
 
-def bar_rows(surface, line, carried, *, x0, y0, unit, step, h, arrows=None, old=None, labels=True, style=None,
-             prefix="ld", ox=0, oy=0):
+def bar_rows(surface, line, carried, *, x0, y0, unit, step, h, arrows=None, ai=None, old=None, labels=True,
+             style=None, prefix="ld", ox=0, oy=0):
     """The five bars. Each row: the track (its length is the surface), teal for work someone else
     carries, gold for where the line is heading, blue for what customers and their AI carry alone,
     and a white mark at the end of the blue, which is the serviceable line on that layer.
+    With ai, blue is what customers carry, solid gold runs on to ai[i] for what their AI carries,
+    and the mark moves to the end of the gold.
     style=None draws with CSS classes (prefix-bar-*); a style dict draws with inline attributes."""
     att = (lambda k: style[k]) if style else (lambda k: f'class="{prefix}-bar-{k}"')
-    arrows, out = arrows or {}, []
+    arrows, ai, out = arrows or {}, ai or {}, []
     for i, n in enumerate(LAYERS):
         y = oy + y0 + i * step
         x = ox + x0
@@ -130,9 +141,11 @@ def bar_rows(surface, line, carried, *, x0, y0, unit, step, h, arrows=None, old=
             out.append(f'<rect x="{x}" y="{y - h / 2}" width="{carried[i] * unit:.1f}" height="{h}" rx="{h / 4}" {att("other")}/>')
         if i in arrows:
             out.append(f'<rect x="{x}" y="{y - h / 2}" width="{arrows[i] * unit:.1f}" height="{h}" rx="{h / 4}" {att("gain")}/>')
+        if i in ai:
+            out.append(f'<rect x="{x}" y="{y - h / 2}" width="{ai[i] * unit:.1f}" height="{h}" rx="{h / 4}" {att("ai")}/>')
         if line[i] > 0:
             out.append(f'<rect x="{x}" y="{y - h / 2}" width="{line[i] * unit:.1f}" height="{h}" rx="{h / 4}" {att("line")}/>')
-        mx = x + line[i] * unit
+        mx = x + ai.get(i, line[i]) * unit
         out.append(f'<line x1="{mx:.1f}" y1="{y - h / 2 - 6}" x2="{mx:.1f}" y2="{y + h / 2 + 6}" {att("mark")}/>')
         if i in arrows:
             tip, head = x + arrows[i] * unit, 10
@@ -141,13 +154,13 @@ def bar_rows(surface, line, carried, *, x0, y0, unit, step, h, arrows=None, old=
     return out
 
 
-def svg(name, surface, line, carried, *, kind, arrows=None, old=None, indent="          "):
+def svg(name, surface, line, carried, *, kind, arrows=None, ai=None, old=None, indent="          "):
     if kind == "hero":
         geo, prefix, w, hgt = dict(x0=132, y0=36, unit=148, step=62, h=22), "ld", 600, 320
     else:
         geo, prefix, w, hgt = dict(x0=100, y0=24, unit=88, step=40, h=16), "sh", 380, 208
-    rows = bar_rows(surface, line, carried, arrows=arrows, old=old, prefix=prefix, **geo)
-    label = describe(name, surface, line, carried, arrows)
+    rows = bar_rows(surface, line, carried, arrows=arrows, ai=ai, old=old, prefix=prefix, **geo)
+    label = describe(name, surface, line, carried, arrows, ai)
     out = [f'<svg viewBox="0 0 {w} {hgt}" role="img" aria-label="{label}">'] + ["  " + r for r in rows] + ["</svg>"]
     return "\n".join(indent + l for l in out)
 
@@ -175,7 +188,7 @@ def blocks():
             "growth": grid(GROWTH, "shape-grid shape-pair"),
         },
         MAIN_PAGE: {
-            "main-hero": svg("An illustrative offering", *FULL, kind="hero", arrows=HERO_ARROWS),
+            "main-hero": svg("An illustrative offering", *FULL, kind="hero", ai=HERO_ARROWS),
         },
     }
 
@@ -192,19 +205,20 @@ def legend_row(x, y, kind, text):
         "gap": f'<rect x="{x}" y="{y - 12}" width="22" height="14" rx="3" fill="{MINT}" fill-opacity=".14" stroke="{MINT}" stroke-opacity=".45"/>',
         "surface": f'<rect x="{x}" y="{y - 12}" width="22" height="14" rx="3" fill="none" stroke="{MINT}" stroke-opacity=".7" stroke-width="1.5"/>',
         "mark": f'<line x1="{x + 11}" y1="{y - 15}" x2="{x + 11}" y2="{y + 3}" stroke="{PAPER}" stroke-width="3" stroke-linecap="round"/>',
+        "ai": f'<rect x="{x}" y="{y - 12}" width="22" height="14" rx="3" fill="{GOLD}"/>',
         "move": f'<line x1="{x}" y1="{y - 5}" x2="{x + 14}" y2="{y - 5}" stroke="{GOLD}" stroke-width="3" stroke-linecap="round"/><polygon points="{x + 22},{y - 5} {x + 13},{y - 11} {x + 13},{y + 1}" fill="{GOLD}"/>',
     }[kind]
     return f'  {swatch}\n  <text x="{x + 34}" y="{y}" {FONT} font-size="17" fill="{MINT}" opacity=".8">{text}</text>'
 
 
 def main_card():
-    rows = bar_rows(*FULL, x0=800, y0=110, unit=112, step=60, h=24, style=CARD_STYLE, arrows=HERO_ARROWS)
+    rows = bar_rows(*FULL, x0=800, y0=110, unit=112, step=60, h=24, style=CARD_STYLE, ai=HERO_ARROWS)
     body = "\n".join(["  " + r for r in rows] + [
         legend_row(690, 450, "surface", "The surface: what your offering asks of someone"),
         legend_row(690, 482, "mark", "The serviceable line"),
-        legend_row(690, 514, "line", "Carried by your customers and their AI"),
-        legend_row(690, 546, "gap", "Your people step in, or the customer is lost"),
-        legend_row(690, 578, "move", "Where the line is heading"),
+        legend_row(690, 514, "line", "Carried by your customers"),
+        legend_row(690, 546, "ai", "Carried by their AI"),
+        legend_row(690, 578, "gap", "Your people step in, or the customer is lost"),
         f'  <text x="80" y="196" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">The serviceable</text>',
         f'  <text x="80" y="274" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">line</text>',
         f'  <text x="80" y="352" {FONT} font-size="30" fill="{MINT}">How far do your customers,</text>',
@@ -215,7 +229,7 @@ def main_card():
     return card_svg("The serviceable line",
                     "Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A mark on each bar "
                     "is the serviceable line: how far your customers and their AI get on that layer on their own. Past it, your people step in "
-                    "or the customer is lost. Arrows on Findable, Selectable, Integrable and Operable show where the line is heading. "
+                    "or the customer is lost. Blue is what customers carry; gold on Findable, Selectable, Integrable and Operable is what their AI carries, and the mark sits at its end. "
                     "How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.", body)
 
 
