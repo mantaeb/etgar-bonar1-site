@@ -12,7 +12,7 @@ A point of view by Etgar Bonar
 
 Move the line out, and you can win customers you used to walk away from.
 
-Published 29 August 2026 · Updated 8 October 2026 · 8 minute read
+Published 29 August 2026 · Updated 10 October 2026 · 8 minute read
 
 - The surface: what your offering asks of someone
 - The serviceable line
@@ -24,11 +24,13 @@ Illustrative, for one example offering. Each bar is one layer, as long as the wo
 
 The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose revenue, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.
 
-Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine. I spent most of those years on the seller's side of that shift, at Amazon, Taboola, Rapyd and Lokalise, where my teams and I moved this line by hand (examples below).
-
 *Serviceable* as in serviceable available market: the demand a company can actually reach.
 
-Both sales-led and product-led motions are losing ground to this silent part of the journey. The company does not own the machine doing the work. It often cannot see the interaction. And rarely does one leader own whether the machine's picture of the company matches what the company actually is.
+Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it. Increasingly it is a machine. I spent most of those years on the seller's side of that shift, at Amazon, Taboola, Rapyd and Lokalise, where my teams and I moved this line by hand (examples below).
+
+Both sales-led and product-led motions are losing ground to this silent part of the journey.
+
+It is silent because the company does not own the machine doing the work, and often cannot see the interaction.
 
 ## The two variables behind the variance
 
@@ -46,8 +48,6 @@ These are not stages in a funnel. The machine can consult any of them before or 
 
 Each question becomes useful when it has an observable test and a commercial signal. The point is not one total score. It is to locate where the work stops and what that stop costs.
 
-**Integrable gets the offering into the customer's environment. Operable gets the customer's work done once it is there.**
-
 1. **Findable Can it find you at all?**
 
    **If it fails:** never considered.
@@ -64,7 +64,7 @@ Each question becomes useful when it has an observable test and a commercial sig
    **Signal:** Shortlist inclusion, comparison accuracy and win rate.
 3. **Integrable Can it work out how you connect?**
 
-   **If it fails:** bought as a smaller version of you.
+   **If it fails:** bought or selected, does not go live.
 
    **Test:** The agent produces a valid implementation plan and, where test access exists, completes a working connection.
 
@@ -84,9 +84,9 @@ Each question becomes useful when it has an observable test and a commercial sig
 
    **Signal:** Resolution rate, escalation rate and churn.
 
-A payments agent can authenticate and read account data, yet lack the permission or capability to issue a refund. The platform is Integrable for that agent, but not Operable for that job.
+Integrable and Operable are the easiest pair to confuse. Integrable gets the offering into the customer's environment. Operable gets the customer's work done once it is there. A payments agent can authenticate and read account data, yet lack the permission or capability to issue a refund: the platform is Integrable for that agent, but not Operable for that job.
 
-Every exit is a loss the seller may never see recorded. The two in the middle are especially expensive: the customer buys a smaller version of what you offer, or pays and then stalls. When the job is done, it ends in activation, expansion and advocacy. Either way, the outcome becomes public evidence and shapes the next buyer's research.
+Each "If it fails" above is an exit the seller may never see recorded. When the job is done, it ends in activation, expansion and advocacy. Either way, the outcome becomes public evidence and shapes the next buyer's research.
 
 Selected examples of where my teams and I have moved the line · [Full track record, by company](https://etgarbonar.com/#record)
 
@@ -110,13 +110,13 @@ A capability is real but poorly described. The buyer's AI compares you against a
 
 ### Disillusion
 
-The buyer arrives with an implementation plan assembled from public material. The plan is wrong, so activation stalls and the failure becomes evidence for the next buyer.
+The buyer arrives with an implementation plan assembled from public material. The plan is wrong, or the agent connects but cannot run the work, so activation stalls. This is the costliest exit: a good-fit customer who already bought, and often already integrated, churns. The company loses revenue it had already won and that customer's next decisions, and the reviews they leave on G2, Trustpilot and Reddit become evidence for the next buyer's consideration.
 
 The vacancy
 
 ## Five answers, five teams, rarely one owner
 
-How a company is represented to machines is split across marketing, product, pricing, partnerships, documentation, and support. Each team may be doing its part well. Rarely does one person own whether the answers add up across the full customer journey, and almost nobody measures it end to end.
+How a company is represented to machines is split across marketing, product, pricing, partnerships, documentation, and support. Each team may be doing its part well. Rarely does one leader own whether the machine's picture of the company matches what the company actually is, and almost nobody measures it end to end.
 
 This is a commercial job because the failure appears as lost consideration, lower conversion, slow activation, higher cost to serve, and quiet churn. The owner needs the authority to coordinate the whole system and the discipline to measure it end to end.
 
