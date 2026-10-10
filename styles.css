@@ -1112,7 +1112,7 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 }
 
 /* Narrowest phones: the serviceable-line bar carries four links, so tighten it after the 640px rules */
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .site-nav { gap: .4rem; font-size: .69rem; }
   .site-nav .nav-cta { padding: .32rem .52rem; }
 }
