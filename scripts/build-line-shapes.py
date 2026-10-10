@@ -68,6 +68,13 @@ assert all(HERO_LINE[i] < v <= HERO_SURFACE[i] for i, v in HERO_ARROWS.items())
 # the arrows, because its six cards have no customer/AI split and share the hero's legend.
 SIMPLE = (HERO_SURFACE, HERO_LINE, HERO_LINE)
 FULL = (HERO_SURFACE, HERO_LINE, HERO_LINE)
+# The main hero and the main card also put a little gold on Fixable, taken from its blue so its mark stays
+# put: most fixes needed outside people, and AI now carries some (Etgar, 2026-10-10, matching Clip A v8).
+# The shapes page keeps HERO_LINE and HERO_ARROWS until its new image replaces that hero.
+MAIN_LINE = HERO_LINE[:4] + [0.85]
+MAIN_AI = {**HERO_ARROWS, 4: 1.1}
+MAIN = (HERO_SURFACE, MAIN_LINE, MAIN_LINE)
+assert all(MAIN_LINE[i] < v <= HERO_SURFACE[i] for i, v in MAIN_AI.items())
 
 FONT = 'font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif"'
 MINT, GOLD, BLUE, INK, PAPER = "#a8bdc1", "#dcb96f", "#2f72ff", "#101a1d", "#f4efe6"
@@ -188,7 +195,7 @@ def blocks():
             "growth": grid(GROWTH, "shape-grid shape-pair"),
         },
         MAIN_PAGE: {
-            "main-hero": svg("An illustrative offering", *FULL, kind="hero", ai=HERO_ARROWS),
+            "main-hero": svg("An illustrative offering", *MAIN, kind="hero", ai=MAIN_AI),
         },
     }
 
@@ -212,7 +219,7 @@ def legend_row(x, y, kind, text):
 
 
 def main_card():
-    rows = bar_rows(*FULL, x0=800, y0=110, unit=112, step=60, h=24, style=CARD_STYLE, ai=HERO_ARROWS)
+    rows = bar_rows(*MAIN, x0=800, y0=110, unit=112, step=60, h=24, style=CARD_STYLE, ai=MAIN_AI)
     body = "\n".join(["  " + r for r in rows] + [
         legend_row(690, 450, "surface", "The surface: what your offering asks of someone"),
         legend_row(690, 482, "mark", "The serviceable line"),
@@ -229,7 +236,7 @@ def main_card():
     return card_svg("The serviceable line",
                     "Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A mark on each bar "
                     "is the serviceable line: how far your customers and their AI get on that layer on their own. Past it, your people step in "
-                    "or revenue is lost. Blue is what customers carry; gold on Findable, Selectable, Integrable and Operable is what their AI carries, and the mark sits at its end. "
+                    "or revenue is lost. Blue is what customers carry; gold on all five layers is what their AI carries, and the mark sits at its end. "
                     "How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.", body)
 
 
