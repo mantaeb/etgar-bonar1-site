@@ -12,15 +12,16 @@ Description: How far do your customers, and their AI, get without you? The five 
 
 The five layers are not the same size for every offering. A bag of rice has almost nothing to connect or fix. A medical device has a hospital committee to convince and technicians to train. A software platform has all five, in depth. So the line has a shape, and so does the work around it.
 
-Published 3 October 2026 · Updated 7 October 2026 · 7 minute read
+Published 3 October 2026 · Updated 10 October 2026 · 7 minute read
 
 - The surface: what your offering asks of someone
 - The serviceable line
-- Carried by your customers and their AI
-- Your people step in, or the customer is lost
-- Where the line is heading
+- Carried by your customers
+- Carried by their AI
+- Carried by someone else, such as a partner
+- Your people step in, or revenue is lost
 
-Illustrative: the same offering as on the main page. A bar's length is what the offering asks on that layer. What matters is the gap on each bar, the part past the line, not which bar is longest. The arrows mark where the line is heading: on Findable, Selectable and Integrable, and a little on Operable, which moves last.
+Illustrative: three of the six offerings below, in turn. A bar's length is what the offering asks on that layer. What matters is the gap on each bar, the part past the line, not which bar is longest.
 
 Every offering asks something of the person buying it. Some ask almost nothing. Some ask a great deal, before the purchase and long after it.
 
@@ -42,7 +43,7 @@ Everything someone has to work out or do to get value from your offering, on eac
 
 The line
 
-How much of that surface your customers, and increasingly their AI, get through on their own. It ends at the serviceable line, the mark on each bar. Blue on the drawings.
+How much of that surface your customers, and increasingly their AI, get through on their own. It ends at the serviceable line, the mark on each bar. On the drawings, blue is what customers carry and gold is what their AI carries.
 
 The gap
 
@@ -52,7 +53,7 @@ Moving the line out shrinks the gap from the inside. How much there is to shrink
 
 ### The scale
 
-Every bar on this page is scored on one scale, for the surface, the line and what others carry, so two people draw the same offering the same way.
+Every bar on this page is scored on one scale, for the surface, the line, the part of it their AI carries and what others carry, so two people draw the same offering the same way.
 
 1. **0** Nothing to do. The layer does not exist for this offering.
 2. **1** A few facts to look up.
@@ -166,7 +167,7 @@ Use it
 ## Draw your own shape
 
 1. For each layer, list what a buyer has to work out or do with your offering. If the list is empty, the layer does not exist for you. That is your surface.
-2. For each item, ask whether your customers, or their AI, can get through it from what you publish, without a person. That is your line.
+2. For each item, ask whether your customers, or their AI, can get through it from what you publish, without a person. That is your line. Mark the part their AI already does.
 3. If partners, dealers, service companies or third-party sites carry part of it, mark that too.
 4. What is left is your gap: the work your people carry, and the customers you lose, often without seeing why.
 5. Draw it once per buyer segment, not once per company.

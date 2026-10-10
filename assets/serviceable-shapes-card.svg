@@ -3,47 +3,58 @@
   <desc id="carddesc">Three sets of five bars: a bag of rice with three short bars and two layers missing, a medical device with long bars and little of each carried by the customer, and API-first software with five full bars. How far do your customers, and their AI, get without you? Not every offering has five layers. A point of view by Etgar Bonar.</desc>
   <rect width="1200" height="630" fill="#101a1d"/>
   <rect x="80" y="61.0" width="80.0" height="18" rx="4.5" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="80" y="61.0" width="20.0" height="18" rx="4.5" fill="#2f72ff"/>
+  <rect x="80" y="61.0" width="20.0" height="18" rx="4.5" fill="#dcb96f"/>
+  <rect x="80" y="61.0" width="10.0" height="18" rx="4.5" fill="#2f72ff"/>
   <line x1="100.0" y1="55.0" x2="100.0" y2="85.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <rect x="80" y="99.0" width="80.0" height="18" rx="4.5" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="80" y="99.0" width="30.0" height="18" rx="4.5" fill="#2f72ff"/>
+  <rect x="80" y="99.0" width="30.0" height="18" rx="4.5" fill="#dcb96f"/>
+  <rect x="80" y="99.0" width="15.0" height="18" rx="4.5" fill="#2f72ff"/>
   <line x1="110.0" y1="93.0" x2="110.0" y2="123.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <text x="80" y="151" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="14" fill="#a8bdc1" opacity=".45">none</text>
   <rect x="80" y="175.0" width="40.0" height="18" rx="4.5" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="80" y="175.0" width="40.0" height="18" rx="4.5" fill="#2f72ff"/>
+  <rect x="80" y="175.0" width="40.0" height="18" rx="4.5" fill="#dcb96f"/>
+  <rect x="80" y="175.0" width="30.0" height="18" rx="4.5" fill="#2f72ff"/>
   <line x1="120.0" y1="169.0" x2="120.0" y2="199.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <text x="80" y="227" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="14" fill="#a8bdc1" opacity=".45">none</text>
   <text x="80" y="290" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Bag of rice</text>
   <rect x="440" y="61.0" width="180.0" height="18" rx="4.5" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="440" y="61.0" width="100.0" height="18" rx="4.5" fill="#2f72ff"/>
+  <rect x="440" y="61.0" width="100.0" height="18" rx="4.5" fill="#dcb96f"/>
+  <rect x="440" y="61.0" width="70.0" height="18" rx="4.5" fill="#2f72ff"/>
   <line x1="540.0" y1="55.0" x2="540.0" y2="85.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <rect x="440" y="99.0" width="300.0" height="18" rx="4.5" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="440" y="99.0" width="70.0" height="18" rx="4.5" fill="#2f72ff"/>
+  <rect x="440" y="99.0" width="70.0" height="18" rx="4.5" fill="#dcb96f"/>
+  <rect x="440" y="99.0" width="50.0" height="18" rx="4.5" fill="#2f72ff"/>
   <line x1="510.0" y1="93.0" x2="510.0" y2="123.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <rect x="440" y="137.0" width="260.0" height="18" rx="4.5" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
   <rect x="440" y="137.0" width="70.0" height="18" rx="4.5" fill="#2f72ff"/>
   <line x1="510.0" y1="131.0" x2="510.0" y2="161.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <rect x="440" y="175.0" width="260.0" height="18" rx="4.5" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="440" y="175.0" width="80.0" height="18" rx="4.5" fill="#2f72ff"/>
+  <rect x="440" y="175.0" width="80.0" height="18" rx="4.5" fill="#dcb96f"/>
+  <rect x="440" y="175.0" width="60.0" height="18" rx="4.5" fill="#2f72ff"/>
   <line x1="520.0" y1="169.0" x2="520.0" y2="199.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <rect x="440" y="213.0" width="300.0" height="18" rx="4.5" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
   <rect x="440" y="213.0" width="50.0" height="18" rx="4.5" fill="#2f72ff"/>
   <line x1="490.0" y1="207.0" x2="490.0" y2="237.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <text x="440" y="290" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Medical device</text>
   <rect x="800" y="61.0" width="300.0" height="18" rx="4.5" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="61.0" width="250.0" height="18" rx="4.5" fill="#2f72ff"/>
+  <rect x="800" y="61.0" width="250.0" height="18" rx="4.5" fill="#dcb96f"/>
+  <rect x="800" y="61.0" width="160.0" height="18" rx="4.5" fill="#2f72ff"/>
   <line x1="1050.0" y1="55.0" x2="1050.0" y2="85.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <rect x="800" y="99.0" width="300.0" height="18" rx="4.5" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="99.0" width="160.0" height="18" rx="4.5" fill="#2f72ff"/>
+  <rect x="800" y="99.0" width="160.0" height="18" rx="4.5" fill="#dcb96f"/>
+  <rect x="800" y="99.0" width="100.0" height="18" rx="4.5" fill="#2f72ff"/>
   <line x1="960.0" y1="93.0" x2="960.0" y2="123.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <rect x="800" y="137.0" width="300.0" height="18" rx="4.5" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="137.0" width="220.0" height="18" rx="4.5" fill="#2f72ff"/>
+  <rect x="800" y="137.0" width="220.0" height="18" rx="4.5" fill="#dcb96f"/>
+  <rect x="800" y="137.0" width="120.0" height="18" rx="4.5" fill="#2f72ff"/>
   <line x1="1020.0" y1="131.0" x2="1020.0" y2="161.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <rect x="800" y="175.0" width="300.0" height="18" rx="4.5" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="175.0" width="130.0" height="18" rx="4.5" fill="#2f72ff"/>
+  <rect x="800" y="175.0" width="130.0" height="18" rx="4.5" fill="#dcb96f"/>
+  <rect x="800" y="175.0" width="90.0" height="18" rx="4.5" fill="#2f72ff"/>
   <line x1="930.0" y1="169.0" x2="930.0" y2="199.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <rect x="800" y="213.0" width="300.0" height="18" rx="4.5" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="213.0" width="150.0" height="18" rx="4.5" fill="#2f72ff"/>
+  <rect x="800" y="213.0" width="150.0" height="18" rx="4.5" fill="#dcb96f"/>
+  <rect x="800" y="213.0" width="90.0" height="18" rx="4.5" fill="#2f72ff"/>
   <line x1="950.0" y1="207.0" x2="950.0" y2="237.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
   <text x="800" y="290" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">API-first software</text>
   <path d="M80 340H1120" stroke="#233236" stroke-width="1"/>
