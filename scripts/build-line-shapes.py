@@ -281,14 +281,14 @@ def main_card():
         f'  <text x="80" y="274" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">line</text>',
         f'  <text x="80" y="352" {FONT} font-size="30" fill="{MINT}">How far do your customers,</text>',
         f'  <text x="80" y="394" {FONT} font-size="30" fill="{MINT}">and their AI, get without you?</text>',
-        f'  <text x="80" y="548" {FONT} font-size="21" fill="{GOLD}">A point of view by Etgar Bonar</text>',
+        f'  <text x="80" y="548" {FONT} font-size="21" fill="{GOLD}">A framework by Etgar Bonar</text>',
         f'  <text x="80" y="580" {FONT} font-size="21" fill="{MINT}" opacity=".5">etgarbonar.com</text>',
     ])
     return card_svg("The serviceable line",
                     "Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A mark on each bar "
                     "is the serviceable line: how far your customers and their AI get on that layer on their own. Past it, your people step in "
                     "or revenue is lost. Blue is what customers carry; gold on all five layers is what their AI carries, and the mark sits at its end. "
-                    "How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.", body)
+                    "How far do your customers, and their AI, get without you? A framework by Etgar Bonar.", body)
 
 
 def shapes_card():
