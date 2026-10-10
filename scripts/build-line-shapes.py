@@ -218,7 +218,7 @@ def main_card():
         legend_row(690, 482, "mark", "The serviceable line"),
         legend_row(690, 514, "line", "Carried by your customers"),
         legend_row(690, 546, "ai", "Carried by their AI"),
-        legend_row(690, 578, "gap", "Your people step in, or the customer is lost"),
+        legend_row(690, 578, "gap", "Your people step in, or revenue is lost"),
         f'  <text x="80" y="196" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">The serviceable</text>',
         f'  <text x="80" y="274" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">line</text>',
         f'  <text x="80" y="352" {FONT} font-size="30" fill="{MINT}">How far do your customers,</text>',
@@ -229,7 +229,7 @@ def main_card():
     return card_svg("The serviceable line",
                     "Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A mark on each bar "
                     "is the serviceable line: how far your customers and their AI get on that layer on their own. Past it, your people step in "
-                    "or the customer is lost. Blue is what customers carry; gold on Findable, Selectable, Integrable and Operable is what their AI carries, and the mark sits at its end. "
+                    "or revenue is lost. Blue is what customers carry; gold on Findable, Selectable, Integrable and Operable is what their AI carries, and the mark sits at its end. "
                     "How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.", body)
 
 

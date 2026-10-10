@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="cardtitle carddesc">
   <title id="cardtitle">The serviceable line</title>
-  <desc id="carddesc">Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A mark on each bar is the serviceable line: how far your customers and their AI get on that layer on their own. Past it, your people step in or the customer is lost. Blue is what customers carry; gold on Findable, Selectable, Integrable and Operable is what their AI carries, and the mark sits at its end. How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.</desc>
+  <desc id="carddesc">Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A mark on each bar is the serviceable line: how far your customers and their AI get on that layer on their own. Past it, your people step in or revenue is lost. Blue is what customers carry; gold on Findable, Selectable, Integrable and Operable is what their AI carries, and the mark sits at its end. How far do your customers, and their AI, get without you? A point of view by Etgar Bonar.</desc>
   <rect width="1200" height="630" fill="#101a1d"/>
   <text x="786" y="116" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Findable</text>
   <rect x="800" y="98.0" width="302.4" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
@@ -35,7 +35,7 @@
   <rect x="690" y="534" width="22" height="14" rx="3" fill="#dcb96f"/>
   <text x="724" y="546" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Carried by their AI</text>
   <rect x="690" y="566" width="22" height="14" rx="3" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <text x="724" y="578" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Your people step in, or the customer is lost</text>
+  <text x="724" y="578" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Your people step in, or revenue is lost</text>
   <text x="80" y="196" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-1" fill="#f4efe6">The serviceable</text>
   <text x="80" y="274" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-1" fill="#f4efe6">line</text>
   <text x="80" y="352" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="30" fill="#a8bdc1">How far do your customers,</text>
