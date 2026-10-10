@@ -33,9 +33,7 @@ How to read the shape
 
 ## A surface, a line and a gap
 
-Each bar is one of the five layers: Findable, Selectable, Integrable, Operable and Fixable. Three things sit on each bar.
-
-**Integrable gets the offering into the customer's environment. Operable gets the customer's work done once it is there.**
+Each bar is one of the five layers: Findable, Selectable, Integrable, Operable and Fixable. Integrable gets the offering into the customer's environment. Operable gets the customer's work done once it is there. Three things sit on each bar.
 
 The surface
 

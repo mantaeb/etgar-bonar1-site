@@ -158,6 +158,10 @@ a {
   min-width: 64px;
 }
 
+.pov-link {
+  padding: 0 14px;
+}
+
 .faq-link:hover,
 .lang-toggle:hover {
   border-color: rgba(255, 255, 255, 0.72);

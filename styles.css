@@ -725,6 +725,10 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 @media (max-width: 900px) {
   .site-header { padding-block: .8rem; align-items: flex-start; }
   .site-nav { gap: .85rem 1.1rem; flex-wrap: wrap; }
+  /* On the serviceable-line pages the bar drops the page you are on and uses short labels, so the rest fit */
+  .site-nav .nav-here { display: none; }
+  .site-nav .nav-long { display: none; }
+  .site-nav .nav-short { display: inline; }
   .hero, .method, .frontier-teaser, .build, .article-hero { grid-template-columns: 1fr; }
   .ai-test-copy { grid-template-columns: 1fr; }
   .hero { min-height: 0; gap: 5rem; align-items: start; }
@@ -1105,4 +1109,10 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
   .hero-grid { display: none; }
   .section, .section-dark, .article-body { padding: 2rem 0; }
   .career-card { break-inside: avoid; }
+}
+
+/* Narrowest phones: the serviceable-line bar carries four links, so tighten it after the 640px rules */
+@media (max-width: 380px) {
+  .site-nav { gap: .4rem; font-size: .69rem; }
+  .site-nav .nav-cta { padding: .32rem .52rem; }
 }
