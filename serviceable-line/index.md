@@ -6,7 +6,7 @@
 Title: The Serviceable Line: How Far Do Your Customers, and Their AI, Get Without You?
 Description: How far do your customers, and their AI, get without you? The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own.
 
-A point of view by Etgar Bonar
+A framework by Etgar Bonar
 
 # The serviceable line How far do your customers, and their AI, get without you?
 
