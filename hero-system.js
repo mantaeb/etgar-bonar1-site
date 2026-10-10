@@ -65,7 +65,7 @@
     host.innerHTML = svgMarkup;
     const svg = host.querySelector('.system-visual');
     const customerLayer = svg.querySelector('.moving-customers');
-    const hero = host.closest('.hero');
+    const hero = host.closest('.hero, .article-hero');
     const routeSeeds = [
       ['market-1', 'market', 0.000035, 0.05],
       ['market-2', 'market', 0.000052, 0.29],

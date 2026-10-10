@@ -46,7 +46,7 @@ The diagnostic
 
 ## Five questions that locate the Serviceable Line
 
-The diagnostic starts with a specific offering, buyer segment and job. What work is the customer willing and allowed to hand to AI, and what access and authority will that AI have? Then run the same job against your offering and the alternatives.
+The diagnostic starts with a specific offering, buyer segment and job. What work is the customer willing and allowed to hand to AI, and what access and authority will that AI have? Then run the same job against your offering and the alternatives. Keep those conditions fixed when comparing providers; the [small-business and enterprise shapes](https://etgarbonar.com/serviceable-line/shapes/#segments-title) show why.
 
 These are not stages in a funnel or a checklist every AI runs. They are five places where the work can become blocked, before or after money moves.
 
