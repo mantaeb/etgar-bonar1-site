@@ -38,15 +38,19 @@ How far AI moves the line depends on two things, and neither works without the o
 
 They multiply, they do not add. A perfectly legible product sold into a market whose buyers do not yet delegate gains little from AI. A market full of delegating buyers does nothing for a vendor a machine cannot read. That is why the line sits in a different place in developer tooling than in hospital procurement, and why the same vendor's line differs by segment inside one company. It is not only a software question. A bag of rice has nothing to connect or fix. A cordless drill does, and a buyer can ask an AI whether it takes a battery they already own before paying. [How the line takes a different shape for each offering](https://etgarbonar.com/serviceable-line/shapes/).
 
+Those two variables tell you where the Serviceable Line sits for a specific offering, buyer segment and job. The same company can therefore have several lines, and the same offering can have different lines for a small business and an enterprise buyer. To understand the revenue risk or opportunity, compare that line with the alternatives available to that buyer for the same job.
+
 One of those you do not control, and it is rising anyway. The other is a decision you have already made, deliberately or not.
 
 The diagnostic
 
-## Five questions the customer's AI keeps asking
+## Five questions that locate the Serviceable Line
 
-These are not stages in a funnel. The machine can consult any of them before or after money moves, and a weak answer at one point contaminates the others.
+The diagnostic starts with a specific offering, buyer segment and job. What work is the customer willing and allowed to hand to AI, and what access and authority will that AI have? Then run the same job against your offering and the alternatives.
 
-Each question becomes useful when it has an observable test and a commercial signal. The point is not one total score. It is to locate where the work stops and what that stop costs.
+These are not stages in a funnel or a checklist every AI runs. They are five places where the work can become blocked, before or after money moves.
+
+Each question needs an observable test and a commercial signal. The point is not one total score. It is to locate where the work stops, whether it stops earlier or later than it does with another provider, and what that difference costs.
 
 1. **Findable Can it find you at all?**
 
@@ -87,6 +91,19 @@ Each question becomes useful when it has an observable test and a commercial sig
 Integrable and Operable are the easiest pair to confuse. Integrable gets the offering into the customer's environment. Operable gets the customer's work done once it is there. A payments agent can authenticate and read account data, yet lack the permission or capability to issue a refund: the platform is Integrable for that agent, but not Operable for that job.
 
 Each "If it fails" above is an exit the seller may never see recorded. When the job is done, it ends in activation, expansion and advocacy. Either way, the outcome becomes public evidence and shapes the next buyer's research.
+
+The competitive gap
+
+## The same customer can get farther with one provider than another
+
+A Serviceable Line is not good or bad in isolation. Its commercial meaning depends on what customers are handing to AI and how far the alternatives let that AI go.
+
+- If customers are not yet delegating the job, a short line is mainly a readiness issue.
+- If customers are delegating the job but every provider blocks them at the same point, there is a potential category opportunity for the company that moves first.
+- If another provider lets the customer and their AI go farther than you do, the difference is revenue risk: lost consideration, slower activation, higher service costs or churn.
+- If you let them go farther than the alternatives, the difference is a competitive advantage: more customers you can win, activate, serve and retain without adding the same human cost.
+
+That is why the diagnostic must compare providers using the same buyer segment, job and access conditions. Your absolute line shows where people still have to step in. Your competitive gap shows the revenue at risk or available to win.
 
 Selected examples of where my teams and I have moved the line · [Full track record, by company](https://etgarbonar.com/#record)
 
