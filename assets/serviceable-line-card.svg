@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="cardtitle carddesc">
   <title id="cardtitle">The Serviceable Line</title>
-  <desc id="carddesc">Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A connected white line through the marks is the Serviceable Line: how far your customers and their AI get on that layer on their own. Past it, your people step in or revenue is lost. Blue is what customers carry; gold on all five layers is what their AI carries, and the mark sits at its end. How far do your customers, and their AI, get without you? A framework by Etgar Bonar.</desc>
+  <desc id="carddesc">Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A connected white line through the marks is the Serviceable Line: how far your customers and their AI get on that layer on their own. Past it, your people step in or revenue is lost. Blue is what customers carry; gold on all five layers is what their AI carries, and the mark sits at its end. How far do your customers, and their AI, get without you? By Etgar Bonar, Revenue &amp; GTM Executive.</desc>
   <rect width="1200" height="630" fill="#101a1d"/>
   <text x="786" y="116" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Findable</text>
   <rect x="800" y="98.0" width="302.4" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
@@ -31,7 +31,7 @@
   <rect x="690" y="438" width="22" height="14" rx="3" fill="none" stroke="#a8bdc1" stroke-opacity=".7" stroke-width="1.5"/>
   <text x="724" y="450" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">The surface: what your offering asks of someone</text>
   <line x1="701" y1="467" x2="701" y2="485" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
-  <text x="724" y="482" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">The serviceable line</text>
+  <text x="724" y="482" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">The Serviceable Line</text>
   <rect x="690" y="502" width="22" height="14" rx="3" fill="#2f72ff"/>
   <text x="724" y="514" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Carried by your customers</text>
   <rect x="690" y="534" width="22" height="14" rx="3" fill="#dcb96f"/>
@@ -42,6 +42,6 @@
   <text x="80" y="274" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-1" fill="#f4efe6">Line</text>
   <text x="80" y="352" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="30" fill="#a8bdc1">How far do your customers,</text>
   <text x="80" y="394" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="30" fill="#a8bdc1">and their AI, get without you?</text>
-  <text x="80" y="548" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#dcb96f">A framework by Etgar Bonar</text>
+  <text x="80" y="548" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#dcb96f">Etgar Bonar · Revenue &amp; GTM Executive</text>
   <text x="80" y="580" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#a8bdc1" opacity=".5">etgarbonar.com</text>
 </svg>

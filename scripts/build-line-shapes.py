@@ -373,7 +373,7 @@ def main_card():
     service_line = f'  <path d="{curve_path(marks, 24)}" fill="none" stroke="{PAPER}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'
     body = "\n".join(["  " + r for r in rows] + [service_line,
         legend_row(690, 450, "surface", "The surface: what your offering asks of someone"),
-        legend_row(690, 482, "mark", "The serviceable line"),
+        legend_row(690, 482, "mark", "The Serviceable Line"),
         legend_row(690, 514, "line", "Carried by your customers"),
         legend_row(690, 546, "ai", "Carried by their AI"),
         legend_row(690, 578, "gap", "Your people step in, or revenue is lost"),
@@ -381,14 +381,14 @@ def main_card():
         f'  <text x="80" y="274" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">Line</text>',
         f'  <text x="80" y="352" {FONT} font-size="30" fill="{MINT}">How far do your customers,</text>',
         f'  <text x="80" y="394" {FONT} font-size="30" fill="{MINT}">and their AI, get without you?</text>',
-        f'  <text x="80" y="548" {FONT} font-size="21" fill="{GOLD}">A framework by Etgar Bonar</text>',
+        f'  <text x="80" y="548" {FONT} font-size="21" fill="{GOLD}">Etgar Bonar · Revenue &amp; GTM Executive</text>',
         f'  <text x="80" y="580" {FONT} font-size="21" fill="{MINT}" opacity=".5">etgarbonar.com</text>',
     ])
     return card_svg("The Serviceable Line",
                     "Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A connected white line through the marks "
                     "is the Serviceable Line: how far your customers and their AI get on that layer on their own. Past it, your people step in "
                     "or revenue is lost. Blue is what customers carry; gold on all five layers is what their AI carries, and the mark sits at its end. "
-                    "How far do your customers, and their AI, get without you? A framework by Etgar Bonar.", body)
+                    "How far do your customers, and their AI, get without you? By Etgar Bonar, Revenue &amp; GTM Executive.", body)
 
 
 def shapes_card():
