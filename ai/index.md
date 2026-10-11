@@ -20,7 +20,7 @@ The idea
 
 This is a working pilot of a private operating system with long-term, source-backed memory. It connects knowledge and actions across the tools a person or family already uses, while keeping the system readable, inspectable, and portable.
 
-I built it for three reasons: to experience first-hand, as an early adopter, how buying changes when AI does the finding, choosing and using; to run my own and my family's work and life on it; and to build differently. I have been a builder many times before. What is new is that I can now write the code myself: connecting systems and apps that were never connected, and automating processes that could not be automated before. Together with solving discoverability and selectability at Lokalise, it changed how I think product-led and sales-led motions evolve in the age of AI. It is now the platform, a second brain and its agents, that I use to assess where a company's serviceable line sits.
+I built it for three reasons: to experience first-hand, as an early adopter, how buying changes when AI does the finding, choosing and using; to run my own and my family's work and life on it; and to build differently. I have been a builder many times before. What is new is that I can now write the code myself: connecting systems and apps that were never connected, and automating processes that could not be automated before. Together with solving discoverability and selectability at Lokalise, it changed how I think product-led and sales-led motions evolve in the age of AI. It is now the platform, a second brain and its agents, that I use to assess where a company's Serviceable Line sits.
 
 How it works
 

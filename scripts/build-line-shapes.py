@@ -135,7 +135,10 @@ def describe(name, surface, line, carried, ai=None):
         else:
             others = ", more by others" if c - ai.get(i, l) >= .2 else ""
             parts.append(f"{n}: {size_word(s)} surface, {carried_word(s, ai.get(i, l))} of it carried alone{others}")
-    text = f"{name}, one bar per layer. " + "; ".join(parts) + ". A white mark on each bar is the serviceable line."
+    line_description = ("A connected white line through the marks is the Serviceable Line."
+                        if all(surface) else
+                        "White line segments through the marks are the Serviceable Line, breaking where a layer does not exist.")
+    text = f"{name}, one bar per layer. " + "; ".join(parts) + ". " + line_description
     if ai:
         names = [LAYERS[i] for i in sorted(ai)]
         listed = names[0] if len(names) == 1 else f"{', '.join(names[:-1])} and {names[-1]}"
@@ -182,8 +185,9 @@ def svg(name, surface, line, carried, *, kind, ai=None, old=None, indent="      
     else:
         geo, prefix, w, hgt = dict(x0=100, y0=24, unit=88, step=40, h=16), "sh", 380, 208
     rows = bar_rows(surface, line, carried, ai=ai, old=old, prefix=prefix, **geo)
+    curves = segmented_curve_paths(surface, line, ai=ai, prefix=prefix, **geo) if kind == "card" else []
     label = describe(name, surface, line, carried, ai)
-    out = [f'<svg viewBox="0 0 {w} {hgt}" role="img" aria-label="{label}">'] + ["  " + r for r in rows] + ["</svg>"]
+    out = [f'<svg viewBox="0 0 {w} {hgt}" role="img" aria-label="{label}">'] + ["  " + r for r in rows] + ["  " + curve for curve in curves] + ["</svg>"]
     return "\n".join(indent + l for l in out)
 
 
@@ -197,6 +201,21 @@ def curve_path(points, h):
         path.append(f"C{x1:.1f} {y1 + half:.1f} {x2:.1f} {y2 - half:.1f} {x2:.1f} {y2:.1f}")
     path.append(f"L{bottom[0]:.1f} {bottom[1]:.1f}")
     return " ".join(path)
+
+
+def segmented_curve_paths(surface, line, *, x0, y0, unit, step, h, ai=None, prefix):
+    """Connect marks within each uninterrupted run of layers; absent layers break the line."""
+    ai, runs, run = ai or {}, [], []
+    for i, length in enumerate(surface):
+        if length == 0:
+            if run:
+                runs.append(run)
+                run = []
+            continue
+        run.append((x0 + ai.get(i, line[i]) * unit, y0 + i * step))
+    if run:
+        runs.append(run)
+    return [f'<path d="{curve_path(points, h)}" class="{prefix}-service-line"/>' for points in runs]
 
 
 def main_hero():
@@ -302,6 +321,8 @@ def rotating_hero(indent="          "):
                        f'class="ld-bar-{cls}" data-k="{key}"/>')
         out += [f'    <line x1="{mx:.1f}" y1="{y - h / 2 - 6}" x2="{mx:.1f}" y2="{y + h / 2 + 6}" class="ld-bar-mark"/>',
                 '  </g>']
+    marks = [(x0 + first["line"][i] * unit, y0 + i * step) for i in range(len(LAYERS))]
+    out.append(f'  <path d="{curve_path(marks, h)}" class="ld-service-line"/>')
     out.append('</svg>')
     return "\n".join(indent + l for l in out)
 
@@ -340,22 +361,24 @@ def legend_row(x, y, kind, text):
 
 def main_card():
     rows = bar_rows(*MAIN, x0=800, y0=110, unit=112, step=60, h=24, style=CARD_STYLE, ai=MAIN_AI)
-    body = "\n".join(["  " + r for r in rows] + [
+    marks = [(800 + MAIN_AI[i] * 112, 110 + i * 60) for i in range(len(LAYERS))]
+    service_line = f'  <path d="{curve_path(marks, 24)}" fill="none" stroke="{PAPER}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'
+    body = "\n".join(["  " + r for r in rows] + [service_line,
         legend_row(690, 450, "surface", "The surface: what your offering asks of someone"),
         legend_row(690, 482, "mark", "The serviceable line"),
         legend_row(690, 514, "line", "Carried by your customers"),
         legend_row(690, 546, "ai", "Carried by their AI"),
         legend_row(690, 578, "gap", "Your people step in, or revenue is lost"),
-        f'  <text x="80" y="196" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">The serviceable</text>',
-        f'  <text x="80" y="274" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">line</text>',
+        f'  <text x="80" y="196" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">The Serviceable</text>',
+        f'  <text x="80" y="274" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">Line</text>',
         f'  <text x="80" y="352" {FONT} font-size="30" fill="{MINT}">How far do your customers,</text>',
         f'  <text x="80" y="394" {FONT} font-size="30" fill="{MINT}">and their AI, get without you?</text>',
         f'  <text x="80" y="548" {FONT} font-size="21" fill="{GOLD}">A framework by Etgar Bonar</text>',
         f'  <text x="80" y="580" {FONT} font-size="21" fill="{MINT}" opacity=".5">etgarbonar.com</text>',
     ])
-    return card_svg("The serviceable line",
-                    "Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A mark on each bar "
-                    "is the serviceable line: how far your customers and their AI get on that layer on their own. Past it, your people step in "
+    return card_svg("The Serviceable Line",
+                    "Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A connected white line through the marks "
+                    "is the Serviceable Line: how far your customers and their AI get on that layer on their own. Past it, your people step in "
                     "or revenue is lost. Blue is what customers carry; gold on all five layers is what their AI carries, and the mark sits at its end. "
                     "How far do your customers, and their AI, get without you? A framework by Etgar Bonar.", body)
 
@@ -370,12 +393,12 @@ def shapes_card():
         parts.append(f'  <text x="{gx}" y="290" {FONT} font-size="20" fill="{MINT}">{name}</text>')
     parts += [
         f'  <path d="M80 340H1120" stroke="#233236" stroke-width="1"/>',
-        f'  <text x="80" y="420" {FONT} font-size="56" font-weight="700" letter-spacing="-1" fill="{PAPER}">The shape of the serviceable line</text>',
+        f'  <text x="80" y="420" {FONT} font-size="56" font-weight="700" letter-spacing="-1" fill="{PAPER}">The shape of the Serviceable Line</text>',
         f'  <text x="80" y="474" {FONT} font-size="28" fill="{MINT}">How far do your customers, and their AI, get without you?</text>',
         f'  <text x="80" y="560" {FONT} font-size="21" fill="{GOLD}">A point of view by Etgar Bonar</text>',
         f'  <text x="1120" y="560" text-anchor="end" {FONT} font-size="21" fill="{MINT}" opacity=".5">etgarbonar.com</text>',
     ]
-    return card_svg("The shape of the serviceable line",
+    return card_svg("The shape of the Serviceable Line",
                     "Three sets of five bars: a bag of rice with three short bars and two layers missing, a medical device with long bars "
                     "and little of each carried by the customer, and API-first software with five full bars. How far do your customers, and their AI, get without you? "
                     "Not every offering has five layers. A point of view by Etgar Bonar.", "\n".join(parts))

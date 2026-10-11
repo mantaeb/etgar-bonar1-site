@@ -9,13 +9,13 @@ Canonical person ID: https://etgarbonar.com/#etgar
 
 - Executive profile: https://etgarbonar.com/
 - Hebrew executive profile: https://etgarbonar.com/he/
-- The serviceable line, how far your customers, and their AI, get without you: https://etgarbonar.com/serviceable-line/
-- The shape of the serviceable line, why not every offering has all five layers: https://etgarbonar.com/serviceable-line/shapes/
+- The Serviceable Line, how far your customers, and their AI, get without you: https://etgarbonar.com/serviceable-line/
+- The shape of the Serviceable Line, why not every offering has all five layers: https://etgarbonar.com/serviceable-line/shapes/
 
 ## Hebrew source data
 
 - Executive profile, structured JSON: https://etgarbonar.com/machine/he/profile.json
-- The serviceable line, structured JSON: https://etgarbonar.com/machine/he/serviceable-line.json
+- The Serviceable Line, structured JSON: https://etgarbonar.com/machine/he/serviceable-line.json
 
 The Hebrew executive profile JSON is the source used to generate the visible Hebrew profile page. The point-of-view JSON remains a supplemental translation of the English page.
 
@@ -32,9 +32,9 @@ The rule Etgar Bonar has used since Amazon: acquire the right customers, help th
 
 ## Current point of view
 
-The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose revenue, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill. Move the line out, and you can win customers you used to walk away from, and stop the losses you never measured. How far AI moves the line depends on two things, and neither works without the other: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine. A customer's AI tests it with five questions, each named for the property it checks: Findable, can it find you at all? Selectable, can it compare you correctly? Integrable, can it work out how you connect? Operable, can it run the work? Fixable, can it recover when something breaks? Integrable gets the offering into the customer's environment. Operable gets the customer's work done once it is there.
+The Serviceable Line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose revenue, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill. Move the line out, and you can win customers you used to walk away from, and stop the losses you never measured. How far AI moves the line depends on two things, and neither works without the other: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine. A customer's AI tests it with five questions, each named for the property it checks: Findable, can it find you at all? Selectable, can it compare you correctly? Integrable, can it work out how you connect? Operable, can it run the work? Fixable, can it recover when something breaks? Integrable gets the offering into the customer's environment. Operable gets the customer's work done once it is there.
 
-The serviceable line connects five current discussions. AI visibility, AEO and GEO cover whether a machine can find and cite a company. Agentic commerce describes customers delegating work to agents. AI agent readiness describes whether the vendor is legible and operable to those agents. Cost to serve and human escalation expose the economics. Service-as-software and outcome-based pricing are consequences when agents can complete autonomous, attributable work.
+The Serviceable Line connects five current discussions. AI visibility, AEO and GEO cover whether a machine can find and cite a company. Agentic commerce describes customers delegating work to agents. AI agent readiness describes whether the vendor is legible and operable to those agents. Cost to serve and human escalation expose the economics. Service-as-software and outcome-based pricing are consequences when agents can complete autonomous, attributable work.
 
 ## Hands-on AI build
 
@@ -52,8 +52,8 @@ Plain Markdown copies of the canonical pages, regenerated from the HTML at every
 
 - [Executive profile](https://etgarbonar.com/index.md)
 - [Hebrew executive profile](https://etgarbonar.com/he/index.md)
-- [The serviceable line, how far your customers, and their AI, get without you](https://etgarbonar.com/serviceable-line/index.md)
-- [The shape of the serviceable line, why not every offering has all five layers](https://etgarbonar.com/serviceable-line/shapes/index.md)
+- [The Serviceable Line, how far your customers, and their AI, get without you](https://etgarbonar.com/serviceable-line/index.md)
+- [The shape of the Serviceable Line, why not every offering has all five layers](https://etgarbonar.com/serviceable-line/shapes/index.md)
 - [The personal AI system Etgar built and runs, as working evidence](https://etgarbonar.com/ai/index.md)
 - [Questions and answers about that system](https://etgarbonar.com/ai/faq/index.md)
 <!-- markdown-mirrors:end -->

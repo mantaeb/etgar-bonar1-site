@@ -4,18 +4,18 @@
 > The HTML page is the canonical source.
 
 Title: The Shape of the Serviceable Line: Not Every Offering Has Five Layers
-Description: How far do your customers, and their AI, get without you? The five layers are not the same size for every offering, so the serviceable line has a shape, and so does the work around it.
+Description: How far do your customers, and their AI, get without you? The five layers are not the same size for every offering, so the Serviceable Line has a shape, and so does the work around it.
 
-[The serviceable line](https://etgarbonar.com/serviceable-line/) · Part two
+[The Serviceable Line](https://etgarbonar.com/serviceable-line/) · Part two
 
-# The shape of the serviceable line How far do your customers, and their AI, get without you?
+# The shape of the Serviceable Line How far do your customers, and their AI, get without you?
 
 The five layers are not the same size for every offering. A bag of rice has almost nothing to connect or fix. A medical device has a hospital committee to convince and technicians to train. A software platform has all five, in depth. So the line has a shape, and so does the work around it.
 
-Published 3 October 2026 · Updated 10 October 2026 · 7 minute read
+Published 3 October 2026 · Updated 11 October 2026 · 7 minute read
 
 - The surface: what your offering asks of someone
-- The serviceable line
+- The Serviceable Line
 - Carried by your customers
 - Carried by their AI
 - Carried by someone else, such as a partner
@@ -25,7 +25,7 @@ Illustrative: three of the six offerings below, in turn. A bar's length is what 
 
 Every offering asks something of the person buying it. Some ask almost nothing. Some ask a great deal, before the purchase and long after it.
 
-The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own.
+The Serviceable Line is how far your customers, and increasingly their AI, get with your offering on their own.
 
 That distance only means something against how much there is to get through. So before asking where your line sits, ask how big your surface is.
 
@@ -41,7 +41,7 @@ Everything someone has to work out or do to get value from your offering, on eac
 
 The line
 
-How much of that surface your customers, and increasingly their AI, get through on their own. It ends at the serviceable line, the mark on each bar. On the drawings, blue is what customers carry and gold is what their AI carries.
+How much of that surface your customers, and increasingly their AI, get through on their own. It ends at the Serviceable Line, the mark on each bar. On the drawings, blue is what customers carry and gold is what their AI carries.
 
 The gap
 
@@ -176,8 +176,8 @@ Compare offerings layer by layer, and look at the gap: it is what costs you, not
 
 Start here
 
-## The serviceable line
+## The Serviceable Line
 
 The full argument: what the line is, the five questions the customer's AI keeps asking, the losses no funnel records, and how the line was moved by hand before AI.
 
-[Read the serviceable line](https://etgarbonar.com/serviceable-line/) [Start a conversation](mailto:etgar@bonar1.com) [Message on LinkedIn](https://www.linkedin.com/in/etgar1/)
+[Read the Serviceable Line](https://etgarbonar.com/serviceable-line/) [Start a conversation](mailto:etgar@bonar1.com) [Message on LinkedIn](https://www.linkedin.com/in/etgar1/)

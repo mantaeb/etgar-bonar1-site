@@ -7,7 +7,7 @@ English and Hebrew executive profile, plus Etgar Bonar's English point-of-view s
 | Route | Purpose |
 |---|---|
 | `/` | English executive profile |
-| `/serviceable-line/` | English point of view, The serviceable line |
+| `/serviceable-line/` | English point of view, The Serviceable Line |
 | `/cost-to-serve-line/` | Former point-of-view URL, permanently redirected to `/serviceable-line/` by Cloudflare |
 | `/five-layers/` | Legacy stub that points directly to `/serviceable-line/` |
 | `/ai/` | Working personal AI system, presented as executive build evidence |
@@ -81,7 +81,7 @@ The build uses exact logo assets for Amazon, Taboola, Rapyd, Lokalise, Johnson &
 - [ ] Verify the `etgarbonar.com` Search Console domain property before cutover.
 - [ ] Submit the sitemap through the `bonar1.com` Search Console Domain property.
 - [x] Publish redesign commit `a58a9fe` after explicit approval of the public career-content update.
-- [x] Replace the retired "frontier" name with "the serviceable line" in English and "הקו שזז" in Hebrew.
+- [x] Replace the retired "frontier" name with "the Serviceable Line" in English and "הקו שזז" in Hebrew.
 - [x] Publish content refinement commit `9e50cfd` after explicit approval.
 - [x] Introduce the initial "shape the commercial system" hero, localize it to Hebrew, and publish the responsive treatment in `4cfcde3`.
 - [x] Restore the complete Lokalise/Claude graphic at its natural aspect ratio and link the English and Hebrew visual and caption to the Anthropic customer story in `1ff1fdc`.
