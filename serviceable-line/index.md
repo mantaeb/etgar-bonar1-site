@@ -22,7 +22,7 @@ Published 29 August 2026 · Updated 10 October 2026 · 8 minute read
 
 Illustrative, for one example offering. Each bar is one layer, as long as the work that layer takes, and the mark on it is the Serviceable Line. Other offerings have different bars: [see six examples](https://etgarbonar.com/serviceable-line/shapes/).
 
-**The Serviceable Line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose revenue, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.**
+The Serviceable Line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or **you lose revenue, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.**
 
 *Serviceable* as in serviceable available market: the demand a company can actually reach.
 
