@@ -4,25 +4,25 @@
 > The HTML page is the canonical source.
 
 Title: The Serviceable Line: How Far Do Your Customers, and Their AI, Get Without You?
-Description: How far do your customers, and their AI, get without you? The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own.
+Description: How far do your customers, and their AI, get without you? The Serviceable Line is how far your customers, and increasingly their AI, get with your offering on their own.
 
 A framework by Etgar Bonar
 
-# The serviceable line How far do your customers, and their AI, get without you?
+# The Serviceable Line How far do your customers, and their AI, get without you?
 
 Move the line out, and you can win customers you used to walk away from.
 
 Published 29 August 2026 · Updated 10 October 2026 · 8 minute read
 
 - The surface: what your offering asks of someone
-- The serviceable line
+- The Serviceable Line
 - Carried by your customers
 - Carried by their AI
 - Your people step in, or revenue is lost
 
-Illustrative, for one example offering. Each bar is one layer, as long as the work that layer takes, and the mark on it is the serviceable line. Other offerings have different bars: [see six examples](https://etgarbonar.com/serviceable-line/shapes/).
+Illustrative, for one example offering. Each bar is one layer, as long as the work that layer takes, and the mark on it is the Serviceable Line. Other offerings have different bars: [see six examples](https://etgarbonar.com/serviceable-line/shapes/).
 
-The serviceable line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose revenue, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.
+The Serviceable Line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or you lose revenue, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.
 
 *Serviceable* as in serviceable available market: the demand a company can actually reach.
 
@@ -38,7 +38,7 @@ How far AI moves the line depends on two things, and neither works without the o
 
 They multiply, they do not add. A perfectly legible product sold into a market whose buyers do not yet delegate gains little from AI. A market full of delegating buyers does nothing for a vendor a machine cannot read. That is why the line sits in a different place in developer tooling than in hospital procurement, and why the same vendor's line differs by segment inside one company. It is not only a software question. A bag of rice has nothing to connect or fix. A cordless drill does, and a buyer can ask an AI whether it takes a battery they already own before paying. [How the line takes a different shape for each offering](https://etgarbonar.com/serviceable-line/shapes/).
 
-Those two variables tell you where the Serviceable Line sits for a specific offering, buyer segment and job. The same company can therefore have several lines, and the same offering can have different lines for a small business and an enterprise buyer. To understand the revenue risk or opportunity, compare that line with the alternatives available to that buyer for the same job.
+Those two variables tell you where the Serviceable Line sits for a specific offering, buyer segment and job. The same company can therefore have several Serviceable Lines, and the same offering can have different Serviceable Lines for a small business and an enterprise buyer. To understand the revenue risk or opportunity, compare that line with the alternatives available to that buyer for the same job.
 
 One of those you do not control, and it is rising anyway. The other is a decision you have already made, deliberately or not.
 
@@ -92,19 +92,6 @@ Integrable and Operable are the easiest pair to confuse. Integrable gets the off
 
 Each "If it fails" above is an exit the seller may never see recorded. When the job is done, it ends in activation, expansion and advocacy. Either way, the outcome becomes public evidence and shapes the next buyer's research.
 
-The competitive gap
-
-## The same customer can get farther with one provider than another
-
-A Serviceable Line is not good or bad in isolation. Its commercial meaning depends on what customers are handing to AI and how far the alternatives let that AI go.
-
-- If customers are not yet delegating the job, a short line is mainly a readiness issue.
-- If customers are delegating the job but every provider blocks them at the same point, there is a potential category opportunity for the company that moves first.
-- If another provider lets the customer and their AI go farther than you do, the difference is revenue risk: lost consideration, slower activation, higher service costs or churn.
-- If you let them go farther than the alternatives, the difference is a competitive advantage: more customers you can win, activate, serve and retain without adding the same human cost.
-
-That is why the diagnostic must compare providers using the same buyer segment, job and access conditions. Your absolute line shows where people still have to step in. Your competitive gap shows the revenue at risk or available to win.
-
 Selected examples of where my teams and I have moved the line · [Full track record, by company](https://etgarbonar.com/#record)
 
 The rule I have used since Amazon: bring a person in when automation and mass communication are not enough.
@@ -129,6 +116,16 @@ A capability is real but poorly described. The buyer's AI compares you against a
 
 The buyer arrives with an implementation plan assembled from public material. The plan is wrong, or the agent connects but cannot run the work, so activation stalls. This is the costliest exit: a good-fit customer who already bought, and often already integrated, churns. The company loses revenue it had already won and that customer's next decisions, and the reviews they leave on G2, Trustpilot and Reddit become evidence for the next buyer's consideration.
 
+The competitive gap
+
+## The same customer can get farther with one provider than another
+
+A Serviceable Line is not good or bad in isolation. Your absolute line shows where people still have to step in. Your competitive gap shows the revenue at risk or available to win.
+
+For a fair comparison, keep the offering and the buyer segment the same across providers. Where an alternative lets the customer and their AI go farther, revenue is at risk. Where you let them go farther, it is yours to win.
+
+revenue at risk  available to win  Illustrative. Not measured values.
+
 The vacancy
 
 ## Five answers, five teams, rarely one owner
@@ -141,13 +138,13 @@ The revenue leader should own the shared economic outcome across the journey (sh
 
 The current conversation
 
-## Where the serviceable line fits
+## Where the Serviceable Line fits
 
-Several active debates describe parts of the same shift. The serviceable line connects them across the customer journey and separates the force the market controls from the part a company can change.
+Several active debates describe parts of the same shift. The Serviceable Line connects them across the customer journey and separates the force the market controls from the part a company can change.
 
 ### AI visibility, AEO and GEO
 
-Answer-engine optimization (AEO) and generative-engine optimization (GEO) ask whether AI can find, understand and cite a company. That is the first question. The serviceable line continues through comparison, connection, operation and recovery.
+Answer-engine optimization (AEO) and generative-engine optimization (GEO) ask whether AI can find, understand and cite a company. That is the first question. The Serviceable Line continues through comparison, connection, operation and recovery.
 
 ### Agentic commerce and agentic buying
 

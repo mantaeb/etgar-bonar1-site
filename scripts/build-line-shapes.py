@@ -105,6 +105,7 @@ assert all(MAIN_LINE[i] < v <= HERO_SURFACE[i] for i, v in MAIN_AI.items())
 
 FONT = 'font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif"'
 MINT, GOLD, BLUE, INK, PAPER = "#a8bdc1", "#dcb96f", "#2f72ff", "#101a1d", "#f4efe6"
+PAPER_BRIGHT, DRAIN, RISK, WIN = "#fbf8f2", "#3a4a4f", "#ff4f3f", "#4d8dff"
 
 # Inline styles for the standalone social-card SVGs; the pages use CSS classes instead.
 CARD_STYLE = {
@@ -186,6 +187,73 @@ def svg(name, surface, line, carried, *, kind, ai=None, old=None, indent="      
     return "\n".join(indent + l for l in out)
 
 
+def curve_path(points, h):
+    """One continuous line through marks with vertical tangents between rows."""
+    top = (points[0][0], points[0][1] - h / 2 - 6)
+    bottom = (points[-1][0], points[-1][1] + h / 2 + 6)
+    path = [f"M{top[0]:.1f} {top[1]:.1f} L{points[0][0]:.1f} {points[0][1]:.1f}"]
+    for (x1, y1), (x2, y2) in zip(points, points[1:]):
+        half = (y2 - y1) / 2
+        path.append(f"C{x1:.1f} {y1 + half:.1f} {x2:.1f} {y2 - half:.1f} {x2:.1f} {y2:.1f}")
+    path.append(f"L{bottom[0]:.1f} {bottom[1]:.1f}")
+    return " ".join(path)
+
+
+def main_hero():
+    x0, y0, unit, step, h = 132, 36, 148, 62, 22
+    rows = bar_rows(*MAIN, x0=x0, y0=y0, unit=unit, step=step, h=h, ai=MAIN_AI)
+    marks = [(x0 + MAIN_AI[i] * unit, y0 + i * step) for i in range(len(LAYERS))]
+    line = f'<path d="{curve_path(marks, h)}" class="ld-service-line"/>'
+    label = ("An illustrative offering, one bar per layer. Findable: long surface, almost all of it carried alone; "
+             "Selectable: long surface, most of it carried alone; Integrable: long surface, almost all of it carried alone; "
+             "Operable: long surface, about half of it carried alone; Fixable: medium surface, most of it carried alone. "
+             "The connected white line and its marks are the Serviceable Line. Blue is what customers carry. Gold on "
+             "Findable, Selectable, Integrable, Operable and Fixable is what their AI carries, and the marks sit at its end.")
+    out = [f'<svg viewBox="0 0 600 320" role="img" aria-label="{label}">'] + ["  " + row for row in rows] + ["  " + line, "</svg>"]
+    return "\n".join("          " + row for row in out)
+
+
+def main_gap():
+    x0, y0, unit, step, h = 132, 36, 148, 62, 22
+    alternative = [1.75, 2.9, 1.25, 2.05, 1.55]
+    marks = [(x0 + MAIN_AI[i] * unit, y0 + i * step) for i in range(len(LAYERS))]
+    label = ("Illustrative comparison of two Serviceable Lines for the same offering and buyer segment. Findable and "
+             "Integrable: you get farther, available to win. Selectable, Operable and Fixable: the competitor gets farther, "
+             "revenue at risk. The values are illustrative, not measured.")
+    out = [
+        f'<svg viewBox="0 0 600 350" role="img" aria-label="{label}">',
+        '  <defs>',
+        f'    <pattern id="line-gap-risk-stripes" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="{RISK}" stroke-opacity=".95" stroke-width="2"/></pattern>',
+        f'    <pattern id="line-gap-win-stripes" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="{WIN}" stroke-opacity=".95" stroke-width="2"/></pattern>',
+        '  </defs>',
+    ]
+    for i, name in enumerate(LAYERS):
+        y = y0 + i * step
+        your_x, alt_x = marks[i][0], x0 + alternative[i] * unit
+        gap_x, gap_w = min(your_x, alt_x), abs(your_x - alt_x)
+        color, pattern = (RISK, "line-gap-risk-stripes") if alt_x > your_x else (WIN, "line-gap-win-stripes")
+        out += [
+            f'  <text x="{x0 - 14}" y="{y + 7}" text-anchor="end" class="gap-name">{name}</text>',
+            f'  <rect x="{x0}" y="{y - h / 2}" width="{HERO_SURFACE[i] * unit:.1f}" height="{h}" rx="{h / 4}" class="gap-track"/>',
+            f'  <rect x="{x0}" y="{y - h / 2}" width="{MAIN_AI[i] * unit:.1f}" height="{h}" rx="{h / 4}" fill="{DRAIN}"/>',
+            f'  <rect x="{gap_x:.1f}" y="{y - h / 2}" width="{gap_w:.1f}" height="{h}" rx="{h / 4}" fill="{color}" fill-opacity=".32"/>',
+            f'  <rect x="{gap_x:.1f}" y="{y - h / 2}" width="{gap_w:.1f}" height="{h}" rx="{h / 4}" fill="url(#{pattern})" stroke="{color}" stroke-width="2"/>',
+        ]
+    out.append(f'  <path d="{curve_path(marks, h)}" class="gap-your-line"/>')
+    for i, (your_x, y) in enumerate(marks):
+        alt_x = x0 + alternative[i] * unit
+        out += [
+            f'  <line x1="{your_x:.1f}" y1="{y - h / 2 - 6}" x2="{your_x:.1f}" y2="{y + h / 2 + 6}" class="gap-your-mark"/>',
+            f'  <line x1="{alt_x:.1f}" y1="{y - h / 2 - 6}" x2="{alt_x:.1f}" y2="{y + h / 2 + 6}" class="gap-competitor-mark"/>',
+        ]
+    out += [
+        f'  <text x="{x0 + alternative[0] * unit:.1f}" y="16" text-anchor="middle" class="gap-competitor-label">Competitor</text>',
+        f'  <text x="{marks[-1][0]:.1f}" y="{marks[-1][1] + h / 2 + 32:.1f}" text-anchor="middle" class="gap-your-label">Your Serviceable Line</text>',
+        '</svg>',
+    ]
+    return "\n".join("          " + row for row in out)
+
+
 def card(name, surface, line, carried, caption, old=None):
     for l, c, su in zip(line, carried, surface):
         assert l <= c <= su, f"{name}: line <= carried <= surface broken"
@@ -247,7 +315,8 @@ def blocks():
             "growth": grid(GROWTH, "shape-grid shape-pair"),
         },
         MAIN_PAGE: {
-            "main-hero": svg("An illustrative offering", *MAIN, kind="hero", ai=MAIN_AI),
+            "main-hero": main_hero(),
+            "main-gap": main_gap(),
         },
     }
 
