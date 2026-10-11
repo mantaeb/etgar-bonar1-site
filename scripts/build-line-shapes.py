@@ -283,8 +283,10 @@ def card(name, surface, line, carried, caption, old=None):
             f'            </figure>')
 
 
-def grid(items, cls="shape-grid"):
+def grid(items, cls="shape-grid", footer=None):
     cards = [card(*item) for item in items]
+    if footer:
+        cards.append(f'            <p class="shape-grid-disclaimer">{footer}</p>')
     return f'          <div class="{cls}">\n' + "\n".join(cards) + "\n          </div>"
 
 
@@ -301,7 +303,9 @@ def rotating_hero(indent="          "):
         name, surface, line, carried = by_name[n][:4]
         customers, _ = split(name, line)
         assert all(su > 0 for su in surface), f"{name}: the rotating hero has no 'none' rows"
-        states.append(dict(name=name, surface=surface, carried=carried, line=line, customers=customers))
+        # The opening animation introduces only the customer-and-AI Serviceable Line.
+        # Partner-carried work appears after the explanation below, with the six comparisons.
+        states.append(dict(name=name, surface=surface, carried=line, line=line, customers=customers))
     x0, y0, unit, step, h = 132, 36, 148, 62, 22
     first = states[0]
     label = " ".join(describe(st["name"], st["surface"], st["customers"], st["carried"],
@@ -331,7 +335,11 @@ def blocks():
     return {
         PAGE: {
             "hero": rotating_hero(),
-            "grid": grid(OFFERINGS),
+            "grid": grid(
+                OFFERINGS,
+                footer=("These shapes are illustrative, scored on the scale above. "
+                        "They vary by the specific type of offering and buyer segment."),
+            ),
             "segments": grid(SEGMENTS, "shape-grid shape-pair"),
             "growth": grid(GROWTH, "shape-grid shape-pair"),
         },

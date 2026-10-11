@@ -18,7 +18,6 @@ Published 3 October 2026 · Updated 11 October 2026 · 7 minute read
 - The Serviceable Line
 - Carried by your customers
 - Carried by their AI
-- Carried by someone else, such as a partner
 - Your people step in, or revenue is lost
 
 Illustrative: three of the six offerings below, in turn. A bar's length is what the offering asks on that layer. What matters is the gap on each bar, the part past the line, not which bar is longest.
@@ -58,11 +57,24 @@ Every bar on this page is scored on one scale, for the surface, the line, the pa
 3. **2** A procedure to follow.
 4. **3** A system to configure and keep running.
 
+Before comparing offerings
+
+## A partner can carry work too
+
+The Serviceable Line stays where your customers and their AI can get on their own. Sometimes a dealer, distributor, implementation partner, service company or third-party site carries work past that line. That does not move the line. It explains who carries part of the remaining surface.
+
+In the comparisons below, teal marks that partner-carried work. Grey is what still requires your people, or becomes revenue lost.
+
 Six offerings
 
 ## Six offerings, six shapes
 
-These shapes are illustrative, scored on the scale above. They are drawn from how each kind of offering is typically bought and used, not from measurement, so read the shape, not the exact lengths. Some of the work past your line is carried by someone else, such as a partner, a dealer or a service company. That work is teal on the drawings; more on that below.
+- The surface
+- The Serviceable Line
+- Carried by your customers
+- Carried by their AI
+- Carried by a partner or someone else
+- Your people step in, or revenue is lost
 
 Bag of rice Two short layers, each a few facts to look up, and the retailer carries most of both. Integrable and Fixable score zero: nothing to connect, nothing to fix.
 
@@ -75,6 +87,8 @@ Medical device The longest Selectable: clinical evidence, approvals and a hospit
 Clinic A service has a surface too: coverage, preparation, follow-up and the bill. Insurer directories and booking sites answer part of it.
 
 API-first software All five layers, each at the top of the scale, and the one shape where every layer can be tested from outside today. Review sites and implementation partners carry part of it.
+
+These shapes are illustrative, scored on the scale above. They vary by the specific type of offering and buyer segment.
 
 What the shapes show
 

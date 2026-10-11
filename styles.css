@@ -611,6 +611,16 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .shape-card figcaption { margin-top: 1rem; }
 .shape-card h3 { margin: 0 0 .35rem; color: var(--paper-bright); }
 .shape-card p { margin: 0; color: var(--mint); font-size: .94rem; }
+.shape-grid-disclaimer { grid-column: 1 / -1; margin: 0; padding: 1.35rem 1.6rem; background: var(--ink); color: var(--paper-bright); font-size: .94rem; }
+.shape-card-legend { display: flex; flex-wrap: wrap; gap: .7rem 1.3rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
+.shape-card-legend li { display: flex; align-items: center; gap: .5rem; color: var(--muted); font-size: .78rem; font-weight: 750; letter-spacing: .03em; }
+.shape-card-legend li::before { content: ""; flex: none; width: 1.4rem; height: .85rem; border-radius: 2px; }
+.shape-card-legend .sc-key-surface::before { background: transparent; border: 1.5px solid #3a4a4f; }
+.shape-card-legend .sc-key-serviceable::before { background: linear-gradient(#101a1d 0 42%, #fbf8f2 42% 58%, #101a1d 58%); border: 1px solid #101a1d; }
+.shape-card-legend .sc-key-customer::before { background: var(--blue); }
+.shape-card-legend .sc-key-ai::before { background: var(--gold); }
+.shape-card-legend .sc-key-partner::before { background: #4cc3ae; }
+.shape-card-legend .sc-key-gap::before { background: #3a4a4f; }
 .sh-bar-track { fill: rgba(168,189,193,.14); stroke: rgba(168,189,193,.45); stroke-width: 1; }
 .sh-bar-line { fill: var(--blue); }
 .sh-bar-ai { fill: var(--gold); }
