@@ -14,7 +14,7 @@ Move the line out, and you can win customers you used to walk away from.
 
 *Serviceable* as in serviceable available market: the demand a company can actually reach.
 
-Published 29 August 2026 · Updated 10 October 2026 · 8 minute read
+Published 29 August 2026 · Updated 11 October 2026 · 8 minute read
 
 - The surface: what your offering asks of someone
 - The Serviceable Line
