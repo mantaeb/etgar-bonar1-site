@@ -10,7 +10,7 @@ Evolving since February 2026
 
 # A private AI system: one builder, no team, real consequences.
 
-Not a demo. One person builds and maintains it, and other people depend on it. It remembers from sources, coordinates across a household, and acts only inside the permissions it is granted. It runs across platforms and swaps models without a rewrite, so no vendor owns it, on hardware that cost less than a laptop.
+Not a demo. One person builds and maintains it, and other people depend on it. It remembers from sources, connects personal and small-business workflows, and acts only inside the permissions it is granted. It runs across platforms and swaps models without a rewrite, so no vendor owns it, on hardware that cost less than a laptop.
 
 [The point of view it shaped](https://etgarbonar.com/serviceable-line/)
 

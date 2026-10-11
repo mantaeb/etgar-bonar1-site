@@ -8,15 +8,15 @@ Description: Direct answers about a working private AI system running on a home 
 
 Questions
 
-# Straight answers about a private AI system that runs a household.
+# Straight answers about a private AI system used in real life and work.
 
-These are the questions people ask when they hear that an AI assistant runs a household from a box on a shelf. The answers below are specific, dated, and drawn from the running system rather than from a plan.
+These are the questions people ask when they hear that one person has built a private AI operating system used across personal and small-business workflows. The answers below are specific, dated, and drawn from the running system rather than from a plan.
 
 Last verified 1 September 2026 against the live system · Written and operated by [Etgar Bonar](https://etgarbonar.com/) · Figures come from the system's own cost and audit reports
 
 ## What is this system?
 
-It is a private AI operating layer that has run one household. A person talks to it through ordinary messaging apps, and it answers from a readable knowledge base of the household's own notes and records rather than from conversational memory. The coordination layer and all the data run on a home server the owner controls. The AI models are rented from external providers and are treated as interchangeable parts.
+It is a private AI operating layer used across personal and small-business workflows. It is a working proof of concept for what one person can build and run without a dedicated team: real costs, real consequences, and real users. Users talk to it through ordinary messaging apps. It answers from readable notes and records rather than from conversational memory. The coordination layer runs on a local server the owner controls. The AI models are rented from external providers and treated as interchangeable parts.
 
 ## Does it run AI models locally on the home server?
 
@@ -36,7 +36,7 @@ Each agent has a two-deep fallback chain that crosses vendors, so an outage at a
 
 ## Where does the data live and who can see it?
 
-All of it lives on the home server as plain text files, backed up nightly to the owner's own cloud storage. No third party holds the knowledge base. AI providers see only what a single request sends them, which is the relevant excerpt for that question and not the archive.
+The system's operational knowledge base is held as ordinary readable text on a local server and backed up nightly to cloud storage. Connected services, such as mail and calendar, keep their own data with their providers. An AI provider sees only the excerpt sent for a particular request, not the archive.
 
 Because the knowledge base is ordinary readable text rather than a vendor database, it can be opened, audited, exported or moved to a different AI model without a migration.
 
@@ -73,6 +73,8 @@ Anything that has to add up is not left to the model. The shopping list, the cho
 It works the same from a laptop, a phone or an iPad. The server hosts a development workspace that runs in a browser, alongside a terminal whose session survives a dropped connection. Both are reachable only over a private network overlay and never from the public internet. Opening either one from any of those devices lands straight back where the last session stopped.
 
 The workspace was built for a small screen on purpose: a single column that a stray tap cannot split, a pinned tab for each AI coding agent, and a fix for the Android keyboard shoving the tab strip off screen. More than one vendor's coding agent runs there against the same knowledge base, which is what turns the claim about staying portable across AI models into something demonstrated rather than asserted.
+
+Beyond system maintenance, I use the same remote workspace, running on the virtual machine, to review and edit video and audio while on the go. It has made the system useful as a real work environment, not only a remote administration tool.
 
 It was built ahead of family travel in 2026 and has been the main way the system is reached ever since: months of daily use, including extended travel in the near and far east, over hotel WiFi and mobile data, where it was the only access path there was. A plain terminal is kept as an independent fallback if the browser workspace is ever unavailable. The household kept running at home throughout, and one incident was diagnosed and closed from abroad.
 
