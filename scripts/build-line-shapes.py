@@ -218,26 +218,61 @@ def segmented_curve_paths(surface, line, *, x0, y0, unit, step, h, ai=None, pref
     return [f'<path d="{curve_path(points, h)}" class="{prefix}-service-line"/>' for points in runs]
 
 
+# The competitive gap, as in the explainer's opening frame (Etgar, 2026-10-13): the competitor leads on Findable, on a
+# slightly longer Findable surface, so both tags point at the first bar in the ticks' order; Integrable and Operable
+# are available to win, the rest revenue at risk. The hero and the competitive-gap section share these values.
+GAP_SURFACE = [2.95, 3.0, 2.0, 2.4, 1.6]
+GAP_ALTERNATIVE = [2.85, 2.9, 1.25, 0.8, 1.55]
+CARD_ALT = ("Your competitive gap shows the revenue at risk or available to win. Five bars, one per layer: Findable, Selectable, "
+            "Integrable, Operable and Fixable. The white marks, joined by a line, are your Serviceable Line; the red marks are a "
+            "competitor's. On Findable, Selectable and Fixable the competitor gets farther: revenue at risk. On Integrable and "
+            "Operable you get farther: available to win. Illustrative, not measured. By Etgar Bonar, Revenue &amp; GTM Executive.")
+
+
 def main_hero():
-    x0, y0, unit, step, h = 132, 36, 148, 62, 22
-    rows = bar_rows(*MAIN, x0=x0, y0=y0, unit=unit, step=step, h=h, ai=MAIN_AI)
+    """The page hero: the competitive gap, with a tag and an arrow for each line (viewBox kept at 600x320 for the play badge)."""
+    x0, y0, unit, step, h = 132, 76, 120, 52, 22
     marks = [(x0 + MAIN_AI[i] * unit, y0 + i * step) for i in range(len(LAYERS))]
-    line = f'<path d="{curve_path(marks, h)}" class="ld-service-line"/>'
-    label = ("An illustrative offering, one bar per layer. Findable: long surface, almost all of it carried alone; "
-             "Selectable: long surface, most of it carried alone; Integrable: long surface, almost all of it carried alone; "
-             "Operable: long surface, about half of it carried alone; Fixable: medium surface, most of it carried alone. "
-             "The connected white line and its marks are the Serviceable Line. Blue is what customers carry. Gold on "
-             "Findable, Selectable, Integrable, Operable and Fixable is what their AI carries, and the marks sit at its end.")
-    out = [f'<svg viewBox="0 0 600 320" role="img" aria-label="{label}">'] + ["  " + row for row in rows] + ["  " + line, "</svg>"]
+    label = ("An illustrative competitive gap for one offering, buyer and job. The white marks, joined by a line, are your "
+             "Serviceable Line; the red marks are a competitor's. On Findable, Selectable and Fixable the competitor gets "
+             "farther: revenue at risk. On Integrable and Operable you get farther: available to win. Values are illustrative.")
+    out = [f'<svg viewBox="0 0 600 320" role="img" aria-label="{label}">',
+           '  <defs>',
+           f'    <pattern id="hero-risk" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="{RISK}" stroke-opacity=".95" stroke-width="2.5"/></pattern>',
+           f'    <pattern id="hero-win" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="{WIN}" stroke-opacity=".95" stroke-width="2.5"/></pattern>',
+           '  </defs>']
+    for i, name in enumerate(LAYERS):
+        y = y0 + i * step
+        your_x, alt_x = marks[i][0], x0 + GAP_ALTERNATIVE[i] * unit
+        gx, gw = min(your_x, alt_x), abs(your_x - alt_x)
+        col, pat = (RISK, "hero-risk") if alt_x > your_x else (WIN, "hero-win")
+        out += [f'  <text x="{x0 - 14}" y="{y + 6}" text-anchor="end" class="ld-name">{name}</text>',
+                f'  <rect x="{x0}" y="{y - h / 2}" width="{GAP_SURFACE[i] * unit:.1f}" height="{h}" rx="{h / 4}" fill="{MINT}" fill-opacity=".14" stroke="{MINT}" stroke-opacity=".45"/>',
+                f'  <rect x="{x0}" y="{y - h / 2}" width="{MAIN_AI[i] * unit:.1f}" height="{h}" rx="{h / 4}" fill="{DRAIN}"/>',
+                f'  <rect x="{gx:.1f}" y="{y - h / 2}" width="{gw:.1f}" height="{h}" rx="4" fill="{col}" fill-opacity=".3"/>',
+                f'  <rect x="{gx:.1f}" y="{y - h / 2}" width="{gw:.1f}" height="{h}" rx="4" fill="url(#{pat})" stroke="{col}" stroke-width="2"/>']
+    out.append(f'  <path d="{curve_path(marks, h)}" fill="none" stroke="{PAPER_BRIGHT}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>')
+    for i, (your_x, y) in enumerate(marks):
+        alt_x = x0 + GAP_ALTERNATIVE[i] * unit
+        out += [f'  <line x1="{alt_x:.1f}" y1="{y - h / 2 - 6}" x2="{alt_x:.1f}" y2="{y + h / 2 + 6}" stroke="{RISK}" stroke-width="4" stroke-linecap="round"/>',
+                f'  <line x1="{your_x:.1f}" y1="{y - h / 2 - 6}" x2="{your_x:.1f}" y2="{y + h / 2 + 6}" stroke="{PAPER_BRIGHT}" stroke-width="4" stroke-linecap="round"/>']
+    # the two tags, on one line in the ticks' order, each with an elbow arrow to its tick on Findable
+    ty, tip = 30, y0 - h / 2 - 9
+    for k, (text, x, col) in enumerate([("Your Serviceable Line", marks[0][0], PAPER_BRIGHT), ("Competitor", x0 + GAP_ALTERNATIVE[0] * unit, RISK)]):
+        sd = 1 if k else -1
+        out += [f'  <text x="{x + 12 * sd:.1f}" y="{ty}" text-anchor="{"start" if k else "end"}" fill="{col}" class="ld-tag">{text}</text>',
+                f'  <path d="M{x + 6 * sd:.1f} {ty - 5}H{x:.1f}V{tip - 6:.1f}" fill="none" stroke="{col}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+                f'  <path d="M{x - 5:.1f} {tip - 7:.1f}L{x + 5:.1f} {tip - 7:.1f}L{x:.1f} {tip:.1f}Z" fill="{col}"/>']
+    out.append("</svg>")
     return "\n".join("          " + row for row in out)
 
 
 def main_gap():
     x0, y0, unit, step, h = 132, 36, 148, 62, 22
-    alternative = [1.75, 2.9, 1.25, 2.05, 1.55]
+    alternative = GAP_ALTERNATIVE
     marks = [(x0 + MAIN_AI[i] * unit, y0 + i * step) for i in range(len(LAYERS))]
-    label = ("Illustrative comparison of two Serviceable Lines for the same offering and buyer segment. Findable and "
-             "Integrable: you get farther, available to win. Selectable, Operable and Fixable: the competitor gets farther, "
+    label = ("Illustrative comparison of two Serviceable Lines for the same offering and buyer segment. Integrable and "
+             "Operable: you get farther, available to win. Findable, Selectable and Fixable: the competitor gets farther, "
              "revenue at risk. The values are illustrative, not measured.")
     out = [
         f'<svg viewBox="0 0 600 350" role="img" aria-label="{label}">',
@@ -253,7 +288,7 @@ def main_gap():
         color, pattern = (RISK, "line-gap-risk-stripes") if alt_x > your_x else (WIN, "line-gap-win-stripes")
         out += [
             f'  <text x="{x0 - 14}" y="{y + 7}" text-anchor="end" class="gap-name">{name}</text>',
-            f'  <rect x="{x0}" y="{y - h / 2}" width="{HERO_SURFACE[i] * unit:.1f}" height="{h}" rx="{h / 4}" class="gap-track"/>',
+            f'  <rect x="{x0}" y="{y - h / 2}" width="{GAP_SURFACE[i] * unit:.1f}" height="{h}" rx="{h / 4}" class="gap-track"/>',
             f'  <rect x="{x0}" y="{y - h / 2}" width="{MAIN_AI[i] * unit:.1f}" height="{h}" rx="{h / 4}" fill="{DRAIN}"/>',
             f'  <rect x="{gap_x:.1f}" y="{y - h / 2}" width="{gap_w:.1f}" height="{h}" rx="{h / 4}" fill="{color}" fill-opacity=".32"/>',
             f'  <rect x="{gap_x:.1f}" y="{y - h / 2}" width="{gap_w:.1f}" height="{h}" rx="{h / 4}" fill="url(#{pattern})" stroke="{color}" stroke-width="2"/>',
@@ -368,27 +403,52 @@ def legend_row(x, y, kind, text):
 
 
 def main_card():
-    rows = bar_rows(*MAIN, x0=800, y0=110, unit=112, step=60, h=24, style=CARD_STYLE, ai=MAIN_AI)
-    marks = [(800 + MAIN_AI[i] * 112, 110 + i * 60) for i in range(len(LAYERS))]
-    service_line = f'  <path d="{curve_path(marks, 24)}" fill="none" stroke="{PAPER}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'
-    body = "\n".join(["  " + r for r in rows] + [service_line,
-        legend_row(690, 450, "surface", "The surface: what your offering asks of someone"),
-        legend_row(690, 482, "mark", "The Serviceable Line"),
-        legend_row(690, 514, "line", "Carried by your customers"),
-        legend_row(690, 546, "ai", "Carried by their AI"),
-        legend_row(690, 578, "gap", "Your people step in, or revenue is lost"),
-        f'  <text x="80" y="196" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">The Serviceable</text>',
-        f'  <text x="80" y="274" {FONT} font-size="68" font-weight="700" letter-spacing="-1" fill="{PAPER}">Line</text>',
-        f'  <text x="80" y="352" {FONT} font-size="30" fill="{MINT}">How far do your customers,</text>',
-        f'  <text x="80" y="394" {FONT} font-size="30" fill="{MINT}">and their AI, get without you?</text>',
-        f'  <text x="80" y="548" {FONT} font-size="21" fill="{GOLD}">Etgar Bonar · Revenue &amp; GTM Executive</text>',
-        f'  <text x="80" y="580" {FONT} font-size="21" fill="{MINT}" opacity=".5">etgarbonar.com</text>',
-    ])
-    return card_svg("The Serviceable Line",
-                    "Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A connected white line through the marks "
-                    "is the Serviceable Line: how far your customers and their AI get on that layer on their own. Past it, your people step in "
-                    "or revenue is lost. Blue is what customers carry; gold on all five layers is what their AI carries, and the mark sits at its end. "
-                    "How far do your customers, and their AI, get without you? By Etgar Bonar, Revenue &amp; GTM Executive.", body)
+    """The og:image: the competitive gap, as the explainer's opening frame, the page hero and the LinkedIn Featured card
+    (Etgar, 2026-10-13). The same drawing as the LinkedIn Featured card, at 1200x630."""
+    x0, unit, bh, y0, step = 724, 104, 34, 164, 70
+    ys = [y0 + i * step for i in range(len(LAYERS))]
+    o = ["  <defs>",
+         *(f'    <pattern id="{pid}" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)"><rect width="4" height="10" fill="{col}"/></pattern>'
+           for pid, col in (("hr", RISK), ("hw", WIN))),
+         '    <filter id="glow" x="-40%" y="-80%" width="180%" height="260%"><feGaussianBlur stdDeviation="6"/></filter>',
+         "  </defs>",
+         f'  <text x="72" y="104" {FONT} font-size="20" font-weight="700" letter-spacing="4" fill="{GOLD}">THE SERVICEABLE LINE</text>']
+    risk, win = (f'<tspan fill="{col}">{text}</tspan>' for col, text in ((RISK, "revenue at risk"), (WIN, "available to win")))
+    for i, line in enumerate(["Your competitive", "gap shows the", f"{risk} or", win]):
+        o.append(f'  <text x="72" y="{186 + i * 64}" {FONT} font-size="54" font-weight="700" letter-spacing="-0.5" fill="{PAPER}">{line}</text>')
+    o += [f'  <text x="72" y="552" {FONT} font-size="21" font-weight="600" fill="{GOLD}">Etgar Bonar · Revenue &amp; GTM Executive</text>',
+          f'  <text x="72" y="584" {FONT} font-size="21" fill="{MINT}" opacity=".6">etgarbonar.com</text>']
+    for i, (name, y) in enumerate(zip(LAYERS, ys)):
+        top, your, alt = y - bh / 2, MAIN_AI[i], GAP_ALTERNATIVE[i]
+        lo, hi, at_risk = min(your, alt), max(your, alt), alt > your
+        col, pat, gx, gw = (RISK if at_risk else WIN), ("hr" if at_risk else "hw"), x0 + lo * unit, (hi - lo) * unit
+        o += [f'  <text x="{x0 - 16}" y="{y + 8}" {FONT} font-size="23" font-weight="600" fill="{MINT}" text-anchor="end">{name}</text>',
+              f'  <rect x="{x0}" y="{top}" width="{GAP_SURFACE[i] * unit:.1f}" height="{bh}" rx="9" fill="{MINT}" fill-opacity=".22" stroke="{MINT}" stroke-opacity=".45" stroke-width="1.5"/>',
+              f'  <rect x="{gx:.1f}" y="{top - 3}" width="{gw:.1f}" height="{bh + 6}" rx="6" fill="{col}" filter="url(#glow)" opacity=".55"/>',
+              f'  <rect x="{gx:.1f}" y="{top}" width="{gw:.1f}" height="{bh}" rx="4" fill="{col}" fill-opacity=".32"/>',
+              f'  <rect x="{gx:.1f}" y="{top}" width="{gw:.1f}" height="{bh}" rx="4" fill="url(#{pat})" stroke="{col}" stroke-width="2.5"/>']
+        for x, stroke in ((x0 + alt * unit, RISK), (x0 + your * unit, PAPER)):
+            o.append(f'  <line x1="{x:.1f}" x2="{x:.1f}" y1="{top - 9}" y2="{top + bh + 9}" stroke="{stroke}" stroke-width="5" stroke-linecap="round"/>')
+    pts = [(x0 + MAIN_AI[i] * unit, y) for i, y in enumerate(ys)]
+    d = f"M{pts[0][0]:.1f} {pts[0][1] - bh / 2 - 6:.1f} L{pts[0][0]:.1f} {pts[0][1]:.1f}"
+    for (x1, y1), (x2, y2) in zip(pts, pts[1:]):
+        h = (y2 - y1) / 2
+        d += f" C{x1:.1f} {y1 + h:.1f} {x2:.1f} {y2 - h:.1f} {x2:.1f} {y2:.1f}"
+    d += f" L{pts[-1][0]:.1f} {pts[-1][1] + bh / 2 + 6:.1f}"
+    o.append(f'  <path d="{d}" fill="none" stroke="{PAPER}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>')
+    # the two tags on one line in the ticks' order, each with an elbow arrow down to its tick on Findable
+    ty, tip = ys[0] - bh / 2 - 46, ys[0] - bh / 2 - 12
+    for k, (label, x, col) in enumerate((("Your Serviceable Line", x0 + MAIN_AI[0] * unit, PAPER), ("Competitor", x0 + GAP_ALTERNATIVE[0] * unit, RISK))):
+        sd = 1 if k else -1
+        o += [f'  <text x="{x + 14 * sd:.1f}" y="{ty}" {FONT} font-size="21" font-weight="700" fill="{col}" text-anchor="{"start" if k else "end"}">{label}</text>',
+              f'  <path d="M{x + 7 * sd:.1f} {ty - 7}H{x:.1f}V{tip - 7:.1f}" fill="none" stroke="{col}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>',
+              f'  <path d="M{x - 6:.1f} {tip - 8:.1f}L{x + 6:.1f} {tip - 8:.1f}L{x:.1f} {tip:.1f}Z" fill="{col}"/>']
+    for x, pat, col, label in ((640, "hr", RISK, "revenue at risk"), (884, "hw", WIN, "available to win")):
+        o += [f'  <rect x="{x}" y="533" width="38" height="24" rx="4" fill="{col}" fill-opacity=".32"/>',
+              f'  <rect x="{x}" y="533" width="38" height="24" rx="4" fill="url(#{pat})" stroke="{col}" stroke-width="2"/>',
+              f'  <text x="{x + 50}" y="552" {FONT} font-size="21" font-weight="700" fill="{col}">{label}</text>']
+    o.append(f'  <text x="640" y="584" {FONT} font-size="17" font-style="italic" fill="{MINT}" opacity=".75">Illustrative. Not measured values.</text>')
+    return card_svg("The Serviceable Line: your competitive gap", CARD_ALT, "\n".join(o))
 
 
 def shapes_card():

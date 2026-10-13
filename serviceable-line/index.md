@@ -14,23 +14,26 @@ Move the line out, and you can win customers you used to walk away from.
 
 *Serviceable* as in serviceable available market: the demand a company can actually reach.
 
-Published 29 August 2026 · Updated 11 October 2026 · 8 minute read
+Published 29 August 2026 · Updated 13 October 2026 · 8 minute read
 
 - The surface: what your offering asks of someone
-- The Serviceable Line
-- Carried by your customers
-- Carried by their AI
-- Your people step in, or revenue is lost
+- Carried by your customers and their AI
+- Revenue at risk: a competitor gets farther
+- Available to win: you get farther
 
-Illustrative, for one example offering. Each bar is one layer, as long as the work that layer takes, and the mark on it is the Serviceable Line. Other offerings have different bars: [see six examples](https://etgarbonar.com/serviceable-line/shapes/).
+Illustrative, for one example offering against one competitor, for the same buyer and job. Each bar is one layer, as long as the work that layer takes. Other offerings have different bars: [see six examples](https://etgarbonar.com/serviceable-line/shapes/).
 
 The Serviceable Line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or **you lose revenue, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.**
 
-**Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. What is changing is who is doing it.** Increasingly it is a machine. I spent most of those years on the seller's side of that shift, at Amazon, Taboola, Rapyd and Lokalise, where my teams and I moved this line by hand (examples below).
+[Part 1 of 6 · 0:28 Intro](https://etgarbonar.com/assets/video/serviceable-line/01-intro.mp4?v=1)
+
+**Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks.** I spent most of those years on the seller's side of that shift, at Amazon, Taboola, Rapyd and Lokalise, where my teams and I moved this line by hand (examples below).
+
+**What is changing is who is doing it.** Increasingly it is a machine, and that part of the journey is silent: the company does not own the machine doing the work, and often cannot see the interaction.
+
+[Part 2 of 6 · 0:21 The customer's AI](https://etgarbonar.com/assets/video/serviceable-line/02-the-customers-ai.mp4?v=1)
 
 Both sales-led and product-led motions are losing ground to this silent part of the journey.
-
-It is silent because the company does not own the machine doing the work, and often cannot see the interaction.
 
 ## The two variables behind the variance
 
@@ -38,7 +41,9 @@ How far AI moves the line depends on two things, and neither works without the o
 
 They multiply, they do not add. A perfectly legible product sold into a market whose buyers do not yet delegate gains little from AI. A market full of delegating buyers does nothing for a vendor a machine cannot read. That is why the line sits in a different place in developer tooling than in hospital procurement, and why the same vendor's line differs by segment inside one company. It is not only a software question. A bag of rice has nothing to connect or fix. A cordless drill does, and a buyer can ask an AI whether it takes a battery they already own before paying. [How the line takes a different shape for each offering](https://etgarbonar.com/serviceable-line/shapes/).
 
-Those two variables tell you where the Serviceable Line sits for a specific offering, buyer segment and job. The same company can therefore have several Serviceable Lines, and the same offering can have different Serviceable Lines for a small business and an enterprise buyer. To understand the revenue risk or opportunity, compare that line with the alternatives available to that buyer for the same job.
+Those two variables tell you where the Serviceable Line sits for a specific offering, buyer segment and job. The same company can therefore have several Serviceable Lines, and the same offering can have different Serviceable Lines for a small business and an enterprise buyer. To understand the revenue risk or opportunity, compare that line with the alternatives available to that buyer.
+
+[Part 3 of 6 · 1:18 Every offering has one](https://etgarbonar.com/assets/video/serviceable-line/03-every-offering.mp4?v=1)
 
 One of those you do not control, and it is rising anyway. The other is a decision you have already made, deliberately or not.
 
@@ -51,6 +56,8 @@ The diagnostic starts with a specific offering, buyer segment and job. What work
 These are not stages in a funnel or a checklist every AI runs. They are five places where the work can become blocked, before or after money moves.
 
 Each question needs an observable test and a commercial signal. The point is not one total score. It is to locate where the work stops, whether it stops earlier or later than it does with another provider, and what that difference costs.
+
+[Part 4 of 6 · 0:49 Five questions](https://etgarbonar.com/assets/video/serviceable-line/04-five-questions.mp4?v=1)
 
 1. **Findable Can it find you at all?**
 
@@ -116,19 +123,28 @@ A capability is real but poorly described. The buyer's AI compares you against a
 
 The buyer arrives with an implementation plan assembled from public material. The plan is wrong, or the agent connects but cannot run the work, so activation stalls. This is the costliest exit: a good-fit customer who already bought, and often already integrated, churns. The company loses revenue it had already won and that customer's next decisions, and the reviews they leave on G2, Trustpilot and Reddit become evidence for the next buyer's consideration.
 
+[Part 5 of 6 · 0:41 Quiet losses and the gap](https://etgarbonar.com/assets/video/serviceable-line/05-quiet-losses-and-the-gap.mp4?v=1)
+
 The competitive gap
 
 ## Your competitive gap shows the revenue at risk or available to win
 
-A Serviceable Line is not good or bad in isolation. Your absolute line shows where people still have to step in.
+A Serviceable Line is not good or bad in isolation. Your absolute line shows where people still have to step in. What it means commercially depends on what customers are handing to AI, and how far the alternatives let that AI go:
 
-For a fair comparison, keep the offering and the buyer segment the same across providers. Where an alternative lets the customer and their AI go farther, revenue is at risk. Where you let them go farther, it is yours to win.
+- If customers are not yet delegating the job, a short line is mainly a readiness issue or an education opportunity: get your offering ready for their AI before they hand it the job, or show them what their AI can already do with you.
+- If customers are delegating the job but every provider blocks them at the same point, there is a category opportunity for the company that moves first.
+- If another provider lets the customer and their AI go farther than you do, the difference is revenue at risk: lost consideration, slower activation, higher service costs or churn.
+- If you let them go farther than the alternatives, the difference is revenue available to win: more customers you can win, activate, serve and retain without adding the same human cost.
+
+For a fair comparison, keep the offering, the buyer segment and the AI's access the same across providers. A merchant asks its own AI why yesterday's payout came in short. With one payments provider, the AI reads the account's transactions and explains the shortfall on the spot: a refund and a dispute fee came out of that payout. With the other, the question becomes a ticket for the provider's support team. Same merchant, same question: the first provider answers without a person; the second pays for one, and the merchant waits.
 
 revenue at risk  available to win  Illustrative. Not measured values.
 
 The vacancy
 
 ## Five answers, five teams, rarely one owner
+
+[Part 6 of 6 · 0:28 Who owns it](https://etgarbonar.com/assets/video/serviceable-line/06-who-owns-it.mp4?v=1)
 
 How a company is represented to machines is split across marketing, product, pricing, partnerships, documentation, and support. Each team may be doing its part well. Rarely does one leader own whether the machine's picture of the company matches what the company actually is, and almost nobody measures it end to end.
 

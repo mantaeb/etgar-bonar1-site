@@ -1,47 +1,66 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="cardtitle carddesc">
-  <title id="cardtitle">The Serviceable Line</title>
-  <desc id="carddesc">Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable, each as long as what the offering asks on that layer. A connected white line through the marks is the Serviceable Line: how far your customers and their AI get on that layer on their own. Past it, your people step in or revenue is lost. Blue is what customers carry; gold on all five layers is what their AI carries, and the mark sits at its end. How far do your customers, and their AI, get without you? By Etgar Bonar, Revenue &amp; GTM Executive.</desc>
+  <title id="cardtitle">The Serviceable Line: your competitive gap</title>
+  <desc id="carddesc">Your competitive gap shows the revenue at risk or available to win. Five bars, one per layer: Findable, Selectable, Integrable, Operable and Fixable. The white marks, joined by a line, are your Serviceable Line; the red marks are a competitor's. On Findable, Selectable and Fixable the competitor gets farther: revenue at risk. On Integrable and Operable you get farther: available to win. Illustrative, not measured. By Etgar Bonar, Revenue &amp; GTM Executive.</desc>
   <rect width="1200" height="630" fill="#101a1d"/>
-  <text x="786" y="116" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Findable</text>
-  <rect x="800" y="98.0" width="302.4" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="98.0" width="280.0" height="24" rx="6.0" fill="#dcb96f"/>
-  <rect x="800" y="98.0" width="212.8" height="24" rx="6.0" fill="#2f72ff"/>
-  <line x1="1080.0" y1="92.0" x2="1080.0" y2="128.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
-  <text x="786" y="176" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Selectable</text>
-  <rect x="800" y="158.0" width="336.0" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="158.0" width="257.6" height="24" rx="6.0" fill="#dcb96f"/>
-  <rect x="800" y="158.0" width="145.6" height="24" rx="6.0" fill="#2f72ff"/>
-  <line x1="1057.6" y1="152.0" x2="1057.6" y2="188.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
-  <text x="786" y="236" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Integrable</text>
-  <rect x="800" y="218.0" width="224.0" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="218.0" width="212.8" height="24" rx="6.0" fill="#dcb96f"/>
-  <rect x="800" y="218.0" width="168.0" height="24" rx="6.0" fill="#2f72ff"/>
-  <line x1="1012.8" y1="212.0" x2="1012.8" y2="248.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
-  <text x="786" y="296" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Operable</text>
-  <rect x="800" y="278.0" width="268.8" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="278.0" width="140.0" height="24" rx="6.0" fill="#dcb96f"/>
-  <rect x="800" y="278.0" width="100.8" height="24" rx="6.0" fill="#2f72ff"/>
-  <line x1="940.0" y1="272.0" x2="940.0" y2="308.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
-  <text x="786" y="356" text-anchor="end" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" fill="#a8bdc1">Fixable</text>
-  <rect x="800" y="338.0" width="179.2" height="24" rx="6.0" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <rect x="800" y="338.0" width="123.2" height="24" rx="6.0" fill="#dcb96f"/>
-  <rect x="800" y="338.0" width="95.2" height="24" rx="6.0" fill="#2f72ff"/>
-  <line x1="923.2" y1="332.0" x2="923.2" y2="368.0" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
-  <path d="M1080.0 92.0 L1080.0 110.0 C1080.0 140.0 1057.6 140.0 1057.6 170.0 C1057.6 200.0 1012.8 200.0 1012.8 230.0 C1012.8 260.0 940.0 260.0 940.0 290.0 C940.0 320.0 923.2 320.0 923.2 350.0 L923.2 368.0" fill="none" stroke="#f4efe6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="690" y="438" width="22" height="14" rx="3" fill="none" stroke="#a8bdc1" stroke-opacity=".7" stroke-width="1.5"/>
-  <text x="724" y="450" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">The surface: what your offering asks of someone</text>
-  <line x1="701" y1="467" x2="701" y2="485" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/>
-  <text x="724" y="482" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">The Serviceable Line</text>
-  <rect x="690" y="502" width="22" height="14" rx="3" fill="#2f72ff"/>
-  <text x="724" y="514" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Carried by your customers</text>
-  <rect x="690" y="534" width="22" height="14" rx="3" fill="#dcb96f"/>
-  <text x="724" y="546" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Carried by their AI</text>
-  <rect x="690" y="566" width="22" height="14" rx="3" fill="#a8bdc1" fill-opacity=".14" stroke="#a8bdc1" stroke-opacity=".45"/>
-  <text x="724" y="578" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" fill="#a8bdc1" opacity=".8">Your people step in, or revenue is lost</text>
-  <text x="80" y="196" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-1" fill="#f4efe6">The Serviceable</text>
-  <text x="80" y="274" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-1" fill="#f4efe6">Line</text>
-  <text x="80" y="352" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="30" fill="#a8bdc1">How far do your customers,</text>
-  <text x="80" y="394" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="30" fill="#a8bdc1">and their AI, get without you?</text>
-  <text x="80" y="548" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#dcb96f">Etgar Bonar · Revenue &amp; GTM Executive</text>
-  <text x="80" y="580" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#a8bdc1" opacity=".5">etgarbonar.com</text>
+  <defs>
+    <pattern id="hr" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)"><rect width="4" height="10" fill="#ff4f3f"/></pattern>
+    <pattern id="hw" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)"><rect width="4" height="10" fill="#4d8dff"/></pattern>
+    <filter id="glow" x="-40%" y="-80%" width="180%" height="260%"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <text x="72" y="104" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="4" fill="#dcb96f">THE SERVICEABLE LINE</text>
+  <text x="72" y="186" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-0.5" fill="#f4efe6">Your competitive</text>
+  <text x="72" y="250" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-0.5" fill="#f4efe6">gap shows the</text>
+  <text x="72" y="314" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-0.5" fill="#f4efe6"><tspan fill="#ff4f3f">revenue at risk</tspan> or</text>
+  <text x="72" y="378" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-0.5" fill="#f4efe6"><tspan fill="#4d8dff">available to win</tspan></text>
+  <text x="72" y="552" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" font-weight="600" fill="#dcb96f">Etgar Bonar · Revenue &amp; GTM Executive</text>
+  <text x="72" y="584" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" fill="#a8bdc1" opacity=".6">etgarbonar.com</text>
+  <text x="708" y="172" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="23" font-weight="600" fill="#a8bdc1" text-anchor="end">Findable</text>
+  <rect x="724" y="147.0" width="306.8" height="34" rx="9" fill="#a8bdc1" fill-opacity=".22" stroke="#a8bdc1" stroke-opacity=".45" stroke-width="1.5"/>
+  <rect x="984.0" y="144.0" width="36.4" height="40" rx="6" fill="#ff4f3f" filter="url(#glow)" opacity=".55"/>
+  <rect x="984.0" y="147.0" width="36.4" height="34" rx="4" fill="#ff4f3f" fill-opacity=".32"/>
+  <rect x="984.0" y="147.0" width="36.4" height="34" rx="4" fill="url(#hr)" stroke="#ff4f3f" stroke-width="2.5"/>
+  <line x1="1020.4" x2="1020.4" y1="138.0" y2="190.0" stroke="#ff4f3f" stroke-width="5" stroke-linecap="round"/>
+  <line x1="984.0" x2="984.0" y1="138.0" y2="190.0" stroke="#f4efe6" stroke-width="5" stroke-linecap="round"/>
+  <text x="708" y="242" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="23" font-weight="600" fill="#a8bdc1" text-anchor="end">Selectable</text>
+  <rect x="724" y="217.0" width="312.0" height="34" rx="9" fill="#a8bdc1" fill-opacity=".22" stroke="#a8bdc1" stroke-opacity=".45" stroke-width="1.5"/>
+  <rect x="963.2" y="214.0" width="62.4" height="40" rx="6" fill="#ff4f3f" filter="url(#glow)" opacity=".55"/>
+  <rect x="963.2" y="217.0" width="62.4" height="34" rx="4" fill="#ff4f3f" fill-opacity=".32"/>
+  <rect x="963.2" y="217.0" width="62.4" height="34" rx="4" fill="url(#hr)" stroke="#ff4f3f" stroke-width="2.5"/>
+  <line x1="1025.6" x2="1025.6" y1="208.0" y2="260.0" stroke="#ff4f3f" stroke-width="5" stroke-linecap="round"/>
+  <line x1="963.2" x2="963.2" y1="208.0" y2="260.0" stroke="#f4efe6" stroke-width="5" stroke-linecap="round"/>
+  <text x="708" y="312" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="23" font-weight="600" fill="#a8bdc1" text-anchor="end">Integrable</text>
+  <rect x="724" y="287.0" width="208.0" height="34" rx="9" fill="#a8bdc1" fill-opacity=".22" stroke="#a8bdc1" stroke-opacity=".45" stroke-width="1.5"/>
+  <rect x="854.0" y="284.0" width="67.6" height="40" rx="6" fill="#4d8dff" filter="url(#glow)" opacity=".55"/>
+  <rect x="854.0" y="287.0" width="67.6" height="34" rx="4" fill="#4d8dff" fill-opacity=".32"/>
+  <rect x="854.0" y="287.0" width="67.6" height="34" rx="4" fill="url(#hw)" stroke="#4d8dff" stroke-width="2.5"/>
+  <line x1="854.0" x2="854.0" y1="278.0" y2="330.0" stroke="#ff4f3f" stroke-width="5" stroke-linecap="round"/>
+  <line x1="921.6" x2="921.6" y1="278.0" y2="330.0" stroke="#f4efe6" stroke-width="5" stroke-linecap="round"/>
+  <text x="708" y="382" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="23" font-weight="600" fill="#a8bdc1" text-anchor="end">Operable</text>
+  <rect x="724" y="357.0" width="249.6" height="34" rx="9" fill="#a8bdc1" fill-opacity=".22" stroke="#a8bdc1" stroke-opacity=".45" stroke-width="1.5"/>
+  <rect x="807.2" y="354.0" width="46.8" height="40" rx="6" fill="#4d8dff" filter="url(#glow)" opacity=".55"/>
+  <rect x="807.2" y="357.0" width="46.8" height="34" rx="4" fill="#4d8dff" fill-opacity=".32"/>
+  <rect x="807.2" y="357.0" width="46.8" height="34" rx="4" fill="url(#hw)" stroke="#4d8dff" stroke-width="2.5"/>
+  <line x1="807.2" x2="807.2" y1="348.0" y2="400.0" stroke="#ff4f3f" stroke-width="5" stroke-linecap="round"/>
+  <line x1="854.0" x2="854.0" y1="348.0" y2="400.0" stroke="#f4efe6" stroke-width="5" stroke-linecap="round"/>
+  <text x="708" y="452" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="23" font-weight="600" fill="#a8bdc1" text-anchor="end">Fixable</text>
+  <rect x="724" y="427.0" width="166.4" height="34" rx="9" fill="#a8bdc1" fill-opacity=".22" stroke="#a8bdc1" stroke-opacity=".45" stroke-width="1.5"/>
+  <rect x="838.4" y="424.0" width="46.8" height="40" rx="6" fill="#ff4f3f" filter="url(#glow)" opacity=".55"/>
+  <rect x="838.4" y="427.0" width="46.8" height="34" rx="4" fill="#ff4f3f" fill-opacity=".32"/>
+  <rect x="838.4" y="427.0" width="46.8" height="34" rx="4" fill="url(#hr)" stroke="#ff4f3f" stroke-width="2.5"/>
+  <line x1="885.2" x2="885.2" y1="418.0" y2="470.0" stroke="#ff4f3f" stroke-width="5" stroke-linecap="round"/>
+  <line x1="838.4" x2="838.4" y1="418.0" y2="470.0" stroke="#f4efe6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M984.0 141.0 L984.0 164.0 C984.0 199.0 963.2 199.0 963.2 234.0 C963.2 269.0 921.6 269.0 921.6 304.0 C921.6 339.0 854.0 339.0 854.0 374.0 C854.0 409.0 838.4 409.0 838.4 444.0 L838.4 467.0" fill="none" stroke="#f4efe6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="970.0" y="101.0" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#f4efe6" text-anchor="end">Your Serviceable Line</text>
+  <path d="M977.0 94.0H984.0V128.0" fill="none" stroke="#f4efe6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M978.0 127.0L990.0 127.0L984.0 135.0Z" fill="#f4efe6"/>
+  <text x="1034.4" y="101.0" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#ff4f3f" text-anchor="start">Competitor</text>
+  <path d="M1027.4 94.0H1020.4V128.0" fill="none" stroke="#ff4f3f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1014.4 127.0L1026.4 127.0L1020.4 135.0Z" fill="#ff4f3f"/>
+  <rect x="640" y="533" width="38" height="24" rx="4" fill="#ff4f3f" fill-opacity=".32"/>
+  <rect x="640" y="533" width="38" height="24" rx="4" fill="url(#hr)" stroke="#ff4f3f" stroke-width="2"/>
+  <text x="690" y="552" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#ff4f3f">revenue at risk</text>
+  <rect x="884" y="533" width="38" height="24" rx="4" fill="#4d8dff" fill-opacity=".32"/>
+  <rect x="884" y="533" width="38" height="24" rx="4" fill="url(#hw)" stroke="#4d8dff" stroke-width="2"/>
+  <text x="934" y="552" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#4d8dff">available to win</text>
+  <text x="640" y="584" font-family="Noto Sans, Liberation Sans, Arial, Helvetica, sans-serif" font-size="17" font-style="italic" fill="#a8bdc1" opacity=".75">Illustrative. Not measured values.</text>
 </svg>
