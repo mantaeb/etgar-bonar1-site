@@ -1215,9 +1215,13 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .video-next button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .video-next-count { min-height: 1.2em; color: var(--mint); font-size: .9rem; }
 @media (max-width: 900px) {
-  .video-dialog { width: min(94vw, 60vh); max-height: 94vh; overflow: auto; }
-  .video-dialog[open] { grid-template-columns: 1fr; }
-  .video-chapters-nav { max-height: none; padding-top: 1.1rem; border-inline-start: 0; border-top: 1px solid rgba(168,189,193,.25); }
+  /* Phones and tablets in portrait: the video, then the whole chapter list under it. The dialog scrolls, never the
+     list: a list with its own scroll area could shrink to nothing in WebKit (iPhone Safari and Chrome, 2026-10-13).
+     The video is sized by the small viewport height so the first chapters show without scrolling. */
+  .video-dialog { width: 94vw; max-width: 94vw; max-height: 92vh; max-height: 92svh; overflow-y: auto; }
+  .video-dialog[open] { grid-template-columns: 1fr; grid-template-rows: auto auto; }
+  .video-dialog video { width: auto; max-width: 100%; height: min(56vh, 117.5vw); height: min(56svh, 117.5vw); margin: 0 auto; }
+  .video-chapters-nav { max-height: none; overflow: visible; padding-top: 1rem; border-inline-start: 0; border-top: 1px solid rgba(168,189,193,.25); }
 }
 
 /* The hero is the competitive gap, as in the explainer's opening frame (2026-10-14): a tag with an arrow for each line,
@@ -1236,3 +1240,11 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 /* the competitive gap's four cases, at the paragraphs' width (2026-10-13) */
 .article-body .gap-cases { max-width: 750px; padding-left: 1.3rem; }
 .article-body .gap-cases li { margin-bottom: .55rem; }
+/* Phones held sideways: the video at full height, the chapter list beside it (the video's height fixes the row, so the
+   list cannot collapse) */
+@media (max-width: 900px) and (orientation: landscape) and (max-height: 520px) {
+  .video-dialog { width: 96vw; max-width: 96vw; overflow: hidden; }
+  .video-dialog[open] { grid-template-columns: auto minmax(0, 1fr); grid-template-rows: auto; }
+  .video-dialog video { height: 88vh; height: 88svh; }
+  .video-chapters-nav { max-height: 88vh; max-height: 88svh; overflow: auto; padding-top: 3rem; border-top: 0; border-inline-start: 1px solid rgba(168,189,193,.25); }
+}
