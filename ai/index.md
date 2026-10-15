@@ -306,4 +306,4 @@ He also built a mobile development workspace so he can inspect, program, and imp
 
 ## Contact
 
-[ai@bonar1.com](mailto:ai@bonar1.com)
+[Contact](mailto:ai@bonar1.com)
