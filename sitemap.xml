@@ -20,8 +20,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://etgarbonar.com/serviceable-line/" />
   </url>
   <url>
+    <loc>https://etgarbonar.com/serviceable-line/examples/flight/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://etgarbonar.com/serviceable-line/examples/flight/" />
+  </url>
+  <url>
     <loc>https://etgarbonar.com/serviceable-line/shapes/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://etgarbonar.com/serviceable-line/shapes/" />
   </url>
   <url>

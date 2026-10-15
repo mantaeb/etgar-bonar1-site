@@ -2,7 +2,7 @@
 
 > Canonical public profile and point-of-view site for Etgar Bonar, a revenue and go-to-market executive.
 
-Updated: 2026-10-01
+Updated: 2026-10-14
 Canonical person ID: https://etgarbonar.com/#etgar
 
 ## Canonical pages
@@ -10,6 +10,7 @@ Canonical person ID: https://etgarbonar.com/#etgar
 - Executive profile: https://etgarbonar.com/
 - Hebrew executive profile: https://etgarbonar.com/he/
 - The Serviceable Line, how far your customers, and their AI, get without you: https://etgarbonar.com/serviceable-line/
+- One trip through five layers, a worked flight-booking example: https://etgarbonar.com/serviceable-line/examples/flight/
 - The shape of the Serviceable Line, why not every offering has all five layers: https://etgarbonar.com/serviceable-line/shapes/
 
 ## Hebrew source data
@@ -53,6 +54,7 @@ Plain Markdown copies of the canonical pages, regenerated from the HTML at every
 - [Executive profile](https://etgarbonar.com/index.md)
 - [Hebrew executive profile](https://etgarbonar.com/he/index.md)
 - [The Serviceable Line, how far your customers, and their AI, get without you](https://etgarbonar.com/serviceable-line/index.md)
+- [One trip through five layers, a worked flight-booking example](https://etgarbonar.com/serviceable-line/examples/flight/index.md)
 - [The shape of the Serviceable Line, why not every offering has all five layers](https://etgarbonar.com/serviceable-line/shapes/index.md)
 - [The personal AI system Etgar built and runs, as working evidence](https://etgarbonar.com/ai/index.md)
 - [Questions and answers about that system](https://etgarbonar.com/ai/faq/index.md)

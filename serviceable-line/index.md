@@ -14,7 +14,7 @@ Move the line out, and you can win customers you used to walk away from.
 
 *Serviceable* as in serviceable available market: the demand a company can actually reach.
 
-Published 29 August 2026 · Updated 13 October 2026 · 8 minute read
+Published 29 August 2026 · Updated 14 October 2026 · 8 minute read
 
 - The surface: what your offering asks of someone
 - Carried by your customers and their AI
@@ -33,7 +33,13 @@ The Serviceable Line is how far your customers, and increasingly their AI, get w
 
 [Part 2 of 6 · 0:21 The customer's AI](https://etgarbonar.com/assets/video/serviceable-line/02-the-customers-ai.mp4?v=2)
 
-Both sales-led and product-led motions are losing ground to this silent part of the journey.
+Worked example
+
+## See it in one trip
+
+Same flight. Two booking platforms. The traveler’s AI tries both, but only one keeps the customer.
+
+[Walk through the five layers](https://etgarbonar.com/serviceable-line/examples/flight/)
 
 ## The two variables behind the variance
 

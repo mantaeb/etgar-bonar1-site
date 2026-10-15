@@ -8,6 +8,8 @@ English and Hebrew executive profile, plus Etgar Bonar's English point-of-view s
 |---|---|
 | `/` | English executive profile |
 | `/serviceable-line/` | English point of view, The Serviceable Line |
+| `/serviceable-line/examples/flight/` | Worked example, one trip through the five Serviceable Line layers |
+| `/serviceable-line/shapes/` | How the Serviceable Line changes across offerings and buyer segments |
 | `/cost-to-serve-line/` | Former point-of-view URL, permanently redirected to `/serviceable-line/` by Cloudflare |
 | `/five-layers/` | Legacy stub that points directly to `/serviceable-line/` |
 | `/ai/` | Working personal AI system, presented as executive build evidence |
