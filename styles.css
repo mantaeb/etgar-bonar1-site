@@ -764,6 +764,8 @@ h3 { font-weight: 750; letter-spacing: -.025em; }
 .article-footer > div:first-child { max-width: 600px; }
 .article-footer h2 { margin-bottom: .8rem; font-size: 2.35rem; }
 .article-footer p:last-child { color: var(--muted); }
+.article-footer h2 ~ p { color: var(--muted); }
+.article-footer .article-footer-note { margin-top: 1.1rem; font-size: .95rem; }
 .article-footer-actions { display: flex; flex-direction: column; gap: .7rem; }
 
 /* Hebrew */

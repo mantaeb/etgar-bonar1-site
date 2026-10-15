@@ -152,6 +152,17 @@
     });
   });
 
+  // a link to /serviceable-line/#watch opens the player and plays them all; browsers that block
+  // sound without a click leave it open and paused, one tap from playing
+  if (window.location.hash === '#watch') {
+    playAll = true;
+    dialog.showModal();
+    close.focus();
+    track('video_chapter_select', { video_chapter: 1, video_source: 'link' });
+    load(0, true);
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }
+
   close.addEventListener('click', () => dialog.close());
   dialog.addEventListener('click', event => {
     if (event.target === dialog) dialog.close();

@@ -8,11 +8,45 @@ Description: Not a demo. A private AI system running under real load, with permi
 
 Evolving since February 2026
 
-# A private AI system: one builder, no team, real consequences.
+# A private AI system: one builder, many agents, real consequences.
 
 Not a demo. One person builds and maintains it, and other people depend on it. It remembers from sources, connects personal and small-business workflows, and acts only inside the permissions it is granted. It runs across platforms and swaps models without a rewrite, so no vendor owns it, on hardware that cost less than a laptop.
 
 [The point of view it shaped](https://etgarbonar.com/serviceable-line/)
+
+How this site is made
+
+## AI agents made this site. The framework and the judgement calls are mine.
+
+Since 30 August, every page here has been produced with AI agents I run, mainly Claude Code and Codex, working inside rules and review steps I set: the research, the drafts, the code, the [diagrams](https://etgarbonar.com/serviceable-line/shapes/), a [four-minute explainer video](https://etgarbonar.com/serviceable-line/#watch) and the LinkedIn carousel. I choose the argument, decide which words survive, and sign off on what goes live.
+
+**139** changes committed to the site between 30 August and launch day, 12 October
+
+**4:05** explainer video in six parts. The voice is mine; agents animated, timed and rendered it. [Watch it](https://etgarbonar.com/serviceable-line/#watch)
+
+**20** advisor-panel sessions in the same weeks
+
+**Every number is sourced**
+
+Each figure on this site traces to a ledger of sourced claims. A number without a source does not ship.
+
+**Private material cannot ship**
+
+Every release passes an automated gate that refuses anything carrying private notes or internal references.
+
+**Copy is reviewed line by line**
+
+Each page is mirrored into a document I comment on, and my comments become the next draft.
+
+**Big calls are argued first**
+
+Decisions go to a panel of advisor personas that disagree with each other before I decide. This section came out of one.
+
+One thing that went wrong
+
+In early October, a file on this site was found listing the paths of my private notes, though not their contents. The release gate above exists because of it.
+
+The same system runs the rest of my work and my family's life.
 
 The idea
 
@@ -20,7 +54,7 @@ The idea
 
 This is a working pilot of a private operating system with long-term, source-backed memory. It connects knowledge and actions across the tools a person or family already uses, while keeping the system readable, inspectable, and portable.
 
-I built it for three reasons: to experience first-hand, as an early adopter, how buying changes when AI does the finding, choosing and using; to run my own and my family's work and life on it; and to build differently. I have been a builder many times before. What is new is that I can now write the code myself: connecting systems and apps that were never connected, and automating processes that could not be automated before. Together with solving discoverability and selectability at Lokalise, it changed how I think product-led and sales-led motions evolve in the age of AI. It is now the platform, a second brain and its agents, that I use to assess where a company's Serviceable Line sits.
+I built it for three reasons: to experience first-hand, as an early adopter, how buying changes when AI does the finding, choosing and using; to run my own and my family's work and life on it; and to build differently. I have been a builder many times before. What is new is that I can now write the code: connecting systems and apps that were never connected, and automating processes that could not be automated before. Together with solving discoverability and selectability at Lokalise, it changed how I think product-led and sales-led motions evolve in the age of AI. It is now the platform, a second brain and its agents, that I use to assess where a company's Serviceable Line sits.
 
 How it works
 
@@ -85,6 +119,10 @@ Where it works
 Business work
 
 Commercial strategy, AI visibility, product positioning, and decision support for confidential advisory work.
+
+Creative and web
+
+Websites, diagrams, explainer videos and carousels, built by agents and published after my review. See how this site is made.
 
 Personal administration
 

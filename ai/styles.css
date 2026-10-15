@@ -2820,3 +2820,25 @@ html[dir="rtl"] .hero-actions {
     box-shadow: none;
   }
 }
+
+/* How this site is made (2026-10-15) */
+.making-lede { max-width: 760px; margin: 0 0 2.2rem; color: var(--muted); font-size: 1.12rem; line-height: 1.6; }
+.making-of a:not(.button),
+.list-row a { color: var(--green); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.making-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin: 0 0 2.4rem; padding: 1.6rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.making-stats strong { display: block; margin-bottom: .5rem; color: var(--green); font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1; }
+.making-stats span { display: block; color: var(--muted); font-size: .92rem; line-height: 1.4; }
+.making-controls { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.making-controls p { margin: .6rem 0 0; color: var(--muted); font-size: .95rem; line-height: 1.5; }
+.making-lesson { max-width: 760px; margin: 2.4rem 0 0; padding: 1.2rem 1.4rem; border-left: 4px solid var(--amber); background: var(--paper-strong); }
+.making-lesson p { margin: .3rem 0 0; }
+.making-lesson .rail-label { position: static; }
+.making-handoff { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin: 2.2rem 0 0; font-size: 1.05rem; }
+
+@media (max-width: 900px) {
+  .making-stats, .making-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 560px) {
+  .making-stats, .making-controls { grid-template-columns: 1fr; }
+}
