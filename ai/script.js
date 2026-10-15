@@ -88,9 +88,16 @@ function restoreFragmentPosition() {
   window.requestAnimationFrame(() => target.scrollIntoView());
 }
 
+function restoreContactLabels() {
+  document.querySelectorAll(".contact-email-link").forEach((link) => {
+    link.textContent = "Contact";
+  });
+}
+
 window.addEventListener("scroll", updateScrollEffects, { passive: true });
 window.addEventListener("resize", updateScrollEffects);
 window.addEventListener("load", restoreFragmentPosition);
+window.addEventListener("DOMContentLoaded", restoreContactLabels);
 
 updateScrollEffects();
 initReveals();
