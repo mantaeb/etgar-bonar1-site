@@ -42,36 +42,6 @@ In early October, a file on this site was found listing the paths of my private 
 
 The same system runs the rest of my work and my family's life.
 
-The idea
-
-## Not another chatbot. A personal system that works where life already happens.
-
-This is a working pilot of a private operating system with long-term, source-backed memory. It connects knowledge and actions across the tools a person or family already uses, while keeping the system readable, inspectable, and portable.
-
-I built it for three reasons: to experience first-hand, as an early adopter, how buying changes when AI does the finding, choosing and using; to run my own and my family's work and life on it; and to build differently. I have been a builder many times before. What is new is that I can now write the code: connecting systems and apps that were never connected, and automating processes that could not be automated before. Together with solving discoverability and selectability at Lokalise, it changed how I think product-led and sales-led motions evolve in the age of AI. It is now the platform, a second brain and its agents, that I use to assess where a company's Serviceable Line sits.
-
-How it works
-
-## Three ideas make it different.
-
-01
-
-### It remembers from sources
-
-Important facts come from real notes, records, tasks, and logs. They remain traceable to their source instead of disappearing into vague conversational memory.
-
-02
-
-### It coordinates across life
-
-Focused assistants connect personal administration, family and travel, household and finance, the connected home, and the flow of information between them.
-
-03
-
-### It keeps the owner in control
-
-Access is scoped by task. Durable memory requires human approval, sensitive actions keep a confirmation step, and the knowledge remains readable outside any one AI model.
-
 Seen in the system
 
 ## It remembers from sources, and the sources are connected.
@@ -298,12 +268,42 @@ The operating system and its readable knowledge base run on a private home serve
 
 Checks, incidents, and fixes remain visible. When a failure repeats, it is turned into a rule or a deterministic tool so the same problem is less likely to happen again.
 
+The idea
+
+## Not another chatbot. A personal system that works where life already happens.
+
+This is a working pilot of a private operating system with long-term, source-backed memory. It connects knowledge and actions across the tools a person or family already uses, while keeping the system readable, inspectable, and portable.
+
+I built it for three reasons: to experience first-hand, as an early adopter, how buying changes when AI does the finding, choosing and using; to run my own and my family's work and life on it; and to build differently. I have been a builder many times before. What is new is that I can now write the code: connecting systems and apps that were never connected, and automating processes that could not be automated before. Together with solving discoverability and selectability at Lokalise, it changed how I think product-led and sales-led motions evolve in the age of AI. It is now the platform, a second brain and its agents, that I use to assess where a company's Serviceable Line sits.
+
+How it works
+
+## Three ideas make it different.
+
+01
+
+### It remembers from sources
+
+Important facts come from real notes, records, tasks, and logs. They remain traceable to their source instead of disappearing into vague conversational memory.
+
+02
+
+### It coordinates across life
+
+Focused assistants connect personal administration, family and travel, household and finance, the connected home, and the flow of information between them.
+
+03
+
+### It keeps the owner in control
+
+Access is scoped by task. Durable memory requires human approval, sensitive actions keep a confirmation step, and the knowledge remains readable outside any one AI model.
+
 Who is behind it
 
 ## Built and operated by [Etgar Bonar](https://etgarbonar.com/), a commercial executive who chose to learn AI by building and running a working system around real life.
 
 He also built a mobile development workspace so he can inspect, program, and improve the system from anywhere.
 
-## Contact
+## Want to talk about the system?
 
-[Contact](mailto:ai@bonar1.com)
+[Get in touch](mailto:ai@bonar1.com)

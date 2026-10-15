@@ -90,7 +90,7 @@ function restoreFragmentPosition() {
 
 function restoreContactLabels() {
   document.querySelectorAll(".contact-email-link").forEach((link) => {
-    link.textContent = "Contact";
+    link.textContent = link.dataset.contactLabel || "Contact";
   });
 }
 

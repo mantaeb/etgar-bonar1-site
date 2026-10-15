@@ -679,7 +679,7 @@ h1 {
   display: grid;
   justify-items: center;
   text-align: center;
-  padding: clamp(82px, 10vw, 142px) clamp(20px, 5vw, 64px);
+  padding: clamp(64px, 7vw, 96px) clamp(20px, 5vw, 64px);
   color: rgba(255, 250, 240, 0.94);
   background:
     radial-gradient(circle at var(--cursor-x) var(--cursor-y), rgba(244, 188, 127, calc(var(--cursor-active) * 0.18)), transparent 24rem),
@@ -719,7 +719,7 @@ h1 {
 
 .early .button {
   width: fit-content;
-  margin: 0 auto;
+  margin: 28px auto 0;
 }
 
 .early .button-primary {
