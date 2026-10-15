@@ -40,8 +40,6 @@ One thing that went wrong
 
 In early October, a file on this site was found listing the paths of my private notes, though not their contents. The release gate above exists because of it.
 
-The same system runs the rest of my work and my family's life.
-
 Seen in the system
 
 ## It remembers from sources, and the sources are connected.
