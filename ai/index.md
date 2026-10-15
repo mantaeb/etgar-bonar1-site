@@ -10,7 +10,7 @@ Evolving since February 2026
 
 # A private AI system: one builder, many agents, real consequences.
 
-Not a demo. One person builds and maintains it, and other people depend on it. It remembers from sources, connects personal and small-business workflows, and acts only inside the permissions it is granted. It runs across platforms and swaps models without a rewrite, so no vendor owns it, on hardware that cost less than a laptop.
+It remembers from sources, connects small-business workflows, and acts only within explicit permissions. It runs across platforms, swaps models, and lives on hardware that cost less than a laptop.
 
 [The point of view it shaped](https://etgarbonar.com/serviceable-line/)
 
