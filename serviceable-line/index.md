@@ -214,6 +214,6 @@ About the author
 
 Commercial leader and General Manager, accountable for revenue in his last three roles: General Manager of Taboola's global SMB business through its IPO; Vice President of Sales and Executive Team member at Rapyd, running several business units; Chief Marketing Officer at Lokalise. Before that, Amazon Advertising, Amazon Payments and Johnson & Johnson. Sales, partnerships, customer success and marketing, run as one revenue system.
 
-Made with AI agents I run. The framework and the judgement calls are mine. [See how this site is made](https://etgarbonar.com/ai/#how-this-site-is-made).
+Made with AI agents I run. The framework, the judgement calls and the voice are mine. [See how this site is made](https://etgarbonar.com/ai/#how-this-site-is-made).
 
 [View executive profile](https://etgarbonar.com/) [Start a conversation](mailto:etgar@bonar1.com) [Message on LinkedIn](https://www.linkedin.com/in/etgar1/)

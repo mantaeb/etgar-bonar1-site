@@ -16,15 +16,9 @@ Not a demo. One person builds and maintains it, and other people depend on it. I
 
 How this site is made
 
-## AI agents made this site. The framework and the judgement calls are mine.
+## AI agents made this site. The framework, the judgement calls and the voice are mine.
 
 Since 30 August, every page here has been produced with AI agents I run, mainly Claude Code and Codex, working inside rules and review steps I set: the research, the drafts, the code, the [diagrams](https://etgarbonar.com/serviceable-line/shapes/), a [four-minute explainer video](https://etgarbonar.com/serviceable-line/#watch) and the LinkedIn carousel. I choose the argument, decide which words survive, and sign off on what goes live.
-
-**139** changes committed to the site between 30 August and launch day, 12 October
-
-**4:05** explainer video in six parts. The voice is mine; agents animated, timed and rendered it. [Watch it](https://etgarbonar.com/serviceable-line/#watch)
-
-**20** advisor-panel sessions in the same weeks
 
 **Every number is sourced**
 
