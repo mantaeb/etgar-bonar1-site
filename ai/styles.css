@@ -169,7 +169,8 @@ a {
   transform: translateY(-1px);
 }
 
-section[id] {
+section[id],
+.home-monitor-row[id] {
   scroll-margin-top: 96px;
 }
 
