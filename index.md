@@ -163,7 +163,7 @@ The operating test
 
 ## How much work one person could carry once AI was connected to real context and tools, and where that leverage stopped.
 
-I built and run a working [personal AI operating system](https://etgarbonar.com/ai/) at the smallest useful scale: one operator, real costs and real consequences. It works across family, household, travel, health, finance, research, writing and development.
+I built and run a working [personal AI operating system](https://etgarbonar.com/ai/) at the smallest useful scale: one builder, real costs and real consequences. It works across family, household, travel, health, finance, research, writing and development.
 
 The answer only became useful when I added the controls the demo layer skips: scoped permissions, human approval, watchdogs, canary tests, backups, incident logging and a written record of failures.
 
