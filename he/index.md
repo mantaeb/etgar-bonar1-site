@@ -122,4 +122,4 @@ B.Sc
 
 ## לבניית מערכת מסחרית שמתאימה לשינוי הבא.
 
-[אימייל לאתגר](mailto:etgar@bonar1.com) [חיבור ב-LinkedIn](https://www.linkedin.com/in/etgar1/)
+[אימייל לאתגר](mailto:etgar@etgarbonar.com) [חיבור ב-LinkedIn](https://www.linkedin.com/in/etgar1/)

@@ -199,4 +199,4 @@ Contact
 
 ## The best conversations start with the commercial challenge.
 
-[Email Etgar](mailto:etgar@bonar1.com) [Connect on LinkedIn](https://www.linkedin.com/in/etgar1/)
+[Email Etgar](mailto:etgar@etgarbonar.com) [Connect on LinkedIn](https://www.linkedin.com/in/etgar1/)

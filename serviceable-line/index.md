@@ -216,4 +216,4 @@ Commercial leader and General Manager, accountable for revenue in his last three
 
 Made with AI agents I run. The framework, the judgement calls and the voice are mine. [See how this site is made](https://etgarbonar.com/ai/#how-this-site-is-made).
 
-[View executive profile](https://etgarbonar.com/) [Start a conversation](mailto:etgar@bonar1.com) [Message on LinkedIn](https://www.linkedin.com/in/etgar1/)
+[View executive profile](https://etgarbonar.com/) [Start a conversation](mailto:etgar@etgarbonar.com) [Message on LinkedIn](https://www.linkedin.com/in/etgar1/)

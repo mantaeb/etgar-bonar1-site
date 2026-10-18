@@ -304,4 +304,4 @@ He also built a mobile development workspace so he can inspect, program, and imp
 
 ## Want to talk about the system?
 
-[Get in touch](mailto:ai@bonar1.com)
+[Get in touch](mailto:ai@etgarbonar.com)

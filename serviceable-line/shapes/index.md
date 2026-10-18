@@ -202,4 +202,4 @@ Start here
 
 The full argument: what the line is, the five questions the customer's AI keeps asking, the losses no funnel records, and how the line was moved by hand before AI.
 
-[Read the Serviceable Line](https://etgarbonar.com/serviceable-line/) [Start a conversation](mailto:etgar@bonar1.com) [Message on LinkedIn](https://www.linkedin.com/in/etgar1/)
+[Read the Serviceable Line](https://etgarbonar.com/serviceable-line/) [Start a conversation](mailto:etgar@etgarbonar.com) [Message on LinkedIn](https://www.linkedin.com/in/etgar1/)

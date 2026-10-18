@@ -99,4 +99,4 @@ Private conversations
 
 ## Still have a question this page did not answer?
 
-[Ask it directly](mailto:ai@bonar1.com?subject=About%20the%20AI%20system&body=Hi%20Etgar%2C%0A%0AI%20have%20a%20question%20about%20the%20AI%20system%3A%0A)
+[Ask it directly](mailto:ai@etgarbonar.com?subject=About%20the%20AI%20system&body=Hi%20Etgar%2C%0A%0AI%20have%20a%20question%20about%20the%20AI%20system%3A%0A)
