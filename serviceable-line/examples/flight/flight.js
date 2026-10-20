@@ -62,5 +62,17 @@
     show(distance < 0 ? index + 1 : index - 1);
   }, { passive: true });
 
+  // Coming from the Serviceable Line page, go back in history so the reader lands where they left off.
+  const back = document.querySelector("[data-trip-back]");
+  if (back && document.referrer && history.length > 1) {
+    const from = new URL(document.referrer);
+    if (from.origin === location.origin && from.pathname === "/serviceable-line/") {
+      back.addEventListener("click", (event) => {
+        event.preventDefault();
+        history.back();
+      });
+    }
+  }
+
   show(0);
 })();

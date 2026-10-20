@@ -254,6 +254,14 @@
 
 .trip-follow a:hover { background: rgba(47, 114, 255, 0.28); }
 
+.trip-back {
+  max-width: none;
+  margin: 1.8rem auto 0;
+  text-align: center;
+}
+
+.trip-back .button { gap: 0.5rem; }
+
 .trip-transcript {
   max-width: 760px;
   margin: 2.5rem auto 0;
@@ -295,7 +303,7 @@
 }
 
 @media print {
-  .trip-arrow, .trip-controls, .trip-follow { display: none; }
+  .trip-arrow, .trip-controls, .trip-follow, .trip-back { display: none; }
   .trip-slide { display: block; break-after: page; }
   .trip-slide img { max-width: 520px; margin: 0 auto; box-shadow: none; }
   .trip-transcript { color: black; border-color: #777; }

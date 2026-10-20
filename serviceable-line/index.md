@@ -12,62 +12,61 @@ A framework by Etgar Bonar
 
 Move the line out, and you can win customers you used to walk away from.
 
-*Serviceable* as in serviceable available market: the demand a company can actually reach.
+*Serviceable* as in serviceable available market: the demand a company can actually reach. Moving the line out makes more of it worth serving.
 
-Published 29 August 2026 · Updated 15 October 2026 · 8 minute read
+Published 29 August 2026 · Updated 20 October 2026 · 7 minute read
 
 - The surface: what your offering asks of someone
 - Carried by your customers and their AI
 - Revenue at risk: a competitor gets farther
 - Available to win: you get farther
 
-Illustrative, for one example offering against one competitor, for the same buyer and job. Each bar is one layer, as long as the work that layer takes. Other offerings have different bars: [see six examples](https://etgarbonar.com/serviceable-line/shapes/).
+Illustrative: one example offering against one competitor, same buyer and job. Each bar is one layer, as long as the work that layer takes. Other offerings have different bars: [see six examples](https://etgarbonar.com/serviceable-line/shapes/).
 
-The Serviceable Line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or **you lose revenue, often without seeing why: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.**
+The Serviceable Line is how far your customers, and increasingly their AI, get with your offering on their own. Past that point, either one of your people has to step in, or **you lose revenue, often without seeing why**: left out of an AI's answer, judged on a smaller version of what you offer, or quietly gone after the trial or the first bill.
+
+**How far your customers and their AI can get with your offerings, without your people, is an executive decision.** Most companies are setting that boundary without realizing it.
 
 [Part 1 of 6 · 0:28 Intro](https://etgarbonar.com/assets/video/serviceable-line/01-intro.mp4?v=2)
 
-**Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks.** I spent most of those years on the seller's side of that shift, at Amazon, Taboola, Rapyd and Lokalise, where my teams and I moved this line by hand (examples below).
+Customers have been getting further on their own for a decade: finding you, comparing you, connecting you, running the product, fixing it when it breaks. I spent most of those years on the seller's side of that shift, at Amazon, Taboola, Rapyd and Lokalise, where my teams and I moved this line by hand (examples below).
 
 **What is changing is who is doing it.** Increasingly it is a machine, and that part of the journey is silent: the company does not own the machine doing the work, and often cannot see the interaction.
 
 [Part 2 of 6 · 0:21 The customer's AI](https://etgarbonar.com/assets/video/serviceable-line/02-the-customers-ai.mp4?v=2)
 
-Worked example
+## Why the line sits in different places
 
-## See it in one trip
+How far AI moves the line depends on two things, and neither works without the other: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine.
 
-Same flight. Two booking platforms. The traveler’s AI tries both, but only one keeps the customer.
+- **Delegation** is gated by permission, accountability, regulation and the cost of error, not by model capability.
+- **Legibility** is whether an outsider's agent can find your offering, compare it, connect it, run it and recover it without a person.
 
-[Walk through the five layers](https://etgarbonar.com/serviceable-line/examples/flight/)
+**They multiply, they do not add.** A perfectly legible product sold into a market whose buyers do not yet delegate gains little from AI. A market full of delegating buyers does nothing for a vendor a machine cannot read.
 
-## The two variables behind the variance
+That is why the line sits in a different place in developer tooling than in hospital procurement. It is not only a software question. A bag of rice has nothing to connect or fix. A cordless drill does, and a buyer can ask an AI whether it takes a battery they already own before paying. [How the line takes a different shape for each offering](https://etgarbonar.com/serviceable-line/shapes/).
 
-How far AI moves the line depends on two things, and neither works without the other: how far your buyers have gone in handing this work to AI, and how legible your offering is to a machine. The first is gated by permission, accountability, regulation and the cost of error, not by model capability. The second is whether an outsider's agent can find it, compare it, connect it, run it and recover it without a person.
-
-They multiply, they do not add. A perfectly legible product sold into a market whose buyers do not yet delegate gains little from AI. A market full of delegating buyers does nothing for a vendor a machine cannot read. That is why the line sits in a different place in developer tooling than in hospital procurement, and why the same vendor's line differs by segment inside one company. It is not only a software question. A bag of rice has nothing to connect or fix. A cordless drill does, and a buyer can ask an AI whether it takes a battery they already own before paying. [How the line takes a different shape for each offering](https://etgarbonar.com/serviceable-line/shapes/).
-
-Those two variables tell you where the Serviceable Line sits for a specific offering, buyer segment and job. The same company can therefore have several Serviceable Lines, and the same offering can have different Serviceable Lines for a small business and an enterprise buyer. To understand the revenue risk or opportunity, compare that line with the alternatives available to that buyer.
+So one company can have several Serviceable Lines, by offering and by buyer segment. What each is worth depends on the buyer's alternatives.
 
 [Part 3 of 6 · 1:18 Every offering has one](https://etgarbonar.com/assets/video/serviceable-line/03-every-offering.mp4?v=2)
 
-One of those you do not control, and it is rising anyway. The other is a decision you have already made, deliberately or not.
+Delegation you do not control, and it is rising anyway. Legibility is a decision you have already made, deliberately or not.
 
 The diagnostic
 
 ## Five questions that locate the Serviceable Line
 
-The diagnostic starts with a specific offering, buyer segment and job. What work is the customer willing and allowed to hand to AI, and what access and authority will that AI have? Then run the same job against your offering and the alternatives. Keep those conditions fixed when comparing providers; the [small-business and enterprise shapes](https://etgarbonar.com/serviceable-line/shapes/#segments-title) show why.
+Run them on one offering and one buyer segment, against the alternatives that buyer has; the [small-business and enterprise shapes](https://etgarbonar.com/serviceable-line/shapes/#segments-title) show why the segment matters. They are not funnel stages: they are five places where the work can stop, before or after money moves. Being found, the focus of answer-engine and generative-engine optimization (AEO and GEO), is only the first question.
 
-These are not stages in a funnel or a checklist every AI runs. They are five places where the work can become blocked, before or after money moves.
-
-Each question needs an observable test and a commercial signal. The point is not one total score. It is to locate where the work stops, whether it stops earlier or later than it does with another provider, and what that difference costs.
+Each question has an observable test and a commercial signal. The point is not one total score, but where the work stops compared with another provider, and what that difference costs.
 
 [Part 4 of 6 · 0:49 Five questions](https://etgarbonar.com/assets/video/serviceable-line/04-five-questions.mp4?v=2)
 
 1. **Findable Can it find you at all?**
 
    **If it fails:** never considered.
+
+   **Test and signal**
 
    **Test:** The company is named, without a brand prompt, across the questions its buyers ask.
 
@@ -76,12 +75,16 @@ Each question needs an observable test and a commercial signal. The point is not
 
    **If it fails:** cut from the shortlist.
 
+   **Test and signal**
+
    **Test:** The agent reaches price, limits, security and fit criteria without guessing.
 
    **Signal:** Shortlist inclusion, comparison accuracy and win rate.
 3. **Integrable Can it work out how you connect?**
 
    **If it fails:** bought or selected, does not go live.
+
+   **Test and signal**
 
    **Test:** The agent produces a valid implementation plan and, where test access exists, completes a working connection.
 
@@ -90,6 +93,8 @@ Each question needs an observable test and a commercial signal. The point is not
 
    **If it fails:** paid for and stalled.
 
+   **Test and signal**
+
    **Test:** Once connected, the agent completes and verifies the customer's core job.
 
    **Signal:** Task completion, activation and expansion.
@@ -97,11 +102,16 @@ Each question needs an observable test and a commercial signal. The point is not
 
    **If it fails:** quiet churn.
 
+   **Test and signal**
+
    **Test:** The agent diagnoses a failure, applies the right fix and confirms recovery.
 
    **Signal:** Resolution rate, escalation rate and churn.
 
-Integrable and Operable are the easiest pair to confuse. Integrable gets the offering into the customer's environment. Operable gets the customer's work done once it is there. A payments agent can authenticate and read account data, yet lack the permission or capability to issue a refund: the platform is Integrable for that agent, but not Operable for that job.
+Integrable and Operable are the easiest pair to confuse:
+
+- Integrable gets the offering into the customer's environment: a payments agent can authenticate and read account data.
+- Operable gets the customer's work done once it is there: the same agent can also issue a refund.
 
 Each "If it fails" above is an exit the seller may never see recorded. When the job is done, it ends in activation, expansion and advocacy. Either way, the outcome becomes public evidence and shapes the next buyer's research.
 
@@ -117,17 +127,33 @@ The rule I have used since Amazon: bring a person in when automation and mass co
 
 Each of these is work the customer's AI is starting to do. What this does not prove yet
 
+Worked example
+
+## See it in one trip
+
+Same flight. Two booking platforms. The traveler’s AI tries both, but only one keeps the customer.
+
+[Walk through the five layers](https://etgarbonar.com/serviceable-line/examples/flight/)
+
 The silent losses
 
 ## The funnel cannot report what never entered it
 
 ### Omission
 
-A capability is real but poorly described. The buyer's AI compares you against a smaller version of yourself, and the company never knows the capability was missing from the decision. The first move is to publish each capability, with its price, limits and fit criteria, as plain facts a machine can quote, and to track how accurately the buyer's AI compares you.
+**What happens:** a capability is real but poorly described, so the buyer's AI compares you against a smaller version of yourself.
+
+**What it costs:** the company never knows the capability was missing from the decision.
+
+**First move:** publish each capability, with its price, limits and fit criteria, as plain facts a machine can quote, and track how accurately the buyer's AI compares you.
 
 ### Disillusion
 
-The buyer arrives with an implementation plan assembled from public material. The plan is wrong, or the agent connects but cannot run the work, so activation stalls. This is the costliest exit: a good-fit customer who already bought, and often already integrated, churns. The company loses revenue it had already won and that customer's next decisions, and the reviews they leave on G2, Trustpilot and Reddit become evidence for the next buyer's consideration.
+**What happens:** the buyer arrives with an implementation plan assembled from public material. The plan is wrong, or the agent connects but cannot run the work, so activation stalls.
+
+**What it costs:** the costliest exit. A good-fit customer who already bought, and often already integrated, churns, and the company loses revenue it had already won and that customer's next decisions.
+
+**What follows:** the reviews they leave on G2, Trustpilot and Reddit become evidence for the next buyer's consideration.
 
 [Part 5 of 6 · 0:41 Quiet losses and the gap](https://etgarbonar.com/assets/video/serviceable-line/05-quiet-losses-and-the-gap.mp4?v=2)
 
@@ -135,14 +161,23 @@ The competitive gap
 
 ## Your competitive gap shows the revenue at risk or available to win
 
-A Serviceable Line is not good or bad in isolation. Your absolute line shows where people still have to step in. What it means commercially depends on what customers are handing to AI, and how far the alternatives let that AI go:
+A Serviceable Line is not good or bad on its own. What it is worth depends on how far the alternatives let the buyer's AI go:
 
-- If customers are not yet delegating the job, a short line is mainly a readiness issue or an education opportunity: get your offering ready for their AI before they hand it the job, or show them what their AI can already do with you.
-- If customers are delegating the job but every provider blocks them at the same point, there is a category opportunity for the company that moves first.
-- If another provider lets the customer and their AI go farther than you do, the difference is revenue at risk: lost consideration, slower activation, higher service costs or churn.
-- If you let them go farther than the alternatives, the difference is revenue available to win: more customers you can win, activate, serve and retain without adding the same human cost.
+- **Customers are not delegating yet:** a readiness issue, and a chance to show them what their AI can already do with you.
+- **Every provider blocks them at the same point:** a category opportunity for the company that moves first.
+- **A competitor gets farther:** revenue at risk, through lost consideration, slower activation, higher service costs or churn.
+- **You get farther:** revenue to win, from customers you can win, activate, serve and retain without adding the same human cost.
 
-For a fair comparison, keep the offering, the buyer segment and the AI's access the same across providers. A merchant asks its own AI why yesterday's payout came in short. With one payments provider, the AI reads the account's transactions and explains the shortfall on the spot: a refund and a dispute fee came out of that payout. With the other, the question becomes a ticket for the provider's support team. Same merchant, same question: the first provider answers without a person; the second pays for one, and the merchant waits.
+For a fair comparison, keep the offering, the buyer segment and the AI's access the same across providers.
+
+### B2B example: one payout question, two providers
+
+A merchant asks its own AI why yesterday's payout came in short:
+
+- **With one payments provider,** the AI reads the account's transactions and explains the shortfall on the spot: a refund and a dispute fee came out of that payout.
+- **With the other,** the question becomes a ticket for the provider's support team.
+
+Same merchant, same question: the first provider answers without a person; the second pays for one, and the merchant waits.
 
 revenue at risk  available to win  Illustrative. Not measured values.
 
@@ -152,37 +187,25 @@ The vacancy
 
 [Part 6 of 6 · 0:28 Who owns it](https://etgarbonar.com/assets/video/serviceable-line/06-who-owns-it.mp4?v=2)
 
-How a company is represented to machines is split across marketing, product, pricing, partnerships, documentation, and support. Each team may be doing its part well. Rarely does one leader own whether the machine's picture of the company matches what the company actually is, and almost nobody measures it end to end.
+How a company is represented to machines is split across marketing, product, pricing, partnerships, documentation, and support. Each team may be doing its part well.
 
-This is a commercial job because the failure appears as lost consideration, lower conversion, slow activation, higher cost to serve, and quiet churn. The owner needs the authority to coordinate the whole system and the discipline to measure it end to end.
+Rarely does one leader own whether the machine's picture of the company matches what the company actually is, and almost nobody measures it end to end. This is a commercial job, because the failure appears as lost consideration, lower conversion, slow activation, higher cost to serve, and quiet churn.
 
-The revenue leader should own the shared economic outcome across the journey (shortlist and win rate, activation, expansion, retention, and the cost of serving each customer) without running every function.
+**A revenue leader should own the shared economic outcome** across the journey (shortlist and win rate, activation, expansion, retention, and the cost of serving each customer) without running every function. The owner needs the authority to coordinate the whole system and the discipline to measure it end to end.
 
 The current conversation
 
-## Where the Serviceable Line fits
+## The Serviceable Line connects today's debates across the customer journey
 
-Several active debates describe parts of the same shift. The Serviceable Line connects them across the customer journey and separates the force the market controls from the part a company can change.
+AEO and GEO cover only the first question of five.
 
-### AI visibility, AEO and GEO
+Several active debates describe parts of the same shift. The Serviceable Line separates the force the market controls from the part a company can change.
 
-Answer-engine optimization (AEO) and generative-engine optimization (GEO) ask whether AI can find, understand and cite a company. That is the first question. The Serviceable Line continues through comparison, connection, operation and recovery.
-
-### Agentic commerce and agentic buying
-
-These describe people and companies delegating discovery, evaluation, purchasing and service to AI agents. That is the demand-side force moving the line, unevenly by industry and task.
-
-### AI agent readiness and machine legibility
-
-These ask whether a vendor publishes accurate information, interfaces, permissions and recovery paths that an outside agent can use. This is the half of the line the company controls.
-
-### Cost to serve and human escalation
-
-These make the line visible in the economics: where the journey still requires a person, how often an agent escalates, and what that does to activation, margin and churn.
-
-### Service-as-software and outcome-based pricing
-
-These are consequences of the line moving. When work becomes autonomous enough and its result attributable enough, companies can sell completed work rather than seats or access.
+- **AI visibility, AEO and GEO.** Answer-engine optimization (AEO) and generative-engine optimization (GEO) ask whether AI can find, understand and cite a company. That is the first question. The Serviceable Line continues through comparison, connection, operation and recovery.
+- **Agentic commerce and agentic buying.** People and companies delegating discovery, evaluation, purchasing and service to AI agents. That is the demand-side force moving the line, unevenly by industry and task.
+- **AI agent readiness and machine legibility.** Whether a vendor publishes accurate information, interfaces, permissions and recovery paths that an outside agent can use. This is the half of the line the company controls.
+- **Cost to serve and human escalation.** The line made visible in the economics: where the journey still requires a person, how often an agent escalates, and what that does to activation, margin and churn.
+- **Service-as-software and outcome-based pricing.** Consequences of the line moving. When work becomes autonomous enough and its result attributable enough, companies can sell completed work rather than seats or access.
 
 Evidence and forecast
 
@@ -212,7 +235,13 @@ About the author
 
 ## Etgar Bonar
 
-Commercial leader and General Manager, accountable for revenue in his last three roles: General Manager of Taboola's global SMB business through its IPO; Vice President of Sales and Executive Team member at Rapyd, running several business units; Chief Marketing Officer at Lokalise. Before that, Amazon Advertising, Amazon Payments and Johnson & Johnson. Sales, partnerships, customer success and marketing, run as one revenue system.
+Commercial leader and General Manager, accountable for revenue, whether he ran sales, marketing or both:
+
+- General Manager of Taboola's global SMB business through its IPO
+- Vice President of Sales and Executive Team member at Rapyd, running several business units
+- Chief Marketing Officer at Lokalise
+
+Before that, Amazon Advertising, Amazon Payments and Johnson & Johnson. Sales, partnerships, customer success and marketing, run as one revenue system. He has run both sides of the line, and moved it before with product-led growth.
 
 Made with AI agents I run. The framework, the judgement calls and the voice are mine. [See how this site is made](https://etgarbonar.com/ai/#how-this-site-is-made).
 
