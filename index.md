@@ -203,8 +203,10 @@ Applied
 
 It started with websites in the nineties. Since then: a working clinical decision support system at Tel Aviv University, predicting the treatment course that maximizes quality-adjusted life expectancy. A bet on product-led growth before the category had a name. A personal AI operating system, and this site, now.
 
+![Etgar Bonar](https://etgarbonar.com/assets/images/etgar-bonar-portrait.webp)
+
 Contact
 
-## The best conversations start with the commercial challenge.
+## Get in touch
 
 [Email Etgar](mailto:etgar@etgarbonar.com) [Connect on LinkedIn](https://www.linkedin.com/in/etgar1/)
