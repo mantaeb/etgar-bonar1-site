@@ -18,7 +18,7 @@ const ltr = (value) => `<bdi lang="en" dir="ltr">${escapeHtml(value)}</bdi>`;
 const jsonForHtml = (value) => JSON.stringify(value, null, 2).replaceAll("<", "\\u003c");
 const mixedHebrew = (value) => {
   let html = escapeHtml(value);
-  for (const term of ["contact sales", "self-service", "PLG", "API", "AI"]) {
+  for (const term of ["contact sales", "self-service", "PLG", "API", "GTM", "AI"]) {
     html = html.replaceAll(term, `<bdi lang="en" dir="ltr">${term}</bdi>`);
   }
   return html;
@@ -124,7 +124,7 @@ const html = `<!doctype html>
   <link rel="alternate" hreflang="en" href="${escapeHtml(profile.englishProfileUrl)}">
   <link rel="alternate" hreflang="x-default" href="${escapeHtml(profile.englishProfileUrl)}">
   <link rel="alternate" type="application/json" href="${escapeHtml(profile.machineUrl)}" title="פרופיל מובנה בעברית">
-  <link rel="stylesheet" href="/styles.css?v=22">
+  <link rel="stylesheet" href="/styles.css?v=23">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -172,8 +172,10 @@ ${jsonForHtml(structuredData)}
       <div class="hero-copy">
         <p class="eyebrow light">${ltr(profile.page.eyebrow)}</p>
         <h1 id="hero-title">${escapeHtml(profile.page.headline)}<br><span>${escapeHtml(profile.page.headlineContinuation)}</span></h1>
-        <p class="hero-summary">${escapeHtml(profile.page.summary)}</p>
-        <p class="hero-thesis">${escapeHtml(profile.currentFocus.title)}</p>
+        <p class="hero-summary">${mixedHebrew(profile.page.summary)}</p>
+        <ul class="hero-shifts">
+${(profile.page.inflections || []).map((item) => `          <li><strong>${mixedHebrew(item)}</strong></li>`).join("\n")}
+        </ul>
         <div class="actions">
           <a class="button button-quiet" href="#record">${escapeHtml(profile.page.recordCta)}</a>
           <a class="button button-primary" href="/" hreflang="en">${escapeHtml(profile.page.englishCta)}</a>
