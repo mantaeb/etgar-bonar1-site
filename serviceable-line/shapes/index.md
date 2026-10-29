@@ -196,10 +196,24 @@ Score each layer on the 0 to 3 scale under How to read the shape, so two people 
 
 Compare offerings layer by layer, and look at the gap: it is what costs you, not the length of the bar.
 
-Start here
+Part one
 
 ## The Serviceable Line
 
 The full argument: what the line is, the five questions the customer's AI keeps asking, the losses no funnel records, and how the line was moved by hand before AI.
 
-[Read the Serviceable Line](https://etgarbonar.com/serviceable-line/) [Start a conversation](mailto:etgar@etgarbonar.com) [Message on LinkedIn](https://www.linkedin.com/in/etgar1/)
+[Read the Serviceable Line](https://etgarbonar.com/serviceable-line/)
+
+![Etgar Bonar](https://etgarbonar.com/assets/images/etgar-bonar-portrait.webp)
+
+About the author
+
+## Etgar Bonar
+
+Etgar Bonar is a revenue and go-to-market executive who leads through commercial inflection points. When technology or the market changes the rules of go-to-market, he builds the system and runs the organization the business needs to win.
+
+Across **Amazon**, **Taboola**, **Rapyd** and **Lokalise**, a recurring thread was letting product, content and automation carry more of the customer journey, and putting people where judgment changes the outcome.
+
+Earlier roles include **Amazon Advertising**, **Amazon Pay** and **Johnson & Johnson**.
+
+[View executive profile](https://etgarbonar.com/) [Start a conversation](mailto:etgar@etgarbonar.com) [Message on LinkedIn](https://www.linkedin.com/in/etgar1/)

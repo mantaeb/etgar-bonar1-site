@@ -231,18 +231,24 @@ The mechanism is proven by hand. What is unproven is how quickly each kind of bu
 
 Sources reviewed 26 September 2026.
 
+Part two
+
+## The shape of the Serviceable Line
+
+The five layers are not the same size for every offering or buyer segment. Compare six offerings, see what changes, and draw your own shape.
+
+[Explore the shapes](https://etgarbonar.com/serviceable-line/shapes/)
+
+![Etgar Bonar](https://etgarbonar.com/assets/images/etgar-bonar-portrait.webp)
+
 About the author
 
 ## Etgar Bonar
 
-Commercial leader and General Manager, accountable for revenue, whether he ran sales, marketing or both:
+Etgar Bonar is a revenue and go-to-market executive who leads through commercial inflection points. When technology or the market changes the rules of go-to-market, he builds the system and runs the organization the business needs to win.
 
-- General Manager of Taboola's global SMB business through its IPO
-- Vice President of Sales and Executive Team member at Rapyd, running several business units
-- Chief Marketing Officer at Lokalise
+Across **Amazon**, **Taboola**, **Rapyd** and **Lokalise**, a recurring thread was letting product, content and automation carry more of the customer journey, and putting people where judgment changes the outcome.
 
-Before that, Amazon Advertising, Amazon Payments and Johnson & Johnson. Sales, partnerships, customer success and marketing, run as one revenue system. He has run both sides of the line, and moved it before with product-led growth.
-
-Made with AI agents I run. The framework, the judgement calls and the voice are mine. [See how this site is made](https://etgarbonar.com/ai/#how-this-site-is-made).
+Earlier roles include **Amazon Advertising**, **Amazon Pay** and **Johnson & Johnson**.
 
 [View executive profile](https://etgarbonar.com/) [Start a conversation](mailto:etgar@etgarbonar.com) [Message on LinkedIn](https://www.linkedin.com/in/etgar1/)
