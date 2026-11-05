@@ -20,7 +20,7 @@ Career at a glance
 
 - **Amazon 2013 to 2019** Built mass account management for new European markets at Amazon Advertising, carrying its revenue goal, then built Amazon Pay's global marketing communications organization.
 - **Taboola 2019 to 2021** General Manager of a unit of about 40% of global revenue, from about $130M to $500M through the Nasdaq IPO. 65 people in five cities.
-- **Rapyd 2021 to 2024** VP reporting to the CEO, running several business units and about 35 people. An acquired book from loss-making to several million dollars in gross profit inside a year.
+- **Rapyd 2021 to 2024** VP of Sales, previously VP of SMB (GM) & Product Led Growth, reporting to the CEO and running several business units and about 35 people. An acquired book from loss-making to several million dollars in gross profit inside a year.
 - **Lokalise 2024 to 2026** Co-owned the company revenue as CMO through AI-era repositioning, repricing and repackaging, and the move upmarket to enterprise businesses.
 
 Built across
@@ -84,27 +84,35 @@ The same few interventions keep recurring: changing how customers are covered an
 
 [Anthropic customer story, where Etgar is quoted.](https://claude.com/customers/lokalise)
 
-2021 to 2024 Rapyd
+Oct 2022 - Sep 2024 Rapyd · Tel Aviv
 
-### Vice President of Sales, previously VP of SMB and Product-Led Growth
+### Vice President of Sales
 
-Reporting to the CEO as an Executive Team member, I ran several business units, with about 35 people across the UK, Israel, Hong Kong and the Philippines.
+Reporting to the CEO as an Executive Team member, I ran several business units: the core offering in selected markets, with sales, account management and referral partnerships under it; the acquired Hong Kong business; the acquired UK point-of-sale business; and the sales development function that qualified for the whole company.
 
-- Turned an acquired Hong Kong book from loss-making to several million dollars in gross profit inside a year, repackaging it as an off-the-shelf business account and introducing Rapyd's first subscription billing flow.
-- Built the Rapyd referral partner program to 74 partners generating more than 40% of new opportunities, turning founder-led conversations into a repeatable qualification, contracting, and revenue channel.
-- Launched UK online card acquiring, card-not-present, growing customers by 600% in the first year through product-led activation.
+- Built and led a 35-person commercial organization across Israel, the UK, Hong Kong and the Philippines.
+- Turned the acquired Hong Kong business from loss-making to several million dollars in gross profit inside a year, repackaging it as an off-the-shelf business account and introducing Rapyd's first subscription billing flow.
+- Integrated the acquired UK and Ireland acquiring business and held it at target, then repriced the inherited books, including the UK card-acquiring base we had grown, in a shift from growth-at-all-costs to disciplined, profitable growth.
 
 **More from this role**
 
-The units: the core offering in selected markets, with sales, account management and referral partnerships under it; the acquired Hong Kong business; the acquired UK point-of-sale business; and the sales development function that qualified for the whole company.
-
-- Shifted inherited books of business from growth-at-all-costs to disciplined, profitable growth, holding the core business at its revenue target while driving profitability.
-- Created the sales development function from zero; it became the lead qualifier for all of Rapyd, not just my own remit.
-- Automated merchant onboarding and KYC decisioning with Product and Compliance, sorting applications into auto-approve, auto-reject and manual review, so a person was needed only where judgment actually was.
+- Built the Rapyd Partner Program, scaling to 74 partners driving 40%+ of new opportunities, turning founder-led conversations into a repeatable qualification, contracting, and revenue channel.
+- Drove Rapyd's 2024 sales transformation, installing operating cadences across pipeline management, Account Management, top-of-funnel, onboarding, Salesforce adoption, and Sales-to-Onboarding-to-AM handoffs.
+- Steered GTM across my remit, from self-serve merchants to Enterprise clients, balancing new business and account expansion.
 
 ![Aerial view of Rapyd's rooftop workplace and basketball court in Tel Aviv](https://etgarbonar.com/assets/images/rapyd-office-aerial.webp)
 
 Rapyd rooftop, Tel Aviv. Photography: Amit Geron.
+
+Oct 2021 - Nov 2022 Rapyd · Tel Aviv
+
+### Vice President of SMB (GM) & Product Led Growth
+
+Recruited to build and lead Rapyd's SMB and Product-Led Growth business, with end-to-end responsibility across acquisition, Sales, Account Management, operations and enablement, and self-service.
+
+- Launched the UK card-acquiring GTM, growing customers by 600% in the first year through product-led activation.
+- The sales development team we built from zero became the lead qualifier for all of Rapyd, not just my own remit.
+- With Product and Compliance, we automated merchant onboarding and KYC decisioning, sorting applications into auto-approve, auto-reject and manual review, so a person was needed only where judgment actually was.
 
 2019 to 2021 Taboola
 

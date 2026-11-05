@@ -16,10 +16,14 @@ const escapeHtml = (value) => String(value)
 
 const ltr = (value) => `<bdi lang="en" dir="ltr">${escapeHtml(value)}</bdi>`;
 const jsonForHtml = (value) => JSON.stringify(value, null, 2).replaceAll("<", "\\u003c");
+const mixedLtrTerms = ["Sales-to-Onboarding-to-AM", "Product-Led Growth", "Account Management", "top-of-funnel", "contact sales", "self-service", "Salesforce", "Onboarding", "Enterprise", "Compliance", "Product", "Sales", "Rapyd", "SMB", "PLG", "KYC", "GTM", "API", "AI", "AM"];
 const mixedHebrew = (value) => {
   let html = escapeHtml(value);
-  for (const term of ["contact sales", "self-service", "PLG", "API", "GTM", "AI"]) {
-    html = html.replaceAll(term, `<bdi lang="en" dir="ltr">${term}</bdi>`);
+  for (const [index, term] of mixedLtrTerms.entries()) {
+    html = html.replaceAll(term, `__LTR_${index}__`);
+  }
+  for (const [index, term] of mixedLtrTerms.entries()) {
+    html = html.replaceAll(`__LTR_${index}__`, `<bdi lang="en" dir="ltr">${term}</bdi>`);
   }
   return html;
 };
@@ -83,14 +87,19 @@ const structuredData = {
   ]
 };
 
-const careerHtml = profile.career.map((item, index) => `
+const careerHtml = profile.career.map((item, index) => {
+  const visibleBulletCount = item.company === "Rapyd" && item.role === "Vice President of Sales" ? 3 : item.bullets?.length;
+  const visibleBullets = item.bullets?.slice(0, visibleBulletCount) || [];
+  const extraBullets = item.bullets?.slice(visibleBulletCount) || [];
+  return `
         <article class="career-card${index === 0 ? " career-featured" : ""}">
-          <div class="career-meta"><span>${escapeHtml(item.period)}</span><span>${escapeHtml(item.companyHebrew)} ${ltr(item.company)}</span></div>
+          <div class="career-meta"><span>${/[A-Za-z]/.test(item.period) ? ltr(item.period) : escapeHtml(item.period)}</span><span>${escapeHtml(item.companyHebrew)} ${ltr(item.company)}</span></div>
           <div class="career-body">
             <h3>${ltr(item.role)}</h3>
-            <p>${escapeHtml(item.description)}</p>
-          </div>
-        </article>`).join("");
+${item.location ? `            <p>${escapeHtml(item.location)}</p>\n` : ""}            <p>${mixedHebrew(item.description)}</p>
+${visibleBullets.length ? `            <ul>\n${visibleBullets.map((bullet) => `              <li>${mixedHebrew(bullet)}</li>`).join("\n")}\n            </ul>\n` : ""}${extraBullets.length ? `            <details class="career-more"><summary>עוד מהתפקיד</summary>\n              <ul>\n${extraBullets.map((bullet) => `                <li>${mixedHebrew(bullet)}</li>`).join("\n")}\n              </ul>\n            </details>\n` : ""}          </div>
+        </article>`;
+}).join("");
 
 const educationHtml = profile.education.map((item, index) => `
         <article${index === 0 ? ' class="credential-lbs"' : ""}>
